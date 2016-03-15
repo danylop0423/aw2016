@@ -13,34 +13,28 @@
         <li><a href="contacto.html">Contacto</a></li>
     </ul>
 
-    <br>
 
     <h1>Formulario de contacto</h1>
 
     <form action="MAILTO:davidlab@ucm.es" method="post" enctype="text/plain">
-        <input type="text" name="name" placeholder="Nombre" required/><br>
+        <input type="text" name="name" placeholder="Nombre" required/>
+        
 
-        <br>
+        <input type="text" name="email" placeholder="Email" required/>
 
-        <input type="text" name="email" placeholder="Email" required/><br>
 
-        <br>
+        <input type="radio" name="query" value="evaluacion" required>Evaluación
 
-        <input type="radio" name="query" value="evaluacion" required>Evaluación<br>
+        <input type="radio" name="query" value="sugerencias" required>Sugerencias
 
-        <input type="radio" name="query" value="sugerencias" required>Sugerencias<br>
+        <input type="radio" name="query" value="critica" required>Críticas
 
-        <input type="radio" name="query" value="critica" required>Críticas<br>
 
-        <br>
+        <textarea name="message" cols="30" rows="10" required></textarea>
 
-        <textarea name="message" cols="30" rows="10" required></textarea><br>
-
-        <br>
+        
 
         <input type="checkbox" required> Marque esta casilla para verificar que ha leído nuestros términos y condiciones del servicio
-
-        <br><br>
 
         <input type="submit" value="Enviar">
 
