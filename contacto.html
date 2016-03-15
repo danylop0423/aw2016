@@ -17,12 +17,12 @@
 
     <h1>Formulario de contacto</h1>
 
-    <form action="MAILTO:davidlab@ucm.es">
-        <input type="text" id="name" placeholder="Nombre" required/><br>
+    <form action="MAILTO:davidlab@ucm.es" method="post" enctype="text/plain">
+        <input type="text" name="name" placeholder="Nombre" required/><br>
 
         <br>
 
-        <input type="text" id="email" placeholder="Email" required/><br>
+        <input type="text" name="email" placeholder="Email" required/><br>
 
         <br>
 
@@ -34,11 +34,11 @@
 
         <br>
 
-        <textarea name="message" id="message" cols="30" rows="10" required></textarea><br>
+        <textarea name="message" cols="30" rows="10" required></textarea><br>
 
         <br>
 
-        <input type="checkbox" name="accept" value="accepts" required> Marque esta casilla para verificar que ha leído nuestros términos y condiciones del servicio
+        <input type="checkbox" required> Marque esta casilla para verificar que ha leído nuestros términos y condiciones del servicio
 
         <br><br>
 
