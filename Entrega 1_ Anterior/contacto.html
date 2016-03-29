@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+	<a href="detalles.html"><h2><em>Detalles</em></h2></a>
+	<a href="miembros.html"><h2><em>Miembros</em></h2></a>
+	<a href="index.html"><h2><em>Index</em></h2></a>
+	<a href="planificacion.html"><h2><em>Planificación</em></h2></a>
+    <title>Contacto</title>
+</head>
+<body>
+    <form action="MAILTO:davidlab@ucm.es">
+        <input type="text" id="name" placeholder="Nombre" required/><br>
+
+        <input type="text" id="email" placeholder="Email" required/><br>
+
+        <br>
+
+        <input type="radio" name="query" value="evaluacion" required>Evaluación<br>
+
+        <input type="radio" name="query" value="sugerencias" required>Sugerencias<br>
+
+        <input type="radio" name="query" value="critica" required>Críticas<br>
+
+        <br>
+
+        <textarea name="message" id="message" cols="30" rows="10" required></textarea><br>
+
+        <br>
+
+        <input type="checkbox" name="accept" value="accepts" required> Marque esta casilla para verificar que ha leído nuestros términos y condiciones del servicio
+
+        <br><br>
+
+        <input type="submit" value="Enviar">
+
+        <input type="reset" value="Borrar">
+    </form>
+</body>
+</html>
