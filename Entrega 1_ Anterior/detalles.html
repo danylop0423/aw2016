@@ -1,54 +1,75 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8">
-	<a href="index.html"><h2><em>Index</em></h2></a>
-	<a href="miembros.html"><h2><em>Miembros</em></h2></a>
-	<a href="contacto.html"><h2><em>Contacto</em></h2></a>
-	<a href="planificacion.html"><h2><em>Planificación</em></h2></a>
-  <title>ReverseBid - Detalles</title>
-
+	<meta charset="utf-8">
+	<title>ReverseBid - Detalles</title>
 </head>
 
 <body>
-  
-	<h1 align="center">Detalles</h1>
-	<h2 align="center">Introducción</h2>
+<!----------------------------Enlaces a Paginas Externas--------------------------- -->
+	<ul>
+        <li><a href="index.html">Index</a></li>
+        <li><a href="detalles.html">Detalles</a></li>
+		<li><a href="bocetos.html">Bocetos</a></li>
+        <li><a href="miembros.html">Miembros</a></li>
+        <li><a href="planificacion.html">Planificación</a></li>
+		<li><a href="contacto.html">Contacto</a></li>
+    </ul>
 
-	<p>ReverseBid es una aplicacion web que sirve de plataforma para realizar subastas con unas caracteristicas concretas.  
-	Su funcionamiento es el siguiente:<br>
+<!----------------------------Desarrollo de los Detalles--------------------------- -->	
+	<h1>Detalles</h1>
+	<h2>Introducción</h2>
+
+	<p>
+	ReverseBid es una aplicación web que sirve de plataforma para realizar subastas con unas características concretas.
+	Su funcionamiento es el siguiente:
+	</p>
+
+	<p>
+	Un usuario registrado, llamado subastador, quiere deshacerse de un producto por cualquier motivo, en lugar de venderlo,
+	visitará nuestra web registrándose, selecionará una categoría de la lista, subirá una foto del producto a subastar, 
+	le dará una descripción, fijará un precio por puja, selecionará el tiempo máximo que su producto estará en subasta 
+	(siendo el tiempo minimo 24 horas y el máximo 1 semana).</p>
+	</p>
 	
 	<p>
-	Un usuario registrado, llamado subastador, quiere deshacerse de un producto por cualquier motivo, en lugar de venderlo, visitara nuestra web registrandose, selecionara una categoria de la lista, subira una foto del producto a subastar, le dara una descripcion, fijara un precio por puja, selecionara el tiempo maximo que su producto estara en subasta (siendo el tiempo minimo 24 horas y el maximo 1 semana).<br></p>
+	Tras este proceso, su producto pasará a estar en subasta en la aplicación, un usuario registrado, puede ver este producto, hacer 
+	preguntas al vendedor sobre el producto y podrá realizar una puja para el producto que este viendo, introducirá en una caja, 
+	una cantidad concreta de euros que desee, este usuario, puede realizar más de una puja sobre el mismo producto, cada vez que se 
+	realice una puja, se le cobrará, el importe establecido por el subastador.
+	Todas las pujas de cada usuario, quedarán registradas en esa subasta.
+	</p>
 	
-	<p>Tras este proceso, su producto pasara a estar en subasta en la aplicacion, un usuario registrado, puede ver este producto, hacer preguntas al vendedor sobre el producto y podra realizar una puja para el producto que este viendo, introducira en una caja, una cantidad concreta de euros que desee, este usuario, puede realizar mas de una puja sobre el mismo producto, cada vez que se realice una puja, se le cobrara, el importe establecido por el subastador.<br></p>
-	Todas las pujas de cada usuario, quedaran registradas en esa subasta<br>
+	<p>
+	Finalmente, la subasta ganadora, será aquella, más pequeña y que a su vez no este repetida.
+	En todo momento, se mostrará la puja más baja no repetida actual, es decir, se mostrará la puja ganadora actual
+	En el caso de que la puja este repetida, tras terminar de pujar, se le notificará al usuario pujador con un mensaje de "puja repetida"
+	Al finalizar el tiempo, se le notificará al subastador, quien ha sido el ganador de su subasta, y le proporcionara su correo 
+	electrónico para ponerse en contacto con él, así como la dirección de envio para proporcionarle el producto al ganador.
+	Tras la subasta, el usuario ganador, se le dara la posibilidad de calificar al subastador con un sistema de puntuación 
+	basado en "estrellas" u objeto similar y una valoración en forma de comentario.
+	</p>
+
+	<p>
+	Como visitante de la página, sin estar registrado, podra ver los objetos subastados, su puja mínima no repetida actual, las opiniones
+	y calificaciones de los subastadores, asi como podra navegar por todas las categorías viendo los productos a subasta actuales
+	</p>
+
 	
-	Finalmente, la subasta ganadora, sera aquella, mas pequeña y que a su vez no este repetida.<br>
-	En todo momento, se mostrara la puja mas baja no repetida actual, es decir, se mostrara la puja ganadora actual<br>
-	En el caso de que la puja este repetida, tras terminar de pujar, se le notificara al usuario pujador con un mensaje de "puja repetida"
-	Al finalizar el tiempo, se le notificara al subastador, quien ha sido el ganador de su subasta, y le proporcionara su correo electronico para ponerse en contacto con el, asi como la direccion de envio para proporcionarle el producto al ganador.<br>
-	Tras la subasta, el usuario ganador, se le dara la posibilidad de calificar al subastador con un sistema de puntuacion basado en "estrellas" u objeto similar y una valoracion en forma de comentario.
-	<br>
-	Como visitante de la pagina, sin estar registrado, podra ver los objetos subastados, su puja minima no repetida actual, las opiniones y calificaciones de los subastadores, asi como podra navegar por todas las categorias viendo los productos a subasta actuales
-	</p>
-
-	<h2 align="center">Tipos de Usuario</h2>
-	<p><strong>Administrador</Strong><br>
-	Encargados de administrar, gestionar y controlar el buen funcionamiento de las subastas
-	</p>
-	<p><strong>Subastador</Strong><br>
-	Usuarios con capacidad de poner un producto a subastar, encargados de especificar el precio por puja
-	</p>
-	<p><strong>Usuario registrado</Strong><br>
-	Usuarios con capacidad, de participar en las pujas, calificar subastadores y productos.
-	</p>
-	<p><strong>Visitante</Strong><br>
-	Capacidad de ver subastas, pujas, calificaciones y comentarios de subastadores, pero sin participar en ellas.
-	</p>
-
-
-
+	<!----------------------------Usuarios y Roles--------------------------- -->
+	<h2>Tipos de Usuario</h2>
+	
+	<h3>Administrador</h3>
+	<p>Encargados de administrar, gestionar y controlar el buen funcionamiento de las subastas</p>
+	
+	<h3>Subastador</h3>
+	<p>Usuarios con capacidad de poner un producto a subastar, encargados de especificar el precio por puja</p>
+	
+	<h3>Usuario registrado</h3>
+	<p>Usuarios con capacidad, de participar en las pujas, calificar subastadores y productos.</p>
+	
+	<h3>Visitante</h3>
+	<p>Capacidad de ver subastas, pujas, calificaciones y comentarios de subastadores, pero sin participar en ellas.</p>
+	
 </body>
 </html>

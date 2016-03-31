@@ -2,36 +2,47 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-	<a href="detalles.html"><h2><em>Detalles</em></h2></a>
-	<a href="miembros.html"><h2><em>Miembros</em></h2></a>
-	<a href="index.html"><h2><em>Index</em></h2></a>
-	<a href="planificacion.html"><h2><em>Planificación</em></h2></a>
-    <title>Contacto</title>
+    <title>ReverseBid - Contacto</title>
 </head>
 <body>
-    <form action="MAILTO:davidlab@ucm.es">
-        <input type="text" id="name" placeholder="Nombre" required/><br>
+<!----------------------------Enlaces a Paginas Externas--------------------------- -->
+    <ul>
+        <li><a href="index.html">Index</a></li>
+        <li><a href="detalles.html">Detalles</a></li>
+		<li><a href="bocetos.html">Bocetos</a></li>
+        <li><a href="miembros.html">Miembros</a></li>
+        <li><a href="planificacion.html">Planificación</a></li>
+		<li><a href="contacto.html">Contacto</a></li>
+    </ul>
 
-        <input type="email" id="email" placeholder="Email" required/><br>
+<!----------------------------Desarrollo de Contacto--------------------------- -->
+    <h1>Formulario de contacto</h1>
 
-        <br>
+    <form action="MAILTO:davidlab@ucm.es" method="post" enctype="text/plain">
+        <input type="text" name="name" placeholder="Nombre" required/>
+        
 
-        <input type="radio" name="query" value="evaluacion" required>Evaluación<br>
+        <input type="email" name="email" placeholder="Email" required/>
 
-        <input type="radio" name="query" value="sugerencias" required>Sugerencias<br>
 
-        <input type="radio" name="query" value="critica" required>Críticas<br>
+        <input type="radio" name="query" value="evaluacion" required>Evaluación</input>
 
-        <br>
+        <input type="radio" name="query" value="sugerencias" required>Sugerencias</input>
 
-        <textarea name="message" id="message" cols="30" rows="10" required></textarea><br>
+        
+		<input type="radio" name="query" value="critica" required>Críticas</input>
 
-        <br>
+		<p>Mensaje:</p>
 
-        <input type="checkbox" name="accept" value="accepts" required> Marque esta casilla para verificar que ha leído nuestros términos y condiciones del servicio
+		
+        <textarea name="message" cols="30" rows="10" required></textarea>
 
-        <br><br>
 
+        <p>
+		<input type="checkbox" required> Marque esta casilla para verificar que ha
+		leído nuestros términos y condiciones del servicio</input>
+        </p>
+		
         <input type="submit" value="Enviar">
 
         <input type="reset" value="Borrar">
