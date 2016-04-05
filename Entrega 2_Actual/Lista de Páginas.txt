@@ -1,0 +1,17 @@
+1. index.html 
+   L--> confección del pie de página en grupo >> en cuanto esté hecho avisar para incorporarlo todos
+2. subastar.html >> en bocetos
+3. subastadornuevo.html >> para completar datos para ser subastador si estas registrado 
+4. destacadas.html >> subastas destacadas 
+5. producto.html >> en bocetos
+    L--> 6. ranking.html >> te lleva a leer todos los comentarios sobre un subastador, puedes calificar y comentar
+7. categoria.html >> en bocetos
+8. subcategoria.html >> parecida a la anterior pero centrada en un tipo de producto en plan "portátiles"
+9. login.html * >> parecida a la que aparece en index ( en bocetos)
+10. registrouser.html >> para registrar usuarios en general los que quieran pujar
+11. miperfil.html >> en bocetos
+12. cerrar.htm >> muestra el tipico mensaje de logout y un enlace a login
+13. avanzada.html  >> con formularios para una búsqueda avanzada
+14. contacto.html >> contacto con la empresa (vias de comunicación, ubicación)
+15. FAQ >> para leer preguntas frecuentes
+ 
