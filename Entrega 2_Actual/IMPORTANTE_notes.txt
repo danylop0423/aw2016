@@ -1,0 +1,17 @@
+Acuerdos Generales:
+
+   	> El código .html de vuestras páginas debe incluir lo referente a cabecera("<header>") y pie("<div id=footer>") 
+	  que podeís copiar de "index.html" de momento como está (la estructura yá es definitiva, el contenido puede variar); 
+	  cuando esté completamente preparado os avisaré para que lo copieís de manera definitiva.
+	  
+	> Cada uno implementará un .html y un .css para el contenido("<div id= "contenedor"> es donde teneis que tocar");de sus páginas 
+      debeís incluir en vuestro .html una línea más de referencia a vuestros .css de manera que se apliquen a vuestras páginas 
+	  tanto "default.css" como "vuestra_pagina.css"
+	  
+	> No hace falta toqueís "default.css" pues Dany Reyes está encargado de esa parte, si teneis sugerencias decirmelo y lo miro 
+	  (por tanto puede que haya cambios en dicho fichero, esto no tiene porque ni debería afectaros) 
+
+Otras Notas Importantes:			
+    // Escribirlas aqui //
+	
+	> Tenemos tres vías de comunicación GitHub, Whatsapp y Asana; aseguraos de que todos nos informemos de lo que va pasando 
