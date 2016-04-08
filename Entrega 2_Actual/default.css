@@ -17,7 +17,7 @@ html,body{
 
 #all{
 	margin: 0 auto;
-	width: 1328;
+	width: 1320px;
 	height: 100%;
 }  
 
@@ -43,19 +43,20 @@ html,body{
 } 
 
 	#menu{
+	
 		background-color: #000000;
 		color: #ffffff;
 		height: 60px;
+		width:100%;
 		text-align: left;
 		border: 0px;
 		margin: 0px;
 		padding-bottom: 12px;
 		padding-top: 5px;
-		clear:both;
 	} 
 
 				#logo{
-					float:left;
+					float:left; 
 					display: inline;
 					margin: 0px;
 					border: 0px;
@@ -66,14 +67,16 @@ html,body{
 				}	
 
 				ul {
-				  float:left;
+	               
 				  list-style:none;
 				  line-height: 350%;
 				  height: 70%;
+				 
 				 }
 								
 					.barra > li {
-						float:left;
+					    float:left;
+						
 						}
 								
 					.barra li a {
@@ -81,11 +84,12 @@ html,body{
 						color:#ffffff;
 						text-decoration:none;
 						padding-top:4px;
-						padding-left: 60px;
-						padding-right: 60px;
+						padding-left: 65px;
+						padding-right: 53px;
 						padding-bottom:10px;
 						display:block;
-							}
+							
+						}
 								
 					.barra li a:hover {
 						background-color:#434343;
@@ -119,6 +123,7 @@ html,body{
 				
 				
 				.buscar form{
+					/* float:left; */
 					background-color: #000000;
 					height: 69px;
 					padding-top: 1px;
@@ -156,5 +161,11 @@ html,body{
 				
 #contenedor{
   background-color: #D8D8D8;
-  height: 100%; 	
+  height: 100%;
+  
+}
+#footer{
+	background-color: #434343;
+	height: 20%;
+	clear:both;
 }
