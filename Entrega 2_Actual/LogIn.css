@@ -64,6 +64,23 @@
     
 }
 
+a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    
+    border-radius: 5px;
+    height: 40px;
+    width: 60px;
+    background-color: #d2d2d2;
+    color: #980d0d;
+    font-weight: bold; 
+    font-size: 15px;
+    margin-left: 180px;
+
+
+}
+
 #containerEresNuevo{
     
     margin-top: 25px;
