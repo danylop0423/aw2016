@@ -47,13 +47,12 @@ html,body{
 	
 		background-color: #000000;
 		color: #ffffff;
-		height: 60px;
+		height: 80px;
 		width:100%;
 		text-align: left;
 		border: 0px;
 		margin: 0px;
-		padding-bottom: 12px;
-		padding-top: 5px;
+		padding: 0px;
 	} 
 
 				#logo{
@@ -70,9 +69,12 @@ html,body{
 				ul {
 	               
 				  list-style:none;
-				  line-height: 350%;
-				  height: 70%;
-				 
+				  margin: 0px;
+				  border: 0px;
+				  padding: 0px;
+				  /* line-height: 350%; */
+				  height: 60px;
+				  
 				 }
 								
 					.barra > li {
@@ -80,14 +82,15 @@ html,body{
 						
 						}
 								
-					.barra li a {
+					.barra li > a {
 						background-color:#000000;
 						color:#ffffff;
 						text-decoration:none;
-						padding-top:4px;
-						padding-left: 65px;
-						padding-right: 53px;
-						padding-bottom:10px;
+						margin: 10px 0px 0px 0px;
+						padding-top:20px;
+						padding-left: 60px;
+						padding-right: 56px;
+						padding-bottom:13px;
 						display:block;
 							
 						}
@@ -100,7 +103,6 @@ html,body{
 						display:none;
 						position:absolute;
 						min-width:100px;
-					
 						
 					 }
 								
@@ -110,10 +112,16 @@ html,body{
 								
 					.barra li ul li {
 							position:relative;
-							
+				
 							
 						}
-								
+					
+					.barra > li > ul > li  a {
+						margin: 0px;
+							
+						}
+					
+					
 					.barra li ul li ul {
 							right:195px;
 							top:5px;
@@ -124,63 +132,77 @@ html,body{
 				
 				
 				.buscar form{
-					/* float:left; */
+					float: left; 
+					border: 0px;
+					margin: 0px;
+					display: inline;
 					background-color: #000000;
-					height: 69px;
-					padding-top: 1px;
-					padding-left: 50px;
+					height: 50px;
+					width: 250px;
+					padding: 1px 20px 0px 50px;					
 					
 				}	
 
 				.buscar a{
+					float:left;
 					border: 0px;
 					padding: 0px;
 					margin: 0px;
 					height: 0%;
-					width: 71%;
-					line-height: 30%;
+					width: 80%;
 					text-align: right;
+					text-decoration:none;
 					font-size: 9px;
+					color: #FFFFFF;
+					font-weight: bold ;
 				}	
 
 				#findbutt{
-					
 					background: none;
 					background-color: #000000;
 					border: 0px;
 					margin: 0px;
-					padding: 3px 40px 11px 1px;
+					padding:1px 0px 5px 1px;
 					cursor:pointer;
 				}
 
 				#findimg{
 					border: 0px;
-					padding-top: 15px;
-					height: 25px;	
+					margin:0px;
+					padding: 13px 0px 0px 0px;
+					height: 21px;	
 				}
 
 				
 #contenedor{
-  background-color: #D8D8D8;
+  background-color: #B4B4B4;
   height: 100%;
-  
+  border: 0px;
+  margin: 2px 0px 0px 0px;
+  padding: 20px 3px 3px 3px;
 }
 
 #title1{
   float: left; 	
+  border:none;
+  margin: 0px; 
+  text-shadow: #F1F1F1 3px 3px 5px;
+  font-weight: bold;
   font-size: 36px;
-  padding: 50px 30px 30px 50px;
-  color: #086A87;
+  padding: 60px 225px 0px 50px;
+  color: #232B75;
 }
 
 
 #title2 {
-  margin: 0px;
+  border: none;	
+  margin: 20px 5px 0px 20px;
   float: left;
-  font-size: 30px;
+  font-weight: bold;
+  font-size: 26px;
   line-height; 110%;
-  padding: 20px 30px 30px 200px;
-  color: #ffffff;
+  padding: 30px 65px 50px 65px;
+  color: #FFFFFF;
   background: rgba(138,5,30,1);
   background: -moz-linear-gradient(top, rgba(138,5,30,1) 0%, rgba(138,5,30,1) 19%, rgba(194,37,63,1) 99%, rgba(138,5,30,1) 100%);
   background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(138,5,30,1)), color-stop(19%, rgba(138,5,30,1)), color-stop(99%, rgba(194,37,63,1)), color-stop(100%, rgba(138,5,30,1)));
@@ -191,7 +213,14 @@ html,body{
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8a051e', endColorstr='#8a051e', GradientType=0 );
 }
 
-
+#principal_img img{
+  float: left;	
+  border: 0px;
+  margin: 0px;
+  padding: 0px 0px 0px 10px;
+  height: 450px;
+  width: 620px;
+}
 
 #footer{
 	background-color: #434343;
