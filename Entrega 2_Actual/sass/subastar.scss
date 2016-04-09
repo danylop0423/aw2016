@@ -1,0 +1,62 @@
+#contenedor {
+    padding-top: 50px;
+}
+
+.content {
+    width: 70%;
+
+    .box {
+        width: 500px;
+        margin: 0 auto;
+        padding: 50px;
+        border: 3px solid #fff;
+        border-radius: 30px;
+        background-color: #000;
+        color: #fff;
+
+        form {
+            select,
+            input[type=text],
+            input[type=password],
+            input[type=email],
+            input[type=file] {
+                padding: 8px 5px;
+            }
+
+            input[type=submit],
+            input[type=button],
+            input[type=reset] {
+                padding: 10px;
+            }
+
+            label {
+                margin: 0 15px 10px 0;
+            }
+
+            input[type=radio]#new {
+                margin-right: 30px;
+            }
+        }
+    }
+}
+
+.col {
+    width: 30%;
+
+    .box {
+        width: 150px;
+        margin: 0 auto;
+        padding: 30px 40px 15px 20px;
+        background-color: #a8162f;
+
+        a {
+            display: block;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.col,
+.content {
+    float: left;
+}
