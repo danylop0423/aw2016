@@ -11,6 +11,20 @@
     border-radius: 30px;
     background-color: #000;
     color: #fff; }
+    .content .box form select,
+    .content .box form input[type=text],
+    .content .box form input[type=password],
+    .content .box form input[type=email],
+    .content .box form input[type=file] {
+      padding: 8px 5px; }
+    .content .box form input[type=submit],
+    .content .box form input[type=button],
+    .content .box form input[type=reset] {
+      padding: 10px; }
+    .content .box form label {
+      margin: 0 15px 10px 0; }
+    .content .box form input[type=radio]#new {
+      margin-right: 30px; }
 
 .col {
   width: 30%; }

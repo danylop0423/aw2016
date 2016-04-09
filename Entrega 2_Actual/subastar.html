@@ -88,6 +88,7 @@
         <div class="content">
             <div class="box">
                 <form action="">
+                    <label for="cat">Escoge producto*:</label>
                     <select name="cat" id="cat">
                         <option value="">Seleccione una categoría</option>
                         <option value="tv">Televisiones</option>
@@ -97,21 +98,26 @@
                     </select>
                     <br><br>
 
-                    <input type="text" placeholder="Nombre del producto">
+                    <label for="name">Nombre producto*:</label>
+                    <input type="text" id="name" placeholder="Nombre del producto">
                     <br><br>
 
-                    <input type="text" placeholder="Puja mínima">
+                    <label for="bid">Puja mínima en €*:</label>
+                    <input type="text" id="bid" placeholder="Puja mínima">
                     <br><br>
 
-                    <input type="radio" name="query" value="new_product">Producto nuevo
-                    <input type="radio" name="query" value="used_product">Producto usado
+                    <label for="new">Producto nuevo</label>
+                    <input type="radio" name="query" id="new" value="new_product">
+                    <label for="used">Producto usado</label>
+                    <input type="radio" name="query" id="used" value="used_product">
                     <br><br>
 
-                    <input type="file" placeholder="Imagen del producto">
+                    <label for="pic">Imagen del producto*:</label>
+                    <input type="file" id="pic" placeholder="Imagen del producto">
                     <br><br>
 
-                    <p>Mensaje:</p>
-                    <textarea name="description" cols="30" rows="10" required></textarea>
+                    <label for="message">Mensaje:</label>
+                    <textarea name="description" id="message" cols="60" rows="10" required></textarea>
                     <br><br>
 
                     <input type="submit" value="Añadir subasta">
