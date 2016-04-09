@@ -15,3 +15,4 @@ Otras Notas Importantes:
     // Escribirlas aqui //
 	
 	> Tenemos tres vías de comunicación GitHub, Whatsapp y Asana; aseguraos de que todos nos informemos de lo que va pasando 
+	> Trabajar siempre los CSS con identificadores y clase no sea que la liemos a los demás
