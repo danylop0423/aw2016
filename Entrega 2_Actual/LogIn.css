@@ -1,11 +1,9 @@
 #LogIn{
-
 	border-style: solid;
     border-color: #D8D8D8;
     height: 600px;
     width: 600px;
-    margin: auto; 
-    
+    margin: auto;     
     
 
 }
@@ -89,7 +87,7 @@ a.button {
 
 #botonRegistrate{
     
-     border-radius: 5px;
+    border-radius: 5px;
     height: 40px;
     width: 100px;
     background-color: #d2d2d2;
@@ -97,6 +95,6 @@ a.button {
     font-weight: bold; 
     font-size: 15px;
     margin-left: 20px;
-    
+
     
 }

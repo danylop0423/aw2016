@@ -131,7 +131,7 @@ html,body{
 							}
 				
 				
-				.buscar form{
+				.buscar > form {
 					float: left; 
 					border: 0px;
 					margin: 0px;
@@ -139,12 +139,12 @@ html,body{
 					background-color: #000000;
 					height: 50px;
 					width: 250px;
-					padding: 1px 20px 0px 50px;					
+					padding: 1px 5px 0px 50px;					
 					
 				}	
 
-				.buscar a{
-					float:left;
+				.buscar a {
+				   float:left;
 					border: 0px;
 					padding: 0px;
 					margin: 0px;
@@ -173,58 +173,24 @@ html,body{
 					height: 21px;	
 				}
 
-				
 #contenedor{
+  float: left;	
   background-color: #B4B4B4;
   height: 100%;
+  width: 100%;
   border: 0px;
   margin: 2px 0px 0px 0px;
   padding: 20px 3px 3px 3px;
 }
-
-#title1{
-  float: left; 	
-  border:none;
-  margin: 0px; 
-  text-shadow: #F1F1F1 3px 3px 5px;
-  font-weight: bold;
-  font-size: 36px;
-  padding: 60px 225px 0px 50px;
-  color: #232B75;
-}
-
-
-#title2 {
-  border: none;	
-  margin: 20px 5px 0px 20px;
-  float: left;
-  font-weight: bold;
-  font-size: 26px;
-  line-height; 110%;
-  padding: 30px 65px 50px 65px;
-  color: #FFFFFF;
-  background: rgba(138,5,30,1);
-  background: -moz-linear-gradient(top, rgba(138,5,30,1) 0%, rgba(138,5,30,1) 19%, rgba(194,37,63,1) 99%, rgba(138,5,30,1) 100%);
-  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(138,5,30,1)), color-stop(19%, rgba(138,5,30,1)), color-stop(99%, rgba(194,37,63,1)), color-stop(100%, rgba(138,5,30,1)));
-  background: -webkit-linear-gradient(top, rgba(138,5,30,1) 0%, rgba(138,5,30,1) 19%, rgba(194,37,63,1) 99%, rgba(138,5,30,1) 100%);
-  background: -o-linear-gradient(top, rgba(138,5,30,1) 0%, rgba(138,5,30,1) 19%, rgba(194,37,63,1) 99%, rgba(138,5,30,1) 100%);
-  background: -ms-linear-gradient(top, rgba(138,5,30,1) 0%, rgba(138,5,30,1) 19%, rgba(194,37,63,1) 99%, rgba(138,5,30,1) 100%);
-  background: linear-gradient(to bottom, rgba(138,5,30,1) 0%, rgba(138,5,30,1) 19%, rgba(194,37,63,1) 99%, rgba(138,5,30,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8a051e', endColorstr='#8a051e', GradientType=0 );
-}
-
-#principal_img img{
-  float: left;	
-  border: 0px;
-  margin: 0px;
-  padding: 0px 0px 0px 10px;
-  height: 450px;
-  width: 620px;
-}
+				
 
 #footer{
 	background-color: #434343;
 	height: 20%;
+	width: 100%;
+	border: 0px;
+	margin: 2px 0px 0px 0px;
+	padding: 20px 3px 3px 3px;
 	clear:both;
 	
 }
