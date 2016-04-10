@@ -2,7 +2,9 @@
   padding-top: 50px; }
 
 .content {
-  width: 70%; height:90%}
+  width: 70%; 
+  height:90%;
+  }
   .content .box {
     width: 500px;
     margin: 0 auto;
