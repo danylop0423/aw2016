@@ -68,10 +68,10 @@
                 </li>
                 <li class="buscar">
 				  <form action="producto.html" method="post" enctype="text/plain">Buscar:
-				   <input type="text" name="name" placeholder="Search.." /> 				
+				   <input type="text" name="name" placeholder="Search.." />
 				   <a href="avanzada.html">Busqueda avanzada</a>
 				   <button id="findbutt" type="submit" ><img id="findimg" src="./img/find.png" alt=“find” /></button>
-				  </form>	
+				  </form>
 				</li>
                 <li><a href="index.html">Ayuda?</a>
                     <ul>
@@ -102,7 +102,7 @@
                     <br><br>
 
                     <label for="bid">Puja mínima en €*:</label>
-                    <input type="text" id="bid" placeholder="Puja mínima">
+                    <input type="text" class="price-input" id="bid" placeholder="Puja mínima">
                     <br><br>
 
                     <label for="new">Producto nuevo</label>
@@ -115,11 +115,12 @@
                     <input type="file" id="pic" placeholder="Imagen del producto">
                     <br><br>
 
-                    <label for="message">Mensaje:</label>
-                    <textarea name="description" id="message" cols="60" rows="10" required></textarea>
-                    <br><br>
+                    <div class="message-container">
+                        <label for="message">Mensaje:</label>
+                        <textarea name="description" id="message" cols="60" rows="10" required></textarea>
+                    </div>
 
-                    <input type="submit" value="Añadir subasta">
+                    <input type="submit" class="button" value="Añadir subasta">
                 </form>
             </div>
         </div>
@@ -135,6 +136,6 @@
     </div>
 	<div id= "footer">
    </div>
-  </div>	
+  </div>
 </body>
 </html>
