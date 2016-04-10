@@ -1,0 +1,103 @@
+#contenedor {
+    padding: 20px;
+}
+
+.content {
+    .menu {
+        h2 {
+            color: #273a62;
+            font-weight: bold;
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .list-title {
+            color: #273a62;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            > li {
+                a {
+                    color: #8a051e;
+                    font-weight: bold;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    .banner {
+        img {
+            margin: 0 20px 0 110px;
+        }
+    }
+
+    .user-menu {
+        width: 30%;
+
+        .box {
+            width: 160px;
+            margin: 0 auto;
+            padding: 30px 40px 15px 20px;
+            background: #8a051e;
+            background: -moz-linear-gradient(top, rgba(138,5,30,1) 0%, rgba(138,5,30,1) 19%, rgba(194,37,63,1) 99%, rgba(138,5,30,1) 100%);
+            background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(138,5,30,1)), color-stop(19%, rgba(138,5,30,1)), color-stop(99%, rgba(194,37,63,1)), color-stop(100%, rgba(138,5,30,1)));
+            background: -webkit-linear-gradient(top, rgba(138,5,30,1) 0%, rgba(138,5,30,1) 19%, rgba(194,37,63,1) 99%, rgba(138,5,30,1) 100%);
+            background: -o-linear-gradient(top, rgba(138,5,30,1) 0%, rgba(138,5,30,1) 19%, rgba(194,37,63,1) 99%, rgba(138,5,30,1) 100%);
+            background: -ms-linear-gradient(top, rgba(138,5,30,1) 0%, rgba(138,5,30,1) 19%, rgba(194,37,63,1) 99%, rgba(138,5,30,1) 100%);
+            background: linear-gradient(to bottom, rgba(138,5,30,1) 0%, rgba(138,5,30,1) 19%, rgba(194,37,63,1) 99%, rgba(138,5,30,1) 100%);
+
+            a {
+                display: block;
+                margin-bottom: 20px;
+                color: #fff;
+                font-weight:bold;
+
+                &:hover {
+                    font-size: 17px;
+                }
+            }
+        }
+    }
+
+    .menu,
+    .banner,
+    .user-menu {
+        float: left;
+    }
+
+    &:after {
+        display: block;
+        content: "";
+        clear: both;
+    }
+}
+
+.outstanding {
+    h3 {
+        color: #273a62;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .product {
+        float: left;
+        width: 200px;
+        height: 200px;
+        margin-left: 80px;
+
+        img {
+            width: 200px;
+            height: 150px;
+        }
+
+        p {
+            color: #273a62;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 6px;
+        }
+    }
+}
