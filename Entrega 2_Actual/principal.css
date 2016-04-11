@@ -52,11 +52,12 @@
 #how p{
   display:none;
   width: 160px;	
-  margin: 2px 0px 0px 3px;
+  margin: 0px 0px 0px 2px;
   background-color:#F2F2CD;
-  padding: 3px 0px 0px 0px;
+  padding: 3px 3px 3px 2px;
   font-size: 10px;
-  color: #232B75;	
+  color: #232B75;
+  line-height: 110%;  
 }
 
 #contenedor button {
