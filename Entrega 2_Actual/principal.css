@@ -1,4 +1,6 @@
-
+#contenedor button{
+	cursor: pointer;
+}
 #title1{
   float: left; 	
   border:none;
@@ -34,6 +36,91 @@
   border: 0px;
   margin: 0px;
   padding: 0px 0px 0px 10px;
-  height: 450px;
-  width: 620px;
+  height: 380px;
+  width: 640px;
+}
+
+#how  {
+  float:left;
+  margin: 150px 35px 0px 80px;
+}    	
+
+#how:hover p{
+	display: block;
+}
+
+#how p{
+  display:none;
+  width: 160px;	
+  margin: 2px 0px 0px 3px;
+  background-color:#F2F2CD;
+  padding: 3px 0px 0px 0px;
+  font-size: 10px;
+  color: #232B75;	
+}
+
+#contenedor button {
+	height: 30px;
+	border: solid #000000 2px;
+	border-radius: 8px;
+	padding: 0px 5px 0px 5px;
+	background-color: #E0E0E0;
+	color: #D71031;
+	font-size: 14px;
+	font-weight: bold;
+	text-shadow: #D71031 1px 2px 3px;
+}
+
+
+#login {
+	float:left;
+	width: 250px;
+	height: 320px;
+	margin: -22px 2px 2px 35px;
+	border-style: solid;
+	border-radius: 20px ;
+	padding: 20px 20px 20px 20px;
+	line-height: 400%;
+	background-color: black;
+	color:#FFFFFF;
+	text-align: right;
+	
+}
+
+	
+#login input{
+	border-radius: 5px;
+	width: 150px;
+}	
+	
+#login p{
+	text-align: center;
+}
+
+#login input {
+	height: 30px;
+	border: solid #000000 2px;
+	border-radius: 8px;
+	padding: 0px;
+	background-color: #E0E0E0;
+	color: #D71031;
+	font-size: 14px;
+	font-weight: bold;
+	text-shadow: #D71031 1px 2px 3px;
+		
+}	
+
+#login a{
+	text-decoration: none;
+	cursor: pointer;
+}
+
+#register{
+	cursor: pointer;
+}
+
+#read_more{
+ height:17px;
+ width:15px;
+ padding: 0px 0px 0px 2px;
 }

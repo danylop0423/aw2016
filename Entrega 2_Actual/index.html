@@ -76,9 +76,9 @@
 				
 				<li class="buscar">
 				  <form action="producto.html" method="post" enctype="text/plain">Buscar:
-				   <input type="text" name="name" placeholder="Search.." /> 				
+				   <input type="text" name="findtext" placeholder="Search.." /> 				
 				   <a href="avanzada.html">Busqueda avanzada</a>
-				   <button id="findbutt" type="submit" ><img id="findimg" src="./img/find.png" alt=“find” /></button>
+				   <button id="findbutt" name="find" type="submit" ><img id="findimg" src="./img/find.png" alt=“find” /></button>
 				  </form>	
 				</li>
 				
@@ -99,28 +99,45 @@
 		</div>
 		
 		<div id="title2">
-			<p>Participa en Nuestras Subastas:</p>
+			<p>Participa En Nuestras Subastas:</p>
 		</div>
 		
 		<div id= "principal_img">
-		  <img src="./img/principal1.png" alt=“ReverseBid_img” ><img/>
+		  <img src="./img/principal1.png" alt=“ReverseBid_img” />
    		</div>
 		
-		<div class="login">
-		  <form action="producto.html" method="post" enctype="text/plain">Buscar:
-				  <input type="text" name="name" placeholder="Search.." /> 				
-				  <a href="avanzada.html">Busqueda avanzada</a>
-				  <button  type="submit"><img id="findimg" src="./img/find.png" alt=“find” /></button>
+		<div id="how">
+			<button  name="how1" value="#" type="button" >¿ Cómo Funciona ?<img  id="read_more" src="./img/more.png"  /></button>
+			<p>descripcion del funcionamiento de las subastas </p>
+		</div>
+		
+		<div id="login">
+		  <form action="mi_perfil.html" method="post" enctype="text/plain">
+				  <fieldset>
+					User: <input type="text" name="user"  size="30" placeholder="Your e-m@il"><br>
+					Password: <input type="password" name="pass"  size="8" ><br>
+					<button type="submit"  name="Login" value="#"/>Login</button><br>
+				  </fieldset>
+				  <p>¿Eres Nuevo?..<p>
+				  <a href="registro.html"><input id="register" type="button"   action="registro.html" name="Regist" value="Registrate" /></a>
 		  </form>
 		</div>
 		
-		<div>
-		</div>   
+		   
    </div>
    
    
    <div id= "footer">
-      <a href="avanzada.html">Contacto</a>
+	  <ul>
+        <li><a href="avanzada.html">Contacto</a></li>
+		<li><a href="avanzada.html">Asistencia Técnica</a></li>
+		<li><a href="avanzada.html">Condiciones de Uso</a></li>
+		<li><a href="avanzada.html">Políticas de privacida y Cookies</a></li>
+		<li><p>Ventas y Reembolsos</p></li>
+	  <ul>
+	  <p class="empire"> Todos los Derechos Reservados ® </p>
+	  <p class="empire"> ReverseBid</p>
+	  <img id="read_more" src="./img/logo2.png" />	
    </div>
    
    
