@@ -52,7 +52,7 @@
 #how p{
   display:none;
   width: 160px;	
-  margin: 0px;
+  margin: 0px 0px 0px 2px;
   background-color:#F2F2CD;
   padding: 3px 3px 3px 2px;
   font-size: 10px;
