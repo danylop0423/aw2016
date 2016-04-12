@@ -42,7 +42,7 @@
 
 #how  {
   float:left;
-  margin: 120px 35px 0px 70px;
+  margin: 110px 35px 0px 70px;
 }    	
 
 #how:hover p{
@@ -51,7 +51,7 @@
 
 #how p{
   display:none;
-  width: 160px;	
+  width: 150px;	
   margin: 0px 0px 0px 2px;
   background-color:#F2F2CD;
   padding: 3px 3px 3px 2px;
