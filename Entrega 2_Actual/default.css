@@ -38,7 +38,13 @@ html,body{
 	height: 40px;
 	border: 0px;
 	margin: 0 auto;
+
 } 
+
+#cabecera a{
+	color:#FBEFFB;
+	text-decoration: none;
+}
 
 	#menu{
 		background-color: #000000;
