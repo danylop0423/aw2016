@@ -15,7 +15,7 @@ html,body{
 
 #all{
 	margin: 0 auto;
-	width: 1320px;
+	width: 1170px;
 	height: 100%;
 }  
 
@@ -84,7 +84,7 @@ ul {
 						color:#ffffff;
 						text-decoration:none;
 						margin: 10px 0px 0px 0px;
-						padding: 20px 56px 13px 60px;
+						padding: 20px 40px 13px 40px;
 						display:block;
 						}
 								
@@ -215,7 +215,7 @@ ul {
 	border: none;
 	height: 45px;
 	margin: 0px 0px 0px;
-	padding: 0px 0px 0px 930px;
+	padding: 5px 0px 0px 770px;
 	
 }
 
@@ -226,8 +226,11 @@ ul {
   text-decoration: none; 
   padding: 20px 0px 0px 10px;
   cursor: initial;  
+  line-height: 210%;	
 }
+
 
 #emp{
 	font-size: 16px;
 }
+

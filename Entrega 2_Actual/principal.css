@@ -8,13 +8,13 @@
   text-shadow: #F1F1F1 3px 3px 5px;
   font-weight: bold;
   font-size: 36px;
-  padding: 60px 225px 0px 50px;
+  padding: 60px 100px 0px 40px;
   color: #232B75;
 }
 
 #title2 {
   border: none;	
-  margin: 20px 5px 0px 20px;
+  margin: 20px 5px 0px 0px;
   float: left;
   font-weight: bold;
   font-size: 26px;
@@ -36,13 +36,13 @@
   border: 0px;
   margin: 0px;
   padding: 0px 0px 0px 10px;
-  height: 380px;
-  width: 640px;
+  height: 340px;
+  width: 500px;
 }
 
 #how  {
   float:left;
-  margin: 150px 35px 0px 80px;
+  margin: 120px 35px 0px 70px;
 }    	
 
 #how:hover p{
@@ -76,8 +76,8 @@
 #login {
 	float:left;
 	width: 250px;
-	height: 320px;
-	margin: -22px 2px 2px 35px;
+	height: 300px;
+	margin: -22px 2px 2px 25px;
 	border-style: solid;
 	border-radius: 20px ;
 	padding: 20px 20px 20px 20px;
