@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
 	<title>ReverseBid: Búsqueda Avanzada</title>
     <link id="estilo" href="./default.css" rel="stylesheet" type="text/css" />
-	<link id="estilo" href="./contacto.css"  media="screen" rel="stylesheet" type="text/css" />
+	<link id="estilo_avanzada" href="./avanzada.css"  media="screen" rel="stylesheet" type="text/css" />
 </head>
 
 
@@ -95,39 +95,65 @@
  
    <div id="contenedor">
 
-   	<!---------------------------------------- INICIO CONTACTO ------------------------------>
+   	<!---------------------------------------- INICIO BUSQUEDA AVANZADA ------------------------------>
 	
-	   	<div id="contacto">
+	   	<div id="busqueda_avanzada">
 
-		   	<form action="MAILTO:chsuarez@ucm.es" method="post" enctype="text/plain">
+		   	<form class="form_busqueda_avanzada" action="producto.htmml" method="post" enctype="text/plain">
 		    	
-		            	<h2>Contáctanos</h2>
+		            	<h2>Búsqueda Avanzada</h2>
 		       		
-		           		<label for="name">Nombre <small>*</small>:</label>
-		           		<input type="text" name="Nombre" placeholder="Nombre Apellido" required />
+		           		<label for="clave">Palabra Clave <small>*</small>:</label>
+		           		<input type="text" required>
 		       		
-		           		<label for="email">Email <small>*</small>:</label>
-		           		<input type="email" name="e-mail" placeholder="user@domain.com" required />
+		           		<label for="marca">Marca :</label>
+		           		<input type="text">
 		       		
-		           		<label for="telefono">Teléfono:</label>
-		          		<input type="tel" name="Teléfono" placeholder="Fijo o Movil" pattern="[0-9]{9}"/>
-		       		
-		           		<label for="asunto">Asunto <small>*</small>:</label>
-		           		<input type="text" name="Asunto" placeholder="Información" required> 
-		          		<label for="mensaje">Mensaje <small>*</small>:</label>
-		          		<textarea id="mensaje" name="Mensaje" cols="42" rows="6" placeholder="Escriba aquí su mensaje"required ></textarea>
-		       		
-						<input id="ceheckbox_condiciones"  type="checkbox" name="Condiciones Generales" value="Acepto las condiciones generales" required />
-						<label id="politicas" for="Condiciones_Generales">He leído y acepto la  <a href="javascript:abrir('politicas_privacidad.html')">Política de Privacidad.</a><small>*</small></label>
-					
-		         		<button class="submit" type="submit">Enviar</button>
-		          		<button class="reset" type="reset">Borrar Formulario</button>
+		           		<label for="categoria">Categoría :</label>
+			           	<select name="categorias">
+			          		<option value>Cualquier Categoría</option>
+			          		<option value="electronica">Electronica</option>
+			          		<option value="deporte">Deporte</option>
+			          		<option value="hogar">Hogar</option>
+						</select>
+
+						<label for="subcategoria">Sub-Categorías :</label>
+
+			           	<select name="electronica" disabled="disabled">
+			          		<option value>Cualquier Sub-Categoría</option>
+			          		<option value>Discos Duros</option>
+			          		<option value>Portatiles</option>
+			          		<option value>SmartPhones</option>
+			          		<option value>SmartWatches</option>
+			          	</select>
+		          		
+		          		
+			           	<select name="deporte" disabled="disabled">
+			          		<option value>Cualquier Sub-Categoría</option>
+			          		<option value>Bicicletas</option>
+			          		<option value>Musculación</option>
+			          		<option value>Accesorios</option>
+			          		<option value>Zapatillas</option>
+			          	</select>
+
+			      
+			           	<select name="hogar" disabled="disabled">
+			          		<option value>Cualquier Sub-Categoría</option>
+			          		<option value>Muebles</option>
+			          		<option value>Jardín</option>
+			          		<option value>Electrodomésticos</option>
+			          		<option value>Decoración</option>
+			          	</select>
+
+		       	
+		         		<button class="submit" type="submit">Buscar</button>
+		          		<button class="reset" type="reset">Borrar Búsqueda</button>
 		        	
 			</form>
 
 		</div>
 
-	<!---------------------------------------- FIN CONTACTO ------------------------------>
+	<!---------------------------------------- FIN BUSQUEDA AVANZADA ------------------------------>
 		   	   
    </div>
    
