@@ -11,16 +11,10 @@
     border-radius: 70px;
     background-color: #000;
     color: #fff; }
-    .content .box form select,
-    .content .box form input[type=text],
-    .content .box form input[type=password],
-    .content .box form input[type=email],
-    .content .box form input[type=file] {
+    .content .box form .input-form {
       padding: 8px 5px;
       width: 300px; }
-    .content .box form input[type=submit],
-    .content .box form input[type=button],
-    .content .box form input[type=reset] {
+    .content .box form .btn {
       padding: 10px; }
     .content .box form label {
       font-weight: bold;
