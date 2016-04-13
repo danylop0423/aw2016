@@ -15,18 +15,12 @@
         color: #fff;
 
         form {
-            select,
-            input[type=text],
-            input[type=password],
-            input[type=email],
-            input[type=file] {
+            .input-form {
                 padding: 8px 5px;
                 width: 300px;
             }
 
-            input[type=submit],
-            input[type=button],
-            input[type=reset] {
+            .btn {
                 padding: 10px;
             }
 
