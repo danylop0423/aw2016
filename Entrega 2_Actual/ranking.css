@@ -17,10 +17,13 @@
 .estrella{
   
   height: 30px;
-  white-space: 30px;
+  width: : 30px;
   padding-top: 20px;
+  background-image: = url('./img/Empty_Star.png');
   
   
+}
+
 }
 
 #estrella1{
@@ -32,5 +35,75 @@
 #rankingStarsContainer{
   
   padding: 15px;
+  width: 350px;
+  margin: 0px;
+  float:left;
+  
+}
+
+#comentariosContainer{
+  
+  padding-left: 15px;
+  font-size: 15px;
+  width: 300px;
+  height: 280px;
+  font-weight: normal;
+  float:left;
+  
+  
+  
+}
+
+.usuario{
+  
+  font-style: oblique;
+  font-weight: bold ;
+  
+  
+}
+
+.comentarioUsuario{
+  
+  font-style: normal;
+  font-weight: normal ;
+  padding-left: 10px;
+  
+}
+
+#enviarComentarioContainer{
+
+  width: 300px;
+  height: 70px;
+  padding-top: 30px;
+  float:left;
+  
+}
+
+#botonEnviarComentario{
+  
+    border-radius: 5px;
+    height: 40px;
+    width: 200px;
+    background-color: #d2d2d2;
+    color: #980d0d;
+    font-weight: bold; 
+    font-size: 15px;
+    margin-left: 40px;
+ 
+  
+}
+
+#textAreaContainer{
+  
+  float:left;
+  
+}
+
+#textAreaComentario{
+  height: 270px;
+  width: 350px;
+  border-radius: 8px;
+  padding: 5px;
+  resize: none;
   
 }
