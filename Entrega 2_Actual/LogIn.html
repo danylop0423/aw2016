@@ -2,7 +2,7 @@
 <html lang=es>
 <head>
     <meta charset="UTF-8">
-	<title>ReverseBid LogIn</title>
+	<title>Reverse Bid</title>
     <link id="estilo" href="./default.css" rel="stylesheet" type="text/css" />
     <link id="estiloLogIn" href="./LogIn.css" rel="stylesheet" type="text/css" />
 </head>
@@ -99,33 +99,39 @@
 
    			<div id= "miniForm">
 
+   			<form>
+
 	   			<div class = "Container" id="containerUser">
 
-	   			 	Usuario<input type="text" name="user" id="userText"></input>
+	   			    <label class="label" for="usuarioLabel">Usuario</label>
+	   			 	<input type="text" name="user" id="userText"></input>
 
 	   			</div>
 	   			<div class = "Container" id="containerPassword">
 	   				
-	   				Contraseña<input type="text" name="password" id="passwordText"></input>
+	   				<label class="label" for="contraseñaLabel">Contraseña</label>
+	   				<input type="password" name="password" id="passwordText"></input>
 
 
 	   			</div>
 
 	   			<div class = "Container" id="containerBotonLogIn">
 	   				
-	   				 <a href="miperfil.html"><button value="Log In" id="botonLogIn" >Log In</button></a>
+	   				<input type="submit" value="Log In" id="botonLogIn" ></input>
 
 
 	   			</div>
+
+	   		</form>
 
 	   			<div class = "Container" id="containerEresNuevo">
 	   				
-	   				¿Eres Nuevo?
-	   				 <a href="subastadornuevo.html"><button value="Registrate" id="botonRegistrate">Registrate</Button></a>
+	   				<label class="label" for="eresnuevoLabelLabel">¿Eres Nuevo?</label>
+	   				<a href="registrouser.html"><button value="Registrate" id="botonRegistrate">Registrate</Button></a>
 
 
 	   			</div>
-
+			
 
    			</div>
 

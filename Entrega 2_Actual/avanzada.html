@@ -99,11 +99,11 @@
 	
 	   	<div id="busqueda_avanzada">
 
-		   	<form class="form_busqueda_avanzada" action="producto.htmml" method="post" enctype="text/plain">
+		   	<form class="form_busqueda_avanzada" action="producto.html" method="post" type="text/plain">
 		    	
 		            	<h2>Búsqueda Avanzada</h2>
 		       		
-		           		<label for="clave">Palabra Clave <small>*</small>:</label>
+		           		<label for="clave">Palabra Clave<span class="requerido" > * </span>:</label>
 		           		<input type="text" required>
 		       		
 		           		<label for="marca">Marca :</label>
@@ -119,7 +119,7 @@
 
 						<label for="subcategoria">Sub-Categorías :</label>
 
-			           	<select name="electronica" disabled="disabled">
+			           	<select name="electronica">
 			          		<option value>Cualquier Sub-Categoría</option>
 			          		<option value="1">Discos Duros</option>
 			          		<option value="2">Portatiles</option>
@@ -127,7 +127,7 @@
 			          		<option value="4">SmartWatches</option>
 			          	</select>
 		          		
-		          		
+		          <!--		
 			           	<select name="deporte" disabled="disabled">
 			          		<option value>Cualquier Sub-Categoría</option>
 			          		<option value="1">Bicicletas</option>
@@ -144,7 +144,7 @@
 			          		<option value="3">Electrodomésticos</option>
 			          		<option value="4">Decoración</option>
 			          	</select>
-
+						-->
 		       	
 		         		<button class="submit" type="submit">Buscar</button>
 		          		<button class="reset" type="reset">Borrar Búsqueda</button>

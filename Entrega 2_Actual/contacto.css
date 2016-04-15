@@ -1,4 +1,4 @@
-#contacto{
+  #contacto{
     background: rgba(138,5,30,1);
     background: -moz-linear-gradient(top, rgba(138,5,30,1) 0%, rgba(138,5,30,1) 19%, rgba(194,37,63,1) 99%, rgba(138,5,30,1) 100%);
     background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(138,5,30,1)), color-stop(19%, rgba(138,5,30,1)), color-stop(99%, rgba(194,37,63,1)), color-stop(100%, rgba(138,5,30,1)));
@@ -91,6 +91,9 @@ label#politicas{
 	
 }
 
+.requerido{
+  color: red;
+}
 /* === Estilos de Validacion === */	
 
 #contacto input:required:valid, #contacto textarea:required:valid {
@@ -120,6 +123,10 @@ label#politicas{
    border: 1px solid #f1f1f1;
    border-radius: 10px;
    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+input#ceheckbox_condiciones{
+  box-shadow: none;
 }
 
 

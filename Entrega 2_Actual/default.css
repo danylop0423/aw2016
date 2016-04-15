@@ -9,7 +9,7 @@ html,body{
  	margin: 0 auto;
 	padding: 0px;
 	background-color: #000000;  
-	font-style: sans-serif;
+	font-family: sans-serif;
 }
 
 
@@ -17,6 +17,7 @@ html,body{
 	margin: 0 auto;
 	width: 1170px;
 	height: 100%;
+	
 }  
 
 
@@ -174,6 +175,7 @@ ul {
   border: 0px;
   margin: 2px 0px 0px 0px;
   padding: 20px 0px 20px 0px;
+  
 }
 				
 
