@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang=es>
+<head>
+    <meta charset="UTF-8">
+	<title>ReverseBid</title>
+    <link id="estilo" href="css/default.css" rel="stylesheet" type="text/css" />
+    <link id="estiloSubastadorRegistrado" href="css/subastadorregistrado.css" rel="stylesheet" type="text/css" />
+</head>
+
+
+<body>
+ <div id="all">
+
+   <header>
+	<div id="cabecera">
+		<a href="index.html"><h1> ReverseBid </h1></a>
+	</div>
+
+	<div id="menu">
+		<a href="index.html"><img id="logo"src="./img/logo2.png" alt=“ReverseBid” ><img/></a>
+		<ul class="barra">
+				<li><a href="index.html">Home</a></li>
+
+				<li><a href="subastadorregistrado.html">Subastas</a>
+					<ul>
+						<li><a href="subastar.html">Subastar</a></li>
+						<li><a href="subastadorregistrado.html">Registrate Subastador</a></li>
+						<li><a href="destacadas.html">Subastas Destacadas</a>
+							<ul>
+								<li><a href="producto.html">HDD Toshiba 2TB</a></li>
+								<li><a href="producto.html">Portátil Lenovo</a></li>
+								<li><a href="producto.html">Bicicleta BMX</a></li>
+								<li><a href="producto.html">Mueble Bar Rizoli</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+
+				<li><a href="subastadorregistrado.html">Productos</a>
+					<ul>
+						<li><a href="categoria.html">Electrónica</a>
+						  <ul>
+								<li><a href="subcategoria.html">DiscosDuros</a></li>
+								<li><a href="subcategoria.html">Portátiles</a></li>
+								<li><a href="subcategoria.html">SmartPhones</a></li>
+								<li><a href="subcategoria.html">SmartWatches</a></li>
+							</ul>
+						</li>
+						<li><a href="categoria.html">Deporte</a>
+						  <ul>
+							<li><a href="subcategoria.html">Bicicletas</a></li>
+							<li><a href="subcategoria.html">Musculación</a></li>
+							<li><a href="subcategoria.html">Accesorios</a></li>
+							<li><a href="subcategoria.html">Zapatillas</a></li>
+						  </ul>
+						</li>
+						<li><a href="categoria.html">Hogar</a>
+						   <ul>
+							  <li><a href="subcategoria.html">Muebles</a></li>
+							  <li><a href="subcategoria.html">Jardín</a></li>
+							  <li><a href="subcategoria.html">Electrodomésticos</a></li>
+							  <li><a href="subcategoria.html">Decoración</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+
+				<li><a href="login.html">Mi Cuenta</a>
+					<ul>
+						<li><a href="miperfil.html">Mi Perfil</a></li>
+					    <li><a href="miperfil.html#missubastas">Mis Subastas</a></li>
+						<li><a href="miperfil.html#mispujas">Mis Pujas</a></li>
+						<li><a href="login.html">Cerrar Sesión</a></li>
+					</ul>
+				</li>
+
+				<li class="buscar">
+				  <form action="producto.html" method="post" enctype="text/plain">Buscar:
+				   <input type="text" name="findtext" placeholder="Search.." required />
+				   <a href="avanzada.html">Busqueda avanzada</a>
+				   <button id="findbutt" name="find" type="submit" ><img id="findimg" src="./img/find.png" alt=“find” /></button>
+				  </form>
+				</li>
+
+				<li><a href="subastadorregistrado.html">Ayuda?</a>
+				  <ul>
+					 <li><a href="contacto.html">Contacto</a></li>
+					 <li><a href="faq.html">FAQ</a></li>
+				  </ul>
+				</li>
+		</ul>
+	</div>
+   </header>
+
+
+
+   <div id="contenedor">
+
+   		<div id="subastadorregister">
+
+   			<form method="post" enctype="text/plain" id ="miniForm">
+
+   				<div class = "Container" id="containerFirstName">
+
+   				<label for="">Nombre *</label> <input type="text" name="name" id="nameText" required></input>
+
+   				</div>
+
+   				<div class = "Container" id="containerLastName">
+
+   				<label for="">Apellidos *</label> <input type="text" name="lastname" id="lastnameText" required></input>
+
+   				</div>
+
+	   			<div class = "Container" id="containerCompany">
+
+	   			<p id="company" >
+	   				 <input name="accept" type="checkbox" value="on" class="checkbox"/> </input>
+	   				 <label for="">Registrarse como empresa</label>
+	   			</p>
+
+   				<label for="">Empresa</label> <input type="text" name="company" id="companyText"></input>
+
+   				</div>
+
+   				<div class = "Container" id="containerEmail">
+
+   				<label for="">Email *</label> <input type="email" name="email" id="emailText" required></input>
+
+   				</div>
+
+   				<div class = "Container" id="containerPass">
+
+   				<label for="">Contraseña *</label> <input type="text" name="pass" id="passText" required></input>
+
+   				</div>
+
+   				<div class = "Container" id="containerPassAgain">
+
+   				<label for="">Confirma Contraseña *</label> <input type="text" name="passagain" id="passagainText" required></input>
+
+   				</div>
+
+   				<div class = "Container" id="containerCountry">
+
+   				<label for="">País *</label> <input type="text" name="country" id="countryText" required></input>
+
+   				</div>
+
+   				<div class = "Container" id="containerAddress">
+
+   				<label for="">Dirección *</label> <input type="text" name="address" id="addressText" required></input>
+
+   				</div>
+
+   				<div class = "Container" id="containerCode">
+
+   				<label for="">Código Postal</label> <input type="text" name="code" id="codeText"></input>
+
+   				</div>
+
+   				<div class = "Container" id="containerTarjetaCredito">
+
+   				<label for="">Tarjeta De Credito *</label> <input type="text" name="creditcard" id="creditcardText" required></input>
+
+   				</div>
+
+   				<div class = "Container" id="containerPhone">
+
+   				<label for="">Teléfono de Contacto *</label> <input type="text" name="phone" id="phoneText" required></input>
+
+   				</div>
+
+   				<div class = "Container" id="containerAccept">
+
+	   				<p value="Accept" id="AcceptTerms" >
+	   				 	<input name="accept" type="checkbox" value="on" class="checkbox"/> </input>
+	   				 	<a href="politicas_privacidad.html">He leido y estoy de acuerdo con los términos y las condiciones de ReverseBid</a>
+	   				</p>
+
+	   			</div>
+
+   				<div class = "Container" id="containerBotonRegister">
+
+	   				 <a href="miperfil.html"><button class="submit" type="submit" value="Register" id="botonRegister" ><label for="">Registrarse como subastador</label>
+	   				 </button></a>
+
+	   			</div>
+
+	   		</form>
+
+   		</div>
+
+   </div>
+
+   <div id= "footer">
+	  <ul>
+        <li><a href="contacto.html">Contacto</a></li>
+		<li><a href="contacto.html">Asistencia Técnica</a></li>
+		<li><a href="politicas_privacidad.html">Condiciones de Uso</a></li>
+		<li><a href="politicas_privacidad.html">Políticas de privacidad y Cookies</a></li>
+		<li><a href="contacto.html">Ventas y Reembolsos</a></li>
+	  </ul>
+	  <div id="empire">
+		<p> Todos los Derechos Reservados © 2016</p>
+		<h1 id="emp"> ReverseBid</h1>
+		<img id="logos" src="./img/logo3.png" />
+	  </div>
+   </div>
+
+
+  </div>
+ </body>
+</html>
