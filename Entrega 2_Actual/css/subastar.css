@@ -15,11 +15,12 @@
       padding: 8px 5px;
       width: 300px; }
     .content .box form .btn {
-      padding: 10px; }
+      padding: 10px;
+      display: block; }
     .content .box form label {
       font-weight: bold;
       margin: 0 15px 10px 0; }
-    .content .box form input[type=radio]#new {
+    .content .box form input#new {
       margin-right: 30px; }
     .content .box form textarea {
       border-radius: 30px; }
