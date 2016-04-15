@@ -157,7 +157,7 @@
 
 #panelizq #parteinferiorizq #cuadrotextocomentario button {
 	background-color: lightgray;
-	width: 100px;
+	width: 80px;
 	height: 40px;
 	border: 1px solid gray;
 	border-radius: 6px;
@@ -225,4 +225,8 @@
 	margin-left: 455px
 }
 
+#panelizq #partesuperiorizq .imagenproducto {
+	height: 250px;
+	width: 320px;
+}
 
