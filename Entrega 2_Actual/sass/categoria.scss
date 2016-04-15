@@ -2,14 +2,14 @@
     padding: 20px;
     .menu {
         h2 {
-            color: #273a62;
+            color: #232b75;
             font-weight: bold;
             font-size: 32px;
             margin-bottom: 10px;
         }
 
         .list-title {
-            color: #273a62;
+            color: #232b75;
             font-weight: bold;
             margin-bottom: 10px;
         }
@@ -27,7 +27,7 @@
 
     .banner {
         img {
-            margin: 0 55px 0 90px;
+            margin: 0 60px 0 60px;
         }
     }
 
@@ -71,8 +71,10 @@
 }
 
 .outstanding {
+    padding: 20px;
+
     h3 {
-        color: #273a62;
+        color: #232b75;
         font-weight: bold;
         margin-bottom: 10px;
     }
@@ -81,18 +83,41 @@
         float: left;
         width: 200px;
         height: 200px;
-        margin-left: 80px;
+        margin: 20px 0 20px 60px;
 
         img {
             width: 200px;
             height: 150px;
         }
 
-        p {
-            color: #273a62;
+        .title {
+            text-shadow: #f1f1f1 3px 3px 5px;
             font-weight: bold;
-            text-align: center;
-            margin-top: 6px;
+            font-size: 18px;
+            color: #232b75;
+            text-decoration: underline;
         }
+
+        .remaining-time {
+            text-shadow: #686859 1px 2px 2px;
+            font-weight: bold;
+            font-size: 15px;
+            color: #fbeffb;
+            padding: 5px;
+        }
+
+        .lowest-bid {
+            color: #c2253f;
+            font-size: 15px;
+            font-weight: bold;
+            text-shadow: #686859 1px 1px 1px;
+            padding: 0px 0px 10px 5px;
+        }
+    }
+
+    &:after {
+        display: block;
+        content: "";
+        clear: both;
     }
 }

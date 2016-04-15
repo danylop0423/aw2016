@@ -1,12 +1,12 @@
 .content {
   padding: 20px; }
   .content .menu h2 {
-    color: #273a62;
+    color: #232b75;
     font-weight: bold;
     font-size: 32px;
     margin-bottom: 10px; }
   .content .menu .list-title {
-    color: #273a62;
+    color: #232b75;
     font-weight: bold;
     margin-bottom: 10px; }
   .content .menu ul > li a {
@@ -14,7 +14,7 @@
     font-weight: bold;
     text-decoration: underline; }
   .content .banner img {
-    margin: 0 55px 0 70px; }
+    margin: 0 60px 0 60px; }
   .content .user-menu .box {
     width: 160px;
     margin: 0 auto;
@@ -42,21 +42,39 @@
     content: "";
     clear: both; }
 
-.outstanding h3 {
-  color: #273a62;
-  font-weight: bold;
-  margin-bottom: 10px; }
-
-.outstanding .product {
-  float: left;
-  width: 200px;
-  height: 200px;
-  margin-left: 80px; }
-  .outstanding .product img {
-    width: 200px;
-    height: 150px; }
-  .outstanding .product p {
-    color: #273a62;
+.outstanding {
+  padding: 20px; }
+  .outstanding h3 {
+    color: #232b75;
     font-weight: bold;
-    text-align: center;
-    margin-top: 6px; }
+    margin-bottom: 10px; }
+  .outstanding .product {
+    float: left;
+    width: 200px;
+    height: 200px;
+    margin: 20px 0 20px 60px; }
+    .outstanding .product img {
+      width: 200px;
+      height: 150px; }
+    .outstanding .product .title {
+      text-shadow: #f1f1f1 3px 3px 5px;
+      font-weight: bold;
+      font-size: 18px;
+      color: #232b75;
+      text-decoration: underline; }
+    .outstanding .product .remaining-time {
+      text-shadow: #686859 1px 2px 2px;
+      font-weight: bold;
+      font-size: 15px;
+      color: #fbeffb;
+      padding: 5px; }
+    .outstanding .product .lowest-bid {
+      color: #c2253f;
+      font-size: 15px;
+      font-weight: bold;
+      text-shadow: #686859 1px 1px 1px;
+      padding: 0px 0px 10px 5px; }
+  .outstanding:after {
+    display: block;
+    content: "";
+    clear: both; }
