@@ -4,23 +4,23 @@
     <meta charset="UTF-8">
 	<title>ReverseBid</title>
     <link id="estilo" href="css/default.css" rel="stylesheet" type="text/css" />
-	<link id="estilo_principal" href="css/miperfil.css" rel="stylesheet" type="text/css" />
+	<link id="estilo_principal" href="./miperfil.css" rel="stylesheet" type="text/css" />
 </head>
 
 
 <body>
  <div id="all">
-
+ 
    <header>
-	<div id="cabecera">
-		<h1> ReverseBid </h1>
-	</div>
+	<div id="cabecera"> 
+		<a href="index.html"><h1> ReverseBid </h1></a>
+	</div>	
 
-	<div id="menu">
-		<img id="logo"src="./img/logo2.png" alt=“ReverseBid” ><img/>
+	<div id="menu"> 
+		<a href="index.html"><img id="logo"src="./img/logo2.png" alt=“ReverseBid” ><img/></a>
 		<ul class="barra">
 				<li><a href="index.html">Home</a></li>
-
+				
 				<li><a href="index.html">Subastas</a>
 					<ul>
 						<li><a href="subastar.html">Subastar</a></li>
@@ -35,7 +35,7 @@
 						</li>
 					</ul>
 				</li>
-
+				
 				<li><a href="index.html">Productos</a>
 					<ul>
 						<li><a href="categoria.html">Electrónica</a>
@@ -64,7 +64,7 @@
 						</li>
 					</ul>
 				</li>
-
+				
 				<li><a href="login.html">Mi Cuenta</a>
 					<ul>
 						<li><a href="miperfil.html">Mi Perfil</a></li>
@@ -73,15 +73,15 @@
 						<li><a href="login.html">Cerrar Sesión</a></li>
 					</ul>
 				</li>
-
+				
 				<li class="buscar">
 				  <form action="producto.html" method="post" enctype="text/plain">Buscar:
-				   <input type="text" name="findtext" placeholder="Search.." />
+				   <input type="text" name="findtext" placeholder="Search.." /> 				
 				   <a href="avanzada.html">Busqueda avanzada</a>
 				   <button id="findbutt" name="find" type="submit" ><img id="findimg" src="./img/find.png" alt=“find” /></button>
-				  </form>
+				  </form>	
 				</li>
-
+				
 				<li><a href="index.html">Ayuda?</a>
 				  <ul>
 					 <li><a href="contacto.html">Contacto</a></li>
@@ -89,49 +89,93 @@
 				  </ul>
 				</li>
 		</ul>
-	</div>
+	</div>    
    </header>
-
-
+ 
+ 
    <div id="contenedor">
 		<div id="data">
 			<h1>Mi Perfil:</h1>
 			<img src="./img/avatar2.png" alt=“ReverseBid_img” />
 			<ul>
 				<li><h2>Datos Personales</h2></li>
-				<li><p class="campo">Name:</p> <p class="dato">Pepe</p></li>
-				<li><p class="campo">Apellido:</p> <p class="dato">Smith</p></li>
-				<li><p class="campo">Name:</p> <p class="dato">Pepe</p></li>
-				<li><p class="campo">Apellido:</p> <p class="dato">Smith</p></li>
+				<li><p class="campo">Name: </p> <p class="dato">Pepe</p></li>
+				<li><p class="campo">Apellido:  </p> <p class="dato">Smith</p></li>
+				<li><p class="campo">Subastas Activas: </p> <p class="dato">2</p></li>
+				<li><p class="campo">Pujas Activas: </p> <p class="dato">2</p></li>
 			</ul>
         </div>
-
+		
+	   <div id= "derecont">
+	   
 		<div class="puja_subasta">
-		  <h1>Mis Pujas</h1>
+		   <h1 id="mispujas">Mis Pujas:</h1>
+		   
+		   <div class="puja">
+				<div class="pujadatos">
+					<p>Producto: X</p>
+					<ul>
+						<li>Estado de la Subasta: Activa</li> 
+						<li>Puja Ganadora: 3,00 €</li>
+						<li>Mi Ultima Puja: 1,00 €</li>
+						<li>Tiempo Restante: 00:03:45</li>
+						<li>He Ganado: Aún No</li>
+					</ul>
+					<form></form>
+				  </div>
+				 <div class="pic_prod">
+					<img src="./img/smartw4.png" alt=“ReverseBid_img” />
+                 </div>
+			 </div>
+			 
+		   <div id="pujalink">
+		     <a href="login.html">Cerrar Sesión</a>
+		   </div>
+		  
         </div>
-
+		
 		<div class="puja_subasta">
-			<h1>Mis Subastas</h1>
-        </div>
+			 <h1 id="missubastas">Mis Subastas:</h1>
+		   
+		   <div class="subasta">
+				<div class="subastadatos">
+					<p>Producto: X</p>
+					<ul>
+						<li>Estado de la Subasta: Activa</li> 
+						<li>Puja Mínima: 3,00 €</li>
+						<li>Cantidad Ganadora: 1,00 €</li>
+						<li>Tiempo Restante: 00:03:45</li>
+						<li>Total Acumulado: 350,00 €</li>
+					</ul>
+				 </div>
+				  
+				 <div class="pic_prod">
+					<img src="./img/smartw6.png" alt=“ReverseBid_img” />
+                 </div>
+			</div>
+			
+		   </div>
+		
+	  </div>	
    </div>
-
-
+   
+   
    <div id= "footer">
 	  <ul>
         <li><a href="contacto.html">Contacto</a></li>
 		<li><a href="contacto.html">Asistencia Técnica</a></li>
-		<li><p>Condiciones de Uso</p></li>
-		<li><p>Políticas de privacida y Cookies</p></li>
+		<li><a href="politicas_privacidad.html">Condiciones de Uso</a></li>
+		<li><a href="politicas_privacidad.html">Políticas de privacidad y Cookies</a></li>
 		<li><a href="contacto.html">Ventas y Reembolsos</a></li>
 	  </ul>
 	  <div id="empire">
-		<p> Todos los Derechos Reservados ® 2016</p>
+		<p> Todos los Derechos Reservados © 2016</p>
 		<h1 id="emp"> ReverseBid</h1>
-		<img id="read_more" src="./img/logo3.png" />
-	  </div>
+		<img id="logos" src="./img/logo3.png" />
+	  </div>	
    </div>
-
-
+   
+   
   </div>
  </body>
 </html>
