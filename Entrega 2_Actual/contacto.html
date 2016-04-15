@@ -3,24 +3,24 @@
 <head>
     <meta charset="UTF-8">
 	<title>ReverseBid: Contacto</title>
-    <link id="estilo" href="./default.css" rel="stylesheet" type="text/css" />
-	<link id="estilo_contacto" href="./contacto.css"  media="screen" rel="stylesheet" type="text/css" />
+    <link id="estilo" href="css/default.css" rel="stylesheet" type="text/css" />
+	<link id="estilo_contacto" href="css/contacto.css" media="screen" rel="stylesheet" type="text/css" />
 </head>
 
 
 <body>
  <div id="all">
- 
-   <header>
-	<div id="cabecera"> 
-		<a href="index.html"><h1> ReverseBid </h1></a>
-	</div>	
 
-	<div id="menu"> 
+   <header>
+	<div id="cabecera">
+		<a href="index.html"><h1> ReverseBid </h1></a>
+	</div>
+
+	<div id="menu">
 		<a href="index.html"><img id="logo"src="./img/logo2.png" alt=“ReverseBid” ></a>
 		<ul class="barra">
 				<li><a href="index.html">Home</a></li>
-				
+
 				<li><a href="index.html">Subastas</a>
 					<ul>
 						<li><a href="subastar.html">Subastar</a></li>
@@ -35,7 +35,7 @@
 						</li>
 					</ul>
 				</li>
-				
+
 				<li><a href="index.html">Productos</a>
 					<ul>
 						<li><a href="categoria.html">Electrónica</a>
@@ -64,7 +64,7 @@
 						</li>
 					</ul>
 				</li>
-				
+
 				<li><a href="login.html">Mi Cuenta</a>
 					<ul>
 						<li><a href="miperfil.html">Mi Perfil</a></li>
@@ -73,15 +73,15 @@
 						<li><a href="login.html">Cerrar Sesión</a></li>
 					</ul>
 				</li>
-				
+
 				<li class="buscar">
 				  <form action="producto.html" method="post" enctype="text/plain">Buscar:
-				   <input type="text" name="findtext" placeholder="Search.." /> 				
+				   <input type="text" name="findtext" placeholder="Search.." />
 				   <a href="avanzada.html">Busqueda avanzada</a>
 				   <button id="findbutt" name="find" type="submit" ><img id="findimg" src="./img/find.png" alt=“find” /></button>
-				  </form>	
+				  </form>
 				</li>
-				
+
 				<li><a href="index.html">Ayuda?</a>
 				  <ul>
 					 <li><a href="contacto.html">Contacto</a></li>
@@ -89,48 +89,48 @@
 				  </ul>
 				</li>
 		</ul>
-	</div>    
+	</div>
    </header>
- 
- 
+
+
    <div id="contenedor">
 
    	<!---------------------------------------- INICIO CONTACTO ------------------------------>
-	
+
 	   	<div id="contacto">
 
 		   	<form action="MAILTO:chsuarez@ucm.es" method="post" enctype="text/plain">
-		    	
+
 		            	<h2>Contáctanos</h2>
-		       		
+
 		           		<label for="name">Nombre <span class="requerido" > * </span>:</label>
 		           		<input type="text" name="Nombre" placeholder="Nombre Apellido" required />
-		       		
+
 		           		<label for="email">Email <span class="requerido" > * </span>:</label>
 		           		<input type="email" name="e-mail" placeholder="user@domain.com" required />
-		       		
+
 		           		<label for="telefono">Teléfono:</label>
 		          		<input type="tel" name="Teléfono" placeholder="Fijo o Movil" pattern="[0-9]{9}"/>
-		       		
+
 		           		<label for="asunto">Asunto <span class="requerido" > * </span>:</label>
-		           		<input type="text" name="Asunto" placeholder="Información" required> 
+		           		<input type="text" name="Asunto" placeholder="Información" required>
 		          		<label for="mensaje">Mensaje <span class="requerido" > * </span>:</label>
 		          		<textarea id="mensaje" name="Mensaje" cols="42" rows="6" placeholder="Escriba aquí su mensaje"required ></textarea>
-		       		
+
 						<input id="ceheckbox_condiciones"  type="checkbox" name="Condiciones Generales" value="Acepto las condiciones generales" required />
 						<label id="politicas" for="Condiciones_Generales">He leído y acepto la  <a href="politicas_privacidad.html">Política de Privacidad.</a><span class="requerido" > * </span></label>
-					
+
 		         		<button class="submit" type="submit">Enviar</button>
 		          		<button class="reset" type="reset">Borrar Formulario</button>
-		        	
+
 			</form>
 
 		</div>
 
 <!---------------------- SECCIION DOS DE CONTACTO ------------------>
 
-		<div class="seccion_dos">	
-			
+		<div class="seccion_dos">
+
 			<div class="medios_contacto">
 				<div id="descripcion">
 					<h3>Dirección</h3>
@@ -150,7 +150,7 @@
 					<p>Fax: +34 91 919191919</p>
 				</div>
 				<div id="icono">
-					<img src="./img/telephone.png">  
+					<img src="./img/telephone.png">
 				</div>
 			</div>
 
@@ -159,7 +159,7 @@
 				<div id="descripcion">
 					<h3>Correo Electronico</h3>
 					<a  href="MAILTO:chsuarez@ucm.es"><p>chsuarez@ucm.es</p></a>
-				</div>	
+				</div>
 				<div id="icono">
 					<a  href="MAILTO:chsuarez@ucm.es"> <img src="./img/email.png"> </a>
 				</div>
@@ -175,10 +175,10 @@
 		</div>
 
 	<!---------------------------------------- FIN CONTACTO ------------------------------>
-		   	   
+
    </div>
-   
-   
+
+
    <div id= "footer">
 	  <ul>
         <li><a href="contacto.html">Contacto</a></li>
@@ -191,10 +191,10 @@
 		<p> Todos los Derechos Reservados © 2016</p>
 		<h1 id="emp"> ReverseBid</h1>
 		<img id="logos" src="./img/logo3.png" />
-	  </div>	
+	  </div>
    </div>
-   
-   
+
+
   </div>
  </body>
 </html>
