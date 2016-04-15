@@ -97,42 +97,42 @@
 
    		<div id= "register">
 
-   			<form method="post" enctype="text/plain" id ="miniForm">
+   			<form action="miperfil.html" method="post" type="text/plain" id ="miniForm">
 
    				<div class = "Container" id="containerFirstName">
 
-   				<label for=""> Nombre</label> <input type="text" name="name" id="nameText"></input>
+   				<label for=""> Nombre *</label> <input type="text" name="name" id="nameText" required></input>
 
    				</div>
 
    				<div class = "Container" id="containerLastName">
 
-   				<label for="">Apellidos</label> <input type="text" name="lastname" id="lastnameText"></input>
+   				<label for="">Apellidos *</label> <input type="text" name="lastname" id="lastnameText" required></input>
 
    				</div>
 
    				<div class = "Container" id="containerEmail">
 
-   				<label for="">Email </label> <input type="text" name="email" id="emailText"></input>
+   				<label for="">Email *</label> <input type="email" name="email" id="emailText" required></input>
 
    				</div>
 
    				<div class = "Container" id="containerPass">
 
-   				<label for="">Contraseña </label><input type="text" name="pass" id="passText"></input>
+   				<label for="">Contraseña *</label><input type="text" name="pass" id="passText" required></input>
 
    				</div>
 
    				<div class = "Container" id="containerPassAgain">
 
-   				<label for="">Confirma Contraseña </label><input type="text" name="passagain" id="passagainText"></input>
+   				<label for="">Confirma Contraseña *</label><input type="text" name="passagain" id="passagainText" required></input>
 
    				</div>
 
    				<div class = "Container" id="containerAccept">
 	   				
 	   				<p value="Accept" id="AcceptTerms" >
-	   				 	<input name="accept" type="checkbox" value="on" class="checkbox"/> </input>
+	   				 	<input name="accept" type="checkbox" value="on" class="checkbox" required> </input>
 	   				 	<label for="">He leido y estoy de acuerdo con los términos y las condiciones de ReverseBid</label>
 	   				</p>
 
@@ -140,7 +140,7 @@
 
    				<div class = "Container" id="containerBotonRegister">
 	   				
-	   				 <a href="miperfil.html"><button value="Register" id="botonRegister" >Registrate</button></a>
+	   				<button class="submit" type="submit" id="botonRegister">Registrate</button>
 
 	   			</div>
 	   		
