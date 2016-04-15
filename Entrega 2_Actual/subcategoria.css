@@ -1,0 +1,90 @@
+#detalles{
+	float:left;
+	width: 300px;
+	padding: 100px 30px 0px 30px;
+}
+
+#detalles h1{
+  text-shadow: #F1F1F1 3px 3px 5px;
+  font-weight: bold;
+  font-size: 40px;
+  color: #232B75;
+}
+
+#detalles p{	
+	color: #c2253f;
+	font-size: 18px;
+	font-weight: bold;
+	text-shadow: #686859 1px 1px 1px;	
+	text-align: center;
+	padding: 20px 40px 0px 20px;
+}
+
+#principal_pic img{
+	float:left;
+	height:350px;
+	width: 550px;
+	padding: 50px 30px 0px 10px;
+}
+
+#enlaza {
+	float:left;
+	display: block;
+	border: none;
+	margin: 100px 0px 300px 0px;
+	padding: 20px 20px 20px 20px; 
+	background-color:#a91731;
+}
+
+#enlaza a{
+	display: block;
+	text-decoration: underline ;
+	color: #FBEFFB;
+	font-weight: bold;
+	line-height: 230%;
+}
+
+#downcont{
+	float:left;	
+	width: 1165px;
+	border-style: solid;
+	border-color: #232B75;
+	border-radius: 2px ;
+	padding: 0px; 
+}
+
+
+#filtro{
+	float:left;	
+	height: 300px;
+	border-style: none solid solid none;
+	border-color: #232B75;
+	border-radius: 4px ;
+	padding: 20px 20px 20px 20px;
+
+}
+
+ .producto div{
+	float:left;
+	padding: 10px 10px 10px 12px;
+}
+
+.producto img{
+
+	height: 230px;
+	width: 250px;
+}
+
+
+.descrip{
+/* azul */
+}
+
+.restante{
+/* blanco rev */	
+}
+
+.minim{
+ /* rojorev */	
+}
+

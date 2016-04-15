@@ -1,5 +1,14 @@
 #contenedor button{
 	cursor: pointer;
+	height: 30px;
+	border: solid #000000 2px;
+	border-radius: 8px;
+	padding: 0px 5px 0px 5px;
+	background-color: #E0E0E0;
+	color: #c2253f;
+	font-size: 14px;
+	font-weight: bold;
+	text-shadow: #686859 1px 2px 2px;
 }
 #title1{
   float: left; 	
@@ -43,7 +52,7 @@
 
 #how  {
   float:left;
-  margin: 110px 35px 0px 70px;
+  margin: 100px 35px 0px 70px;
 }    	
 
 #how:hover p{
@@ -52,25 +61,18 @@
 
 #how p{
   display:none;
-  width: 150px;	
+  width: 145px;	
   margin: 0px 0px 0px 2px;
   background-color:#F2F2CD;
   padding: 3px 3px 3px 2px;
   font-size: 10px;
   color: #232B75;
-  line-height: 110%;  
 }
 
-#contenedor button {
-	height: 30px;
-	border: solid #000000 2px;
-	border-radius: 8px;
-	padding: 0px 5px 0px 5px;
-	background-color: #E0E0E0;
-	color: #D71031;
-	font-size: 14px;
-	font-weight: bold;
-	text-shadow: #D71031 1px 2px 3px;
+#read_more{
+ height:17px;
+ width:13px;
+ padding: 0px 0px 0px 2px;
 }
 
 
@@ -93,36 +95,28 @@
 #login input{
 	border-radius: 5px;
 	width: 150px;
+	height: 30px;
+	border: solid #000000 2px;
+	border-radius: 8px;
+	padding: 0px;
+	
 }	
 	
 #login p{
 	text-align: center;
 }
 
-#login input {
-	height: 30px;
-	border: solid #000000 2px;
-	border-radius: 8px;
-	padding: 0px;
+
+#login a, #register{
+	cursor: pointer;
+	text-decoration: none;
 	background-color: #E0E0E0;
-	color: #D71031;
+	color:#c2253f;
 	font-size: 14px;
 	font-weight: bold;
-	text-shadow: #D71031 1px 2px 3px;
-		
-}	
-
-#login a{
-	text-decoration: none;
+	text-shadow: #686859 1px 2px 2px;
 	cursor: pointer;
 }
 
-#register{
-	cursor: pointer;
-}
 
-#read_more{
- height:17px;
- width:15px;
- padding: 0px 0px 0px 2px;
-}
+
