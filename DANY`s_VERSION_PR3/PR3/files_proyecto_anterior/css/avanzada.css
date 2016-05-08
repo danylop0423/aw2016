@@ -1,0 +1,123 @@
+#busqueda_avanzada{
+    background: rgba(138,5,30,1);
+    background: -moz-linear-gradient(top, rgba(138,5,30,1) 0%, rgba(138,5,30,1) 19%, rgba(194,37,63,1) 99%, rgba(138,5,30,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(138,5,30,1)), color-stop(19%, rgba(138,5,30,1)), color-stop(99%, rgba(194,37,63,1)), color-stop(100%, rgba(138,5,30,1)));
+    background: -webkit-linear-gradient(top, rgba(138,5,30,1) 0%, rgba(138,5,30,1) 19%, rgba(194,37,63,1) 99%, rgba(138,5,30,1) 100%);
+    background: -o-linear-gradient(top, rgba(138,5,30,1) 0%, rgba(138,5,30,1) 19%, rgba(194,37,63,1) 99%, rgba(138,5,30,1) 100%);
+    background: -ms-linear-gradient(top, rgba(138,5,30,1) 0%, rgba(138,5,30,1) 19%, rgba(194,37,63,1) 99%, rgba(138,5,30,1) 100%);
+    background: linear-gradient(to bottom, rgba(138,5,30,1) 0%, rgba(138,5,30,1) 19%, rgba(194,37,63,1) 99%, rgba(138,5,30,1) 100%);
+    border-style: solid;
+    border-color: rgba(138,5,30,1);
+    border-radius: 25px;
+    float: left;
+    
+    width: 40%;
+    padding: 20px;
+    margin-left: calc((1170px - 44% )/ 2);
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+#form_busqueda_avanzada{
+  height: auto;
+}
+
+
+  #busqueda_avanzada h2 {
+    border-radius: 5px;
+    color: white;
+    margin-bottom: 15px;
+    display: block;
+    background-color: #000000;
+    font-size: 25px;
+    text-align: center;
+    text-shadow: 0.1px 1px 1px;
+    width: 100%;
+}
+  
+
+
+ #busqueda_avanzada label {
+    color: white;
+    border-radius: 7px;
+    background: black;
+    font-family: arial;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 5px;
+    padding: 2px;
+    width: auto;
+}
+
+
+/*----- estilos visuales de los elementos --------*/
+
+#busqueda_avanzada input, #busqueda_avanzada select{ 
+  display: block;
+	border:1px solid #aaa;
+	box-shadow: 0px 0px 7px #ccc, 0 10px 15px #eee inset;
+	border-radius:5px;
+	color: black;
+	font-size: 15px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+	width: 90%;
+}
+
+ 
+
+
+#busqueda_avanzada input:focus, #busqueda_avazada input:focus{
+	background: #fff; 
+	border:1px solid #555; 
+	box-shadow: 0 0 3px #aaa; 
+	
+}
+
+/* === Estilos de Validacion === */	
+
+#busqueda_avanzada input:required:valid{
+	box-shadow: 0 0 5px #5cd053;
+	border-color: #28921f;
+
+}
+#busqueda_avanzada input:focus:invalid{
+	box-shadow: 0 0 5px #d45252;
+	border-color: #b03535
+}
+
+/* === Estilos del botonones === */
+#busqueda_avanzada button.submit, #busqueda_avanzada button.reset {
+   padding: 8px 20px;
+   display: inline;
+   margin-top: 10px;
+   margin-left: 17%;
+   font-family: Helvetica;
+   font-weight: bold;
+   line-height: 1;
+   font-size: 13px;
+   margin-bottom: 10px;
+   color: black;
+   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.85);
+   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#bbb));
+   display: inline;
+   border: 1px solid #f1f1f1;
+   border-radius: 10px;
+   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+
+#busqueda_avanzada button.submit:hover, #busqueda_avanzada button.reset:hover {
+	opacity:.80;
+	cursor: pointer; 
+	
+}
+#busqueda_avanzada button.submit:active, #busqueda_avanzada button.reset:active {
+	border: 1px solid #222;
+	
+}
+
+.requerido { 
+   color: red; 
+}

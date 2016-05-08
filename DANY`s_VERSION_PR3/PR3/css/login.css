@@ -1,0 +1,54 @@
+#contenedor button{
+	cursor: pointer;
+	height: 30px;
+	border: solid #000000 2px;
+	border-radius: 8px;
+	padding: 0px 5px 0px 5px;
+	background-color: #E0E0E0;
+	color: #c2253f;
+	font-size: 14px;
+	font-weight: bold;
+	text-shadow: #686859 1px 2px 2px;
+}	
+
+#login {
+	
+	width: 300px;
+	height: 450px;
+	margin: 0 auto;
+	border-style: solid;
+	border-radius: 20px ;
+	padding: 20px 20px 20px 20px;
+	line-height: 400%;
+	background-color: black;
+	color:#FFFFFF;
+	text-align: right;
+	
+}
+
+	
+#login input{
+	border-radius: 5px;
+	width: 150px;
+	height: 30px;
+	border: solid #000000 2px;
+	border-radius: 8px;
+	padding: 0px;
+	
+}	
+	
+#login p{
+	text-align: center;
+}
+
+
+#login a, #register{
+	cursor: pointer;
+	text-decoration: none;
+	background-color: #E0E0E0;
+	color:#c2253f;
+	font-size: 14px;
+	font-weight: bold;
+	text-shadow: #686859 1px 2px 2px;
+	
+}

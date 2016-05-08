@@ -1,0 +1,97 @@
+#subastadorregister{
+    border-style: solid;
+    border-color: #D8D8D8;
+    height: 660px;
+    width: 660px;
+    margin: auto;     
+}
+
+#miniForm {
+    border-style: solid;
+    border-color: #ffffff;
+    border-width: 8px;
+    background-color: #000000;
+    height: 420px;
+    width: 320px;
+    margin-left: 12%;
+    margin-top:1%;
+    padding:90px;
+    padding-bottom: 120px;
+    clear:both;
+    border-radius: 60px;
+}
+
+.Container {
+  color:white;
+  padding-left: 40px;
+  padding-bottom: 20px;
+  margin-top: -10px;
+  display: block;
+  font-size: 15px;
+}
+
+#nameText {
+    margin-left: 25px;
+}
+
+#lastnameText {
+    margin-left: 15px;
+}
+
+#emailText {
+    margin-left: 37px;
+}
+
+#passText {
+    margin-left: 6px;
+}  
+
+#passagainText {
+    margin-left: 75px;
+}
+
+#creditcardText {
+    margin-left: 72px;
+}
+
+#phoneText {
+    margin-left: 75px;
+}
+
+#addressText {
+    margin-left: 12px;
+}
+
+#countryText {
+    margin-left: 48px;
+}
+
+#codeText {
+    margin-left: 75px;
+}
+
+#companyText {
+    margin-left: 20px;
+}
+
+#botonRegister {
+    border-radius: 5px;
+    height: 70px;
+    width: 100px;
+    background-color: #d2d2d2;
+    color: #980d0d;
+    font-weight: bold; 
+    font-size: 15px;
+    margin-left: 180px;
+}
+
+#containerCompany p {
+    border-radius: 5px;
+    height: 25px;
+    font-size: 16px;
+}
+
+a {
+    color:white;
+}
+

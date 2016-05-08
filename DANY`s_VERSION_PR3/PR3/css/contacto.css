@@ -1,0 +1,209 @@
+  #contacto{
+    background: rgba(138,5,30,1);
+    background: -moz-linear-gradient(top, rgba(138,5,30,1) 0%, rgba(138,5,30,1) 19%, rgba(194,37,63,1) 99%, rgba(138,5,30,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(138,5,30,1)), color-stop(19%, rgba(138,5,30,1)), color-stop(99%, rgba(194,37,63,1)), color-stop(100%, rgba(138,5,30,1)));
+    background: -webkit-linear-gradient(top, rgba(138,5,30,1) 0%, rgba(138,5,30,1) 19%, rgba(194,37,63,1) 99%, rgba(138,5,30,1) 100%);
+    background: -o-linear-gradient(top, rgba(138,5,30,1) 0%, rgba(138,5,30,1) 19%, rgba(194,37,63,1) 99%, rgba(138,5,30,1) 100%);
+    background: -ms-linear-gradient(top, rgba(138,5,30,1) 0%, rgba(138,5,30,1) 19%, rgba(194,37,63,1) 99%, rgba(138,5,30,1) 100%);
+    background: linear-gradient(to bottom, rgba(138,5,30,1) 0%, rgba(138,5,30,1) 19%, rgba(194,37,63,1) 99%, rgba(138,5,30,1) 100%);
+    border-style: solid;
+    border-color: rgba(138,5,30,1);
+    border-radius: 25px;
+    float: left;
+    height: 480px;
+    width: 29%;
+    padding: 20px;
+    margin: 10px 0 10px 100px;
+
+}
+
+
+  #contacto h2 {
+    border-radius: 5px;
+    color: white;
+    margin-bottom: 15px;
+    display: block;
+    background-color: #000000;
+    font-size: 25px;
+    text-align: center;
+    text-shadow: 0.1px 1px 1px;
+    width: 100%;
+}
+  
+
+
+ #contacto label {
+    color: white;
+    border-radius: 7px;
+    background: black;
+    font-family: arial;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 5px;
+    padding: 2px;
+    width: auto;
+}
+
+label#politicas{
+  color: yellow;
+  text-decoration: none;
+  font-size: 9px;
+  margin: none; 
+  margin-top: 0px;
+  display: inline;
+  text-decoration: none;
+}
+
+#politicas > a{
+  color: inherit;
+}
+
+/*----- estilos visuales de los elementos --------*/
+
+#contacto input, #contacto textarea { 
+  display: block;
+	border:1px solid #aaa;
+	box-shadow: 0px 0px 7px #ccc, 0 10px 15px #eee inset;
+	border-radius:5px;
+	color: black;
+	font-size: 15px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+	width: 90%;
+}
+
+ input#ceheckbox_condiciones{
+  border: 0px;
+  margin-left: 10%;
+  padding: 0px;
+  height: 10px;
+  background-size: 1px;
+  width: 5%;
+  display: inline;
+  
+  }
+
+
+#contacto input:focus, #contacto textarea:focus {
+	background: #fff; 
+	border:1px solid #555; 
+	box-shadow: 0 0 3px #aaa; 
+	
+}
+
+.requerido{
+  color: red;
+}
+/* === Estilos de Validacion === */	
+
+#contacto input:required:valid, #contacto textarea:required:valid {
+	box-shadow: 0 0 5px #5cd053;
+	border-color: #28921f;
+
+}
+#contacto input:focus:invalid, #contacto textarea:focus:invalid {
+	box-shadow: 0 0 5px #d45252;
+	border-color: #b03535
+}
+
+/* === Estilos del botonones === */
+#contacto button.submit, #contacto button.reset {
+   padding: 8px 20px;
+   display: inline;
+   margin-top: 10px;
+   margin-left: 40px;
+   font-family: Helvetica;
+   font-weight: bold;
+   line-height: 1;
+   margin-bottom: 10px;
+   color: black;
+   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.85);
+   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#bbb));
+   display: inline;
+   border: 1px solid #f1f1f1;
+   border-radius: 10px;
+   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+input#ceheckbox_condiciones{
+  box-shadow: none;
+}
+
+
+#contacto button.submit:hover, #contacto button.reset:hover {
+	opacity:.80;
+	cursor: pointer; 
+	
+}
+#contacto button.submit:active, #contacto button.reset:active {
+	border: 1px solid #222;
+	
+}
+/* ++++++++++++++++++++++++++ SECCION DOS +++++++++++++++++++++++ */
+
+.seccion_dos {
+  border-style: solid;
+  border-color: black;
+  background: black;
+  border-radius: 25px;
+  font-size: 15px; /*revisar*/
+  clear: right;
+  height: 480px;
+  margin: 30px 0px 10px 160px;
+  width: 390px;
+  border-style: solid;
+  float: left;
+
+}
+
+
+.medios_contacto h3{
+  background: rgba(138,5,30,1);
+  background: -moz-linear-gradient(top, rgba(138,5,30,1) 0%, rgba(138,5,30,1) 19%, rgba(194,37,63,1) 99%, rgba(138,5,30,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(138,5,30,1)), color-stop(19%, rgba(138,5,30,1)), color-stop(99%, rgba(194,37,63,1)), color-stop(100%, rgba(138,5,30,1)));
+  background: -webkit-linear-gradient(top, rgba(138,5,30,1) 0%, rgba(138,5,30,1) 19%, rgba(194,37,63,1) 99%, rgba(138,5,30,1) 100%);
+  background: -o-linear-gradient(top, rgba(138,5,30,1) 0%, rgba(138,5,30,1) 19%, rgba(194,37,63,1) 99%, rgba(138,5,30,1) 100%);
+  background: -ms-linear-gradient(top, rgba(138,5,30,1) 0%, rgba(138,5,30,1) 19%, rgba(194,37,63,1) 99%, rgba(138,5,30,1) 100%);
+  background: linear-gradient(to bottom, rgba(138,5,30,1) 0%, rgba(138,5,30,1) 19%, rgba(194,37,63,1) 99%, rgba(138,5,30,1) 100%);  
+  font-size: 20px;
+  border-radius: 10px;
+  line-height: 22px;
+  color:white;
+  text-align: center;
+  padding-bottom: auto;
+  margin-bottom: 5px;
+}
+
+
+.medios_contacto img{
+  height: 35px;
+  width: 36px;
+  padding: 4px;
+  margin-bottom: 7px;
+}
+
+.medios_contacto  a{
+   color: white;
+}
+
+#descripcion{
+  margin-top: 8px;
+  line-height: 25px;
+  padding: 4px;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+}
+
+.redes_sociales img{
+  display: inline;
+  height: 50px;
+  width: 56px;
+  padding: 10px;
+  margin-left: 83px;
+}
+
+#icono{
+  width: 40px;
+  margin:none;
+}
