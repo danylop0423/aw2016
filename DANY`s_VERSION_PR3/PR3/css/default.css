@@ -178,6 +178,14 @@ padding: 20px 0px 20px 0px;
 
 }
 
+#despedida{
+ margin: 80px 0px 150px 400px;
+ text-shadow: #F1F1F1 3px 3px 5px;
+ font-weight: bold;
+ font-size: 36px;
+ padding: 60px 130px 0px 40px;
+ color: #232B75; 
+}
 
 #footer{
 background-color: #434343;
