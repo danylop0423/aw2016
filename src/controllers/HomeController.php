@@ -17,7 +17,14 @@ class HomeController extends AbstractController
             $user = $request->getParam('user');
             $pass = $request->getParam('password');
 
-            var_dump($user . ' -> ' . $pass);
+            $user = $this->db->select()
+                ->from('usuarios')
+                ->where('email', '=', htmlspecialchars($user))
+                ->execute()
+                ->fetch()
+            ;
+
+            var_dump($user);
 
             die;
         }

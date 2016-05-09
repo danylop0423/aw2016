@@ -3,17 +3,19 @@
 class AbstractController
 {
     protected $container;
+    protected $db;
 
     public function __construct($container)
     {
-       $this->container = $container;
+        $this->container = $container;
+        $this->db = $this->container->db;
 
-       $method = $this->container->request->getMethod();
-       $url = $this->container->request->getUri();
-       $agent = $this->container->request->getServerParams()['HTTP_USER_AGENT'];
+        $method = $this->container->request->getMethod();
+        $url = $this->container->request->getUri();
+        $agent = $this->container->request->getServerParams()['HTTP_USER_AGENT'];
 
-       $this->container->logger->info('Route: ' . $url . ' [' . $method . ']');
-       $this->container->logger->info('Agent: ' . $agent);
+        $this->container->logger->info('Route: ' . $url . ' [' . $method . ']');
+        $this->container->logger->info('Agent: ' . $agent);
     }
 
     public function render($response, $partial, $args)
