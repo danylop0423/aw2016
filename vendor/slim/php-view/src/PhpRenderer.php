@@ -65,10 +65,32 @@ class PhpRenderer
 
         ob_start();
         $render($this->templatePath . $template, $data);
-        $output = ob_get_clean(); 
+        $output = ob_get_clean();
 
         $response->getBody()->write($output);
-        
+
+        return $response;
+    }
+
+    public function renderPartial(ResponseInterface $response, $partial, array $data = [])
+    {
+        $this->templatePath .= 'partials/';
+        if (!is_file($this->templatePath . $partial)) {
+            throw new \RuntimeException("View cannot render `$partial` because the partial does not exist");
+        }
+
+        $render = function ($partial, $data) {
+            extract($data);
+            $content = file_get_contents($partial);
+            include $this->templatePath . '/../layouts/defaultLayout.php';
+        };
+
+        ob_start();
+        $render($this->templatePath . $partial, $data);
+        $output = ob_get_clean();
+
+        $response->getBody()->write($output);
+
         return $response;
     }
 }
