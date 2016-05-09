@@ -8,6 +8,14 @@ return [
             'template_path' => __DIR__ . '/views/',
         ],
 
+        // Database settings
+        'db' => [
+            'host' => 'localhost',
+            'user' => 'homestead',
+            'pass' => 'secret',
+            'dbname' => 'reverse_bid',
+        ],
+
         // Monolog settings
         'logger' => [
             'name' => 'reverse-bid',
