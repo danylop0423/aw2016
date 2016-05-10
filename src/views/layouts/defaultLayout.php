@@ -15,7 +15,7 @@
                     <a class="page-title"><?php echo $title ?></a>
 
                     <?php if (isset($loggedUser)): ?>
-                        <a class="dropdown-button" href="#" data-activates="dropdown1">
+                        <a class="dropdown-button" href="#" data-activates="dropdown">
                             <img src="http://materializecss.com/images/yuna.jpg" alt="" class="avatar circle">
                             <span class="name">Administrador</span>
                         </a>
@@ -109,7 +109,11 @@
                     </li>
                 </ul>
             </li>
-            <li class="bold"><a href="/login">Iniciar sesión</a></li>
+            <?php if (isset($loggedUser)): ?>
+                <li class="bold"><a href="/logout">Cerrar sesión</a></li>
+            <?php else: ?>
+                <li class="bold"><a href="/login">Iniciar sesión</a></li>
+            <?php endif ?>
         </ul>
     </header>
 
