@@ -24,9 +24,13 @@ class HomeController extends AbstractController
                 ->fetch()
             ;
 
-            var_dump($user);
+            if ($user && $user['password'] === $pass) {
+                $_SESSION['loggeduser'] = base64_encode(serialize($user));
 
-            die;
+                return $this->home($request, $response, $args);
+            }
+
+            $args['error'] = 'Usuario o contraseña incorrectas';
         }
 
         return $this->render($response, 'login.php', $args);

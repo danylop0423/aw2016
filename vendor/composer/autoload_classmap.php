@@ -8,4 +8,5 @@ $baseDir = dirname($vendorDir);
 return array(
     'AbstractController' => $baseDir . '/src/controllers/AbstractController.php',
     'HomeController' => $baseDir . '/src/controllers/HomeController.php',
+    'LoggedUserMiddleware' => $baseDir . '/src/middlewares/LoggedUserMiddleware.php',
 );
