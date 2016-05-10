@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 04-05-2016 a las 00:39:16
+-- Tiempo de generación: 10-05-2016 a las 18:07:47
 -- Versión del servidor: 5.6.24
 -- Versión de PHP: 5.6.8
 
@@ -19,17 +19,6 @@ SET time_zone = "+00:00";
 --
 -- Base de datos: `reversebid`
 --
-
--- --------------------------------------------------------
-
---
--- Estructura de tabla para la tabla `categoria`
---
-
-CREATE TABLE IF NOT EXISTS `categoria` (
-  `id` int(11) NOT NULL,
-  `nombre` varchar(25) COLLATE utf8_spanish2_ci NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish2_ci;
 
 -- --------------------------------------------------------
 
@@ -90,57 +79,9 @@ CREATE TABLE IF NOT EXISTS `subasta` (
   `total` double DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish2_ci;
 
--- --------------------------------------------------------
-
---
--- Estructura de tabla para la tabla `subastador`
---
-
-CREATE TABLE IF NOT EXISTS `subastador` (
-  `usuario` int(11) NOT NULL,
-  `puntuacion` int(10) DEFAULT NULL,
-  `empresa` varchar(25) COLLATE utf8_spanish2_ci NOT NULL,
-  `pais` varchar(25) COLLATE utf8_spanish2_ci NOT NULL,
-  `cp` varchar(5) COLLATE utf8_spanish2_ci NOT NULL,
-  `telefono` varchar(10) COLLATE utf8_spanish2_ci NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish2_ci;
-
--- --------------------------------------------------------
-
---
--- Estructura de tabla para la tabla `subcategoria`
---
-
-CREATE TABLE IF NOT EXISTS `subcategoria` (
-  `id` int(11) NOT NULL,
-  `categoria` int(11) NOT NULL,
-  `nombre` varchar(25) COLLATE utf8_spanish2_ci NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish2_ci;
-
--- --------------------------------------------------------
-
---
--- Estructura de tabla para la tabla `usuarios`
---
-
-CREATE TABLE IF NOT EXISTS `usuarios` (
-  `id` int(11) NOT NULL,
-  `email` varchar(25) COLLATE utf8_spanish2_ci NOT NULL,
-  `password` varchar(8) COLLATE utf8_spanish2_ci NOT NULL,
-  `foto` varchar(50) COLLATE utf8_spanish2_ci DEFAULT NULL,
-  `tarjeta` varchar(16) COLLATE utf8_spanish2_ci NOT NULL,
-  `direccion` varchar(50) COLLATE utf8_spanish2_ci DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish2_ci;
-
 --
 -- Índices para tablas volcadas
 --
-
---
--- Indices de la tabla `categoria`
---
-ALTER TABLE `categoria`
-  ADD PRIMARY KEY (`id`);
 
 --
 -- Indices de la tabla `comentarios`
@@ -167,32 +108,9 @@ ALTER TABLE `subasta`
   ADD PRIMARY KEY (`id`), ADD UNIQUE KEY `subasta_usuario_producto` (`subastador`,`producto`), ADD KEY `producto` (`producto`);
 
 --
--- Indices de la tabla `subastador`
---
-ALTER TABLE `subastador`
-  ADD PRIMARY KEY (`usuario`);
-
---
--- Indices de la tabla `subcategoria`
---
-ALTER TABLE `subcategoria`
-  ADD PRIMARY KEY (`id`), ADD UNIQUE KEY `subcat_categoria` (`categoria`);
-
---
--- Indices de la tabla `usuarios`
---
-ALTER TABLE `usuarios`
-  ADD PRIMARY KEY (`id`);
-
---
 -- AUTO_INCREMENT de las tablas volcadas
 --
 
---
--- AUTO_INCREMENT de la tabla `categoria`
---
-ALTER TABLE `categoria`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT de la tabla `comentarios`
 --
@@ -212,16 +130,6 @@ ALTER TABLE `pujas`
 -- AUTO_INCREMENT de la tabla `subasta`
 --
 ALTER TABLE `subasta`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
---
--- AUTO_INCREMENT de la tabla `subcategoria`
---
-ALTER TABLE `subcategoria`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
---
--- AUTO_INCREMENT de la tabla `usuarios`
---
-ALTER TABLE `usuarios`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- Restricciones para tablas volcadas
@@ -254,18 +162,6 @@ ADD CONSTRAINT `pujas_ibfk_3` FOREIGN KEY (`producto`) REFERENCES `productos` (`
 ALTER TABLE `subasta`
 ADD CONSTRAINT `subasta_ibfk_1` FOREIGN KEY (`subastador`) REFERENCES `subastador` (`usuario`) ON DELETE CASCADE ON UPDATE CASCADE,
 ADD CONSTRAINT `subasta_ibfk_2` FOREIGN KEY (`producto`) REFERENCES `productos` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
-
---
--- Filtros para la tabla `subastador`
---
-ALTER TABLE `subastador`
-ADD CONSTRAINT `subastador_ibfk_1` FOREIGN KEY (`usuario`) REFERENCES `usuarios` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
-
---
--- Filtros para la tabla `subcategoria`
---
-ALTER TABLE `subcategoria`
-ADD CONSTRAINT `subcategoria_ibfk_1` FOREIGN KEY (`categoria`) REFERENCES `categoria` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
