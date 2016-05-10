@@ -28,6 +28,10 @@
 
 <script>
     $(function() {
+        <?php if ($error): ?>
+            Materialize.toast('<?php echo $error ?>', 6000);
+        <?php endif ?>
+
         $('.btn-flat').on('click', function(e) {
             e.preventDefault();
             window.location.href = '/';
