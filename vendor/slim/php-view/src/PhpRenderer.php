@@ -80,8 +80,10 @@ class PhpRenderer
         }
 
         $render = function ($partial, $data) {
+            ob_start();
             extract($data);
-            $content = file_get_contents($partial);
+            include $partial;
+            $content = ob_get_clean();
             include $this->templatePath . '/../layouts/defaultLayout.php';
         };
 
