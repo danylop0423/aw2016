@@ -5,5 +5,8 @@
         "slim/php-view": "^2.0",
         "monolog/monolog": "^1.17",
         "slim/pdo": "^1.9"
+    },
+    "autoload": {
+        "classmap": [ "src/" ]
     }
 }
