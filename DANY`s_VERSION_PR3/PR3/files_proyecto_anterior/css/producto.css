@@ -1,0 +1,232 @@
+#panelder, #panelizq {
+	float:left;
+}
+
+#panelder {
+	padding-left: 80px;
+	padding-top: 30px;
+}
+
+#panelder #partesuperiorder {
+	padding-top: 1px;
+}
+
+#panelder #partesuperiorder {
+	background-color: rgb(110, 14, 41);
+	height: 200px;
+	width: 180px;
+	text-align: left;
+}
+
+#panelder #partesuperiorder a, #partesuperiorder p {
+	display: block;
+	color: white;
+	margin: 18px 8px;
+}
+
+#panelder #parteinferiorder {
+	height: 250px;
+	width: 250px;
+	background-color: rgb(110, 14, 41);
+	margin-top: 32px;
+}
+
+#panelder #parteinferiorder span {
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+#panelder #parteinferiorder .msgsubastador {
+	padding-top: 8px;
+	text-decoration: underline;
+	color: white;
+	display: block;
+}
+
+#panelder #parteinferiorder .estado {
+	color: white;
+	margin-left: 20px;
+	display: block;
+}
+
+#panelder #parteinferiorder .bolaverde {
+	width: 14px;
+	height: 14px;
+}
+
+#panelder #parteinferiorder p {
+	width: 200px;
+	height: 135px;
+	border: 2px solid gray;
+	border-radius: 18px;
+	border-color: lightblue;
+	background-color: #ffffff;
+}
+
+#panelder #parteinferiorder .chat {
+	margin: 10px;
+}
+
+#panelder #parteinferiorder .chat p {
+	padding-top: 7px;
+}
+
+#panelder #parteinferiorder .chat .vendedor {
+	color: blue;
+}
+
+#panelder #parteinferiorder .chat p .comprador {
+	color: red;
+}
+
+#panelder #parteinferiorder .enviar .textarea {
+	width: 150px;
+	height: 35px;
+	border: 1px solid lightblue;
+	border-radius: 6px;
+	margin-top: -10px;
+	margin-left: 28px;
+}
+
+#panelder #parteinferiorder .enviar .send {
+	background-color: lightgray;
+	width: 50px;
+	height: 38px;
+	border: 1px solid gray;
+	border-radius: 6px;
+	margin-top: -38px;
+	margin-left: 180px;
+	float:left;
+}
+
+#panelizq #parteinferiorizq {
+	background-color: #000000;
+	width: 770px;
+	height: 255px;
+	border: 2px solid white;
+	border-radius: 30px;
+	margin: 10px 6px;
+	padding-left: 20px;
+}
+
+#panelizq #parteinferiorizq #texto {
+	color: white;
+	margin: 10px 0;
+}
+
+#panelizq #parteinferiorizq #texto span {
+	text-decoration: underline;
+}
+
+#panelizq #parteinferiorizq p .emptystar {
+	height: 28px;
+	width: 28px;
+}
+
+#panelizq #parteinferiorizq #texto p, span .ranking {
+	margin-bottom: 40px;
+}
+
+#panelizq #parteinferiorizq #texto span .comment ul {
+	display: block;
+	margin-bottom: 10px;
+}
+
+#panelizq #parteinferiorizq #texto ul .user {
+	padding-left: 10px;
+}
+
+#panelizq #parteinferiorizq #texto ul {
+	padding-top: 10px;
+}
+
+#panelizq #parteinferiorizq #texto a {
+	padding-left: 350px;
+}
+
+#panelizq #parteinferiorizq #cuadrotextocomentario .areacomentario {
+	width: 290px;
+	height: 170px;
+	border: 1px solid lightblue;
+	border-radius: 24px;
+	margin-top: -120px;
+	margin-left: 455px;
+	padding-top: 15px;
+	padding-left: 8px;
+}
+
+#panelizq #parteinferiorizq #cuadrotextocomentario button {
+	background-color: lightgray;
+	width: 80px;
+	height: 40px;
+	border: 1px solid gray;
+	border-radius: 6px;
+	margin-left: 455px;
+	margin-top: -170px;
+	float:left;
+}
+
+#panelizq #partesuperiorizq {
+	font-size: 18px;
+	color: #0B0B61;
+}
+
+#panelizq #partesuperiorizq #texto {
+	padding-top: 10px;
+	width: 120px;
+	height: 100px;
+	float:left;
+}
+
+#panelizq #partesuperiorizq #texto .estado {
+	text-decoration: underline;
+	color: #8A0808;
+	padding-left: 120px;
+}
+
+#panelizq #partesuperiorizq #texto ul, button .pujar {
+	font-size: 20px;
+	width: 190px;
+	margin: 0 120px 60px 120px;
+}
+
+#panelizq #partesuperiorizq textarea {
+	margin-top: -50px;
+}
+
+#panelizq #partesuperiorizq button .pujar {
+	margin-bottom: 40px;
+}
+
+#panelizq #partesuperiorizq #texto button .pujar, textarea {
+	width: 80px;
+	height: 40px;
+	border: 1px solid gray;
+	border-radius: 6px;
+	margin-left: 200px;
+}
+
+#panelizq #partesuperiorizq #texto button {
+	background-color: lightgray;
+	width: 60px;
+	height: 35px;
+	border: 1px solid gray;
+	border-radius: 6px;
+	margin-left: 140px;
+	margin-bottom: -20px;
+}
+
+
+#panelizq #partesuperiorzq #texto textarea .precio{
+	margin-right: -200px;
+}
+
+#panelizq #partesuperiorizq #imagencontexto {
+	margin-left: 455px
+}
+
+#panelizq #partesuperiorizq .imagenproducto {
+	height: 250px;
+	width: 320px;
+}
+
