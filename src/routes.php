@@ -5,4 +5,6 @@ $app->get('/', 'HomeController:home');
 
 $app->any('/login', 'HomeController:login');
 
-$app->any('/logout', 'HomeController:logout');
+$app->get('/logout', 'HomeController:logout');
+
+$app->any('/nuevo-usuario', 'UserController:createUser');

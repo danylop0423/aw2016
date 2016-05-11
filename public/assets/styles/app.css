@@ -3862,7 +3862,7 @@ a.waves-effect .waves-ripple {
   min-height: 3rem;
   line-height: 3rem;
   padding: 0 1rem;
-  background-color: #222;
+  background-color: #fff;
   border-bottom: 1px solid #ddd; }
   .collapsible-header i {
     width: 2rem;
@@ -3900,7 +3900,7 @@ a.waves-effect .waves-ripple {
 
 .side-nav .collapsible-body {
   border: 0;
-  background-color: #222; }
+  background-color: #fff; }
   .side-nav .collapsible-body li a {
     margin: 0 1rem 0 2rem; }
 
@@ -6283,8 +6283,12 @@ a.button-collapse i {
   .container {
     margin-left: auto; } }
 
+form .collapsible .collapsible-body {
+  padding: 15px 40px; }
+
+form .buttons-wrapper {
+  margin-top: 30px; }
+
 .login-page .login-card {
   width: 60%;
   margin: 0 auto; }
-  .login-page .login-card .buttons-wrapper {
-    margin-top: 30px; }

@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="/assets/styles/app.css">
     <link rel="stylesheet" href="/assets/vendor/font-awesome/css/font-awesome.min.css">
     <script src="/assets/vendor/jquery/jquery.min.js"></script>
+    <script src="/assets/vendor/bootstrap/js/materialize.min.js"></script>
 </head>
 <body>
     <header>
@@ -112,6 +113,7 @@
             <?php if ($loggedUser): ?>
                 <li class="bold"><a href="/logout">Cerrar sesión</a></li>
             <?php else: ?>
+                <li class="bold"><a href="/nuevo-usuario">Registrarte</a></li>
                 <li class="bold"><a href="/login">Iniciar sesión</a></li>
             <?php endif ?>
         </ul>
@@ -149,7 +151,6 @@
         </div>
     </footer>
 
-    <script src="/assets/vendor/bootstrap/js/materialize.min.js"></script>
     <script src="/assets/scripts/search.js"></script>
 
     <script>
