@@ -25,6 +25,7 @@ class HomeController extends AbstractController
             ;
 
             if ($user && $user['password'] === $pass) {
+                $args['loggedUser'] = $user;
                 $_SESSION['loggeduser'] = base64_encode(serialize($user));
 
                 return $this->home($request, $response, $args);
@@ -34,5 +35,12 @@ class HomeController extends AbstractController
         }
 
         return $this->render($response, 'login.php', $args);
+    }
+
+    public function logout($request, $response, $args)
+    {
+        unset($_SESSION['loggeduser']);
+
+        return $response->withStatus(302)->withHeader('Location', '/');
     }
 }
