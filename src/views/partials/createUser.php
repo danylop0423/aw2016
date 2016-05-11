@@ -10,18 +10,13 @@
                     </div>
 
                     <div class="input-field col s12 l8">
-                        <label for="">Apellidos *</label>
+                        <label for="">Apellido *</label>
                         <input type="text" name="lastname" id="lastname" class="validate" required>
                     </div>
 
                     <div class="input-field col s12 l9">
                         <label for="">Email *</label>
                         <input type="email" name="email" id="email" class="validate" required>
-                    </div>
-
-                    <div class="input-field col s12 l3">
-                        <label for="">Teléfono</label>
-                        <input type="text" name="phone" id="phone" class="validate">
                     </div>
                 </div>
             </div>
@@ -31,24 +26,10 @@
             <div class="collapsible-body">
                 <div class="row">
                     <div class="input-field col s12">
-                        <label for="street">Calle *</label>
+                        <label for="street">Dirección: *</label>
                         <input type="text" name="street" id="street" class="validate" required>
                     </div>
 
-                    <div class="input-field col s12 l9">
-                        <label for="village">Población *</label>
-                        <input type="text" name="village" id="village" class="validate" required>
-                    </div>
-
-                    <div class="input-field col s12 l3">
-                        <label for="zip-code">Código postal *</label>
-                        <input type="text" name="zip-code" id="zip-code" class="validate" required>
-                    </div>
-
-                    <div class="input-field col s12">
-                        <label for="city">Ciudad *</label>
-                        <input type="text" name="city" id="city" class="validate" required>
-                    </div>
                 </div>
             </div>
         </li>
