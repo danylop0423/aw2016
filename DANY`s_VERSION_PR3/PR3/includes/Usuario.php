@@ -7,6 +7,10 @@ use es\ucm\fdi\aw\Aplicacion as App;
 class Usuario {
 	
   private $id;
+  
+  private $username;
+  
+  private $apellido;
 
   private $email;
 
@@ -16,14 +20,22 @@ class Usuario {
   
   private $tarjeta;
   
+  private $cvv;
+  
+  private $caduca;
+  
   private $direccion;
 
-  private function __construct($id, $email, $password,$foto,$tarjeta,$direccion) {
+  private function __construct($id,$username,$apellido,$email, $password,$foto,$tarjeta,$cvv,$caduca,$direccion) {
     $this->id = $id;
-    $this->email = $email;
+	$this->username= $username;
+    $this->apellido=$apellido;
+	$this->email = $email;
     $this->password = $password;
     $this->foto = $foto;
 	$this->tarjeta = $tarjeta;
+	$this->cvv = $cvv;
+	$this->caduca = $caduca;
 	$this->direccion = $direccion;
   }
 
@@ -34,14 +46,31 @@ private static function buscaUsuario($email) {
     $rs = $conn->query($query);
     if ($rs && $rs->num_rows == 1) {
       $fila = $rs->fetch_assoc();
-      $user = new Usuario($fila['id'], $fila['email'], $fila['password'],$fila['foto'],
-													$fila['tarjeta'],$fila['direccion']);
+      $user = new Usuario($fila['id'],$fila['nombre'] ,$fila['apellido'],$fila['email'], $fila['password']
+								,$fila['foto'],$fila['tarjeta'],$fila['cvv'],$fila['caduca'],$fila['direccion']);
       $rs->free();
 
       return $user;
     }
     return false;
   }
+
+private static function insertaUsuario($username,$apellido,$email,$credito,$cvv,$caduca,$direccion,$password) {
+    $foto='img/avatar2.png';
+	$app = App::getSingleton();
+    $conn = $app->conexionBd();
+	$caduca=$caduca."-01";
+    $query = "INSERT INTO usuarios(email,password,nombre,apellido,foto,tarjeta,cvv,direccion,caduca) 
+							VALUES('$email','$password','$username','$apellido','$foto','$credito','$cvv',
+							'$direccion','$caduca')";
+    $rs = $conn->query($query);
+    if($rs) {
+      return false;
+    }
+    return true;
+  }
+
+
 
   
   public static function login($email, $password) {
@@ -53,7 +82,14 @@ private static function buscaUsuario($email) {
   }
 
   
-  
+  public static function registraUsuario($username,$apellido,$email,$credito,$cvv,$caduca,$direccion,$password) {
+    $user = self::buscaUsuario($email);
+    if ($user) { 
+      return true;
+    }    
+    return self::insertaUsuario($username,$apellido,$email,$credito,$cvv,$caduca,$direccion,$password);	
+  }
+
   
   
   public function get_email() {

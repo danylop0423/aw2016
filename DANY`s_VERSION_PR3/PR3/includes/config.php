@@ -1,7 +1,7 @@
 <?php
 // Varios defines para los parámetros de configuración de acceso a la BD y la URL desde la que se sirve la aplicación
 define('BD_HOST', 'localhost');
-define('BD_NAME', 'reversebid');
+define('BD_NAME', 'reverse_bid');
 define('BD_USER', 'rb_user');
 define('BD_PASS', 'rbpass');
 define('RAIZ_APP', __DIR__);

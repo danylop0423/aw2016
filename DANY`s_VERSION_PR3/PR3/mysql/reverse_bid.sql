@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 10-05-2016 a las 18:49:20
+-- Tiempo de generación: 12-05-2016 a las 01:48:17
 -- Versión del servidor: 5.6.24
 -- Versión de PHP: 5.6.8
 
@@ -17,8 +17,10 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8 */;
 
 --
--- Base de datos: `reversebid`
+-- Base de datos: `reverse_bid`
 --
+CREATE DATABASE IF NOT EXISTS `reverse_bid` DEFAULT CHARACTER SET utf8 COLLATE utf8_spanish2_ci;
+USE `reverse_bid`;
 
 -- --------------------------------------------------------
 
@@ -131,6 +133,8 @@ CREATE TABLE IF NOT EXISTS `usuarios` (
   `apellido` varchar(25) COLLATE utf8_spanish2_ci NOT NULL,
   `foto` varchar(50) COLLATE utf8_spanish2_ci DEFAULT NULL,
   `tarjeta` varchar(16) COLLATE utf8_spanish2_ci NOT NULL,
+  `cvv` int(4) NOT NULL,
+  `caduca` date NOT NULL,
   `direccion` varchar(50) COLLATE utf8_spanish2_ci DEFAULT NULL
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_spanish2_ci;
 

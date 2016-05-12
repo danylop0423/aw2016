@@ -39,8 +39,15 @@
 	
 #login p{
 	text-align: center;
+	text-shadow: #F1F1F1 0px 0px 1px;
+	font-weight: bold;
+	font-size: 11px;
+	color: #cccccc;
 }
 
+#login h5{
+	text-align: center;
+}
 
 #login a, #register{
 	cursor: pointer;

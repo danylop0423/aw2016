@@ -28,6 +28,7 @@ class FormularioLogin extends Form {
 			</fieldset>
 			<p>¿Eres Nuevo?..<p>
 			<a href="registrouser.php"><input id="register" type="button"   action="registro.php" name="Regist" value="Registrate" /></a>
+		</fieldset>
 EOF;
     return $camposFormulario;
   }

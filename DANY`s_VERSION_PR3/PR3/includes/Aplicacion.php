@@ -98,18 +98,4 @@ class Aplicacion {
     return $this->conn;
   }
 
-  public function tieneRol($rol, $cabeceraError='', $mensajeError='') {
-    if (!isset($_SESSION['roles']) || ! in_array($rol, $_SESSION['roles'])) {
-
-      $bloqueContenido=<<<EOF
-        <h1>$cabeceraError!</h1>
-        <p>$mensajeError.</p>
-EOF;
-
-      echo $bloqueContenido;
-      return false;
-    }
-
-    return true;
-  }
 }

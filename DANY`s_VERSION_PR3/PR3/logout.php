@@ -17,7 +17,7 @@ $app->logout();
 $app->doInclude('comun/cabecera.php');
 ?>
 	<div id="contenedor">
-		<h1>Hasta pronto!</h1>
+		<h1 id="despedida">Hasta pronto!</h1>
 	</div>
 <?php
 $app->doInclude('comun/pie.php');
