@@ -10,8 +10,8 @@
                     </div>
 
                     <div class="input-field col s12 l8">
-                        <label for="">Apellidos *</label>
-                        <input type="text" name="user[apellidos]" id="lastname" class="validate" required>
+                        <label for="">Apellido *</label>
+                        <input type="text" name="user[apellido]" id="lastname" class="validate" required>
                     </div>
 
                     <div class="input-field col s12 l9">
@@ -68,7 +68,7 @@
 
                     <div class="input-field col s6 l3">
                         <label for="expiration">Caducidad *</label>
-                        <input type="text" name="user[caducidad_tarjeta]" id="expiration" required>
+                        <input type="text" name="user[caduca]" id="expiration" required>
                     </div>
                 </div>
             </div>

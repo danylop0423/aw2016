@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 12-05-2016 a las 01:48:17
+-- Tiempo de generación: 13-05-2016 a las 01:43:39
 -- Versión del servidor: 5.6.24
 -- Versión de PHP: 5.6.8
 
@@ -33,6 +33,10 @@ CREATE TABLE IF NOT EXISTS `categoria` (
   `nombre` varchar(25) COLLATE utf8_spanish2_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish2_ci;
 
+--
+-- RELACIONES PARA LA TABLA `categoria`:
+--
+
 -- --------------------------------------------------------
 
 --
@@ -45,6 +49,14 @@ CREATE TABLE IF NOT EXISTS `comentarios` (
   `destino` int(11) NOT NULL,
   `texto` varchar(246) COLLATE utf8_spanish2_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish2_ci;
+
+--
+-- RELACIONES PARA LA TABLA `comentarios`:
+--   `origen`
+--       `usuarios` -> `id`
+--   `destino`
+--       `subastador` -> `usuario`
+--
 
 -- --------------------------------------------------------
 
@@ -64,6 +76,12 @@ CREATE TABLE IF NOT EXISTS `productos` (
   `descripcion` varchar(146) COLLATE utf8_spanish2_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish2_ci;
 
+--
+-- RELACIONES PARA LA TABLA `productos`:
+--   `subcategoria`
+--       `subcategoria` -> `id`
+--
+
 -- --------------------------------------------------------
 
 --
@@ -78,6 +96,16 @@ CREATE TABLE IF NOT EXISTS `pujas` (
   `ultimaPuja` double DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish2_ci;
 
+--
+-- RELACIONES PARA LA TABLA `pujas`:
+--   `usuario`
+--       `usuarios` -> `id`
+--   `subastador`
+--       `subastador` -> `usuario`
+--   `producto`
+--       `productos` -> `id`
+--
+
 -- --------------------------------------------------------
 
 --
@@ -91,6 +119,14 @@ CREATE TABLE IF NOT EXISTS `subasta` (
   `pujaMin` double NOT NULL,
   `total` double DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish2_ci;
+
+--
+-- RELACIONES PARA LA TABLA `subasta`:
+--   `subastador`
+--       `subastador` -> `usuario`
+--   `producto`
+--       `productos` -> `id`
+--
 
 -- --------------------------------------------------------
 
@@ -107,6 +143,12 @@ CREATE TABLE IF NOT EXISTS `subastador` (
   `telefono` varchar(10) COLLATE utf8_spanish2_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish2_ci;
 
+--
+-- RELACIONES PARA LA TABLA `subastador`:
+--   `usuario`
+--       `usuarios` -> `id`
+--
+
 -- --------------------------------------------------------
 
 --
@@ -119,6 +161,12 @@ CREATE TABLE IF NOT EXISTS `subcategoria` (
   `nombre` varchar(25) COLLATE utf8_spanish2_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish2_ci;
 
+--
+-- RELACIONES PARA LA TABLA `subcategoria`:
+--   `categoria`
+--       `categoria` -> `id`
+--
+
 -- --------------------------------------------------------
 
 --
@@ -127,16 +175,24 @@ CREATE TABLE IF NOT EXISTS `subcategoria` (
 
 CREATE TABLE IF NOT EXISTS `usuarios` (
   `id` int(11) NOT NULL,
-  `email` varchar(25) COLLATE utf8_spanish2_ci NOT NULL,
+  `email` varchar(50) COLLATE utf8_spanish2_ci NOT NULL,
   `password` varchar(8) COLLATE utf8_spanish2_ci NOT NULL,
-  `nombre` varchar(25) COLLATE utf8_spanish2_ci NOT NULL,
-  `apellido` varchar(25) COLLATE utf8_spanish2_ci NOT NULL,
+  `nombre` varchar(50) COLLATE utf8_spanish2_ci NOT NULL,
+  `apellido` varchar(50) COLLATE utf8_spanish2_ci NOT NULL,
+  `telefono` varchar(9) COLLATE utf8_spanish2_ci NOT NULL,
+  `calle` varchar(50) COLLATE utf8_spanish2_ci NOT NULL,
+  `poblacion` varchar(50) COLLATE utf8_spanish2_ci NOT NULL,
+  `codigo_postal` varchar(5) COLLATE utf8_spanish2_ci NOT NULL,
+  `ciudad` varchar(50) COLLATE utf8_spanish2_ci NOT NULL,
   `foto` varchar(50) COLLATE utf8_spanish2_ci DEFAULT NULL,
   `tarjeta` varchar(16) COLLATE utf8_spanish2_ci NOT NULL,
-  `cvv` int(4) NOT NULL,
-  `caduca` date NOT NULL,
-  `direccion` varchar(50) COLLATE utf8_spanish2_ci DEFAULT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_spanish2_ci;
+  `cvv` int(3) NOT NULL,
+  `caduca` varchar(5) COLLATE utf8_spanish2_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish2_ci;
+
+--
+-- RELACIONES PARA LA TABLA `usuarios`:
+--
 
 --
 -- Índices para tablas volcadas
@@ -228,7 +284,7 @@ ALTER TABLE `subcategoria`
 -- AUTO_INCREMENT de la tabla `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- Restricciones para tablas volcadas
 --

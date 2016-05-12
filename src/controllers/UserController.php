@@ -43,7 +43,10 @@ class UserController extends AbstractController
             ->execute()
             ->fetch()
         ;
-
-        return $user !== null;
+        if($user){
+         return true;
+	    }else{
+		  return false;
+		  }	
     }
 }
