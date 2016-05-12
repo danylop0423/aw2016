@@ -43,4 +43,13 @@ class HomeController extends AbstractController
 
         return $response->withStatus(302)->withHeader('Location', '/');
     }
+
+    public function createProfile($request, $response, $args)
+    {
+        $args['title'] = 'Mi Perfil';
+        
+        return $this->render($response,'miperfil.php', $args);
+    }
+	
+	
 }

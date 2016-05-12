@@ -102,7 +102,7 @@
                     <li class="bold"><a class="collapsible-header">Mi cuenta</a>
                         <div class="collapsible-body" style="">
                             <ul>
-                                <li><a href="#">Mi perfil</a></li>
+                                <li><a href="/miperfil">Mi perfil</a></li>
                                 <li><a href="#">Mis subastas </a></li>
                                 <li><a href="#">Mis pujas </a></li>
                             </ul>
