@@ -18,7 +18,7 @@
                     <?php if ($loggedUser): ?>
                         <a class="dropdown-button" href="#" data-activates="dropdown">
                             <img src="http://materializecss.com/images/yuna.jpg" alt="" class="avatar circle">
-                            <span class="name">Administrador</span>
+                            <span class="name"><?php echo $loggedUser['nombre'] ?></span>
                         </a>
 
                         <ul id="dropdown" class="dropdown-content">

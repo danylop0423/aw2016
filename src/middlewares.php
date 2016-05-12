@@ -3,7 +3,7 @@
 
 /* Logged user middleware */
 $app->add(function ($request, $response, $next) {
-    $loggeduser = isset($_SESSION['loggeduser']) ? $_SESSION['loggeduser'] : false;
+    $loggeduser = isset($_SESSION['loggeduser']) ? unserialize(base64_decode($_SESSION['loggeduser'])) : false;
 
     $renderer = $this->get('renderer');
     $renderer->addAttribute('loggedUser', $loggeduser);

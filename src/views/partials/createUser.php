@@ -6,17 +6,22 @@
                 <div class="row">
                     <div class="input-field col s12 l4">
                         <label for="name">Nombre *</label>
-                        <input type="text" name="name" id="name" class="validate" required>
+                        <input type="text" name="user[nombre]" id="name" class="validate" required>
                     </div>
 
                     <div class="input-field col s12 l8">
-                        <label for="">Apellido *</label>
-                        <input type="text" name="lastname" id="lastname" class="validate" required>
+                        <label for="">Apellidos *</label>
+                        <input type="text" name="user[apellidos]" id="lastname" class="validate" required>
                     </div>
 
                     <div class="input-field col s12 l9">
                         <label for="">Email *</label>
-                        <input type="email" name="email" id="email" class="validate" required>
+                        <input type="email" name="user[email]" id="email" class="validate" required>
+                    </div>
+
+                    <div class="input-field col s12 l3">
+                        <label for="">Teléfono</label>
+                        <input type="text" name="user[telefono]" id="phone" class="validate">
                     </div>
                 </div>
             </div>
@@ -26,10 +31,24 @@
             <div class="collapsible-body">
                 <div class="row">
                     <div class="input-field col s12">
-                        <label for="street">Dirección: *</label>
-                        <input type="text" name="street" id="street" class="validate" required>
+                        <label for="street">Calle *</label>
+                        <input type="text" name="user[calle]" id="street" class="validate" required>
                     </div>
 
+                    <div class="input-field col s12 l9">
+                        <label for="village">Población *</label>
+                        <input type="text" name="user[poblacion]" id="village" class="validate" required>
+                    </div>
+
+                    <div class="input-field col s12 l3">
+                        <label for="zip">Código postal *</label>
+                        <input type="text" name="user[codigo_postal]" id="zip" class="validate" required>
+                    </div>
+
+                    <div class="input-field col s12">
+                        <label for="city">Ciudad *</label>
+                        <input type="text" name="user[ciudad]" id="city" class="validate" required>
+                    </div>
                 </div>
             </div>
         </li>
@@ -37,19 +56,19 @@
             <div class="collapsible-header active"><i class="fa fa-credit-card"></i>Datos bancarios</div>
             <div class="collapsible-body">
                 <div class="row">
-                    <div class="input-field col s6">
-                        <label for="number">Número de la tarjeta *</label>
-                        <input type="text" name="number" id="number" class="validate" required>
+                    <div class="input-field col s12 l6">
+                        <label for="card">Número de la tarjeta *</label>
+                        <input type="text" name="user[tarjeta]" id="card" class="validate" required>
                     </div>
 
-                    <div class="input-field col s12 l3">
+                    <div class="input-field col s6 l3">
                         <label for="cvv">CVV *</label>
-                        <input type="text" name="cvv" id="cvv" class="validate" required>
+                        <input type="text" name="user[cvv]" id="cvv" class="validate" required>
                     </div>
 
-                    <div class="input-field col s12 l3">
+                    <div class="input-field col s6 l3">
                         <label for="expiration">Caducidad *</label>
-                        <input type="date" name="expiration" id="expiration" required>
+                        <input type="text" name="user[caducidad_tarjeta]" id="expiration" required>
                     </div>
                 </div>
             </div>
@@ -60,12 +79,12 @@
                 <div class="row">
                     <div class="input-field col s12 l6">
                         <label for="">Contraseña</label>
-                        <input type="password" name="pass" id="pass" class="validate" required>
+                        <input type="password" name="user[password]" id="pass" class="validate" required>
                     </div>
 
                     <div class="input-field col s12 l6">
                         <label for="">Confirmar contraseña</label>
-                        <input type="password" name="passagain" id="passagain" class="validate" required>
+                        <input type="password" name="user[password-r]" id="pass-r" class="validate" required>
                     </div>
 
                     <div class="input-field center-align col s12">
@@ -84,10 +103,8 @@
 
 <script>
     $(function() {
-        $('#expiration').pickadate({
-            selectMonths: true,
-            selectYears: 16
-        });
+        <?php if ($error): ?>
+            Materialize.toast('<?php echo $error ?>', 6000);
+        <?php endif ?>
     });
 </script>
-
