@@ -17,7 +17,8 @@ class FormularioRegistro extends Form {
 	$email ='';
 	$credito ='';
 	$cvv = '';
-	$caduca = '';
+	$caducaMonth = '';
+	$caducaYear = '';
 	$direccion ='';
     $password ='';
 	$again ='';
@@ -29,7 +30,8 @@ class FormularioRegistro extends Form {
 	  $email = isset($datos['email']) ? $datos['email'] : $email;
 	  $credito = isset($datos['credito']) ? $datos['credito'] : $credito;
 	  $cvv = isset($datos['cvv']) ? $datos['cvv'] : $cvv;
-	  $caduca = isset($datos['caduca']) ? $datos['caduca'] : $caduca;
+	  $caducaMonth = isset($datos['caducaMonth']) ? $datos['caducaMonth'] : $caducaMonth;
+	  $caducaYear = isset($datos['caducaYear']) ? $datos['caducaYear'] : $caducaYear;
 	  $direccion = isset($datos['direccion']) ? $datos['direccion'] : $direccion;
 	  $password = isset($datos['password']) ? $datos['password'] : $password;
 	  $again = isset($datos['again']) ? $datos['again'] : $again;
@@ -48,8 +50,11 @@ class FormularioRegistro extends Form {
 			<input type="number" name="credito" value="$credito" placeholder="debe tener 16 Digitos" min="1000000000000000" max="9999999999999999"  required><br>
 			<label>CVV *:</label>
 			<input type="number" name="cvv" value="$cvv" placeholder="3 Digitos" min="100" max="999" required><br>
-			<label>Caducidad*:</label>
-			<input type="month" name="caduca" value="$caduca" placeholder=""    required><br>
+			<label>Caducidad*</label><br>
+			<label>Mes:</label>
+			<input type="number" class = "caduca" name="caducaMonth" value="1" placeholder="" max="12" min="1"   required>
+			<label>Año:</label>
+			<input type="number" class = "caduca" name="caducaYear" value="2016" placeholder="" max="2050" min="2016"    required><br>
 			<label>Dirección:</label>
 			<input type="text" name="direccion" value="$direccion" placeholder="Tu dirección" size="35"  required><br>
 			<label>Contraseña*:</label>
@@ -114,7 +119,16 @@ EOF;
     }
 
 	$direccion = isset($datos['direccion']) ? $datos['direccion'] : null ;
-	$caduca = isset($datos['caduca']) ? $datos['caduca'] : null ;
+
+	$caduca = "";
+	$caduca.=$datos['caducaYear'];
+	$caduca.="-";
+	$caduca.=$datos['caducaMonth'];
+	$caduca.="-";
+	$caduca.="00";
+	
+
+	
 	
     if ( $ok ) {
       $flag = Usuario::registraUsuario($username,$apellido,$email,$credito,$cvv,$caduca,$direccion,$password);

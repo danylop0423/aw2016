@@ -59,7 +59,6 @@ private static function insertaUsuario($username,$apellido,$email,$credito,$cvv,
     $foto='img/avatar2.png';
 	$app = App::getSingleton();
     $conn = $app->conexionBd();
-	$caduca=$caduca."-01";
     $query = "INSERT INTO usuarios(email,password,nombre,apellido,foto,tarjeta,cvv,direccion,caduca) 
 							VALUES('$email','$password','$username','$apellido','$foto','$credito','$cvv',
 							'$direccion','$caduca')";
