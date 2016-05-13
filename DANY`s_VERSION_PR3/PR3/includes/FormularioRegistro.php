@@ -34,9 +34,6 @@ class FormularioRegistro extends Form {
 	  $password = isset($datos['password']) ? $datos['password'] : $password;
 	  $again = isset($datos['again']) ? $datos['again'] : $again;
 	  $on = isset($datos['on']) ? $datos['on'] : $on;
-      echo $caduca;
-	  echo gettype($caduca);
-
     }
 
     $camposFormulario=<<<EOF

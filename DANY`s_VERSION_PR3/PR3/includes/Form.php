@@ -72,12 +72,14 @@ class Form {
       $tokenRecibido = isset($_POST['CSRFToken']) ? $_POST['CSRFToken'] : FALSE;
       
       if ( ($errores = $this->csrfguard_ValidateToken($this->formId, $tokenRecibido)) !== TRUE ) { 
-          if ( ! $ajax ) {
-            echo $this->generaFormulario($errores, $_POST);
-          } else {
-            echo $this->generaHtmlErrores($errores);
-          }
-      } else  {
+
+        if (!isset($ajax) || !$ajax  ) {
+          echo $this->generaFormulario($errores, $_POST);
+        } else {
+          echo $this->generaHtmlErrores($errores);
+        }  
+     
+      }else  {
         $result = $this->procesaFormulario($_POST);
         if ( is_array($result) ) {
           // Error al procesar el formulario, volvemos a mostrarlo
