@@ -1,6 +1,6 @@
 <?php
 use es\ucm\fdi\aw;
-
+require_once 'util.php';
 ?>
 <header>
 	<div id="cabecera">
@@ -57,10 +57,11 @@ use es\ucm\fdi\aw;
 				</li>
 
 				<li><a href="login.php">Mi Cuenta</a>
+					<?php $h=mostrarPerfil()?>
 					<ul>
-						<li><a href="miperfil.php">Mi Perfil</a></li>
-					    <li><a href="miperfil.php#missubastas">Mis Subastas</a></li>
-						<li><a href="miperfil.php#mispujas">Mis Pujas</a></li>
+						<li><a href="<?= $h ?>">Mi Perfil</a></li>
+					    <li><a href="<?php $h=$h.'#missubastas';echo $h;?>">Mis Subastas</a></li>
+						<li><a href="<?php $h=$h.'#mispujas';echo $h;?>">Mis Pujas</a></li>
 						<li><a href="login.php">Cerrar Sesión</a></li>
 					</ul>
 				</li>

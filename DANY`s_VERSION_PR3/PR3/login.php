@@ -1,7 +1,7 @@
 <?php
 
 require_once __DIR__.'/includes/config.php';
-$app->doInclude('comun/saludo.php');
+$app->doInclude('comun/util.php');
 ?>
 <!DOCTYPE html>
 <html>
@@ -19,13 +19,12 @@ $app->doInclude('comun/cabecera.php');
 	<div id="contenedor">
 		<div id="login">	
 		<?php 
-			$flag=mostrarSaludo();
-            if($flag===false) {
+			$html=mostrarSaludo();
+            if($html===false) {
 				$formLogin = new \es\ucm\fdi\aw\FormularioLogin();
 				$formLogin->gestiona();
 			}else {
-				echo $flag;
-				}
+			   echo $html;}
 		?>
 		</div>
 	</div>

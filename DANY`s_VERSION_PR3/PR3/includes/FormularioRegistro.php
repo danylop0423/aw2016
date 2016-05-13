@@ -124,7 +124,8 @@ EOF;
       if ( $flag ) {
 		  $result[] = 'ERROR: El usuario '.$email.' ya ha sido registrado anteriormente ';
       }else {
-        $result = \es\ucm\fdi\aw\Aplicacion::getSingleton()->resuelve('/login.php');
+        $result=\es\ucm\fdi\aw\Aplicacion::getSingleton()->resuelve('/login.php');
+		
 		//$result[] = 'El usuario se ha registrado correctamente en breve recibirá un mail informativo';
       }
     }

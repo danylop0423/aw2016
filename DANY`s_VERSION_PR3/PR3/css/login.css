@@ -12,10 +12,10 @@
 }	
 
 #login {
-	
+	float: left;
 	width: 300px;
 	height: 450px;
-	margin: 0 auto;
+	margin: 20px 30px 20px 370px;;
 	border-style: solid;
 	border-radius: 20px ;
 	padding: 20px 20px 20px 20px;
@@ -58,4 +58,21 @@
 	font-weight: bold;
 	text-shadow: #686859 1px 2px 2px;
 	
+}
+
+#enlaza {
+	float:left;
+	display: block;
+	border: none;
+	margin: 100px 0px 300px 0px;
+	padding: 20px 20px 20px 20px; 
+	background-color:#a91731;
+}
+
+#enlaza p{
+	display: block;
+	text-decoration: underline ;
+	color: #FBEFFB;
+	font-weight: bold;
+	line-height: 230%;
 }
