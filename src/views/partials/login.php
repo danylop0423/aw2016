@@ -18,9 +18,11 @@
                 <button class="btn waves-effect waves-light" type="submit" name="action">
                     Iniciar sesión
                 </button>
-                <button class="btn-flat waves-effect waves-light" type="button">
-                    Nuevo usuario
-                </button>
+                
+                   <a  href='/nuevo-usuario' >
+				   <button class="btn-flat waves-effect waves-light" type="button" >Nuevo usuario</button>
+				   </a>
+                
             </div>
         </form>
     </div>
