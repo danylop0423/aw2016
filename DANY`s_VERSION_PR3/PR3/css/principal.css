@@ -102,6 +102,10 @@
 	
 }	
 	
+#login h5{
+	text-align: center;	
+}	
+
 #login p{
 	text-align: center;
 	text-shadow: #F1F1F1 0px 0px 1px;

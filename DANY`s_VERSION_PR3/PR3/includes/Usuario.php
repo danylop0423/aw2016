@@ -104,6 +104,10 @@ private static function insertaUsuario($username,$apellido,$email,$credito,$cvv,
     return $this->email;
   }
 
+  public function get_nombre() {
+    return $this->username;
+  }
+  
   public function compruebaPassword($password) {
     return $this->password === $password;
   }

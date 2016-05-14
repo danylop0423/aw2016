@@ -57,7 +57,7 @@ class Aplicacion {
 
   public function login(Usuario $user) {
     $_SESSION['login'] = true;
-    $_SESSION['nombre'] = $user->get_email();
+    $_SESSION['nombre'] = $user->get_nombre();
   }
 
   public function logout() {
