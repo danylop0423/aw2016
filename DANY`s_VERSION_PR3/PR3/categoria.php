@@ -93,7 +93,7 @@ $app->doInclude('comun/cabecera.php');
     </div>
 
   <?php
-$app->doInclude('comun/cabecera.php');
+$app->doInclude('comun/pie.php');
 ?>
 
   </div>

@@ -128,8 +128,6 @@ EOF;
 	$caduca.="00";
 	
 
-	
-	
     if ( $ok ) {
       $flag = Usuario::registraUsuario($username,$apellido,$email,$credito,$cvv,$caduca,$direccion,$password);
       if ( $flag ) {
@@ -137,7 +135,6 @@ EOF;
       }else {
         $result=\es\ucm\fdi\aw\Aplicacion::getSingleton()->resuelve('/login.php');
 		
-		//$result[] = 'El usuario se ha registrado correctamente en breve recibirá un mail informativo';
       }
     }
     return $result;

@@ -25,6 +25,7 @@ $app->doInclude('comun/cabecera.php');
    		<div id= "register">
 
    				<?php	
+				  //gestion del formulario de registro de usuarios 
 					$formRegistro = new \es\ucm\fdi\aw\FormularioRegistro();
 					$formRegistro->gestiona(); 
 				?>

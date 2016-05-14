@@ -44,6 +44,7 @@ $app->doInclude('comun/cabecera.php');
 		<div id="login">
 		  
 		  <?php
+		  //control de usuario logueado o no, en caso No -> formulario y gestion del mismo
 		  $html=mostrarSaludo();
             if($html===false) {
 				$formLogin = new \es\ucm\fdi\aw\FormularioLogin();

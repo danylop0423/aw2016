@@ -57,7 +57,10 @@ require_once 'util.php';
 				</li>
 
 				<li><a href="login.php">Mi Cuenta</a>
-					<?php $h=mostrarPerfil()?>
+					<?php 
+					//controlamos el acceso a mi perfil o a login
+					$h=mostrarPerfil()
+					?>
 					<ul>
 						<li><a href="<?= $h ?>">Mi Perfil</a></li>
 					    <li><a href="<?php $h=$h.'#missubastas';echo $h;?>">Mis Subastas</a></li>

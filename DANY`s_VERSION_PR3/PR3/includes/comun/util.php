@@ -1,6 +1,9 @@
 <?php
 use es\ucm\fdi\aw;
 
+//Funciones utiles llamadas por otros scripts, generalmente por vistas
+
+//Verifica si existe usuario logueado
 function usuarioIn($aplicat) {
   $res = false;
   $app = $aplicat;
@@ -14,6 +17,7 @@ function usuarioIn($aplicat) {
   return $res;
 }
 
+// verifica lo que se muestra en fución de usuario anónimo o logueado
 function mostrarSaludo(){
 	$app = aw\Aplicacion::getSingleton();
 	$user=usuarioIn($app);
@@ -27,6 +31,7 @@ function mostrarSaludo(){
 	return $html;
 }
 
+//verifica: si usuario esta logueado accede a miperfil de lo contrario a login
 function mostrarPerfil(){
 	$app = aw\Aplicacion::getSingleton();
 	$user=usuarioIn($app);

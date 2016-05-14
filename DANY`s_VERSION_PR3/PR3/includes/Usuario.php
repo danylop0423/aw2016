@@ -39,6 +39,7 @@ class Usuario {
 	$this->direccion = $direccion;
   }
 
+// busca y extrae un usuario en la BD  
 private static function buscaUsuario($email) {
     $app = App::getSingleton();
     $conn = $app->conexionBd();
@@ -55,6 +56,7 @@ private static function buscaUsuario($email) {
     return false;
   }
 
+// inserta usuario en la BD  
 private static function insertaUsuario($username,$apellido,$email,$credito,$cvv,$caduca,$direccion,$password) {
     $foto='img/avatar2.png';
 	$app = App::getSingleton();
@@ -80,7 +82,7 @@ private static function insertaUsuario($username,$apellido,$email,$credito,$cvv,
 
 
 
-  
+// funcion llamada al hacer login  
   public static function login($email, $password) {
     $user = self::buscaUsuario($email);
     if ($user && $user->compruebaPassword($password)) { 
@@ -90,6 +92,7 @@ private static function insertaUsuario($username,$apellido,$email,$credito,$cvv,
   }
 
   
+// función llamada al registrar un usuario   
   public static function registraUsuario($username,$apellido,$email,$credito,$cvv,$caduca,$direccion,$password) {
     $user = self::buscaUsuario($email);
     if ($user) { 
