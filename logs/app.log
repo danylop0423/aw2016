@@ -1,0 +1,1270 @@
+[2016-05-12 01:12:44] reverse-bid.INFO: Route: http://localhost:82/public/ [GET] [] {"uid":"27d95ad"}
+[2016-05-12 01:12:44] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0 [] {"uid":"27d95ad"}
+[2016-05-12 01:12:44] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"27d95ad"}
+[2016-05-12 01:12:44] reverse-bid.INFO: Partial: home.php [200] [] {"uid":"27d95ad"}
+[2016-05-12 01:12:44] reverse-bid.INFO: Arguments: [title] [] {"uid":"27d95ad"}
+[2016-05-12 01:15:05] reverse-bid.INFO: Route: http://localhost:82/ [GET] [] {"uid":"6891b7c"}
+[2016-05-12 01:15:05] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0 [] {"uid":"6891b7c"}
+[2016-05-12 01:15:05] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"6891b7c"}
+[2016-05-12 01:15:05] reverse-bid.INFO: Partial: home.php [200] [] {"uid":"6891b7c"}
+[2016-05-12 01:15:05] reverse-bid.INFO: Arguments: [title] [] {"uid":"6891b7c"}
+[2016-05-12 01:18:15] reverse-bid.INFO: Route: http://localhost:82/ [GET] [] {"uid":"662f54c"}
+[2016-05-12 01:18:15] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0 [] {"uid":"662f54c"}
+[2016-05-12 01:18:15] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"662f54c"}
+[2016-05-12 01:18:15] reverse-bid.INFO: Partial: home.php [200] [] {"uid":"662f54c"}
+[2016-05-12 01:18:15] reverse-bid.INFO: Arguments: [title] [] {"uid":"662f54c"}
+[2016-05-12 01:18:45] reverse-bid.INFO: Route: http://localhost:82/ [GET] [] {"uid":"f11c263"}
+[2016-05-12 01:18:45] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0 [] {"uid":"f11c263"}
+[2016-05-12 01:18:45] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"f11c263"}
+[2016-05-12 01:18:45] reverse-bid.INFO: Partial: home.php [200] [] {"uid":"f11c263"}
+[2016-05-12 01:18:45] reverse-bid.INFO: Arguments: [title] [] {"uid":"f11c263"}
+[2016-05-12 01:20:01] reverse-bid.INFO: Route: http://localhost:82/ [GET] [] {"uid":"0d5abfa"}
+[2016-05-12 01:20:01] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0 [] {"uid":"0d5abfa"}
+[2016-05-12 01:20:01] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"0d5abfa"}
+[2016-05-12 01:20:01] reverse-bid.INFO: Partial: home.php [200] [] {"uid":"0d5abfa"}
+[2016-05-12 01:20:01] reverse-bid.INFO: Arguments: [title] [] {"uid":"0d5abfa"}
+[2016-05-12 01:21:48] reverse-bid.INFO: Route: http://localhost:82/login [GET] [] {"uid":"1092763"}
+[2016-05-12 01:21:48] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0 [] {"uid":"1092763"}
+[2016-05-12 01:21:48] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"1092763"}
+[2016-05-12 01:21:48] reverse-bid.INFO: Partial: login.php [200] [] {"uid":"1092763"}
+[2016-05-12 01:21:48] reverse-bid.INFO: Arguments: [title] [] {"uid":"1092763"}
+[2016-05-12 01:22:09] reverse-bid.INFO: Route: http://localhost:82/login [POST] [] {"uid":"d2b25c6"}
+[2016-05-12 01:22:09] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0 [] {"uid":"d2b25c6"}
+[2016-05-12 01:22:09] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"d2b25c6"}
+[2016-05-12 01:22:09] reverse-bid.INFO: Partial: home.php [200] [] {"uid":"d2b25c6"}
+[2016-05-12 01:22:09] reverse-bid.INFO: Arguments: [title, loggedUser] [] {"uid":"d2b25c6"}
+[2016-05-12 01:22:38] reverse-bid.INFO: Route: http://localhost:82/logout [GET] [] {"uid":"4a2484e"}
+[2016-05-12 01:22:38] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0 [] {"uid":"4a2484e"}
+[2016-05-12 01:22:38] reverse-bid.INFO: Route: http://localhost:82/ [GET] [] {"uid":"b1f828b"}
+[2016-05-12 01:22:38] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0 [] {"uid":"b1f828b"}
+[2016-05-12 01:22:38] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"b1f828b"}
+[2016-05-12 01:22:38] reverse-bid.INFO: Partial: home.php [200] [] {"uid":"b1f828b"}
+[2016-05-12 01:22:38] reverse-bid.INFO: Arguments: [title] [] {"uid":"b1f828b"}
+[2016-05-12 01:22:48] reverse-bid.INFO: Route: http://localhost:82/ [GET] [] {"uid":"77f0cae"}
+[2016-05-12 01:22:48] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0 [] {"uid":"77f0cae"}
+[2016-05-12 01:22:48] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"77f0cae"}
+[2016-05-12 01:22:48] reverse-bid.INFO: Partial: home.php [200] [] {"uid":"77f0cae"}
+[2016-05-12 01:22:48] reverse-bid.INFO: Arguments: [title] [] {"uid":"77f0cae"}
+[2016-05-12 01:22:51] reverse-bid.INFO: Route: http://localhost:82/login [GET] [] {"uid":"4b2e125"}
+[2016-05-12 01:22:51] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0 [] {"uid":"4b2e125"}
+[2016-05-12 01:22:51] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"4b2e125"}
+[2016-05-12 01:22:51] reverse-bid.INFO: Partial: login.php [200] [] {"uid":"4b2e125"}
+[2016-05-12 01:22:51] reverse-bid.INFO: Arguments: [title] [] {"uid":"4b2e125"}
+[2016-05-12 01:23:15] reverse-bid.INFO: Route: http://localhost:82/login [POST] [] {"uid":"2cd4d2d"}
+[2016-05-12 01:23:15] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0 [] {"uid":"2cd4d2d"}
+[2016-05-12 01:23:15] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"2cd4d2d"}
+[2016-05-12 01:23:15] reverse-bid.INFO: Partial: home.php [200] [] {"uid":"2cd4d2d"}
+[2016-05-12 01:23:15] reverse-bid.INFO: Arguments: [title, loggedUser] [] {"uid":"2cd4d2d"}
+[2016-05-12 01:23:33] reverse-bid.INFO: Route: http://localhost:82/ [GET] [] {"uid":"a9de71a"}
+[2016-05-12 01:23:33] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0 [] {"uid":"a9de71a"}
+[2016-05-12 01:23:33] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"a9de71a"}
+[2016-05-12 01:23:33] reverse-bid.INFO: Partial: home.php [200] [] {"uid":"a9de71a"}
+[2016-05-12 01:23:33] reverse-bid.INFO: Arguments: [title] [] {"uid":"a9de71a"}
+[2016-05-12 01:24:45] reverse-bid.INFO: Route: http://localhost:82/logout [GET] [] {"uid":"be64f33"}
+[2016-05-12 01:24:45] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0 [] {"uid":"be64f33"}
+[2016-05-12 01:24:46] reverse-bid.INFO: Route: http://localhost:82/ [GET] [] {"uid":"ada44b7"}
+[2016-05-12 01:24:46] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0 [] {"uid":"ada44b7"}
+[2016-05-12 01:24:46] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"ada44b7"}
+[2016-05-12 01:24:46] reverse-bid.INFO: Partial: home.php [200] [] {"uid":"ada44b7"}
+[2016-05-12 01:24:46] reverse-bid.INFO: Arguments: [title] [] {"uid":"ada44b7"}
+[2016-05-12 01:24:49] reverse-bid.INFO: Route: http://localhost:82/nuevo-usuario [GET] [] {"uid":"7ecd658"}
+[2016-05-12 01:24:49] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0 [] {"uid":"7ecd658"}
+[2016-05-12 01:24:49] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"7ecd658"}
+[2016-05-12 01:24:49] reverse-bid.INFO: Partial: createUser.php [200] [] {"uid":"7ecd658"}
+[2016-05-12 01:24:49] reverse-bid.INFO: Arguments: [title] [] {"uid":"7ecd658"}
+[2016-05-12 01:27:14] reverse-bid.INFO: Route: http://localhost:82/nuevo-usuario [POST] [] {"uid":"572d826"}
+[2016-05-12 01:27:14] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0 [] {"uid":"572d826"}
+[2016-05-12 01:27:14] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"572d826"}
+[2016-05-12 01:27:14] reverse-bid.INFO: Partial: createUser.php [200] [] {"uid":"572d826"}
+[2016-05-12 01:27:14] reverse-bid.INFO: Arguments: [title] [] {"uid":"572d826"}
+[2016-05-12 01:28:21] reverse-bid.INFO: Route: http://localhost:82/login [GET] [] {"uid":"76a8e9e"}
+[2016-05-12 01:28:21] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0 [] {"uid":"76a8e9e"}
+[2016-05-12 01:28:21] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"76a8e9e"}
+[2016-05-12 01:28:21] reverse-bid.INFO: Partial: login.php [200] [] {"uid":"76a8e9e"}
+[2016-05-12 01:28:21] reverse-bid.INFO: Arguments: [title] [] {"uid":"76a8e9e"}
+[2016-05-12 01:33:59] reverse-bid.INFO: Route: http://localhost:82/ [GET] [] {"uid":"994c14a"}
+[2016-05-12 01:33:59] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0 [] {"uid":"994c14a"}
+[2016-05-12 01:33:59] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"994c14a"}
+[2016-05-12 01:33:59] reverse-bid.INFO: Partial: home.php [200] [] {"uid":"994c14a"}
+[2016-05-12 01:33:59] reverse-bid.INFO: Arguments: [title] [] {"uid":"994c14a"}
+[2016-05-12 01:34:03] reverse-bid.INFO: Route: http://localhost:82/ [GET] [] {"uid":"b8079af"}
+[2016-05-12 01:34:03] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0 [] {"uid":"b8079af"}
+[2016-05-12 01:34:03] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"b8079af"}
+[2016-05-12 01:34:03] reverse-bid.INFO: Partial: home.php [200] [] {"uid":"b8079af"}
+[2016-05-12 01:34:03] reverse-bid.INFO: Arguments: [title] [] {"uid":"b8079af"}
+[2016-05-12 01:34:05] reverse-bid.INFO: Route: http://localhost:82/nuevo-usuario [GET] [] {"uid":"c7374e6"}
+[2016-05-12 01:34:05] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0 [] {"uid":"c7374e6"}
+[2016-05-12 01:34:05] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"c7374e6"}
+[2016-05-12 01:34:05] reverse-bid.INFO: Partial: createUser.php [200] [] {"uid":"c7374e6"}
+[2016-05-12 01:34:05] reverse-bid.INFO: Arguments: [title] [] {"uid":"c7374e6"}
+[2016-05-12 01:42:02] reverse-bid.INFO: Route: http://localhost:82/nuevo-usuario [GET] [] {"uid":"616809e"}
+[2016-05-12 01:42:02] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0 [] {"uid":"616809e"}
+[2016-05-12 01:42:02] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"616809e"}
+[2016-05-12 01:42:02] reverse-bid.INFO: Partial: createUser.php [200] [] {"uid":"616809e"}
+[2016-05-12 01:42:02] reverse-bid.INFO: Arguments: [title] [] {"uid":"616809e"}
+[2016-05-12 01:42:04] reverse-bid.INFO: Route: http://localhost:82/ [GET] [] {"uid":"a1defbd"}
+[2016-05-12 01:42:04] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0 [] {"uid":"a1defbd"}
+[2016-05-12 01:42:04] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"a1defbd"}
+[2016-05-12 01:42:04] reverse-bid.INFO: Partial: home.php [200] [] {"uid":"a1defbd"}
+[2016-05-12 01:42:04] reverse-bid.INFO: Arguments: [title] [] {"uid":"a1defbd"}
+[2016-05-12 01:42:29] reverse-bid.INFO: Route: http://localhost:82/ [GET] [] {"uid":"b0392e5"}
+[2016-05-12 01:42:29] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0 [] {"uid":"b0392e5"}
+[2016-05-12 01:42:29] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"b0392e5"}
+[2016-05-12 01:42:29] reverse-bid.INFO: Partial: home.php [200] [] {"uid":"b0392e5"}
+[2016-05-12 01:42:29] reverse-bid.INFO: Arguments: [title] [] {"uid":"b0392e5"}
+[2016-05-12 01:42:30] reverse-bid.INFO: Route: http://localhost:82/ [GET] [] {"uid":"be33d8a"}
+[2016-05-12 01:42:30] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0 [] {"uid":"be33d8a"}
+[2016-05-12 01:42:30] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"be33d8a"}
+[2016-05-12 01:42:30] reverse-bid.INFO: Partial: home.php [200] [] {"uid":"be33d8a"}
+[2016-05-12 01:42:30] reverse-bid.INFO: Arguments: [title] [] {"uid":"be33d8a"}
+[2016-05-12 01:42:32] reverse-bid.INFO: Route: http://localhost:82/ [GET] [] {"uid":"d5955a4"}
+[2016-05-12 01:42:32] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0 [] {"uid":"d5955a4"}
+[2016-05-12 01:42:32] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"d5955a4"}
+[2016-05-12 01:42:32] reverse-bid.INFO: Partial: home.php [200] [] {"uid":"d5955a4"}
+[2016-05-12 01:42:32] reverse-bid.INFO: Arguments: [title] [] {"uid":"d5955a4"}
+[2016-05-12 01:42:34] reverse-bid.INFO: Route: http://localhost:82/ [GET] [] {"uid":"50c66f1"}
+[2016-05-12 01:42:34] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0 [] {"uid":"50c66f1"}
+[2016-05-12 01:42:34] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"50c66f1"}
+[2016-05-12 01:42:34] reverse-bid.INFO: Partial: home.php [200] [] {"uid":"50c66f1"}
+[2016-05-12 01:42:34] reverse-bid.INFO: Arguments: [title] [] {"uid":"50c66f1"}
+[2016-05-12 01:42:35] reverse-bid.INFO: Route: http://localhost:82/ [GET] [] {"uid":"7eda743"}
+[2016-05-12 01:42:35] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0 [] {"uid":"7eda743"}
+[2016-05-12 01:42:35] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"7eda743"}
+[2016-05-12 01:42:35] reverse-bid.INFO: Partial: home.php [200] [] {"uid":"7eda743"}
+[2016-05-12 01:42:35] reverse-bid.INFO: Arguments: [title] [] {"uid":"7eda743"}
+[2016-05-12 01:42:37] reverse-bid.INFO: Route: http://localhost:82/login [GET] [] {"uid":"80d948d"}
+[2016-05-12 01:42:37] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0 [] {"uid":"80d948d"}
+[2016-05-12 01:42:37] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"80d948d"}
+[2016-05-12 01:42:37] reverse-bid.INFO: Partial: login.php [200] [] {"uid":"80d948d"}
+[2016-05-12 01:42:37] reverse-bid.INFO: Arguments: [title] [] {"uid":"80d948d"}
+[2016-05-12 01:42:40] reverse-bid.INFO: Route: http://localhost:82/nuevo-usuario [GET] [] {"uid":"88b92b3"}
+[2016-05-12 01:42:40] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0 [] {"uid":"88b92b3"}
+[2016-05-12 01:42:40] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"88b92b3"}
+[2016-05-12 01:42:40] reverse-bid.INFO: Partial: createUser.php [200] [] {"uid":"88b92b3"}
+[2016-05-12 01:42:40] reverse-bid.INFO: Arguments: [title] [] {"uid":"88b92b3"}
+[2016-05-12 18:43:42] reverse-bid.INFO: Route: http://localhost:82/ [GET] [] {"uid":"0c798b2"}
+[2016-05-12 18:43:42] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"0c798b2"}
+[2016-05-12 18:43:42] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"0c798b2"}
+[2016-05-12 18:43:42] reverse-bid.INFO: Partial: home.php [200] [] {"uid":"0c798b2"}
+[2016-05-12 18:43:42] reverse-bid.INFO: Arguments: [title] [] {"uid":"0c798b2"}
+[2016-05-12 18:45:22] reverse-bid.INFO: Route: http://localhost:82/nuevo-usuario [GET] [] {"uid":"1f7ddae"}
+[2016-05-12 18:45:22] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"1f7ddae"}
+[2016-05-12 18:45:22] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"1f7ddae"}
+[2016-05-12 18:45:22] reverse-bid.INFO: Partial: createUser.php [200] [] {"uid":"1f7ddae"}
+[2016-05-12 18:45:22] reverse-bid.INFO: Arguments: [title] [] {"uid":"1f7ddae"}
+[2016-05-12 18:52:22] reverse-bid.INFO: Route: http://localhost:82/nuevo-usuario [GET] [] {"uid":"1017b35"}
+[2016-05-12 18:52:22] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"1017b35"}
+[2016-05-12 18:52:22] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"1017b35"}
+[2016-05-12 18:52:22] reverse-bid.INFO: Partial: createUser.php [200] [] {"uid":"1017b35"}
+[2016-05-12 18:52:22] reverse-bid.INFO: Arguments: [title] [] {"uid":"1017b35"}
+[2016-05-12 18:52:52] reverse-bid.INFO: Route: http://localhost:82/nuevo-usuario [GET] [] {"uid":"bd496a4"}
+[2016-05-12 18:52:52] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"bd496a4"}
+[2016-05-12 18:52:52] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"bd496a4"}
+[2016-05-12 18:52:52] reverse-bid.INFO: Partial: createUser.php [200] [] {"uid":"bd496a4"}
+[2016-05-12 18:52:52] reverse-bid.INFO: Arguments: [title] [] {"uid":"bd496a4"}
+[2016-05-12 18:55:05] reverse-bid.INFO: Route: http://localhost:82/nuevo-usuario [POST] [] {"uid":"eb4bb85"}
+[2016-05-12 18:55:05] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"eb4bb85"}
+[2016-05-12 18:55:05] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"eb4bb85"}
+[2016-05-12 18:55:05] reverse-bid.INFO: Partial: createUser.php [200] [] {"uid":"eb4bb85"}
+[2016-05-12 18:55:05] reverse-bid.INFO: Arguments: [title, error] [] {"uid":"eb4bb85"}
+[2016-05-12 18:56:53] reverse-bid.INFO: Route: http://localhost:82/nuevo-usuario [POST] [] {"uid":"67fa2a8"}
+[2016-05-12 18:56:53] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"67fa2a8"}
+[2016-05-12 18:56:53] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"67fa2a8"}
+[2016-05-12 18:56:53] reverse-bid.INFO: Partial: createUser.php [200] [] {"uid":"67fa2a8"}
+[2016-05-12 18:56:53] reverse-bid.INFO: Arguments: [title, error] [] {"uid":"67fa2a8"}
+[2016-05-12 19:10:27] reverse-bid.INFO: Route: http://localhost:82/ [GET] [] {"uid":"ff1ce04"}
+[2016-05-12 19:10:27] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"ff1ce04"}
+[2016-05-12 19:10:27] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"ff1ce04"}
+[2016-05-12 19:10:27] reverse-bid.INFO: Partial: home.php [200] [] {"uid":"ff1ce04"}
+[2016-05-12 19:10:27] reverse-bid.INFO: Arguments: [title] [] {"uid":"ff1ce04"}
+[2016-05-12 19:10:29] reverse-bid.INFO: Route: http://localhost:82/ [GET] [] {"uid":"7968aaa"}
+[2016-05-12 19:10:29] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"7968aaa"}
+[2016-05-12 19:10:29] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"7968aaa"}
+[2016-05-12 19:10:29] reverse-bid.INFO: Partial: home.php [200] [] {"uid":"7968aaa"}
+[2016-05-12 19:10:29] reverse-bid.INFO: Arguments: [title] [] {"uid":"7968aaa"}
+[2016-05-12 19:13:32] reverse-bid.INFO: Route: http://localhost:82/ [GET] [] {"uid":"43e90b8"}
+[2016-05-12 19:13:32] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"43e90b8"}
+[2016-05-12 19:13:32] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"43e90b8"}
+[2016-05-12 19:13:32] reverse-bid.INFO: Partial: home.php [200] [] {"uid":"43e90b8"}
+[2016-05-12 19:13:32] reverse-bid.INFO: Arguments: [title] [] {"uid":"43e90b8"}
+[2016-05-12 19:16:11] reverse-bid.INFO: Route: http://localhost:82/ [GET] [] {"uid":"1c39c3f"}
+[2016-05-12 19:16:11] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"1c39c3f"}
+[2016-05-12 19:16:11] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"1c39c3f"}
+[2016-05-12 19:16:11] reverse-bid.INFO: Partial: home.php [200] [] {"uid":"1c39c3f"}
+[2016-05-12 19:16:11] reverse-bid.INFO: Arguments: [title] [] {"uid":"1c39c3f"}
+[2016-05-12 19:19:08] reverse-bid.INFO: Route: http://localhost:82/ [GET] [] {"uid":"7d3f572"}
+[2016-05-12 19:19:08] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"7d3f572"}
+[2016-05-12 19:19:08] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"7d3f572"}
+[2016-05-12 19:19:08] reverse-bid.INFO: Partial: home.php [200] [] {"uid":"7d3f572"}
+[2016-05-12 19:19:08] reverse-bid.INFO: Arguments: [title] [] {"uid":"7d3f572"}
+[2016-05-12 19:19:35] reverse-bid.INFO: Route: http://localhost:82/ [GET] [] {"uid":"2277621"}
+[2016-05-12 19:19:35] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"2277621"}
+[2016-05-12 19:19:35] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"2277621"}
+[2016-05-12 19:19:35] reverse-bid.INFO: Partial: home.php [200] [] {"uid":"2277621"}
+[2016-05-12 19:19:35] reverse-bid.INFO: Arguments: [title] [] {"uid":"2277621"}
+[2016-05-12 19:19:43] reverse-bid.INFO: Route: http://localhost:82/login [GET] [] {"uid":"2cd9afa"}
+[2016-05-12 19:19:43] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"2cd9afa"}
+[2016-05-12 19:19:43] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"2cd9afa"}
+[2016-05-12 19:19:43] reverse-bid.INFO: Partial: login.php [200] [] {"uid":"2cd9afa"}
+[2016-05-12 19:19:43] reverse-bid.INFO: Arguments: [title] [] {"uid":"2cd9afa"}
+[2016-05-12 19:28:14] reverse-bid.INFO: Route: http://localhost:82/login [GET] [] {"uid":"52450e8"}
+[2016-05-12 19:28:14] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"52450e8"}
+[2016-05-12 19:28:14] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"52450e8"}
+[2016-05-12 19:28:14] reverse-bid.INFO: Partial: login.php [200] [] {"uid":"52450e8"}
+[2016-05-12 19:28:14] reverse-bid.INFO: Arguments: [title] [] {"uid":"52450e8"}
+[2016-05-12 19:30:20] reverse-bid.INFO: Route: http://localhost:82/login [GET] [] {"uid":"38a8d95"}
+[2016-05-12 19:30:20] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"38a8d95"}
+[2016-05-12 19:30:20] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"38a8d95"}
+[2016-05-12 19:30:20] reverse-bid.INFO: Partial: login.php [200] [] {"uid":"38a8d95"}
+[2016-05-12 19:30:20] reverse-bid.INFO: Arguments: [title] [] {"uid":"38a8d95"}
+[2016-05-12 19:30:23] reverse-bid.INFO: Route: http://localhost:82/miperfil [GET] [] {"uid":"2ec980a"}
+[2016-05-12 19:30:23] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"2ec980a"}
+[2016-05-12 19:30:23] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"2ec980a"}
+[2016-05-12 19:30:23] reverse-bid.INFO: Partial: miperfil.php [200] [] {"uid":"2ec980a"}
+[2016-05-12 19:30:23] reverse-bid.INFO: Arguments: [title] [] {"uid":"2ec980a"}
+[2016-05-12 19:54:02] reverse-bid.INFO: Route: http://localhost:82/miperfil [GET] [] {"uid":"e6ea780"}
+[2016-05-12 19:54:02] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"e6ea780"}
+[2016-05-12 19:54:02] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"e6ea780"}
+[2016-05-12 19:54:02] reverse-bid.INFO: Partial: miperfil.php [200] [] {"uid":"e6ea780"}
+[2016-05-12 19:54:02] reverse-bid.INFO: Arguments: [title] [] {"uid":"e6ea780"}
+[2016-05-12 19:55:04] reverse-bid.INFO: Route: http://localhost:82/miperfil [GET] [] {"uid":"d6060d8"}
+[2016-05-12 19:55:04] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"d6060d8"}
+[2016-05-12 19:55:04] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"d6060d8"}
+[2016-05-12 19:55:04] reverse-bid.INFO: Partial: miperfil.php [200] [] {"uid":"d6060d8"}
+[2016-05-12 19:55:04] reverse-bid.INFO: Arguments: [title] [] {"uid":"d6060d8"}
+[2016-05-12 19:55:34] reverse-bid.INFO: Route: http://localhost:82/miperfil [GET] [] {"uid":"211d118"}
+[2016-05-12 19:55:34] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"211d118"}
+[2016-05-12 19:55:34] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"211d118"}
+[2016-05-12 19:55:34] reverse-bid.INFO: Partial: miperfil.php [200] [] {"uid":"211d118"}
+[2016-05-12 19:55:34] reverse-bid.INFO: Arguments: [title] [] {"uid":"211d118"}
+[2016-05-12 19:56:27] reverse-bid.INFO: Route: http://localhost:82/miperfil [GET] [] {"uid":"15518f0"}
+[2016-05-12 19:56:27] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"15518f0"}
+[2016-05-12 19:56:27] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"15518f0"}
+[2016-05-12 19:56:27] reverse-bid.INFO: Partial: miperfil.php [200] [] {"uid":"15518f0"}
+[2016-05-12 19:56:27] reverse-bid.INFO: Arguments: [title] [] {"uid":"15518f0"}
+[2016-05-12 19:57:57] reverse-bid.INFO: Route: http://localhost:82/miperfil [GET] [] {"uid":"01a134c"}
+[2016-05-12 19:57:57] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"01a134c"}
+[2016-05-12 19:57:57] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"01a134c"}
+[2016-05-12 19:57:57] reverse-bid.INFO: Partial: miperfil.php [200] [] {"uid":"01a134c"}
+[2016-05-12 19:57:57] reverse-bid.INFO: Arguments: [title] [] {"uid":"01a134c"}
+[2016-05-12 19:59:14] reverse-bid.INFO: Route: http://localhost:82/miperfil [GET] [] {"uid":"f9e2491"}
+[2016-05-12 19:59:14] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"f9e2491"}
+[2016-05-12 19:59:14] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"f9e2491"}
+[2016-05-12 19:59:14] reverse-bid.INFO: Partial: miperfil.php [200] [] {"uid":"f9e2491"}
+[2016-05-12 19:59:14] reverse-bid.INFO: Arguments: [title] [] {"uid":"f9e2491"}
+[2016-05-12 20:06:33] reverse-bid.INFO: Route: http://localhost:82/miperfil [GET] [] {"uid":"8cf9734"}
+[2016-05-12 20:06:33] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"8cf9734"}
+[2016-05-12 20:06:33] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"8cf9734"}
+[2016-05-12 20:06:33] reverse-bid.INFO: Partial: miperfil.php [200] [] {"uid":"8cf9734"}
+[2016-05-12 20:06:33] reverse-bid.INFO: Arguments: [title] [] {"uid":"8cf9734"}
+[2016-05-12 20:07:03] reverse-bid.INFO: Route: http://localhost:82/miperfil [GET] [] {"uid":"2b8f206"}
+[2016-05-12 20:07:03] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"2b8f206"}
+[2016-05-12 20:07:03] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"2b8f206"}
+[2016-05-12 20:07:03] reverse-bid.INFO: Partial: miperfil.php [200] [] {"uid":"2b8f206"}
+[2016-05-12 20:07:03] reverse-bid.INFO: Arguments: [title] [] {"uid":"2b8f206"}
+[2016-05-12 20:09:14] reverse-bid.INFO: Route: http://localhost:82/miperfil [GET] [] {"uid":"44e97ca"}
+[2016-05-12 20:09:14] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"44e97ca"}
+[2016-05-12 20:09:14] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"44e97ca"}
+[2016-05-12 20:09:14] reverse-bid.INFO: Partial: miperfil.php [200] [] {"uid":"44e97ca"}
+[2016-05-12 20:09:14] reverse-bid.INFO: Arguments: [title] [] {"uid":"44e97ca"}
+[2016-05-12 20:09:15] reverse-bid.INFO: Route: http://localhost:82/miperfil [GET] [] {"uid":"15e90e2"}
+[2016-05-12 20:09:15] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"15e90e2"}
+[2016-05-12 20:09:15] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"15e90e2"}
+[2016-05-12 20:09:15] reverse-bid.INFO: Partial: miperfil.php [200] [] {"uid":"15e90e2"}
+[2016-05-12 20:09:15] reverse-bid.INFO: Arguments: [title] [] {"uid":"15e90e2"}
+[2016-05-12 20:14:04] reverse-bid.INFO: Route: http://localhost:82/miperfil [GET] [] {"uid":"1b5d81d"}
+[2016-05-12 20:14:04] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"1b5d81d"}
+[2016-05-12 20:14:04] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"1b5d81d"}
+[2016-05-12 20:14:04] reverse-bid.INFO: Partial: miperfil.php [200] [] {"uid":"1b5d81d"}
+[2016-05-12 20:14:04] reverse-bid.INFO: Arguments: [title] [] {"uid":"1b5d81d"}
+[2016-05-12 20:15:31] reverse-bid.INFO: Route: http://localhost:82/miperfil [GET] [] {"uid":"912a1f0"}
+[2016-05-12 20:15:31] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"912a1f0"}
+[2016-05-12 20:15:31] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"912a1f0"}
+[2016-05-12 20:15:31] reverse-bid.INFO: Partial: miperfil.php [200] [] {"uid":"912a1f0"}
+[2016-05-12 20:15:31] reverse-bid.INFO: Arguments: [title] [] {"uid":"912a1f0"}
+[2016-05-12 20:18:32] reverse-bid.INFO: Route: http://localhost:82/miperfil [GET] [] {"uid":"3ecd458"}
+[2016-05-12 20:18:32] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"3ecd458"}
+[2016-05-12 20:18:32] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"3ecd458"}
+[2016-05-12 20:18:32] reverse-bid.INFO: Partial: miperfil.php [200] [] {"uid":"3ecd458"}
+[2016-05-12 20:18:32] reverse-bid.INFO: Arguments: [title] [] {"uid":"3ecd458"}
+[2016-05-12 20:25:56] reverse-bid.INFO: Route: http://localhost:82/miperfil [GET] [] {"uid":"822d5aa"}
+[2016-05-12 20:25:56] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"822d5aa"}
+[2016-05-12 20:25:56] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"822d5aa"}
+[2016-05-12 20:25:56] reverse-bid.INFO: Partial: miperfil.php [200] [] {"uid":"822d5aa"}
+[2016-05-12 20:25:56] reverse-bid.INFO: Arguments: [title] [] {"uid":"822d5aa"}
+[2016-05-12 20:27:13] reverse-bid.INFO: Route: http://localhost:82/miperfil [GET] [] {"uid":"f1bb09c"}
+[2016-05-12 20:27:13] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"f1bb09c"}
+[2016-05-12 20:27:13] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"f1bb09c"}
+[2016-05-12 20:27:13] reverse-bid.INFO: Partial: miperfil.php [200] [] {"uid":"f1bb09c"}
+[2016-05-12 20:27:13] reverse-bid.INFO: Arguments: [title] [] {"uid":"f1bb09c"}
+[2016-05-12 20:27:56] reverse-bid.INFO: Route: http://localhost:82/miperfil [GET] [] {"uid":"6b0b07a"}
+[2016-05-12 20:27:56] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"6b0b07a"}
+[2016-05-12 20:27:56] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"6b0b07a"}
+[2016-05-12 20:27:56] reverse-bid.INFO: Partial: miperfil.php [200] [] {"uid":"6b0b07a"}
+[2016-05-12 20:27:56] reverse-bid.INFO: Arguments: [title] [] {"uid":"6b0b07a"}
+[2016-05-12 20:32:41] reverse-bid.INFO: Route: http://localhost:82/miperfil [GET] [] {"uid":"2d75ff3"}
+[2016-05-12 20:32:41] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"2d75ff3"}
+[2016-05-12 20:32:41] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"2d75ff3"}
+[2016-05-12 20:32:41] reverse-bid.INFO: Partial: miperfil.php [200] [] {"uid":"2d75ff3"}
+[2016-05-12 20:32:41] reverse-bid.INFO: Arguments: [title] [] {"uid":"2d75ff3"}
+[2016-05-12 20:32:57] reverse-bid.INFO: Route: http://localhost:82/miperfil [GET] [] {"uid":"afb999c"}
+[2016-05-12 20:32:57] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"afb999c"}
+[2016-05-12 20:32:57] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"afb999c"}
+[2016-05-12 20:32:57] reverse-bid.INFO: Partial: miperfil.php [200] [] {"uid":"afb999c"}
+[2016-05-12 20:32:57] reverse-bid.INFO: Arguments: [title] [] {"uid":"afb999c"}
+[2016-05-12 20:34:10] reverse-bid.INFO: Route: http://localhost:82/miperfil [GET] [] {"uid":"5513f0c"}
+[2016-05-12 20:34:10] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"5513f0c"}
+[2016-05-12 20:34:10] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"5513f0c"}
+[2016-05-12 20:34:10] reverse-bid.INFO: Partial: miperfil.php [200] [] {"uid":"5513f0c"}
+[2016-05-12 20:34:10] reverse-bid.INFO: Arguments: [title] [] {"uid":"5513f0c"}
+[2016-05-12 20:35:56] reverse-bid.INFO: Route: http://localhost:82/miperfil [GET] [] {"uid":"370a5ce"}
+[2016-05-12 20:35:56] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"370a5ce"}
+[2016-05-12 20:35:56] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"370a5ce"}
+[2016-05-12 20:35:56] reverse-bid.INFO: Partial: miperfil.php [200] [] {"uid":"370a5ce"}
+[2016-05-12 20:35:56] reverse-bid.INFO: Arguments: [title] [] {"uid":"370a5ce"}
+[2016-05-12 20:39:40] reverse-bid.INFO: Route: http://localhost:82/miperfil [GET] [] {"uid":"e768c21"}
+[2016-05-12 20:39:40] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"e768c21"}
+[2016-05-12 20:39:40] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"e768c21"}
+[2016-05-12 20:39:40] reverse-bid.INFO: Partial: miperfil.php [200] [] {"uid":"e768c21"}
+[2016-05-12 20:39:40] reverse-bid.INFO: Arguments: [title] [] {"uid":"e768c21"}
+[2016-05-12 20:41:57] reverse-bid.INFO: Route: http://localhost:82/miperfil [GET] [] {"uid":"0da31b7"}
+[2016-05-12 20:41:57] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"0da31b7"}
+[2016-05-12 20:41:57] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"0da31b7"}
+[2016-05-12 20:41:57] reverse-bid.INFO: Partial: miperfil.php [200] [] {"uid":"0da31b7"}
+[2016-05-12 20:41:57] reverse-bid.INFO: Arguments: [title] [] {"uid":"0da31b7"}
+[2016-05-12 20:42:16] reverse-bid.INFO: Route: http://localhost:82/miperfil [GET] [] {"uid":"8e0ef48"}
+[2016-05-12 20:42:16] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"8e0ef48"}
+[2016-05-12 20:42:16] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"8e0ef48"}
+[2016-05-12 20:42:16] reverse-bid.INFO: Partial: miperfil.php [200] [] {"uid":"8e0ef48"}
+[2016-05-12 20:42:16] reverse-bid.INFO: Arguments: [title] [] {"uid":"8e0ef48"}
+[2016-05-12 20:42:58] reverse-bid.INFO: Route: http://localhost:82/miperfil [GET] [] {"uid":"770f654"}
+[2016-05-12 20:42:58] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"770f654"}
+[2016-05-12 20:42:58] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"770f654"}
+[2016-05-12 20:42:58] reverse-bid.INFO: Partial: miperfil.php [200] [] {"uid":"770f654"}
+[2016-05-12 20:42:58] reverse-bid.INFO: Arguments: [title] [] {"uid":"770f654"}
+[2016-05-12 20:46:40] reverse-bid.INFO: Route: http://localhost:82/miperfil [GET] [] {"uid":"f80a2f3"}
+[2016-05-12 20:46:40] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"f80a2f3"}
+[2016-05-12 20:46:40] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"f80a2f3"}
+[2016-05-12 20:46:40] reverse-bid.INFO: Partial: miperfil.php [200] [] {"uid":"f80a2f3"}
+[2016-05-12 20:46:40] reverse-bid.INFO: Arguments: [title] [] {"uid":"f80a2f3"}
+[2016-05-12 20:46:59] reverse-bid.INFO: Route: http://localhost:82/miperfil [GET] [] {"uid":"8bd2a74"}
+[2016-05-12 20:46:59] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"8bd2a74"}
+[2016-05-12 20:46:59] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"8bd2a74"}
+[2016-05-12 20:46:59] reverse-bid.INFO: Partial: miperfil.php [200] [] {"uid":"8bd2a74"}
+[2016-05-12 20:46:59] reverse-bid.INFO: Arguments: [title] [] {"uid":"8bd2a74"}
+[2016-05-12 20:47:38] reverse-bid.INFO: Route: http://localhost:82/miperfil [GET] [] {"uid":"04974e0"}
+[2016-05-12 20:47:38] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"04974e0"}
+[2016-05-12 20:47:38] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"04974e0"}
+[2016-05-12 20:47:38] reverse-bid.INFO: Partial: miperfil.php [200] [] {"uid":"04974e0"}
+[2016-05-12 20:47:38] reverse-bid.INFO: Arguments: [title] [] {"uid":"04974e0"}
+[2016-05-12 20:48:34] reverse-bid.INFO: Route: http://localhost:82/miperfil [GET] [] {"uid":"61ed1e2"}
+[2016-05-12 20:48:34] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"61ed1e2"}
+[2016-05-12 20:48:34] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"61ed1e2"}
+[2016-05-12 20:48:34] reverse-bid.INFO: Partial: miperfil.php [200] [] {"uid":"61ed1e2"}
+[2016-05-12 20:48:34] reverse-bid.INFO: Arguments: [title] [] {"uid":"61ed1e2"}
+[2016-05-12 20:48:47] reverse-bid.INFO: Route: http://localhost:82/miperfil [GET] [] {"uid":"b0ddaab"}
+[2016-05-12 20:48:47] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"b0ddaab"}
+[2016-05-12 20:48:47] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"b0ddaab"}
+[2016-05-12 20:48:47] reverse-bid.INFO: Partial: miperfil.php [200] [] {"uid":"b0ddaab"}
+[2016-05-12 20:48:47] reverse-bid.INFO: Arguments: [title] [] {"uid":"b0ddaab"}
+[2016-05-12 20:48:47] reverse-bid.INFO: Route: http://localhost:82/miperfil [GET] [] {"uid":"091cc53"}
+[2016-05-12 20:48:47] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"091cc53"}
+[2016-05-12 20:48:47] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"091cc53"}
+[2016-05-12 20:48:47] reverse-bid.INFO: Partial: miperfil.php [200] [] {"uid":"091cc53"}
+[2016-05-12 20:48:47] reverse-bid.INFO: Arguments: [title] [] {"uid":"091cc53"}
+[2016-05-12 20:49:10] reverse-bid.INFO: Route: http://localhost:82/miperfil [GET] [] {"uid":"35059a7"}
+[2016-05-12 20:49:10] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"35059a7"}
+[2016-05-12 20:49:10] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"35059a7"}
+[2016-05-12 20:49:10] reverse-bid.INFO: Partial: miperfil.php [200] [] {"uid":"35059a7"}
+[2016-05-12 20:49:10] reverse-bid.INFO: Arguments: [title] [] {"uid":"35059a7"}
+[2016-05-12 20:49:12] reverse-bid.INFO: Route: http://localhost:82/miperfil [GET] [] {"uid":"e77c0dc"}
+[2016-05-12 20:49:12] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"e77c0dc"}
+[2016-05-12 20:49:12] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"e77c0dc"}
+[2016-05-12 20:49:12] reverse-bid.INFO: Partial: miperfil.php [200] [] {"uid":"e77c0dc"}
+[2016-05-12 20:49:12] reverse-bid.INFO: Arguments: [title] [] {"uid":"e77c0dc"}
+[2016-05-12 20:49:49] reverse-bid.INFO: Route: http://localhost:82/miperfil [GET] [] {"uid":"0177356"}
+[2016-05-12 20:49:49] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"0177356"}
+[2016-05-12 20:49:49] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"0177356"}
+[2016-05-12 20:49:49] reverse-bid.INFO: Partial: miperfil.php [200] [] {"uid":"0177356"}
+[2016-05-12 20:49:49] reverse-bid.INFO: Arguments: [title] [] {"uid":"0177356"}
+[2016-05-12 20:50:57] reverse-bid.INFO: Route: http://localhost:82/miperfil [GET] [] {"uid":"fcca8cc"}
+[2016-05-12 20:50:57] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"fcca8cc"}
+[2016-05-12 20:50:57] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"fcca8cc"}
+[2016-05-12 20:50:57] reverse-bid.INFO: Partial: miperfil.php [200] [] {"uid":"fcca8cc"}
+[2016-05-12 20:50:57] reverse-bid.INFO: Arguments: [title] [] {"uid":"fcca8cc"}
+[2016-05-12 20:52:08] reverse-bid.INFO: Route: http://localhost:82/miperfil [GET] [] {"uid":"1c44c13"}
+[2016-05-12 20:52:08] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"1c44c13"}
+[2016-05-12 20:52:08] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"1c44c13"}
+[2016-05-12 20:52:08] reverse-bid.INFO: Partial: miperfil.php [200] [] {"uid":"1c44c13"}
+[2016-05-12 20:52:08] reverse-bid.INFO: Arguments: [title] [] {"uid":"1c44c13"}
+[2016-05-12 20:52:09] reverse-bid.INFO: Route: http://localhost:82/miperfil [GET] [] {"uid":"a862a93"}
+[2016-05-12 20:52:09] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"a862a93"}
+[2016-05-12 20:52:09] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"a862a93"}
+[2016-05-12 20:52:09] reverse-bid.INFO: Partial: miperfil.php [200] [] {"uid":"a862a93"}
+[2016-05-12 20:52:09] reverse-bid.INFO: Arguments: [title] [] {"uid":"a862a93"}
+[2016-05-12 20:52:10] reverse-bid.INFO: Route: http://localhost:82/miperfil [GET] [] {"uid":"95e06d6"}
+[2016-05-12 20:52:10] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"95e06d6"}
+[2016-05-12 20:52:10] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"95e06d6"}
+[2016-05-12 20:52:10] reverse-bid.INFO: Partial: miperfil.php [200] [] {"uid":"95e06d6"}
+[2016-05-12 20:52:10] reverse-bid.INFO: Arguments: [title] [] {"uid":"95e06d6"}
+[2016-05-12 20:52:10] reverse-bid.INFO: Route: http://localhost:82/miperfil [GET] [] {"uid":"6a0035c"}
+[2016-05-12 20:52:10] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"6a0035c"}
+[2016-05-12 20:52:10] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"6a0035c"}
+[2016-05-12 20:52:10] reverse-bid.INFO: Partial: miperfil.php [200] [] {"uid":"6a0035c"}
+[2016-05-12 20:52:10] reverse-bid.INFO: Arguments: [title] [] {"uid":"6a0035c"}
+[2016-05-12 20:52:10] reverse-bid.INFO: Route: http://localhost:82/miperfil [GET] [] {"uid":"926f2d0"}
+[2016-05-12 20:52:10] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"926f2d0"}
+[2016-05-12 20:52:10] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"926f2d0"}
+[2016-05-12 20:52:10] reverse-bid.INFO: Partial: miperfil.php [200] [] {"uid":"926f2d0"}
+[2016-05-12 20:52:10] reverse-bid.INFO: Arguments: [title] [] {"uid":"926f2d0"}
+[2016-05-12 20:52:59] reverse-bid.INFO: Route: http://localhost:82/miperfil [GET] [] {"uid":"9c20540"}
+[2016-05-12 20:52:59] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"9c20540"}
+[2016-05-12 20:52:59] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"9c20540"}
+[2016-05-12 20:52:59] reverse-bid.INFO: Partial: miperfil.php [200] [] {"uid":"9c20540"}
+[2016-05-12 20:52:59] reverse-bid.INFO: Arguments: [title] [] {"uid":"9c20540"}
+[2016-05-12 20:54:07] reverse-bid.INFO: Route: http://localhost:82/miperfil [GET] [] {"uid":"4caf02d"}
+[2016-05-12 20:54:07] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"4caf02d"}
+[2016-05-12 20:54:07] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"4caf02d"}
+[2016-05-12 20:54:07] reverse-bid.INFO: Partial: miperfil.php [200] [] {"uid":"4caf02d"}
+[2016-05-12 20:54:07] reverse-bid.INFO: Arguments: [title] [] {"uid":"4caf02d"}
+[2016-05-12 20:54:19] reverse-bid.INFO: Route: http://localhost:82/miperfil [GET] [] {"uid":"ff22f99"}
+[2016-05-12 20:54:19] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"ff22f99"}
+[2016-05-12 20:54:19] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"ff22f99"}
+[2016-05-12 20:54:19] reverse-bid.INFO: Partial: miperfil.php [200] [] {"uid":"ff22f99"}
+[2016-05-12 20:54:19] reverse-bid.INFO: Arguments: [title] [] {"uid":"ff22f99"}
+[2016-05-12 20:54:58] reverse-bid.INFO: Route: http://localhost:82/miperfil [GET] [] {"uid":"3b13ee4"}
+[2016-05-12 20:54:58] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"3b13ee4"}
+[2016-05-12 20:54:58] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"3b13ee4"}
+[2016-05-12 20:54:58] reverse-bid.INFO: Partial: miperfil.php [200] [] {"uid":"3b13ee4"}
+[2016-05-12 20:54:58] reverse-bid.INFO: Arguments: [title] [] {"uid":"3b13ee4"}
+[2016-05-12 20:56:53] reverse-bid.INFO: Route: http://localhost:82/miperfil [GET] [] {"uid":"257349d"}
+[2016-05-12 20:56:53] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"257349d"}
+[2016-05-12 20:56:53] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"257349d"}
+[2016-05-12 20:56:53] reverse-bid.INFO: Partial: miperfil.php [200] [] {"uid":"257349d"}
+[2016-05-12 20:56:53] reverse-bid.INFO: Arguments: [title] [] {"uid":"257349d"}
+[2016-05-12 20:57:30] reverse-bid.INFO: Route: http://localhost:82/miperfil [GET] [] {"uid":"107572b"}
+[2016-05-12 20:57:30] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"107572b"}
+[2016-05-12 20:57:30] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"107572b"}
+[2016-05-12 20:57:30] reverse-bid.INFO: Partial: miperfil.php [200] [] {"uid":"107572b"}
+[2016-05-12 20:57:30] reverse-bid.INFO: Arguments: [title] [] {"uid":"107572b"}
+[2016-05-12 21:21:00] reverse-bid.INFO: Route: http://localhost:82/miperfil [GET] [] {"uid":"53547ac"}
+[2016-05-12 21:21:00] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"53547ac"}
+[2016-05-12 21:21:00] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"53547ac"}
+[2016-05-12 21:21:00] reverse-bid.INFO: Partial: miperfil.php [200] [] {"uid":"53547ac"}
+[2016-05-12 21:21:00] reverse-bid.INFO: Arguments: [title] [] {"uid":"53547ac"}
+[2016-05-12 21:21:37] reverse-bid.INFO: Route: http://localhost:82/miperfil [GET] [] {"uid":"8dc5be2"}
+[2016-05-12 21:21:37] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"8dc5be2"}
+[2016-05-12 21:21:37] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"8dc5be2"}
+[2016-05-12 21:21:37] reverse-bid.INFO: Partial: miperfil.php [200] [] {"uid":"8dc5be2"}
+[2016-05-12 21:21:37] reverse-bid.INFO: Arguments: [title] [] {"uid":"8dc5be2"}
+[2016-05-12 21:23:24] reverse-bid.INFO: Route: http://localhost:82/miperfil [GET] [] {"uid":"3f7fac4"}
+[2016-05-12 21:23:24] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"3f7fac4"}
+[2016-05-12 21:23:24] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"3f7fac4"}
+[2016-05-12 21:23:24] reverse-bid.INFO: Partial: miperfil.php [200] [] {"uid":"3f7fac4"}
+[2016-05-12 21:23:24] reverse-bid.INFO: Arguments: [title] [] {"uid":"3f7fac4"}
+[2016-05-12 21:23:25] reverse-bid.INFO: Route: http://localhost:82/miperfil [GET] [] {"uid":"45944ac"}
+[2016-05-12 21:23:25] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"45944ac"}
+[2016-05-12 21:23:25] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"45944ac"}
+[2016-05-12 21:23:25] reverse-bid.INFO: Partial: miperfil.php [200] [] {"uid":"45944ac"}
+[2016-05-12 21:23:25] reverse-bid.INFO: Arguments: [title] [] {"uid":"45944ac"}
+[2016-05-12 21:23:26] reverse-bid.INFO: Route: http://localhost:82/miperfil [GET] [] {"uid":"814f0dd"}
+[2016-05-12 21:23:26] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"814f0dd"}
+[2016-05-12 21:23:26] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"814f0dd"}
+[2016-05-12 21:23:26] reverse-bid.INFO: Partial: miperfil.php [200] [] {"uid":"814f0dd"}
+[2016-05-12 21:23:26] reverse-bid.INFO: Arguments: [title] [] {"uid":"814f0dd"}
+[2016-05-12 21:23:53] reverse-bid.INFO: Route: http://localhost:82/miperfil [GET] [] {"uid":"50d6fdf"}
+[2016-05-12 21:23:53] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"50d6fdf"}
+[2016-05-12 21:23:53] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"50d6fdf"}
+[2016-05-12 21:23:53] reverse-bid.INFO: Partial: miperfil.php [200] [] {"uid":"50d6fdf"}
+[2016-05-12 21:23:53] reverse-bid.INFO: Arguments: [title] [] {"uid":"50d6fdf"}
+[2016-05-12 21:24:05] reverse-bid.INFO: Route: http://localhost:82/miperfil [GET] [] {"uid":"4c8e10c"}
+[2016-05-12 21:24:05] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"4c8e10c"}
+[2016-05-12 21:24:05] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"4c8e10c"}
+[2016-05-12 21:24:05] reverse-bid.INFO: Partial: miperfil.php [200] [] {"uid":"4c8e10c"}
+[2016-05-12 21:24:05] reverse-bid.INFO: Arguments: [title] [] {"uid":"4c8e10c"}
+[2016-05-12 21:25:19] reverse-bid.INFO: Route: http://localhost:82/miperfil [GET] [] {"uid":"e8093cb"}
+[2016-05-12 21:25:19] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"e8093cb"}
+[2016-05-12 21:25:19] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"e8093cb"}
+[2016-05-12 21:25:19] reverse-bid.INFO: Partial: miperfil.php [200] [] {"uid":"e8093cb"}
+[2016-05-12 21:25:19] reverse-bid.INFO: Arguments: [title] [] {"uid":"e8093cb"}
+[2016-05-12 21:27:03] reverse-bid.INFO: Route: http://localhost:82/miperfil [GET] [] {"uid":"f573561"}
+[2016-05-12 21:27:03] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"f573561"}
+[2016-05-12 21:27:03] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"f573561"}
+[2016-05-12 21:27:03] reverse-bid.INFO: Partial: miperfil.php [200] [] {"uid":"f573561"}
+[2016-05-12 21:27:03] reverse-bid.INFO: Arguments: [title] [] {"uid":"f573561"}
+[2016-05-12 21:27:03] reverse-bid.INFO: Route: http://localhost:82/miperfil [GET] [] {"uid":"aeeb472"}
+[2016-05-12 21:27:03] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"aeeb472"}
+[2016-05-12 21:27:03] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"aeeb472"}
+[2016-05-12 21:27:03] reverse-bid.INFO: Partial: miperfil.php [200] [] {"uid":"aeeb472"}
+[2016-05-12 21:27:03] reverse-bid.INFO: Arguments: [title] [] {"uid":"aeeb472"}
+[2016-05-12 21:37:47] reverse-bid.INFO: Route: http://localhost:82/miperfil [GET] [] {"uid":"b4dd7d6"}
+[2016-05-12 21:37:47] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"b4dd7d6"}
+[2016-05-12 21:37:47] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"b4dd7d6"}
+[2016-05-12 21:37:47] reverse-bid.INFO: Partial: miperfil.php [200] [] {"uid":"b4dd7d6"}
+[2016-05-12 21:37:47] reverse-bid.INFO: Arguments: [title] [] {"uid":"b4dd7d6"}
+[2016-05-12 21:39:05] reverse-bid.INFO: Route: http://localhost:82/miperfil [GET] [] {"uid":"2f64b6a"}
+[2016-05-12 21:39:05] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"2f64b6a"}
+[2016-05-12 21:39:05] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"2f64b6a"}
+[2016-05-12 21:39:05] reverse-bid.INFO: Partial: miperfil.php [200] [] {"uid":"2f64b6a"}
+[2016-05-12 21:39:05] reverse-bid.INFO: Arguments: [title] [] {"uid":"2f64b6a"}
+[2016-05-12 21:39:21] reverse-bid.INFO: Route: http://localhost:82/miperfil [GET] [] {"uid":"e6fd844"}
+[2016-05-12 21:39:21] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"e6fd844"}
+[2016-05-12 21:39:21] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"e6fd844"}
+[2016-05-12 21:39:21] reverse-bid.INFO: Partial: miperfil.php [200] [] {"uid":"e6fd844"}
+[2016-05-12 21:39:21] reverse-bid.INFO: Arguments: [title] [] {"uid":"e6fd844"}
+[2016-05-12 21:39:41] reverse-bid.INFO: Route: http://localhost:82/miperfil [GET] [] {"uid":"c98113d"}
+[2016-05-12 21:39:41] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"c98113d"}
+[2016-05-12 21:39:41] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"c98113d"}
+[2016-05-12 21:39:41] reverse-bid.INFO: Partial: miperfil.php [200] [] {"uid":"c98113d"}
+[2016-05-12 21:39:41] reverse-bid.INFO: Arguments: [title] [] {"uid":"c98113d"}
+[2016-05-12 21:41:05] reverse-bid.INFO: Route: http://localhost:82/miperfil [GET] [] {"uid":"e5860d8"}
+[2016-05-12 21:41:05] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"e5860d8"}
+[2016-05-12 21:41:05] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"e5860d8"}
+[2016-05-12 21:41:05] reverse-bid.INFO: Partial: miperfil.php [200] [] {"uid":"e5860d8"}
+[2016-05-12 21:41:05] reverse-bid.INFO: Arguments: [title] [] {"uid":"e5860d8"}
+[2016-05-12 21:41:53] reverse-bid.INFO: Route: http://localhost:82/miperfil [GET] [] {"uid":"0d79baa"}
+[2016-05-12 21:41:53] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"0d79baa"}
+[2016-05-12 21:41:53] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"0d79baa"}
+[2016-05-12 21:41:53] reverse-bid.INFO: Partial: miperfil.php [200] [] {"uid":"0d79baa"}
+[2016-05-12 21:41:53] reverse-bid.INFO: Arguments: [title] [] {"uid":"0d79baa"}
+[2016-05-12 21:43:13] reverse-bid.INFO: Route: http://localhost:82/miperfil [GET] [] {"uid":"2403c6d"}
+[2016-05-12 21:43:13] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"2403c6d"}
+[2016-05-12 21:43:13] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"2403c6d"}
+[2016-05-12 21:43:13] reverse-bid.INFO: Partial: miperfil.php [200] [] {"uid":"2403c6d"}
+[2016-05-12 21:43:13] reverse-bid.INFO: Arguments: [title] [] {"uid":"2403c6d"}
+[2016-05-12 21:43:58] reverse-bid.INFO: Route: http://localhost:82/miperfil [GET] [] {"uid":"2c37016"}
+[2016-05-12 21:43:58] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"2c37016"}
+[2016-05-12 21:43:58] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"2c37016"}
+[2016-05-12 21:43:58] reverse-bid.INFO: Partial: miperfil.php [200] [] {"uid":"2c37016"}
+[2016-05-12 21:43:58] reverse-bid.INFO: Arguments: [title] [] {"uid":"2c37016"}
+[2016-05-12 21:44:00] reverse-bid.INFO: Route: http://localhost:82/miperfil [GET] [] {"uid":"f39ea5b"}
+[2016-05-12 21:44:00] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"f39ea5b"}
+[2016-05-12 21:44:00] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"f39ea5b"}
+[2016-05-12 21:44:00] reverse-bid.INFO: Partial: miperfil.php [200] [] {"uid":"f39ea5b"}
+[2016-05-12 21:44:00] reverse-bid.INFO: Arguments: [title] [] {"uid":"f39ea5b"}
+[2016-05-12 21:44:39] reverse-bid.INFO: Route: http://localhost:82/miperfil [GET] [] {"uid":"d10e76a"}
+[2016-05-12 21:44:39] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"d10e76a"}
+[2016-05-12 21:44:39] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"d10e76a"}
+[2016-05-12 21:44:39] reverse-bid.INFO: Partial: miperfil.php [200] [] {"uid":"d10e76a"}
+[2016-05-12 21:44:39] reverse-bid.INFO: Arguments: [title] [] {"uid":"d10e76a"}
+[2016-05-12 21:45:04] reverse-bid.INFO: Route: http://localhost:82/miperfil [GET] [] {"uid":"f6cfdaa"}
+[2016-05-12 21:45:04] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"f6cfdaa"}
+[2016-05-12 21:45:04] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"f6cfdaa"}
+[2016-05-12 21:45:04] reverse-bid.INFO: Partial: miperfil.php [200] [] {"uid":"f6cfdaa"}
+[2016-05-12 21:45:04] reverse-bid.INFO: Arguments: [title] [] {"uid":"f6cfdaa"}
+[2016-05-12 21:46:24] reverse-bid.INFO: Route: http://localhost:82/miperfil [GET] [] {"uid":"a0547bf"}
+[2016-05-12 21:46:24] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"a0547bf"}
+[2016-05-12 21:46:24] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"a0547bf"}
+[2016-05-12 21:46:24] reverse-bid.INFO: Partial: miperfil.php [200] [] {"uid":"a0547bf"}
+[2016-05-12 21:46:24] reverse-bid.INFO: Arguments: [title] [] {"uid":"a0547bf"}
+[2016-05-12 21:48:16] reverse-bid.INFO: Route: http://localhost:82/miperfil [GET] [] {"uid":"d1ec20e"}
+[2016-05-12 21:48:16] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"d1ec20e"}
+[2016-05-12 21:48:16] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"d1ec20e"}
+[2016-05-12 21:48:16] reverse-bid.INFO: Partial: miperfil.php [200] [] {"uid":"d1ec20e"}
+[2016-05-12 21:48:16] reverse-bid.INFO: Arguments: [title] [] {"uid":"d1ec20e"}
+[2016-05-12 21:54:49] reverse-bid.INFO: Route: http://localhost:82/miperfil [GET] [] {"uid":"fe5fa05"}
+[2016-05-12 21:54:49] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"fe5fa05"}
+[2016-05-12 21:54:49] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"fe5fa05"}
+[2016-05-12 21:54:49] reverse-bid.INFO: Partial: miperfil.php [200] [] {"uid":"fe5fa05"}
+[2016-05-12 21:54:49] reverse-bid.INFO: Arguments: [title] [] {"uid":"fe5fa05"}
+[2016-05-12 21:55:26] reverse-bid.INFO: Route: http://localhost:82/miperfil [GET] [] {"uid":"3f3d40a"}
+[2016-05-12 21:55:26] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"3f3d40a"}
+[2016-05-12 21:55:26] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"3f3d40a"}
+[2016-05-12 21:55:26] reverse-bid.INFO: Partial: miperfil.php [200] [] {"uid":"3f3d40a"}
+[2016-05-12 21:55:26] reverse-bid.INFO: Arguments: [title] [] {"uid":"3f3d40a"}
+[2016-05-12 21:57:00] reverse-bid.INFO: Route: http://localhost:82/miperfil [GET] [] {"uid":"3fa2cc0"}
+[2016-05-12 21:57:00] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"3fa2cc0"}
+[2016-05-12 21:57:00] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"3fa2cc0"}
+[2016-05-12 21:57:00] reverse-bid.INFO: Partial: miperfil.php [200] [] {"uid":"3fa2cc0"}
+[2016-05-12 21:57:00] reverse-bid.INFO: Arguments: [title] [] {"uid":"3fa2cc0"}
+[2016-05-12 22:02:35] reverse-bid.INFO: Route: http://localhost:82/miperfil [GET] [] {"uid":"d6ff478"}
+[2016-05-12 22:02:35] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"d6ff478"}
+[2016-05-12 22:02:35] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"d6ff478"}
+[2016-05-12 22:02:35] reverse-bid.INFO: Partial: miperfil.php [200] [] {"uid":"d6ff478"}
+[2016-05-12 22:02:35] reverse-bid.INFO: Arguments: [title] [] {"uid":"d6ff478"}
+[2016-05-12 22:03:25] reverse-bid.INFO: Route: http://localhost:82/miperfil [GET] [] {"uid":"802d58c"}
+[2016-05-12 22:03:25] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"802d58c"}
+[2016-05-12 22:03:25] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"802d58c"}
+[2016-05-12 22:03:25] reverse-bid.INFO: Partial: miperfil.php [200] [] {"uid":"802d58c"}
+[2016-05-12 22:03:25] reverse-bid.INFO: Arguments: [title] [] {"uid":"802d58c"}
+[2016-05-12 22:08:14] reverse-bid.INFO: Route: http://localhost:82/miperfil [GET] [] {"uid":"e5aaf4b"}
+[2016-05-12 22:08:14] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"e5aaf4b"}
+[2016-05-12 22:08:14] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"e5aaf4b"}
+[2016-05-12 22:08:14] reverse-bid.INFO: Partial: miperfil.php [200] [] {"uid":"e5aaf4b"}
+[2016-05-12 22:08:14] reverse-bid.INFO: Arguments: [title] [] {"uid":"e5aaf4b"}
+[2016-05-12 22:08:43] reverse-bid.INFO: Route: http://localhost:82/miperfil [GET] [] {"uid":"64a9b02"}
+[2016-05-12 22:08:43] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"64a9b02"}
+[2016-05-12 22:08:43] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"64a9b02"}
+[2016-05-12 22:08:43] reverse-bid.INFO: Partial: miperfil.php [200] [] {"uid":"64a9b02"}
+[2016-05-12 22:08:43] reverse-bid.INFO: Arguments: [title] [] {"uid":"64a9b02"}
+[2016-05-12 22:09:23] reverse-bid.INFO: Route: http://localhost:82/miperfil [GET] [] {"uid":"e8c40f4"}
+[2016-05-12 22:09:23] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"e8c40f4"}
+[2016-05-12 22:09:23] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"e8c40f4"}
+[2016-05-12 22:09:23] reverse-bid.INFO: Partial: miperfil.php [200] [] {"uid":"e8c40f4"}
+[2016-05-12 22:09:23] reverse-bid.INFO: Arguments: [title] [] {"uid":"e8c40f4"}
+[2016-05-12 22:10:03] reverse-bid.INFO: Route: http://localhost:82/miperfil [GET] [] {"uid":"2ce6b67"}
+[2016-05-12 22:10:03] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"2ce6b67"}
+[2016-05-12 22:10:03] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"2ce6b67"}
+[2016-05-12 22:10:03] reverse-bid.INFO: Partial: miperfil.php [200] [] {"uid":"2ce6b67"}
+[2016-05-12 22:10:03] reverse-bid.INFO: Arguments: [title] [] {"uid":"2ce6b67"}
+[2016-05-12 22:10:14] reverse-bid.INFO: Route: http://localhost:82/miperfil [GET] [] {"uid":"dbf27e2"}
+[2016-05-12 22:10:14] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"dbf27e2"}
+[2016-05-12 22:10:14] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"dbf27e2"}
+[2016-05-12 22:10:14] reverse-bid.INFO: Partial: miperfil.php [200] [] {"uid":"dbf27e2"}
+[2016-05-12 22:10:14] reverse-bid.INFO: Arguments: [title] [] {"uid":"dbf27e2"}
+[2016-05-12 22:11:19] reverse-bid.INFO: Route: http://localhost:82/miperfil [GET] [] {"uid":"af51a3f"}
+[2016-05-12 22:11:19] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"af51a3f"}
+[2016-05-12 22:11:19] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"af51a3f"}
+[2016-05-12 22:11:19] reverse-bid.INFO: Partial: miperfil.php [200] [] {"uid":"af51a3f"}
+[2016-05-12 22:11:19] reverse-bid.INFO: Arguments: [title] [] {"uid":"af51a3f"}
+[2016-05-12 22:11:33] reverse-bid.INFO: Route: http://localhost:82/miperfil [GET] [] {"uid":"27d558d"}
+[2016-05-12 22:11:33] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"27d558d"}
+[2016-05-12 22:11:33] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"27d558d"}
+[2016-05-12 22:11:33] reverse-bid.INFO: Partial: miperfil.php [200] [] {"uid":"27d558d"}
+[2016-05-12 22:11:33] reverse-bid.INFO: Arguments: [title] [] {"uid":"27d558d"}
+[2016-05-12 22:11:46] reverse-bid.INFO: Route: http://localhost:82/miperfil [GET] [] {"uid":"3977660"}
+[2016-05-12 22:11:46] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"3977660"}
+[2016-05-12 22:11:46] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"3977660"}
+[2016-05-12 22:11:46] reverse-bid.INFO: Partial: miperfil.php [200] [] {"uid":"3977660"}
+[2016-05-12 22:11:46] reverse-bid.INFO: Arguments: [title] [] {"uid":"3977660"}
+[2016-05-12 22:11:59] reverse-bid.INFO: Route: http://localhost:82/miperfil [GET] [] {"uid":"a927e63"}
+[2016-05-12 22:11:59] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"a927e63"}
+[2016-05-12 22:11:59] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"a927e63"}
+[2016-05-12 22:11:59] reverse-bid.INFO: Partial: miperfil.php [200] [] {"uid":"a927e63"}
+[2016-05-12 22:11:59] reverse-bid.INFO: Arguments: [title] [] {"uid":"a927e63"}
+[2016-05-12 22:14:54] reverse-bid.INFO: Route: http://localhost:82/miperfil [GET] [] {"uid":"d314f58"}
+[2016-05-12 22:14:54] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"d314f58"}
+[2016-05-12 22:14:54] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"d314f58"}
+[2016-05-12 22:14:54] reverse-bid.INFO: Partial: miperfil.php [200] [] {"uid":"d314f58"}
+[2016-05-12 22:14:54] reverse-bid.INFO: Arguments: [title] [] {"uid":"d314f58"}
+[2016-05-12 22:16:23] reverse-bid.INFO: Route: http://localhost:82/miperfil [GET] [] {"uid":"b80dc08"}
+[2016-05-12 22:16:23] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"b80dc08"}
+[2016-05-12 22:16:23] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"b80dc08"}
+[2016-05-12 22:16:23] reverse-bid.INFO: Partial: miperfil.php [200] [] {"uid":"b80dc08"}
+[2016-05-12 22:16:23] reverse-bid.INFO: Arguments: [title] [] {"uid":"b80dc08"}
+[2016-05-12 22:16:51] reverse-bid.INFO: Route: http://localhost:82/miperfil [GET] [] {"uid":"6d2865d"}
+[2016-05-12 22:16:51] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"6d2865d"}
+[2016-05-12 22:16:51] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"6d2865d"}
+[2016-05-12 22:16:51] reverse-bid.INFO: Partial: miperfil.php [200] [] {"uid":"6d2865d"}
+[2016-05-12 22:16:51] reverse-bid.INFO: Arguments: [title] [] {"uid":"6d2865d"}
+[2016-05-12 22:17:00] reverse-bid.INFO: Route: http://localhost:82/miperfil [GET] [] {"uid":"3aa34b5"}
+[2016-05-12 22:17:00] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"3aa34b5"}
+[2016-05-12 22:17:00] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"3aa34b5"}
+[2016-05-12 22:17:00] reverse-bid.INFO: Partial: miperfil.php [200] [] {"uid":"3aa34b5"}
+[2016-05-12 22:17:00] reverse-bid.INFO: Arguments: [title] [] {"uid":"3aa34b5"}
+[2016-05-12 22:17:09] reverse-bid.INFO: Route: http://localhost:82/miperfil [GET] [] {"uid":"b3f7f79"}
+[2016-05-12 22:17:09] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"b3f7f79"}
+[2016-05-12 22:17:09] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"b3f7f79"}
+[2016-05-12 22:17:09] reverse-bid.INFO: Partial: miperfil.php [200] [] {"uid":"b3f7f79"}
+[2016-05-12 22:17:09] reverse-bid.INFO: Arguments: [title] [] {"uid":"b3f7f79"}
+[2016-05-12 22:17:10] reverse-bid.INFO: Route: http://localhost:82/miperfil [GET] [] {"uid":"4079d50"}
+[2016-05-12 22:17:10] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"4079d50"}
+[2016-05-12 22:17:10] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"4079d50"}
+[2016-05-12 22:17:10] reverse-bid.INFO: Partial: miperfil.php [200] [] {"uid":"4079d50"}
+[2016-05-12 22:17:10] reverse-bid.INFO: Arguments: [title] [] {"uid":"4079d50"}
+[2016-05-12 22:17:10] reverse-bid.INFO: Route: http://localhost:82/miperfil [GET] [] {"uid":"65fd0e9"}
+[2016-05-12 22:17:10] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"65fd0e9"}
+[2016-05-12 22:17:10] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"65fd0e9"}
+[2016-05-12 22:17:10] reverse-bid.INFO: Partial: miperfil.php [200] [] {"uid":"65fd0e9"}
+[2016-05-12 22:17:10] reverse-bid.INFO: Arguments: [title] [] {"uid":"65fd0e9"}
+[2016-05-12 22:17:10] reverse-bid.INFO: Route: http://localhost:82/miperfil [GET] [] {"uid":"4b52a8b"}
+[2016-05-12 22:17:10] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"4b52a8b"}
+[2016-05-12 22:17:10] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"4b52a8b"}
+[2016-05-12 22:17:10] reverse-bid.INFO: Partial: miperfil.php [200] [] {"uid":"4b52a8b"}
+[2016-05-12 22:17:10] reverse-bid.INFO: Arguments: [title] [] {"uid":"4b52a8b"}
+[2016-05-12 22:17:10] reverse-bid.INFO: Route: http://localhost:82/miperfil [GET] [] {"uid":"1890fbd"}
+[2016-05-12 22:17:10] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"1890fbd"}
+[2016-05-12 22:17:10] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"1890fbd"}
+[2016-05-12 22:17:10] reverse-bid.INFO: Partial: miperfil.php [200] [] {"uid":"1890fbd"}
+[2016-05-12 22:17:10] reverse-bid.INFO: Arguments: [title] [] {"uid":"1890fbd"}
+[2016-05-12 22:17:10] reverse-bid.INFO: Route: http://localhost:82/miperfil [GET] [] {"uid":"d6d5202"}
+[2016-05-12 22:17:10] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"d6d5202"}
+[2016-05-12 22:17:10] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"d6d5202"}
+[2016-05-12 22:17:10] reverse-bid.INFO: Partial: miperfil.php [200] [] {"uid":"d6d5202"}
+[2016-05-12 22:17:10] reverse-bid.INFO: Arguments: [title] [] {"uid":"d6d5202"}
+[2016-05-12 22:17:23] reverse-bid.INFO: Route: http://localhost:82/miperfil [GET] [] {"uid":"8337f00"}
+[2016-05-12 22:17:23] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"8337f00"}
+[2016-05-12 22:17:23] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"8337f00"}
+[2016-05-12 22:17:23] reverse-bid.INFO: Partial: miperfil.php [200] [] {"uid":"8337f00"}
+[2016-05-12 22:17:23] reverse-bid.INFO: Arguments: [title] [] {"uid":"8337f00"}
+[2016-05-12 22:19:15] reverse-bid.INFO: Route: http://localhost:82/miperfil [GET] [] {"uid":"1345971"}
+[2016-05-12 22:19:15] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"1345971"}
+[2016-05-12 22:19:15] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"1345971"}
+[2016-05-12 22:19:15] reverse-bid.INFO: Partial: miperfil.php [200] [] {"uid":"1345971"}
+[2016-05-12 22:19:15] reverse-bid.INFO: Arguments: [title] [] {"uid":"1345971"}
+[2016-05-12 22:19:50] reverse-bid.INFO: Route: http://localhost:82/miperfil [GET] [] {"uid":"0e9c6b7"}
+[2016-05-12 22:19:50] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"0e9c6b7"}
+[2016-05-12 22:19:50] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"0e9c6b7"}
+[2016-05-12 22:19:50] reverse-bid.INFO: Partial: miperfil.php [200] [] {"uid":"0e9c6b7"}
+[2016-05-12 22:19:50] reverse-bid.INFO: Arguments: [title] [] {"uid":"0e9c6b7"}
+[2016-05-12 22:20:37] reverse-bid.INFO: Route: http://localhost:82/miperfil [GET] [] {"uid":"f6c0859"}
+[2016-05-12 22:20:37] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"f6c0859"}
+[2016-05-12 22:20:37] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"f6c0859"}
+[2016-05-12 22:20:37] reverse-bid.INFO: Partial: miperfil.php [200] [] {"uid":"f6c0859"}
+[2016-05-12 22:20:37] reverse-bid.INFO: Arguments: [title] [] {"uid":"f6c0859"}
+[2016-05-12 22:21:06] reverse-bid.INFO: Route: http://localhost:82/miperfil [GET] [] {"uid":"05153fd"}
+[2016-05-12 22:21:06] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"05153fd"}
+[2016-05-12 22:21:06] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"05153fd"}
+[2016-05-12 22:21:06] reverse-bid.INFO: Partial: miperfil.php [200] [] {"uid":"05153fd"}
+[2016-05-12 22:21:06] reverse-bid.INFO: Arguments: [title] [] {"uid":"05153fd"}
+[2016-05-12 22:23:18] reverse-bid.INFO: Route: http://localhost:82/miperfil [GET] [] {"uid":"2dc95d1"}
+[2016-05-12 22:23:18] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"2dc95d1"}
+[2016-05-12 22:23:18] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"2dc95d1"}
+[2016-05-12 22:23:18] reverse-bid.INFO: Partial: miperfil.php [200] [] {"uid":"2dc95d1"}
+[2016-05-12 22:23:18] reverse-bid.INFO: Arguments: [title] [] {"uid":"2dc95d1"}
+[2016-05-12 22:23:33] reverse-bid.INFO: Route: http://localhost:82/miperfil [GET] [] {"uid":"1b2790b"}
+[2016-05-12 22:23:33] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"1b2790b"}
+[2016-05-12 22:23:33] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"1b2790b"}
+[2016-05-12 22:23:33] reverse-bid.INFO: Partial: miperfil.php [200] [] {"uid":"1b2790b"}
+[2016-05-12 22:23:33] reverse-bid.INFO: Arguments: [title] [] {"uid":"1b2790b"}
+[2016-05-12 22:23:54] reverse-bid.INFO: Route: http://localhost:82/miperfil [GET] [] {"uid":"ac338de"}
+[2016-05-12 22:23:54] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"ac338de"}
+[2016-05-12 22:23:54] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"ac338de"}
+[2016-05-12 22:23:54] reverse-bid.INFO: Partial: miperfil.php [200] [] {"uid":"ac338de"}
+[2016-05-12 22:23:54] reverse-bid.INFO: Arguments: [title] [] {"uid":"ac338de"}
+[2016-05-12 22:24:11] reverse-bid.INFO: Route: http://localhost:82/miperfil [GET] [] {"uid":"91387f0"}
+[2016-05-12 22:24:11] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"91387f0"}
+[2016-05-12 22:24:11] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"91387f0"}
+[2016-05-12 22:24:11] reverse-bid.INFO: Partial: miperfil.php [200] [] {"uid":"91387f0"}
+[2016-05-12 22:24:11] reverse-bid.INFO: Arguments: [title] [] {"uid":"91387f0"}
+[2016-05-12 22:24:47] reverse-bid.INFO: Route: http://localhost:82/miperfil [GET] [] {"uid":"8c5a417"}
+[2016-05-12 22:24:48] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"8c5a417"}
+[2016-05-12 22:24:48] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"8c5a417"}
+[2016-05-12 22:24:48] reverse-bid.INFO: Partial: miperfil.php [200] [] {"uid":"8c5a417"}
+[2016-05-12 22:24:48] reverse-bid.INFO: Arguments: [title] [] {"uid":"8c5a417"}
+[2016-05-12 22:25:08] reverse-bid.INFO: Route: http://localhost:82/miperfil [GET] [] {"uid":"1b8ed37"}
+[2016-05-12 22:25:08] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"1b8ed37"}
+[2016-05-12 22:25:08] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"1b8ed37"}
+[2016-05-12 22:25:08] reverse-bid.INFO: Partial: miperfil.php [200] [] {"uid":"1b8ed37"}
+[2016-05-12 22:25:08] reverse-bid.INFO: Arguments: [title] [] {"uid":"1b8ed37"}
+[2016-05-12 22:25:38] reverse-bid.INFO: Route: http://localhost:82/miperfil [GET] [] {"uid":"10ef0d9"}
+[2016-05-12 22:25:38] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"10ef0d9"}
+[2016-05-12 22:25:38] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"10ef0d9"}
+[2016-05-12 22:25:38] reverse-bid.INFO: Partial: miperfil.php [200] [] {"uid":"10ef0d9"}
+[2016-05-12 22:25:38] reverse-bid.INFO: Arguments: [title] [] {"uid":"10ef0d9"}
+[2016-05-12 22:25:48] reverse-bid.INFO: Route: http://localhost:82/miperfil [GET] [] {"uid":"cb535cb"}
+[2016-05-12 22:25:48] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"cb535cb"}
+[2016-05-12 22:25:48] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"cb535cb"}
+[2016-05-12 22:25:48] reverse-bid.INFO: Partial: miperfil.php [200] [] {"uid":"cb535cb"}
+[2016-05-12 22:25:48] reverse-bid.INFO: Arguments: [title] [] {"uid":"cb535cb"}
+[2016-05-12 22:25:59] reverse-bid.INFO: Route: http://localhost:82/miperfil [GET] [] {"uid":"10d51ca"}
+[2016-05-12 22:25:59] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"10d51ca"}
+[2016-05-12 22:25:59] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"10d51ca"}
+[2016-05-12 22:25:59] reverse-bid.INFO: Partial: miperfil.php [200] [] {"uid":"10d51ca"}
+[2016-05-12 22:25:59] reverse-bid.INFO: Arguments: [title] [] {"uid":"10d51ca"}
+[2016-05-12 22:26:11] reverse-bid.INFO: Route: http://localhost:82/miperfil [GET] [] {"uid":"73f2543"}
+[2016-05-12 22:26:11] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"73f2543"}
+[2016-05-12 22:26:11] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"73f2543"}
+[2016-05-12 22:26:11] reverse-bid.INFO: Partial: miperfil.php [200] [] {"uid":"73f2543"}
+[2016-05-12 22:26:11] reverse-bid.INFO: Arguments: [title] [] {"uid":"73f2543"}
+[2016-05-12 22:28:33] reverse-bid.INFO: Route: http://localhost:82/miperfil [GET] [] {"uid":"c11f195"}
+[2016-05-12 22:28:33] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"c11f195"}
+[2016-05-12 22:28:33] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"c11f195"}
+[2016-05-12 22:28:33] reverse-bid.INFO: Partial: miperfil.php [200] [] {"uid":"c11f195"}
+[2016-05-12 22:28:33] reverse-bid.INFO: Arguments: [title] [] {"uid":"c11f195"}
+[2016-05-12 22:29:21] reverse-bid.INFO: Route: http://localhost:82/miperfil [GET] [] {"uid":"8a9d2d5"}
+[2016-05-12 22:29:21] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"8a9d2d5"}
+[2016-05-12 22:29:21] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"8a9d2d5"}
+[2016-05-12 22:29:21] reverse-bid.INFO: Partial: miperfil.php [200] [] {"uid":"8a9d2d5"}
+[2016-05-12 22:29:21] reverse-bid.INFO: Arguments: [title] [] {"uid":"8a9d2d5"}
+[2016-05-12 22:29:22] reverse-bid.INFO: Route: http://localhost:82/miperfil [GET] [] {"uid":"2a50490"}
+[2016-05-12 22:29:22] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"2a50490"}
+[2016-05-12 22:29:22] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"2a50490"}
+[2016-05-12 22:29:22] reverse-bid.INFO: Partial: miperfil.php [200] [] {"uid":"2a50490"}
+[2016-05-12 22:29:22] reverse-bid.INFO: Arguments: [title] [] {"uid":"2a50490"}
+[2016-05-12 22:29:22] reverse-bid.INFO: Route: http://localhost:82/miperfil [GET] [] {"uid":"2d2a88c"}
+[2016-05-12 22:29:22] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"2d2a88c"}
+[2016-05-12 22:29:22] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"2d2a88c"}
+[2016-05-12 22:29:22] reverse-bid.INFO: Partial: miperfil.php [200] [] {"uid":"2d2a88c"}
+[2016-05-12 22:29:22] reverse-bid.INFO: Arguments: [title] [] {"uid":"2d2a88c"}
+[2016-05-12 22:29:23] reverse-bid.INFO: Route: http://localhost:82/miperfil [GET] [] {"uid":"c204371"}
+[2016-05-12 22:29:23] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"c204371"}
+[2016-05-12 22:29:23] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"c204371"}
+[2016-05-12 22:29:23] reverse-bid.INFO: Partial: miperfil.php [200] [] {"uid":"c204371"}
+[2016-05-12 22:29:23] reverse-bid.INFO: Arguments: [title] [] {"uid":"c204371"}
+[2016-05-12 22:29:23] reverse-bid.INFO: Route: http://localhost:82/miperfil [GET] [] {"uid":"cb7dac3"}
+[2016-05-12 22:29:23] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"cb7dac3"}
+[2016-05-12 22:29:23] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"cb7dac3"}
+[2016-05-12 22:29:23] reverse-bid.INFO: Partial: miperfil.php [200] [] {"uid":"cb7dac3"}
+[2016-05-12 22:29:23] reverse-bid.INFO: Arguments: [title] [] {"uid":"cb7dac3"}
+[2016-05-12 22:29:44] reverse-bid.INFO: Route: http://localhost:82/miperfil [GET] [] {"uid":"a020ba7"}
+[2016-05-12 22:29:44] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"a020ba7"}
+[2016-05-12 22:29:44] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"a020ba7"}
+[2016-05-12 22:29:44] reverse-bid.INFO: Partial: miperfil.php [200] [] {"uid":"a020ba7"}
+[2016-05-12 22:29:44] reverse-bid.INFO: Arguments: [title] [] {"uid":"a020ba7"}
+[2016-05-12 22:30:16] reverse-bid.INFO: Route: http://localhost:82/miperfil [GET] [] {"uid":"f47ea7c"}
+[2016-05-12 22:30:16] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"f47ea7c"}
+[2016-05-12 22:30:16] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"f47ea7c"}
+[2016-05-12 22:30:16] reverse-bid.INFO: Partial: miperfil.php [200] [] {"uid":"f47ea7c"}
+[2016-05-12 22:30:16] reverse-bid.INFO: Arguments: [title] [] {"uid":"f47ea7c"}
+[2016-05-13 00:44:54] reverse-bid.INFO: Route: http://localhost:82/ [GET] [] {"uid":"afa8afd"}
+[2016-05-13 00:44:54] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"afa8afd"}
+[2016-05-13 00:44:54] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"afa8afd"}
+[2016-05-13 00:44:54] reverse-bid.INFO: Partial: home.php [200] [] {"uid":"afa8afd"}
+[2016-05-13 00:44:54] reverse-bid.INFO: Arguments: [title] [] {"uid":"afa8afd"}
+[2016-05-13 00:44:58] reverse-bid.INFO: Route: http://localhost:82/ [GET] [] {"uid":"285d920"}
+[2016-05-13 00:44:58] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"285d920"}
+[2016-05-13 00:44:58] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"285d920"}
+[2016-05-13 00:44:58] reverse-bid.INFO: Partial: home.php [200] [] {"uid":"285d920"}
+[2016-05-13 00:44:58] reverse-bid.INFO: Arguments: [title] [] {"uid":"285d920"}
+[2016-05-13 00:45:12] reverse-bid.INFO: Route: http://localhost:82/nuevo-usuario [GET] [] {"uid":"b288445"}
+[2016-05-13 00:45:12] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"b288445"}
+[2016-05-13 00:45:12] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"b288445"}
+[2016-05-13 00:45:12] reverse-bid.INFO: Partial: createUser.php [200] [] {"uid":"b288445"}
+[2016-05-13 00:45:12] reverse-bid.INFO: Arguments: [title] [] {"uid":"b288445"}
+[2016-05-13 00:45:19] reverse-bid.INFO: Route: http://localhost:82/nuevo-usuario [GET] [] {"uid":"ea25a32"}
+[2016-05-13 00:45:19] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"ea25a32"}
+[2016-05-13 00:45:19] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"ea25a32"}
+[2016-05-13 00:45:19] reverse-bid.INFO: Partial: createUser.php [200] [] {"uid":"ea25a32"}
+[2016-05-13 00:45:19] reverse-bid.INFO: Arguments: [title] [] {"uid":"ea25a32"}
+[2016-05-13 00:45:22] reverse-bid.INFO: Route: http://localhost:82/login [GET] [] {"uid":"c0e6d3d"}
+[2016-05-13 00:45:22] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"c0e6d3d"}
+[2016-05-13 00:45:22] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"c0e6d3d"}
+[2016-05-13 00:45:22] reverse-bid.INFO: Partial: login.php [200] [] {"uid":"c0e6d3d"}
+[2016-05-13 00:45:22] reverse-bid.INFO: Arguments: [title] [] {"uid":"c0e6d3d"}
+[2016-05-13 00:45:27] reverse-bid.INFO: Route: http://localhost:82/ [GET] [] {"uid":"6e727a1"}
+[2016-05-13 00:45:27] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"6e727a1"}
+[2016-05-13 00:45:27] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"6e727a1"}
+[2016-05-13 00:45:27] reverse-bid.INFO: Partial: home.php [200] [] {"uid":"6e727a1"}
+[2016-05-13 00:45:27] reverse-bid.INFO: Arguments: [title] [] {"uid":"6e727a1"}
+[2016-05-13 00:46:12] reverse-bid.INFO: Route: http://localhost:82/nuevo-usuario [GET] [] {"uid":"2206020"}
+[2016-05-13 00:46:12] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"2206020"}
+[2016-05-13 00:46:12] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"2206020"}
+[2016-05-13 00:46:12] reverse-bid.INFO: Partial: createUser.php [200] [] {"uid":"2206020"}
+[2016-05-13 00:46:12] reverse-bid.INFO: Arguments: [title] [] {"uid":"2206020"}
+[2016-05-13 00:47:22] reverse-bid.INFO: Route: http://localhost:82/nuevo-usuario [POST] [] {"uid":"c2ed83c"}
+[2016-05-13 00:47:22] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"c2ed83c"}
+[2016-05-13 00:47:22] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"c2ed83c"}
+[2016-05-13 00:47:22] reverse-bid.INFO: Partial: createUser.php [200] [] {"uid":"c2ed83c"}
+[2016-05-13 00:47:22] reverse-bid.INFO: Arguments: [title, error] [] {"uid":"c2ed83c"}
+[2016-05-13 00:57:09] reverse-bid.INFO: Route: http://localhost:82/login [GET] [] {"uid":"99b665a"}
+[2016-05-13 00:57:09] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"99b665a"}
+[2016-05-13 00:57:09] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"99b665a"}
+[2016-05-13 00:57:09] reverse-bid.INFO: Partial: login.php [200] [] {"uid":"99b665a"}
+[2016-05-13 00:57:09] reverse-bid.INFO: Arguments: [title] [] {"uid":"99b665a"}
+[2016-05-13 00:57:22] reverse-bid.INFO: Route: http://localhost:82/login [POST] [] {"uid":"88ed3f3"}
+[2016-05-13 00:57:22] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"88ed3f3"}
+[2016-05-13 00:57:22] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"88ed3f3"}
+[2016-05-13 00:57:22] reverse-bid.INFO: Partial: home.php [200] [] {"uid":"88ed3f3"}
+[2016-05-13 00:57:22] reverse-bid.INFO: Arguments: [title, loggedUser] [] {"uid":"88ed3f3"}
+[2016-05-13 01:05:48] reverse-bid.INFO: Route: http://localhost:82/logout [GET] [] {"uid":"ca028bc"}
+[2016-05-13 01:05:48] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"ca028bc"}
+[2016-05-13 01:05:48] reverse-bid.INFO: Route: http://localhost:82/ [GET] [] {"uid":"9de47bb"}
+[2016-05-13 01:05:48] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"9de47bb"}
+[2016-05-13 01:05:48] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"9de47bb"}
+[2016-05-13 01:05:48] reverse-bid.INFO: Partial: home.php [200] [] {"uid":"9de47bb"}
+[2016-05-13 01:05:48] reverse-bid.INFO: Arguments: [title] [] {"uid":"9de47bb"}
+[2016-05-13 01:05:50] reverse-bid.INFO: Route: http://localhost:82/nuevo-usuario [GET] [] {"uid":"73fca2d"}
+[2016-05-13 01:05:50] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"73fca2d"}
+[2016-05-13 01:05:50] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"73fca2d"}
+[2016-05-13 01:05:50] reverse-bid.INFO: Partial: createUser.php [200] [] {"uid":"73fca2d"}
+[2016-05-13 01:05:50] reverse-bid.INFO: Arguments: [title] [] {"uid":"73fca2d"}
+[2016-05-13 01:07:40] reverse-bid.INFO: Route: http://localhost:82/nuevo-usuario [POST] [] {"uid":"14b0b42"}
+[2016-05-13 01:07:40] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"14b0b42"}
+[2016-05-13 01:08:31] reverse-bid.INFO: Route: http://localhost:82/nuevo-usuario [GET] [] {"uid":"04394d3"}
+[2016-05-13 01:08:31] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"04394d3"}
+[2016-05-13 01:08:31] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"04394d3"}
+[2016-05-13 01:08:31] reverse-bid.INFO: Partial: createUser.php [200] [] {"uid":"04394d3"}
+[2016-05-13 01:08:31] reverse-bid.INFO: Arguments: [title] [] {"uid":"04394d3"}
+[2016-05-13 01:09:02] reverse-bid.INFO: Route: http://localhost:82/nuevo-usuario [POST] [] {"uid":"38edb91"}
+[2016-05-13 01:09:02] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"38edb91"}
+[2016-05-13 01:14:23] reverse-bid.INFO: Route: http://localhost:82/nuevo-usuario [GET] [] {"uid":"f1e5d2b"}
+[2016-05-13 01:14:23] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"f1e5d2b"}
+[2016-05-13 01:14:23] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"f1e5d2b"}
+[2016-05-13 01:14:23] reverse-bid.INFO: Partial: createUser.php [200] [] {"uid":"f1e5d2b"}
+[2016-05-13 01:14:23] reverse-bid.INFO: Arguments: [title] [] {"uid":"f1e5d2b"}
+[2016-05-13 01:14:30] reverse-bid.INFO: Route: http://localhost:82/nuevo-usuario [POST] [] {"uid":"54d0bb9"}
+[2016-05-13 01:14:30] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"54d0bb9"}
+[2016-05-13 01:15:41] reverse-bid.INFO: Route: http://localhost:82/nuevo-usuario [GET] [] {"uid":"9fdf311"}
+[2016-05-13 01:15:41] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"9fdf311"}
+[2016-05-13 01:15:41] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"9fdf311"}
+[2016-05-13 01:15:41] reverse-bid.INFO: Partial: createUser.php [200] [] {"uid":"9fdf311"}
+[2016-05-13 01:15:41] reverse-bid.INFO: Arguments: [title] [] {"uid":"9fdf311"}
+[2016-05-13 01:15:43] reverse-bid.INFO: Route: http://localhost:82/nuevo-usuario [GET] [] {"uid":"b26cf2c"}
+[2016-05-13 01:15:43] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"b26cf2c"}
+[2016-05-13 01:15:43] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"b26cf2c"}
+[2016-05-13 01:15:43] reverse-bid.INFO: Partial: createUser.php [200] [] {"uid":"b26cf2c"}
+[2016-05-13 01:15:43] reverse-bid.INFO: Arguments: [title] [] {"uid":"b26cf2c"}
+[2016-05-13 01:16:48] reverse-bid.INFO: Route: http://localhost:82/nuevo-usuario [POST] [] {"uid":"b01d34f"}
+[2016-05-13 01:16:48] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"b01d34f"}
+[2016-05-13 01:21:46] reverse-bid.INFO: Route: http://localhost:82/nuevo-usuario [GET] [] {"uid":"744b69f"}
+[2016-05-13 01:21:46] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"744b69f"}
+[2016-05-13 01:21:46] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"744b69f"}
+[2016-05-13 01:21:46] reverse-bid.INFO: Partial: createUser.php [200] [] {"uid":"744b69f"}
+[2016-05-13 01:21:46] reverse-bid.INFO: Arguments: [title] [] {"uid":"744b69f"}
+[2016-05-13 01:21:48] reverse-bid.INFO: Route: http://localhost:82/nuevo-usuario [GET] [] {"uid":"39bb6d6"}
+[2016-05-13 01:21:48] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"39bb6d6"}
+[2016-05-13 01:21:48] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"39bb6d6"}
+[2016-05-13 01:21:48] reverse-bid.INFO: Partial: createUser.php [200] [] {"uid":"39bb6d6"}
+[2016-05-13 01:21:48] reverse-bid.INFO: Arguments: [title] [] {"uid":"39bb6d6"}
+[2016-05-13 01:22:47] reverse-bid.INFO: Route: http://localhost:82/nuevo-usuario [POST] [] {"uid":"10b8dac"}
+[2016-05-13 01:22:47] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"10b8dac"}
+[2016-05-13 01:23:42] reverse-bid.INFO: Route: http://localhost:82/nuevo-usuario [GET] [] {"uid":"7bfa736"}
+[2016-05-13 01:23:42] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"7bfa736"}
+[2016-05-13 01:23:42] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"7bfa736"}
+[2016-05-13 01:23:42] reverse-bid.INFO: Partial: createUser.php [200] [] {"uid":"7bfa736"}
+[2016-05-13 01:23:42] reverse-bid.INFO: Arguments: [title] [] {"uid":"7bfa736"}
+[2016-05-13 01:23:43] reverse-bid.INFO: Route: http://localhost:82/nuevo-usuario [GET] [] {"uid":"f1f752f"}
+[2016-05-13 01:23:43] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"f1f752f"}
+[2016-05-13 01:23:43] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"f1f752f"}
+[2016-05-13 01:23:43] reverse-bid.INFO: Partial: createUser.php [200] [] {"uid":"f1f752f"}
+[2016-05-13 01:23:43] reverse-bid.INFO: Arguments: [title] [] {"uid":"f1f752f"}
+[2016-05-13 01:24:34] reverse-bid.INFO: Route: http://localhost:82/nuevo-usuario [POST] [] {"uid":"8b31d4f"}
+[2016-05-13 01:24:34] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"8b31d4f"}
+[2016-05-13 01:24:34] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"8b31d4f"}
+[2016-05-13 01:24:34] reverse-bid.INFO: Partial: home.php [200] [] {"uid":"8b31d4f"}
+[2016-05-13 01:24:34] reverse-bid.INFO: Arguments: [title, loggedUser] [] {"uid":"8b31d4f"}
+[2016-05-13 01:31:23] reverse-bid.INFO: Route: http://localhost:82/ [GET] [] {"uid":"ba86aec"}
+[2016-05-13 01:31:23] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"ba86aec"}
+[2016-05-13 01:31:23] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"ba86aec"}
+[2016-05-13 01:31:23] reverse-bid.INFO: Partial: home.php [200] [] {"uid":"ba86aec"}
+[2016-05-13 01:31:23] reverse-bid.INFO: Arguments: [title] [] {"uid":"ba86aec"}
+[2016-05-13 01:31:27] reverse-bid.INFO: Route: http://localhost:82/logout [GET] [] {"uid":"6187745"}
+[2016-05-13 01:31:27] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"6187745"}
+[2016-05-13 01:31:27] reverse-bid.INFO: Route: http://localhost:82/ [GET] [] {"uid":"4affe18"}
+[2016-05-13 01:31:27] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"4affe18"}
+[2016-05-13 01:31:27] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"4affe18"}
+[2016-05-13 01:31:27] reverse-bid.INFO: Partial: home.php [200] [] {"uid":"4affe18"}
+[2016-05-13 01:31:27] reverse-bid.INFO: Arguments: [title] [] {"uid":"4affe18"}
+[2016-05-13 01:33:09] reverse-bid.INFO: Route: http://localhost:82/ [GET] [] {"uid":"596ad3e"}
+[2016-05-13 01:33:09] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"596ad3e"}
+[2016-05-13 01:33:09] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"596ad3e"}
+[2016-05-13 01:33:09] reverse-bid.INFO: Partial: home.php [200] [] {"uid":"596ad3e"}
+[2016-05-13 01:33:09] reverse-bid.INFO: Arguments: [title] [] {"uid":"596ad3e"}
+[2016-05-13 01:33:13] reverse-bid.INFO: Route: http://localhost:82/ [GET] [] {"uid":"33dfcd1"}
+[2016-05-13 01:33:13] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"33dfcd1"}
+[2016-05-13 01:33:13] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"33dfcd1"}
+[2016-05-13 01:33:13] reverse-bid.INFO: Partial: home.php [200] [] {"uid":"33dfcd1"}
+[2016-05-13 01:33:13] reverse-bid.INFO: Arguments: [title] [] {"uid":"33dfcd1"}
+[2016-05-13 01:33:16] reverse-bid.INFO: Route: http://localhost:82/ [GET] [] {"uid":"266ae28"}
+[2016-05-13 01:33:16] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"266ae28"}
+[2016-05-13 01:33:16] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"266ae28"}
+[2016-05-13 01:33:16] reverse-bid.INFO: Partial: home.php [200] [] {"uid":"266ae28"}
+[2016-05-13 01:33:16] reverse-bid.INFO: Arguments: [title] [] {"uid":"266ae28"}
+[2016-05-13 01:33:19] reverse-bid.INFO: Route: http://localhost:82/login [GET] [] {"uid":"4307b50"}
+[2016-05-13 01:33:19] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"4307b50"}
+[2016-05-13 01:33:19] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"4307b50"}
+[2016-05-13 01:33:19] reverse-bid.INFO: Partial: login.php [200] [] {"uid":"4307b50"}
+[2016-05-13 01:33:19] reverse-bid.INFO: Arguments: [title] [] {"uid":"4307b50"}
+[2016-05-13 01:33:22] reverse-bid.INFO: Route: http://localhost:82/nuevo-usuario [GET] [] {"uid":"0fecbaf"}
+[2016-05-13 01:33:22] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"0fecbaf"}
+[2016-05-13 01:33:22] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"0fecbaf"}
+[2016-05-13 01:33:22] reverse-bid.INFO: Partial: createUser.php [200] [] {"uid":"0fecbaf"}
+[2016-05-13 01:33:22] reverse-bid.INFO: Arguments: [title] [] {"uid":"0fecbaf"}
+[2016-05-13 01:45:42] reverse-bid.INFO: Route: http://localhost:82/nuevo-usuario [POST] [] {"uid":"e1083bc"}
+[2016-05-13 01:45:42] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"e1083bc"}
+[2016-05-13 01:45:42] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"e1083bc"}
+[2016-05-13 01:45:42] reverse-bid.INFO: Partial: home.php [200] [] {"uid":"e1083bc"}
+[2016-05-13 01:45:42] reverse-bid.INFO: Arguments: [title, loggedUser] [] {"uid":"e1083bc"}
+[2016-05-13 02:00:26] reverse-bid.INFO: Route: http://localhost:82/ [GET] [] {"uid":"a39ef43"}
+[2016-05-13 02:00:26] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"a39ef43"}
+[2016-05-13 02:00:26] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"a39ef43"}
+[2016-05-13 02:00:26] reverse-bid.INFO: Partial: home.php [200] [] {"uid":"a39ef43"}
+[2016-05-13 02:00:26] reverse-bid.INFO: Arguments: [title] [] {"uid":"a39ef43"}
+[2016-05-13 02:00:28] reverse-bid.INFO: Route: http://localhost:82/logout [GET] [] {"uid":"6eee6c9"}
+[2016-05-13 02:00:28] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"6eee6c9"}
+[2016-05-13 02:00:28] reverse-bid.INFO: Route: http://localhost:82/ [GET] [] {"uid":"9e63b90"}
+[2016-05-13 02:00:28] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"9e63b90"}
+[2016-05-13 02:00:28] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"9e63b90"}
+[2016-05-13 02:00:28] reverse-bid.INFO: Partial: home.php [200] [] {"uid":"9e63b90"}
+[2016-05-13 02:00:28] reverse-bid.INFO: Arguments: [title] [] {"uid":"9e63b90"}
+[2016-05-13 02:00:29] reverse-bid.INFO: Route: http://localhost:82/nuevo-usuario [GET] [] {"uid":"c0b98b6"}
+[2016-05-13 02:00:29] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"c0b98b6"}
+[2016-05-13 02:00:29] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"c0b98b6"}
+[2016-05-13 02:00:29] reverse-bid.INFO: Partial: createUser.php [200] [] {"uid":"c0b98b6"}
+[2016-05-13 02:00:29] reverse-bid.INFO: Arguments: [title] [] {"uid":"c0b98b6"}
+[2016-05-13 02:00:40] reverse-bid.INFO: Route: http://localhost:82/ [GET] [] {"uid":"877b66e"}
+[2016-05-13 02:00:40] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"877b66e"}
+[2016-05-13 02:00:40] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"877b66e"}
+[2016-05-13 02:00:40] reverse-bid.INFO: Partial: home.php [200] [] {"uid":"877b66e"}
+[2016-05-13 02:00:40] reverse-bid.INFO: Arguments: [title] [] {"uid":"877b66e"}
+[2016-05-13 02:00:58] reverse-bid.INFO: Route: http://localhost:82/nuevo-usuario [GET] [] {"uid":"1638a6d"}
+[2016-05-13 02:00:58] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"1638a6d"}
+[2016-05-13 02:00:58] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"1638a6d"}
+[2016-05-13 02:00:58] reverse-bid.INFO: Partial: createUser.php [200] [] {"uid":"1638a6d"}
+[2016-05-13 02:00:58] reverse-bid.INFO: Arguments: [title] [] {"uid":"1638a6d"}
+[2016-05-13 02:01:02] reverse-bid.INFO: Route: http://localhost:82/login [GET] [] {"uid":"4c2e8c1"}
+[2016-05-13 02:01:02] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"4c2e8c1"}
+[2016-05-13 02:01:02] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"4c2e8c1"}
+[2016-05-13 02:01:02] reverse-bid.INFO: Partial: login.php [200] [] {"uid":"4c2e8c1"}
+[2016-05-13 02:01:02] reverse-bid.INFO: Arguments: [title] [] {"uid":"4c2e8c1"}
+[2016-05-13 02:08:18] reverse-bid.INFO: Route: http://localhost:82/login [GET] [] {"uid":"ee4dd24"}
+[2016-05-13 02:08:18] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"ee4dd24"}
+[2016-05-13 02:08:18] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"ee4dd24"}
+[2016-05-13 02:08:18] reverse-bid.INFO: Partial: login.php [200] [] {"uid":"ee4dd24"}
+[2016-05-13 02:08:18] reverse-bid.INFO: Arguments: [title] [] {"uid":"ee4dd24"}
+[2016-05-13 02:08:37] reverse-bid.INFO: Route: http://localhost:82/nuevo-usuario [GET] [] {"uid":"b23acf6"}
+[2016-05-13 02:08:37] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"b23acf6"}
+[2016-05-13 02:08:37] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"b23acf6"}
+[2016-05-13 02:08:37] reverse-bid.INFO: Partial: createUser.php [200] [] {"uid":"b23acf6"}
+[2016-05-13 02:08:37] reverse-bid.INFO: Arguments: [title] [] {"uid":"b23acf6"}
+[2016-05-13 02:08:52] reverse-bid.INFO: Route: http://localhost:82/login [GET] [] {"uid":"678d1f6"}
+[2016-05-13 02:08:52] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"678d1f6"}
+[2016-05-13 02:08:52] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"678d1f6"}
+[2016-05-13 02:08:52] reverse-bid.INFO: Partial: login.php [200] [] {"uid":"678d1f6"}
+[2016-05-13 02:08:52] reverse-bid.INFO: Arguments: [title] [] {"uid":"678d1f6"}
+[2016-05-13 02:09:17] reverse-bid.INFO: Route: http://localhost:82/login [POST] [] {"uid":"aad563a"}
+[2016-05-13 02:09:17] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"aad563a"}
+[2016-05-13 02:09:17] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"aad563a"}
+[2016-05-13 02:09:17] reverse-bid.INFO: Partial: login.php [200] [] {"uid":"aad563a"}
+[2016-05-13 02:09:17] reverse-bid.INFO: Arguments: [title, error] [] {"uid":"aad563a"}
+[2016-05-13 02:09:21] reverse-bid.INFO: Route: http://localhost:82/nuevo-usuario [GET] [] {"uid":"3c25369"}
+[2016-05-13 02:09:21] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"3c25369"}
+[2016-05-13 02:09:21] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"3c25369"}
+[2016-05-13 02:09:21] reverse-bid.INFO: Partial: createUser.php [200] [] {"uid":"3c25369"}
+[2016-05-13 02:09:21] reverse-bid.INFO: Arguments: [title] [] {"uid":"3c25369"}
+[2016-05-13 02:09:29] reverse-bid.INFO: Route: http://localhost:82/login [GET] [] {"uid":"f6a86d9"}
+[2016-05-13 02:09:29] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"f6a86d9"}
+[2016-05-13 02:09:29] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"f6a86d9"}
+[2016-05-13 02:09:29] reverse-bid.INFO: Partial: login.php [200] [] {"uid":"f6a86d9"}
+[2016-05-13 02:09:29] reverse-bid.INFO: Arguments: [title] [] {"uid":"f6a86d9"}
+[2016-05-13 02:09:32] reverse-bid.INFO: Route: http://localhost:82/login [GET] [] {"uid":"9b568d7"}
+[2016-05-13 02:09:32] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"9b568d7"}
+[2016-05-13 02:09:32] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"9b568d7"}
+[2016-05-13 02:09:32] reverse-bid.INFO: Partial: login.php [200] [] {"uid":"9b568d7"}
+[2016-05-13 02:09:32] reverse-bid.INFO: Arguments: [title] [] {"uid":"9b568d7"}
+[2016-05-13 02:09:55] reverse-bid.INFO: Route: http://localhost:82/login [POST] [] {"uid":"e4a65d1"}
+[2016-05-13 02:09:55] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"e4a65d1"}
+[2016-05-13 02:09:55] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"e4a65d1"}
+[2016-05-13 02:09:55] reverse-bid.INFO: Partial: login.php [200] [] {"uid":"e4a65d1"}
+[2016-05-13 02:09:55] reverse-bid.INFO: Arguments: [title, error] [] {"uid":"e4a65d1"}
+[2016-05-13 02:09:56] reverse-bid.INFO: Route: http://localhost:82/nuevo-usuario [GET] [] {"uid":"7e4bc98"}
+[2016-05-13 02:09:56] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"7e4bc98"}
+[2016-05-13 02:09:56] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"7e4bc98"}
+[2016-05-13 02:09:56] reverse-bid.INFO: Partial: createUser.php [200] [] {"uid":"7e4bc98"}
+[2016-05-13 02:09:56] reverse-bid.INFO: Arguments: [title] [] {"uid":"7e4bc98"}
+[2016-05-13 02:10:02] reverse-bid.INFO: Route: http://localhost:82/nuevo-usuario [GET] [] {"uid":"0a2ce83"}
+[2016-05-13 02:10:02] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"0a2ce83"}
+[2016-05-13 02:10:02] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"0a2ce83"}
+[2016-05-13 02:10:02] reverse-bid.INFO: Partial: createUser.php [200] [] {"uid":"0a2ce83"}
+[2016-05-13 02:10:02] reverse-bid.INFO: Arguments: [title] [] {"uid":"0a2ce83"}
+[2016-05-13 02:10:04] reverse-bid.INFO: Route: http://localhost:82/login [GET] [] {"uid":"5ea79b8"}
+[2016-05-13 02:10:04] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"5ea79b8"}
+[2016-05-13 02:10:04] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"5ea79b8"}
+[2016-05-13 02:10:04] reverse-bid.INFO: Partial: login.php [200] [] {"uid":"5ea79b8"}
+[2016-05-13 02:10:04] reverse-bid.INFO: Arguments: [title] [] {"uid":"5ea79b8"}
+[2016-05-13 02:11:08] reverse-bid.INFO: Route: http://localhost:82/login [GET] [] {"uid":"08f5c3d"}
+[2016-05-13 02:11:08] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"08f5c3d"}
+[2016-05-13 02:11:08] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"08f5c3d"}
+[2016-05-13 02:11:08] reverse-bid.INFO: Partial: login.php [200] [] {"uid":"08f5c3d"}
+[2016-05-13 02:11:08] reverse-bid.INFO: Arguments: [title] [] {"uid":"08f5c3d"}
+[2016-05-13 02:11:14] reverse-bid.INFO: Route: http://localhost:82/login [POST] [] {"uid":"e92bc2d"}
+[2016-05-13 02:11:14] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"e92bc2d"}
+[2016-05-13 02:11:14] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"e92bc2d"}
+[2016-05-13 02:11:14] reverse-bid.INFO: Partial: login.php [200] [] {"uid":"e92bc2d"}
+[2016-05-13 02:11:14] reverse-bid.INFO: Arguments: [title, error] [] {"uid":"e92bc2d"}
+[2016-05-13 02:11:17] reverse-bid.INFO: Route: http://localhost:82/nuevo-usuario [GET] [] {"uid":"b377ab3"}
+[2016-05-13 02:11:17] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"b377ab3"}
+[2016-05-13 02:11:17] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"b377ab3"}
+[2016-05-13 02:11:17] reverse-bid.INFO: Partial: createUser.php [200] [] {"uid":"b377ab3"}
+[2016-05-13 02:11:17] reverse-bid.INFO: Arguments: [title] [] {"uid":"b377ab3"}
+[2016-05-13 02:11:21] reverse-bid.INFO: Route: http://localhost:82/login [GET] [] {"uid":"c8728b0"}
+[2016-05-13 02:11:21] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"c8728b0"}
+[2016-05-13 02:11:21] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"c8728b0"}
+[2016-05-13 02:11:21] reverse-bid.INFO: Partial: login.php [200] [] {"uid":"c8728b0"}
+[2016-05-13 02:11:21] reverse-bid.INFO: Arguments: [title] [] {"uid":"c8728b0"}
+[2016-05-13 02:11:23] reverse-bid.INFO: Route: http://localhost:82/login [GET] [] {"uid":"3c91cd6"}
+[2016-05-13 02:11:23] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"3c91cd6"}
+[2016-05-13 02:11:23] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"3c91cd6"}
+[2016-05-13 02:11:23] reverse-bid.INFO: Partial: login.php [200] [] {"uid":"3c91cd6"}
+[2016-05-13 02:11:23] reverse-bid.INFO: Arguments: [title] [] {"uid":"3c91cd6"}
+[2016-05-13 02:11:32] reverse-bid.INFO: Route: http://localhost:82/login [POST] [] {"uid":"f983b49"}
+[2016-05-13 02:11:32] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"f983b49"}
+[2016-05-13 02:11:32] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"f983b49"}
+[2016-05-13 02:11:32] reverse-bid.INFO: Partial: login.php [200] [] {"uid":"f983b49"}
+[2016-05-13 02:11:32] reverse-bid.INFO: Arguments: [title, error] [] {"uid":"f983b49"}
+[2016-05-13 02:11:34] reverse-bid.INFO: Route: http://localhost:82/nuevo-usuario [GET] [] {"uid":"ce5d09a"}
+[2016-05-13 02:11:34] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"ce5d09a"}
+[2016-05-13 02:11:34] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"ce5d09a"}
+[2016-05-13 02:11:34] reverse-bid.INFO: Partial: createUser.php [200] [] {"uid":"ce5d09a"}
+[2016-05-13 02:11:34] reverse-bid.INFO: Arguments: [title] [] {"uid":"ce5d09a"}
+[2016-05-13 02:13:46] reverse-bid.INFO: Route: http://localhost:82/login [GET] [] {"uid":"ab71100"}
+[2016-05-13 02:13:46] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"ab71100"}
+[2016-05-13 02:13:46] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"ab71100"}
+[2016-05-13 02:13:46] reverse-bid.INFO: Partial: login.php [200] [] {"uid":"ab71100"}
+[2016-05-13 02:13:46] reverse-bid.INFO: Arguments: [title] [] {"uid":"ab71100"}
+[2016-05-13 02:13:51] reverse-bid.INFO: Route: http://localhost:82/nuevo-usuario [GET] [] {"uid":"f71d073"}
+[2016-05-13 02:13:51] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"f71d073"}
+[2016-05-13 02:13:51] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"f71d073"}
+[2016-05-13 02:13:51] reverse-bid.INFO: Partial: createUser.php [200] [] {"uid":"f71d073"}
+[2016-05-13 02:13:51] reverse-bid.INFO: Arguments: [title] [] {"uid":"f71d073"}
+[2016-05-13 02:15:12] reverse-bid.INFO: Route: http://localhost:82/ [GET] [] {"uid":"a310c00"}
+[2016-05-13 02:15:12] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"a310c00"}
+[2016-05-13 02:15:12] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"a310c00"}
+[2016-05-13 02:15:12] reverse-bid.INFO: Partial: home.php [200] [] {"uid":"a310c00"}
+[2016-05-13 02:15:12] reverse-bid.INFO: Arguments: [title] [] {"uid":"a310c00"}
+[2016-05-13 02:15:13] reverse-bid.INFO: Route: http://localhost:82/ [GET] [] {"uid":"b1a8be1"}
+[2016-05-13 02:15:13] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"b1a8be1"}
+[2016-05-13 02:15:13] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"b1a8be1"}
+[2016-05-13 02:15:13] reverse-bid.INFO: Partial: home.php [200] [] {"uid":"b1a8be1"}
+[2016-05-13 02:15:13] reverse-bid.INFO: Arguments: [title] [] {"uid":"b1a8be1"}
+[2016-05-13 02:15:15] reverse-bid.INFO: Route: http://localhost:82/login [GET] [] {"uid":"fc3c9b8"}
+[2016-05-13 02:15:15] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"fc3c9b8"}
+[2016-05-13 02:15:15] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"fc3c9b8"}
+[2016-05-13 02:15:15] reverse-bid.INFO: Partial: login.php [200] [] {"uid":"fc3c9b8"}
+[2016-05-13 02:15:15] reverse-bid.INFO: Arguments: [title] [] {"uid":"fc3c9b8"}
+[2016-05-13 02:16:34] reverse-bid.INFO: Route: http://localhost:82/login [GET] [] {"uid":"138ca09"}
+[2016-05-13 02:16:34] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"138ca09"}
+[2016-05-13 02:16:34] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"138ca09"}
+[2016-05-13 02:16:34] reverse-bid.INFO: Partial: login.php [200] [] {"uid":"138ca09"}
+[2016-05-13 02:16:34] reverse-bid.INFO: Arguments: [title] [] {"uid":"138ca09"}
+[2016-05-13 02:16:37] reverse-bid.INFO: Route: http://localhost:82/nuevo-usuario [GET] [] {"uid":"191fd10"}
+[2016-05-13 02:16:37] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"191fd10"}
+[2016-05-13 02:16:37] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"191fd10"}
+[2016-05-13 02:16:37] reverse-bid.INFO: Partial: createUser.php [200] [] {"uid":"191fd10"}
+[2016-05-13 02:16:37] reverse-bid.INFO: Arguments: [title] [] {"uid":"191fd10"}
+[2016-05-13 02:16:45] reverse-bid.INFO: Route: http://localhost:82/login [GET] [] {"uid":"3d4136d"}
+[2016-05-13 02:16:45] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"3d4136d"}
+[2016-05-13 02:16:45] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"3d4136d"}
+[2016-05-13 02:16:45] reverse-bid.INFO: Partial: login.php [200] [] {"uid":"3d4136d"}
+[2016-05-13 02:16:45] reverse-bid.INFO: Arguments: [title] [] {"uid":"3d4136d"}
+[2016-05-13 02:17:41] reverse-bid.INFO: Route: http://localhost:82/login [GET] [] {"uid":"8e240dd"}
+[2016-05-13 02:17:41] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"8e240dd"}
+[2016-05-13 02:17:41] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"8e240dd"}
+[2016-05-13 02:17:41] reverse-bid.INFO: Partial: login.php [200] [] {"uid":"8e240dd"}
+[2016-05-13 02:17:41] reverse-bid.INFO: Arguments: [title] [] {"uid":"8e240dd"}
+[2016-05-13 02:17:47] reverse-bid.INFO: Route: http://localhost:82/nuevo-usuario [GET] [] {"uid":"0bb13aa"}
+[2016-05-13 02:17:47] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"0bb13aa"}
+[2016-05-13 02:17:47] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"0bb13aa"}
+[2016-05-13 02:17:47] reverse-bid.INFO: Partial: createUser.php [200] [] {"uid":"0bb13aa"}
+[2016-05-13 02:17:47] reverse-bid.INFO: Arguments: [title] [] {"uid":"0bb13aa"}
+[2016-05-13 02:17:49] reverse-bid.INFO: Route: http://localhost:82/login [GET] [] {"uid":"634d5f9"}
+[2016-05-13 02:17:49] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"634d5f9"}
+[2016-05-13 02:17:49] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"634d5f9"}
+[2016-05-13 02:17:49] reverse-bid.INFO: Partial: login.php [200] [] {"uid":"634d5f9"}
+[2016-05-13 02:17:49] reverse-bid.INFO: Arguments: [title] [] {"uid":"634d5f9"}
+[2016-05-13 02:18:15] reverse-bid.INFO: Route: http://localhost:82/login [GET] [] {"uid":"db4c33c"}
+[2016-05-13 02:18:15] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"db4c33c"}
+[2016-05-13 02:18:15] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"db4c33c"}
+[2016-05-13 02:18:15] reverse-bid.INFO: Partial: login.php [200] [] {"uid":"db4c33c"}
+[2016-05-13 02:18:15] reverse-bid.INFO: Arguments: [title] [] {"uid":"db4c33c"}
+[2016-05-13 02:19:35] reverse-bid.INFO: Route: http://localhost:82/login [GET] [] {"uid":"4df7ceb"}
+[2016-05-13 02:19:35] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"4df7ceb"}
+[2016-05-13 02:19:35] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"4df7ceb"}
+[2016-05-13 02:19:35] reverse-bid.INFO: Partial: login.php [200] [] {"uid":"4df7ceb"}
+[2016-05-13 02:19:35] reverse-bid.INFO: Arguments: [title] [] {"uid":"4df7ceb"}
+[2016-05-13 02:19:59] reverse-bid.INFO: Route: http://localhost:82/login [GET] [] {"uid":"ec60904"}
+[2016-05-13 02:19:59] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"ec60904"}
+[2016-05-13 02:19:59] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"ec60904"}
+[2016-05-13 02:19:59] reverse-bid.INFO: Partial: login.php [200] [] {"uid":"ec60904"}
+[2016-05-13 02:19:59] reverse-bid.INFO: Arguments: [title] [] {"uid":"ec60904"}
+[2016-05-13 02:20:02] reverse-bid.INFO: Route: http://localhost:82/nuevo-usuario [GET] [] {"uid":"a351605"}
+[2016-05-13 02:20:02] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"a351605"}
+[2016-05-13 02:20:02] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"a351605"}
+[2016-05-13 02:20:02] reverse-bid.INFO: Partial: createUser.php [200] [] {"uid":"a351605"}
+[2016-05-13 02:20:02] reverse-bid.INFO: Arguments: [title] [] {"uid":"a351605"}
+[2016-05-13 02:20:06] reverse-bid.INFO: Route: http://localhost:82/login [GET] [] {"uid":"9f2da2e"}
+[2016-05-13 02:20:06] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"9f2da2e"}
+[2016-05-13 02:20:06] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"9f2da2e"}
+[2016-05-13 02:20:06] reverse-bid.INFO: Partial: login.php [200] [] {"uid":"9f2da2e"}
+[2016-05-13 02:20:06] reverse-bid.INFO: Arguments: [title] [] {"uid":"9f2da2e"}
+[2016-05-13 02:20:08] reverse-bid.INFO: Route: http://localhost:82/nuevo-usuario [GET] [] {"uid":"0c5cc63"}
+[2016-05-13 02:20:08] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"0c5cc63"}
+[2016-05-13 02:20:08] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"0c5cc63"}
+[2016-05-13 02:20:08] reverse-bid.INFO: Partial: createUser.php [200] [] {"uid":"0c5cc63"}
+[2016-05-13 02:20:08] reverse-bid.INFO: Arguments: [title] [] {"uid":"0c5cc63"}
+[2016-05-13 02:20:11] reverse-bid.INFO: Route: http://localhost:82/login [GET] [] {"uid":"2d76f7a"}
+[2016-05-13 02:20:11] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"2d76f7a"}
+[2016-05-13 02:20:11] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"2d76f7a"}
+[2016-05-13 02:20:11] reverse-bid.INFO: Partial: login.php [200] [] {"uid":"2d76f7a"}
+[2016-05-13 02:20:11] reverse-bid.INFO: Arguments: [title] [] {"uid":"2d76f7a"}
+[2016-05-13 02:20:14] reverse-bid.INFO: Route: http://localhost:82/nuevo-usuario [GET] [] {"uid":"79d8d3b"}
+[2016-05-13 02:20:14] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"79d8d3b"}
+[2016-05-13 02:20:14] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"79d8d3b"}
+[2016-05-13 02:20:14] reverse-bid.INFO: Partial: createUser.php [200] [] {"uid":"79d8d3b"}
+[2016-05-13 02:20:14] reverse-bid.INFO: Arguments: [title] [] {"uid":"79d8d3b"}
+[2016-05-13 02:20:16] reverse-bid.INFO: Route: http://localhost:82/login [GET] [] {"uid":"5897e51"}
+[2016-05-13 02:20:16] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"5897e51"}
+[2016-05-13 02:20:16] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"5897e51"}
+[2016-05-13 02:20:16] reverse-bid.INFO: Partial: login.php [200] [] {"uid":"5897e51"}
+[2016-05-13 02:20:16] reverse-bid.INFO: Arguments: [title] [] {"uid":"5897e51"}
+[2016-05-13 02:20:19] reverse-bid.INFO: Route: http://localhost:82/nuevo-usuario [GET] [] {"uid":"d238788"}
+[2016-05-13 02:20:19] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"d238788"}
+[2016-05-13 02:20:19] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"d238788"}
+[2016-05-13 02:20:19] reverse-bid.INFO: Partial: createUser.php [200] [] {"uid":"d238788"}
+[2016-05-13 02:20:19] reverse-bid.INFO: Arguments: [title] [] {"uid":"d238788"}
+[2016-05-13 02:20:21] reverse-bid.INFO: Route: http://localhost:82/login [GET] [] {"uid":"5701fc7"}
+[2016-05-13 02:20:21] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"5701fc7"}
+[2016-05-13 02:20:21] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"5701fc7"}
+[2016-05-13 02:20:21] reverse-bid.INFO: Partial: login.php [200] [] {"uid":"5701fc7"}
+[2016-05-13 02:20:21] reverse-bid.INFO: Arguments: [title] [] {"uid":"5701fc7"}
+[2016-05-13 02:20:24] reverse-bid.INFO: Route: http://localhost:82/nuevo-usuario [GET] [] {"uid":"d086dd0"}
+[2016-05-13 02:20:24] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 [] {"uid":"d086dd0"}
+[2016-05-13 02:20:24] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"d086dd0"}
+[2016-05-13 02:20:24] reverse-bid.INFO: Partial: createUser.php [200] [] {"uid":"d086dd0"}
+[2016-05-13 02:20:24] reverse-bid.INFO: Arguments: [title] [] {"uid":"d086dd0"}
+[2016-05-13 10:39:19] reverse-bid.INFO: Route: http://localhost:82/ [GET] [] {"uid":"bfd7436"}
+[2016-05-13 10:39:19] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36 [] {"uid":"bfd7436"}
+[2016-05-13 10:39:19] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"bfd7436"}
+[2016-05-13 10:39:19] reverse-bid.INFO: Partial: home.php [200] [] {"uid":"bfd7436"}
+[2016-05-13 10:39:19] reverse-bid.INFO: Arguments: [title] [] {"uid":"bfd7436"}
+[2016-05-13 10:40:16] reverse-bid.INFO: Route: http://localhost:82/login [GET] [] {"uid":"9b4cd56"}
+[2016-05-13 10:40:16] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36 [] {"uid":"9b4cd56"}
+[2016-05-13 10:40:16] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"9b4cd56"}
+[2016-05-13 10:40:16] reverse-bid.INFO: Partial: login.php [200] [] {"uid":"9b4cd56"}
+[2016-05-13 10:40:16] reverse-bid.INFO: Arguments: [title] [] {"uid":"9b4cd56"}
+[2016-05-13 10:40:29] reverse-bid.INFO: Route: http://localhost:82/nuevo-usuario [GET] [] {"uid":"01329f1"}
+[2016-05-13 10:40:29] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36 [] {"uid":"01329f1"}
+[2016-05-13 10:40:29] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"01329f1"}
+[2016-05-13 10:40:29] reverse-bid.INFO: Partial: createUser.php [200] [] {"uid":"01329f1"}
+[2016-05-13 10:40:29] reverse-bid.INFO: Arguments: [title] [] {"uid":"01329f1"}
+[2016-05-13 10:40:43] reverse-bid.INFO: Route: http://localhost:82/nuevo-usuario [GET] [] {"uid":"c718667"}
+[2016-05-13 10:40:43] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36 [] {"uid":"c718667"}
+[2016-05-13 10:40:43] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"c718667"}
+[2016-05-13 10:40:43] reverse-bid.INFO: Partial: createUser.php [200] [] {"uid":"c718667"}
+[2016-05-13 10:40:43] reverse-bid.INFO: Arguments: [title] [] {"uid":"c718667"}
+[2016-05-13 10:40:44] reverse-bid.INFO: Route: http://localhost:82/ [GET] [] {"uid":"60b6d7a"}
+[2016-05-13 10:40:44] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36 [] {"uid":"60b6d7a"}
+[2016-05-13 10:40:44] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"60b6d7a"}
+[2016-05-13 10:40:44] reverse-bid.INFO: Partial: home.php [200] [] {"uid":"60b6d7a"}
+[2016-05-13 10:40:44] reverse-bid.INFO: Arguments: [title] [] {"uid":"60b6d7a"}
+[2016-05-13 10:40:56] reverse-bid.INFO: Route: http://localhost:82/nuevo-usuario [GET] [] {"uid":"7b75fb1"}
+[2016-05-13 10:40:56] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36 [] {"uid":"7b75fb1"}
+[2016-05-13 10:40:56] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"7b75fb1"}
+[2016-05-13 10:40:56] reverse-bid.INFO: Partial: createUser.php [200] [] {"uid":"7b75fb1"}
+[2016-05-13 10:40:56] reverse-bid.INFO: Arguments: [title] [] {"uid":"7b75fb1"}
+[2016-05-13 10:40:58] reverse-bid.INFO: Route: http://localhost:82/login [GET] [] {"uid":"73c4fc8"}
+[2016-05-13 10:40:58] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36 [] {"uid":"73c4fc8"}
+[2016-05-13 10:40:58] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"73c4fc8"}
+[2016-05-13 10:40:58] reverse-bid.INFO: Partial: login.php [200] [] {"uid":"73c4fc8"}
+[2016-05-13 10:40:58] reverse-bid.INFO: Arguments: [title] [] {"uid":"73c4fc8"}
+[2016-05-13 10:42:08] reverse-bid.INFO: Route: http://localhost:82/nuevo-usuario [GET] [] {"uid":"995dc74"}
+[2016-05-13 10:42:08] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36 [] {"uid":"995dc74"}
+[2016-05-13 10:42:08] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"995dc74"}
+[2016-05-13 10:42:08] reverse-bid.INFO: Partial: createUser.php [200] [] {"uid":"995dc74"}
+[2016-05-13 10:42:08] reverse-bid.INFO: Arguments: [title] [] {"uid":"995dc74"}
+[2016-05-13 10:43:31] reverse-bid.INFO: Route: http://localhost:82/nuevo-usuario [POST] [] {"uid":"ee06cbc"}
+[2016-05-13 10:43:31] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36 [] {"uid":"ee06cbc"}
+[2016-05-13 10:43:32] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"ee06cbc"}
+[2016-05-13 10:43:32] reverse-bid.INFO: Partial: home.php [200] [] {"uid":"ee06cbc"}
+[2016-05-13 10:43:32] reverse-bid.INFO: Arguments: [title, loggedUser] [] {"uid":"ee06cbc"}
+[2016-05-13 19:39:07] reverse-bid.INFO: Route: http://localhost:82/ [GET] [] {"uid":"4d95726"}
+[2016-05-13 19:39:07] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36 [] {"uid":"4d95726"}
+[2016-05-13 19:39:07] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"4d95726"}
+[2016-05-13 19:39:07] reverse-bid.INFO: Partial: home.php [200] [] {"uid":"4d95726"}
+[2016-05-13 19:39:07] reverse-bid.INFO: Arguments: [title] [] {"uid":"4d95726"}
+[2016-05-13 19:39:15] reverse-bid.INFO: Route: http://localhost:82/miperfil [GET] [] {"uid":"79fafed"}
+[2016-05-13 19:39:15] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36 [] {"uid":"79fafed"}
+[2016-05-13 19:39:15] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"79fafed"}
+[2016-05-13 19:39:15] reverse-bid.INFO: Partial: miperfil.php [200] [] {"uid":"79fafed"}
+[2016-05-13 19:39:15] reverse-bid.INFO: Arguments: [title] [] {"uid":"79fafed"}
+[2016-05-13 19:46:54] reverse-bid.INFO: Route: http://localhost:82/ [GET] [] {"uid":"de7d777"}
+[2016-05-13 19:46:54] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36 [] {"uid":"de7d777"}
+[2016-05-13 19:46:54] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"de7d777"}
+[2016-05-13 19:46:54] reverse-bid.INFO: Partial: home.php [200] [] {"uid":"de7d777"}
+[2016-05-13 19:46:54] reverse-bid.INFO: Arguments: [title] [] {"uid":"de7d777"}
+[2016-05-13 19:46:58] reverse-bid.INFO: Route: http://localhost:82/login [GET] [] {"uid":"e2ce8ba"}
+[2016-05-13 19:46:58] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36 [] {"uid":"e2ce8ba"}
+[2016-05-13 19:46:58] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"e2ce8ba"}
+[2016-05-13 19:46:58] reverse-bid.INFO: Partial: login.php [200] [] {"uid":"e2ce8ba"}
+[2016-05-13 19:46:58] reverse-bid.INFO: Arguments: [title] [] {"uid":"e2ce8ba"}
+[2016-05-13 19:50:09] reverse-bid.INFO: Route: http://localhost:82/miperfil [GET] [] {"uid":"c5f4074"}
+[2016-05-13 19:50:09] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36 [] {"uid":"c5f4074"}
+[2016-05-13 19:50:09] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"c5f4074"}
+[2016-05-13 19:50:09] reverse-bid.INFO: Partial: miperfil.php [200] [] {"uid":"c5f4074"}
+[2016-05-13 19:50:09] reverse-bid.INFO: Arguments: [title] [] {"uid":"c5f4074"}
+[2016-05-13 19:56:16] reverse-bid.INFO: Route: http://localhost:82/login [GET] [] {"uid":"48d0049"}
+[2016-05-13 19:56:16] reverse-bid.INFO: Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36 [] {"uid":"48d0049"}
+[2016-05-13 19:56:16] reverse-bid.INFO: Layout: DefaultLayout.php [200] [] {"uid":"48d0049"}
+[2016-05-13 19:56:16] reverse-bid.INFO: Partial: login.php [200] [] {"uid":"48d0049"}
+[2016-05-13 19:56:16] reverse-bid.INFO: Arguments: [title] [] {"uid":"48d0049"}
