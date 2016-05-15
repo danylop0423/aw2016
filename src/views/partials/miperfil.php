@@ -1,8 +1,8 @@
 <div id="contenedor">
 		<div id="data">
-		  <div class="row ">
+		  <div class="row card-panel">
 			<div class="col s12 flow-text ">
-			  <div class="card right">
+			  <div class=" left">
 				  <div class="card-content left">
 					  <h2 class="red-text text-darken-4 card-title">Datos Personales</h2>
 					  <ul class="indigo-text text-darken-4" >
