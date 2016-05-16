@@ -1,6 +1,6 @@
 <div id="contenedor">
 		<div id="data">
-		  <div class="row card-panel">
+		  <div class="row card-panel light-green lighten-5 z-depth-3">
 			<div class="col s12 flow-text ">
 			  <div class=" left">
 				  <div class="card-content left">
@@ -31,7 +31,7 @@
 			   
 		  <div class="row">
 			<div class="col s12 m7">
-			  <div class="card">
+			  <div class="card z-depth-2">
 				  <div class="card-image left">
 				   <img src="/assets/images/smartw6.png">	  
 				  </div>
@@ -51,7 +51,7 @@
 		  
 		  <div class="row">
 			<div class="col s12 m7">
-			  <div class="card">
+			  <div class="card z-depth-2">
 				  <div class="card-image left">
 				   <img src="/assets/images/smartw4.png">	  
 				  </div>
@@ -78,7 +78,7 @@
 			   
 		  <div class="row">
 			<div class="col s12 m7">
-			  <div class="card">
+			  <div class="card z-depth-2">
 				  <div class="card-image left">
 				   <img src="/assets/images/smartw4.png">	  
 				  </div>
@@ -99,7 +99,7 @@
 			   
 		  <div class="row">
 			<div class="col s12 m7">
-			  <div class="card">
+			  <div class="card z-depth-2">
 				  <div class="card-image left">
 				   <img src="/assets/images/smartw6.png">	  
 				  </div>
