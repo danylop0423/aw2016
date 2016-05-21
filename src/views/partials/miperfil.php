@@ -1,9 +1,9 @@
 <div id="contenedor">
 		<div id="data">
 		  <div class="row card-panel light-green lighten-5 z-depth-3">
-			<div class="col s12 flow-text ">
+			<div class="col s12 flow-text">
 			  <div class=" left">
-				  <div class="card-content left">
+				  <div class="col s8 card-content">
 					  <h2 class="red-text text-darken-4 card-title">Datos Personales</h2>
 					  <ul class="indigo-text text-darken-4" >
 						<li>Name:<span class="blue-text text-darken-6"> Pepe</span></li> 
@@ -12,12 +12,30 @@
 						<li>Pujas Activas: <span class="blue-text text-darken-6"> 2 </span></li>
 					  </ul>
 				  </div>
-				  <div class="card-image left">
-				      <img src="/assets/images/add_user.png">	  
-				    </div>
-				</div>
-			</div>
-		   </div>
+				  
+				<div class=" card-image left ">
+					<img src="/assets/images/add_user.png">
+				</div>				  
+				  
+			  
+			      <div class="row card-content right ">	
+					<form  action="#">
+						<div class="file-field input-field">
+							<div class="btn">
+								<span>File</span>
+								<input type="file">
+							</div>
+							<div class="file-path-wrapper">
+								<input class="file-path validate" type="text">
+							</div>
+						</div>
+					</form>
+				  </div>
+
+			  
+		     </div>
+		  </div>
+		</div>
 	  </div>
 		
 	

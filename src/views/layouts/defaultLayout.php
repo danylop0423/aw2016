@@ -11,8 +11,8 @@
 <body>
     <header>
         <nav class="top-nav">
-            <div class="container">
-                <div class="nav-wrapper left-align">
+            <div class="container ">
+                <div class="nav-wrapper left-align  ">
                     <a class="page-title"><?php echo $title ?></a>
 
                     <?php if ($loggedUser): ?>
@@ -22,13 +22,13 @@
                         </a>
 
                         <ul id="dropdown" class="dropdown-content">
-                            <li><a href="#!">Perfil</a></li>
+                            <li><a href="/miperfil">Perfil</a></li>
                             <li class="divider"></li>
-                            <li><a href="#!">Subastas</a></li>
+                            <li><a href="/miperfil#missubastas">Subastas</a></li>
                             <li class="divider"></li>
-                            <li><a href="#!">Pujas</a></li>
+                            <li><a href="/miperfil#mispujas">Pujas</a></li>
                             <li class="divider"></li>
-                            <li><a href="#!">Cerrar sesión</a></li>
+                            <li><a href="/logout">Cerrar sesión</a></li>
                         </ul>
                     <?php endif ?>
                 </div>
@@ -103,8 +103,8 @@
                         <div class="collapsible-body" style="">
                             <ul>
                                 <li><a href="/miperfil">Mi perfil</a></li>
-                                <li><a href="#">Mis subastas </a></li>
-                                <li><a href="#">Mis pujas </a></li>
+                                <li><a href="/miperfil#missubastas">Mis subastas </a></li>
+                                <li><a href="/miperfil#mispujas">Mis pujas </a></li>
                             </ul>
                         </div>
                     </li>
