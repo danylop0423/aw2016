@@ -2,7 +2,20 @@
 
 class UserController extends AbstractController
 {
-    public function createUser($request, $response, $args)
+    public function showProfileAction($request, $response, $args)
+    {
+        $args['title'] = 'Mi Perfil';
+
+        $loggedUser = $request->getAttribute('loggedUser');
+
+        if ($loggedUser) {
+            return $this->render($response,'miperfil.php', $args);
+        } else {
+            return $this->render($response,'login.php', $args);
+        }
+    }
+
+    public function createUserAction($request, $response, $args)
     {
         $args['title'] = 'Nuevo usuario';
 
@@ -43,10 +56,7 @@ class UserController extends AbstractController
             ->execute()
             ->fetch()
         ;
-        if($user){
-         return true;
-	    }else{
-		  return false;
-		  }	
+
+        return $user !== null;
     }
 }

@@ -10,7 +10,8 @@
 }
 @media #{$large-and-up} {
   .container {
-    width: 70%;
+    margin: inherit;
+    width: calc(100% - 320px);
   }
 }
 .container .row {

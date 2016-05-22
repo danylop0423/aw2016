@@ -1,5 +1,7 @@
 @import "../materialize/materialize.scss";
 
-@import "default.scss";
-@import "forms.scss";
-@import "login.scss";
+@import "components/section";
+@import "components/forms.scss";
+
+@import "pages/default.scss";
+@import "pages/login.scss";

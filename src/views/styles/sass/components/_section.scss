@@ -1,0 +1,13 @@
+.section-title {
+    color: $primary_color;
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    &:after {
+        content: "";
+        display: block;
+        margin-top: 3px;
+        border: 2px solid #C62828;
+    }
+}

@@ -2618,7 +2618,8 @@ nav ul a span.badge {
 
 @media only screen and (min-width: 993px) {
   .container {
-    width: 70%; } }
+    margin: inherit;
+    width: calc(100% - 320px); } }
 
 .container .row {
   margin-left: -0.75rem;
@@ -6135,6 +6136,23 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   .picker--time .picker__box {
     margin-bottom: 5em; } }
 
+.section-title {
+  color: #C62828;
+  font-size: 36px;
+  font-weight: bold;
+  text-transform: uppercase; }
+  .section-title:after {
+    content: "";
+    display: block;
+    margin-top: 3px;
+    border: 2px solid #C62828; }
+
+form .collapsible .collapsible-body {
+  padding: 15px 40px; }
+
+form .buttons-wrapper {
+  margin-top: 30px; }
+
 body {
   display: flex;
   min-height: 100vh;
@@ -6281,13 +6299,7 @@ a.button-collapse i {
 
 @media (min-width: 2000px) {
   .container {
-    margin-left: auto; } }
-
-form .collapsible .collapsible-body {
-  padding: 15px 40px; }
-
-form .buttons-wrapper {
-  margin-top: 30px; }
+    margin: 0 auto; } }
 
 .login-page .login-card {
   width: 60%;
