@@ -8,6 +8,7 @@ class UserController extends AbstractController
 
         $loggedUser = $request->getAttribute('loggedUser');
 
+		$picDefault="/assets/images/add_user.png";
         if ($loggedUser) {
 			            $email= $loggedUser['email']; 
 						$bdUser = $this->db->select()
@@ -19,6 +20,17 @@ class UserController extends AbstractController
 								if ($bdUser) {
 									$args['nombre'] = $bdUser['nombre'];
 									$args['apellido'] = $bdUser['apellido'];
+									$args['email'] = $bdUser['email'];
+									$args['telefono'] = $bdUser['telefono'];
+									$args['calle'] = $bdUser['calle'];
+									$args['cp'] = $bdUser['codigo_postal'];
+									$args['poblacion'] = $bdUser['poblacion'];
+									$args['ciudad'] = $bdUser['ciudad'];
+									if($bdUser['foto']){ 
+									  $args['foto']=$bdUser['foto'];
+									   }else{
+									     $args['foto']=$picDefault;
+										 }	
 									$args['loggedUser'] = $loggedUser;
 									$_SESSION['loggeduser'] = base64_encode(serialize($loggedUser));
 
