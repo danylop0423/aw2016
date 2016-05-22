@@ -1,12 +1,12 @@
 <?php
 // Routes
 
-$app->get('/', 'HomeController:home');
+$app->get('/', 'HomeController:homeAction');
 
-$app->any('/login', 'HomeController:login');
+$app->any('/login', 'HomeController:loginAction');
 
-$app->get('/logout', 'HomeController:logout');
+$app->get('/logout', 'HomeController:logoutAction');
 
-$app->any('/nuevo-usuario', 'UserController:createUser');
+$app->any('/nuevo-usuario', 'UserController:createUserAction');
 
-$app->any('/miperfil','HomeController:createProfile');
+$app->get('/miperfil','UserController:showProfileAction');
