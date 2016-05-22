@@ -1,3 +1,8 @@
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">	
+</head>
+
 <div id="contenedor">
 		<div id="data">
 		  <div class="row card-panel light-green lighten-5 z-depth-3">
@@ -6,8 +11,8 @@
 				  <div class="col s8 card-content">
 					  <h2 class="red-text text-darken-4 card-title">Datos Personales</h2>
 					  <ul class="indigo-text text-darken-4" >
-						<li>Name:<span class="blue-text text-darken-6"> Pepe</span></li> 
-						<li>Apellido: <span class="blue-text text-darken-6"> Smith</span></li>
+						<li>Name:<span class="blue-text text-darken-6"><?php echo $nombre?></span></li> 
+						<li>Apellido: <span class="blue-text text-darken-6"><?php echo $apellido?></span></li>
 						<li>Subastas Activas: <span class="blue-text text-darken-6"> 2 </span></li>
 						<li>Pujas Activas: <span class="blue-text text-darken-6"> 2 </span></li>
 					  </ul>
@@ -19,17 +24,21 @@
 				  
 			  
 			      <div class="row card-content right ">	
-					<form  action="#">
-						<div class="file-field input-field">
+					 <fieldset>
+						<legend class="blue-text text-darken-6">Subir Nueva Foto:</legend>
+						<form  action="#">
+						<div class="file-field input-field card-reveal">
 							<div class="btn">
-								<span>File</span>
+								<span>Browse..</span>
 								<input type="file">
 							</div>
 							<div class="file-path-wrapper">
 								<input class="file-path validate" type="text">
 							</div>
 						</div>
-					</form>
+						</form>
+					 </fieldset>
+					</div> 
 				  </div>
 
 			  

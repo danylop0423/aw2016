@@ -9,12 +9,30 @@ class UserController extends AbstractController
         $loggedUser = $request->getAttribute('loggedUser');
 
         if ($loggedUser) {
-            return $this->render($response,'miperfil.php', $args);
-        } else {
-            return $this->render($response,'login.php', $args);
-        }
-    }
+			            $email= $loggedUser['email']; 
+						$bdUser = $this->db->select()
+									->from('usuarios')
+									->where('email', '=', htmlspecialchars($email))
+									->execute()
+									->fetch()
+								;
+								if ($bdUser) {
+									$args['nombre'] = $bdUser['nombre'];
+									$args['apellido'] = $bdUser['apellido'];
+									$args['loggedUser'] = $loggedUser;
+									$_SESSION['loggeduser'] = base64_encode(serialize($loggedUser));
 
+									return $this->render($response,'miperfil.php', $args);
+								}
+
+								$args['error'] = 'Error al consultar los datos';
+     } else {
+         return $this->render($response,'login.php', $args);
+     }
+ }
+
+ 
+ 
     public function createUserAction($request, $response, $args)
     {
         $args['title'] = 'Nuevo usuario';
