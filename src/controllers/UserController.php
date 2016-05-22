@@ -39,7 +39,6 @@ class UserController extends AbstractController
 
         if ($request->isPost()) {
             $user = $request->getParam('user');
-
             if (!$this->userExist($user['email'])) {
                 unset($user['password-r']);
 
@@ -74,7 +73,7 @@ class UserController extends AbstractController
             ->execute()
             ->fetch()
         ;
-
-        return $user !== null;
+	
+        return $user;
     }
 }
