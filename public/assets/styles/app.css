@@ -2618,7 +2618,8 @@ nav ul a span.badge {
 
 @media only screen and (min-width: 993px) {
   .container {
-    width: 70%; } }
+    margin: inherit;
+    width: calc(100% - 320px); } }
 
 .container .row {
   margin-left: -0.75rem;
@@ -6281,7 +6282,7 @@ a.button-collapse i {
 
 @media (min-width: 2000px) {
   .container {
-    margin-left: auto; } }
+    margin: 0 auto; } }
 
 form .collapsible .collapsible-body {
   padding: 15px 40px; }
