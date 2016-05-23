@@ -10,7 +10,7 @@ class UserController extends AbstractController
 
 		$picDefault="/assets/images/add_user.png";
         if ($loggedUser) {
-			            $email= $loggedUser['email']; 
+			            $email= $loggedUser['email'];
 						$bdUser = $this->db->select()
 									->from('usuarios')
 									->where('email', '=', htmlspecialchars($email))
@@ -26,11 +26,11 @@ class UserController extends AbstractController
 									$args['cp'] = $bdUser['codigo_postal'];
 									$args['poblacion'] = $bdUser['poblacion'];
 									$args['ciudad'] = $bdUser['ciudad'];
-									if($bdUser['foto']){ 
+									if($bdUser['foto']){
 									  $args['foto']=$bdUser['foto'];
 									   }else{
 									     $args['foto']=$picDefault;
-										 }	
+										 }
 									$args['loggedUser'] = $loggedUser;
 									$_SESSION['loggeduser'] = base64_encode(serialize($loggedUser));
 
@@ -43,15 +43,13 @@ class UserController extends AbstractController
      }
  }
 
- 
- 
     public function createUserAction($request, $response, $args)
     {
         $args['title'] = 'Nuevo usuario';
 
         if ($request->isPost()) {
             $user = $request->getParam('user');
-            if (!$this->userExist($user['email'])) {
+            if (!$this->userExists($user['email'])) {
                 unset($user['password-r']);
 
                 $id = $this->db->insert(array_keys($user))
@@ -77,7 +75,7 @@ class UserController extends AbstractController
         return $this->render($response, 'createUser.php', $args);
     }
 
-    private function userExist($email)
+    private function userExists($email)
     {
         $user = $this->db->select()
             ->from('usuarios')
@@ -85,7 +83,7 @@ class UserController extends AbstractController
             ->execute()
             ->fetch()
         ;
-	
-        return $user;
+
+        return $user !== false;
     }
 }
