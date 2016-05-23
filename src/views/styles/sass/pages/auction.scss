@@ -1,0 +1,61 @@
+.auction-page {
+    .auction {
+        p {
+            font-size: 25px;
+            font-weight: bold;
+            text-align: center;
+
+            &:nth-child(2) {
+                margin-top: 15px;
+                margin-bottom: 0;
+            }
+
+            &:nth-child(3) {
+                margin-top: 0;
+            }
+        }
+    }
+
+    .auctioneer {
+        .rating {
+            p {
+                &:nth-child(1) {
+                    margin-bottom: 0;
+                }
+
+                &:nth-child(2) {
+                    margin-top: 0;
+                }
+            }
+
+            .fa-star,
+            .fa-star-o,
+            .fa-star-half-o {
+                color: $primary_color;
+            }
+        }
+    }
+
+    .bid {
+        .bid-amount {
+            color: $primary_color;
+            font-size: 30px;
+            border-width: bold;
+            margin-bottom: 20px;
+
+            .fa-gavel {
+                font-size: 50px;
+            }
+        }
+    }
+
+    .section-title {
+        margin-top: 50px;
+        font-size: 22px;
+
+        &:after {
+            margin-top: 0;
+            border-width: 1px;
+        }
+    }
+}

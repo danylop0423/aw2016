@@ -10,8 +10,9 @@ gulp.task('serve', ['sass'], function () {
         proxy: 'reversebid.dev'
     });
 
-    gulp.watch('./src/views/styles/sass/*.scss', ['sass']);
-    gulp.watch('./src/views/partials/*.php').on('change', browserSync.reload);
+    gulp.watch('./src/views/styles/sass/**/*.scss', ['sass']);
+    gulp.watch('./src/**/*.php').on('change', browserSync.reload);
+    gulp.watch('./src/**/**/*.php').on('change', browserSync.reload);
 });
 
 gulp.task('sass', function () {
