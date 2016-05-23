@@ -13,7 +13,9 @@ $app->any('/nuevo-usuario', 'UserController:createUserAction');
 
 $app->get('/profile','UserController:showProfileAction');
 
-$app->any('/editProfile','UserController:editProfileAction');
+$app->get('/editProfile','UserController:editProfileAction');
 
-$app->get('/subasta/{id}', 'AuctionController:showAuctionAction');
+
+/* AuctionController Routes */
+ $app->get('/subasta/{id}', 'AuctionController:showAuctionAction');
 
