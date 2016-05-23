@@ -1,7 +1,9 @@
 @import "../materialize/materialize.scss";
 
+@import "components/helpers";
 @import "components/section";
 @import "components/forms.scss";
 
 @import "pages/default.scss";
 @import "pages/login.scss";
+@import "pages/auction.scss";

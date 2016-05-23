@@ -6136,6 +6136,11 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   .picker--time .picker__box {
     margin-bottom: 5em; } }
 
+.clear-fix:after {
+  display: block;
+  content: "";
+  clear: both; }
+
 .section-title {
   color: #C62828;
   font-size: 36px;
@@ -6304,3 +6309,39 @@ a.button-collapse i {
 .login-page .login-card {
   width: 60%;
   margin: 0 auto; }
+
+.auction-page .auction p {
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center; }
+  .auction-page .auction p:nth-child(2) {
+    margin-top: 15px;
+    margin-bottom: 0; }
+  .auction-page .auction p:nth-child(3) {
+    margin-top: 0; }
+
+.auction-page .auctioneer .rating p:nth-child(1) {
+  margin-bottom: 0; }
+
+.auction-page .auctioneer .rating p:nth-child(2) {
+  margin-top: 0; }
+
+.auction-page .auctioneer .rating .fa-star,
+.auction-page .auctioneer .rating .fa-star-o,
+.auction-page .auctioneer .rating .fa-star-half-o {
+  color: #C62828; }
+
+.auction-page .bid .bid-amount {
+  color: #C62828;
+  font-size: 30px;
+  border-width: bold;
+  margin-bottom: 20px; }
+  .auction-page .bid .bid-amount .fa-gavel {
+    font-size: 50px; }
+
+.auction-page .section-title {
+  margin-top: 50px;
+  font-size: 22px; }
+  .auction-page .section-title:after {
+    margin-top: 0;
+    border-width: 1px; }
