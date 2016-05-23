@@ -22,11 +22,11 @@
                         </a>
 
                         <ul id="dropdown" class="dropdown-content">
-                            <li><a href="/miperfil">Perfil</a></li>
+                            <li><a href="/profile">Perfil</a></li>
                             <li class="divider"></li>
-                            <li><a href="/miperfil#missubastas">Subastas</a></li>
+                            <li><a href="/profile#missubastas">Subastas</a></li>
                             <li class="divider"></li>
-                            <li><a href="/miperfil#mispujas">Pujas</a></li>
+                            <li><a href="/profile#mispujas">Pujas</a></li>
                             <li class="divider"></li>
                             <li><a href="/logout">Cerrar sesión</a></li>
                         </ul>
@@ -102,9 +102,9 @@
                     <li class="bold"><a class="collapsible-header">Mi cuenta</a>
                         <div class="collapsible-body" style="">
                             <ul>
-                                <li><a href="/miperfil">Mi perfil</a></li>
-                                <li><a href="/miperfil#missubastas">Mis subastas </a></li>
-                                <li><a href="/miperfil#mispujas">Mis pujas </a></li>
+                                <li><a href="/profile">Mi perfil</a></li>
+                                <li><a href="/profile#missubastas">Mis subastas </a></li>
+                                <li><a href="/profile#mispujas">Mis pujas </a></li>
                             </ul>
                         </div>
                     </li>

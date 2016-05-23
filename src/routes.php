@@ -9,4 +9,6 @@ $app->get('/logout', 'HomeController:logoutAction');
 
 $app->any('/nuevo-usuario', 'UserController:createUserAction');
 
-$app->get('/miperfil','UserController:showProfileAction');
+$app->get('/profile','UserController:showProfileAction');
+
+$app->any('/editProfile','UserController:editProfileAction');

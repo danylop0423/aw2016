@@ -11,17 +11,17 @@
 				  <div class="col s6 card-content">
 					  <h2 class="red-text text-darken-4 card-title">Datos Personales</h2>
 					  <ul class="indigo-text text-darken-4" >
-						<li>Name: <span class="blue-text text-darken-6"><?php echo $nombre?></span></li> 
-						<li>Apellido: <span class="blue-text text-darken-6"><?php echo $apellido?></span></li>
-						<li>e-m@il: <span class="blue-text text-darken-6"><?php echo $email?></span></li>
-						<li>Teléfono (+34): <span class="blue-text text-darken-6"><?php echo $telefono?></span></li>
+						<li>Name: <span class="blue-text text-darken-6"><?php echo $loggedUser['nombre']?></span></li> 
+						<li>Apellido: <span class="blue-text text-darken-6"><?php echo $loggedUser['apellido']?></span></li>
+						<li>e-m@il: <span class="blue-text text-darken-6"><?php echo $loggedUser['email']?></span></li>
+						<li>Teléfono (+34): <span class="blue-text text-darken-6"><?php echo $loggedUser['telefono']?></span></li>
 						<div class="section">
 						<li>Dirección:</li>
 						<li><div class="col s7 card-content"><ul class="indigo-text text-darken-4" >
-							<li><h6><i class="tiny material-icons">label</i> Calle: <span class="blue-text text-darken-6"><?php echo $calle?></span></h6></li>
-							<li><h6><i class="tiny material-icons">label</i> CP: <span class="blue-text text-darken-6"><?php echo $cp?></span></h6></li>
-							<li><h6><i class="tiny material-icons">label</i> Ciudad: <span class="blue-text text-darken-6"><?php echo $ciudad?></span></h6></li>
-							<li><h6><i class="tiny material-icons">label</i> Población: <span class="blue-text text-darken-6"><?php echo $poblacion?></span></h6></li>
+							<li><h6><i class="tiny material-icons">label</i> Calle: <span class="blue-text text-darken-6"><?php echo $loggedUser['calle']?></span></h6></li>
+							<li><h6><i class="tiny material-icons">label</i> CP: <span class="blue-text text-darken-6"><?php echo $loggedUser['codigo_postal']?></span></h6></li>
+							<li><h6><i class="tiny material-icons">label</i> Ciudad: <span class="blue-text text-darken-6"><?php echo $loggedUser['ciudad']?></span></h6></li>
+							<li><h6><i class="tiny material-icons">label</i> Población: <span class="blue-text text-darken-6"><?php echo $loggedUser['poblacion']?></span></h6></li>
 						 </ul></div></li>
 						 </div>
 						<div class="col s7 m7 section"> 
@@ -30,23 +30,11 @@
 					    </div>
 					  </ul>
 				  </div>
-				  
+				 
 				 <div class="card-image right ">
-					<img src="/assets/images/add_user.png">
-					<fieldset>
-						<legend class="blue-text text-darken-6">Subir Nueva Foto:</legend>
-						<form  action="#">
-						<div class="file-field input-field card-reveal">
-							<div class="btn">
-								<span>Browse..</span>
-								<input type="file">
-							</div>
-							<div class="file-path-wrapper">
-								<input class="file-path validate" type="text">
-							</div>
-						</div>
-						</form>
-					 </fieldset>
+					<img src="<?php echo $loggedUser['foto']?>">
+					<a class="col s8 btn waves-effect waves-light btn-large" href="/editProfile">
+					<i class="material-icons right">edit</i>Editar Datos</a>  
 				  </div>				   
 			 </div>
 
@@ -157,3 +145,11 @@
   </div>				
 				
  </div>	
+ 
+ <script>
+    $(function() {
+        <?php if ($updated): ?>
+            Materialize.toast('<?php echo $updated ?>', 6000);
+        <?php endif ?>
+    });
+</script>
