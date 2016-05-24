@@ -23,9 +23,8 @@ $affectedRows = $updateStatement->execute();
 		   $newUser = $request->getParam('user');
 		   unset($newUser['password-r']);
 
-                $id = $this->db->update(array_keys($newUser))
+                $id = $this->db->update($newUser)
                     ->table('usuarios')
-                    ->set(array_values($newUser))
                     ->where('id','=',$loggedUser['email'])
 					//->execute()
                 ;
