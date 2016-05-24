@@ -7,8 +7,17 @@ class UserController extends AbstractController
     {
 	  $args['title'] = 'Edita Tus Datos';
 	  $loggedUser = $request->getAttribute('loggedUser');
-	  $args['loggedUser'] = $loggedUser;	
-      return $this->render($response, 'editProfile.php', $args);
+	  if($loggedUser){
+		if($request->isPost){
+			//actualizar datos
+		}else{   
+		  $args['loggedUser'] = $loggedUser;	
+		  return $this->render($response, 'editProfile.php', $args);
+		 }
+	  } else{
+		  $args['error'] = 'Estas intentando acceder sin permisos';
+		  return $this->render($response, 'home.php', $args);
+		}
 	}
 	
     public function showProfileAction($request, $response, $args)
@@ -22,7 +31,8 @@ class UserController extends AbstractController
 			$args['loggedUser'] = $loggedUser;
 			return $this->render($response,'profile.php', $args);
      } else {
-         return $this->render($response,'login.php', $args);
+         $args['error'] = 'Estás intentando acceder sin permisos';
+		 return $this->render($response,'login.php', $args);
      }
  }
 
