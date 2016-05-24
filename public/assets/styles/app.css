@@ -6345,3 +6345,33 @@ a.button-collapse i {
   .auction-page .section-title:after {
     margin-top: 0;
     border-width: 1px; }
+
+.list-auctions-page .auction .header .title {
+  margin: 0 0 30px;
+  font-size: 18px;
+  font-weight: bold; }
+  .list-auctions-page .auction .header .title:after {
+    display: block;
+    content: "";
+    border: 1px solid rgba(0, 0, 0, 0.87); }
+  .list-auctions-page .auction .header .title a {
+    color: inherit; }
+
+.list-auctions-page .auction .body .time-left {
+  margin: 0;
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 40px;
+  text-shadow: 1px 2px #AAA;
+  color: #b12424; }
+
+.list-auctions-page .auction .body .lowest-bid {
+  color: rgba(0, 0, 0, 0.87);
+  font-weight: bold;
+  font-size: 35px;
+  margin: 0 0 20px;
+  text-shadow: 1px 2px #AAA; }
+
+.list-auctions-page .auction .body .btn-block {
+  width: 100%;
+  font-size: 19px; }
