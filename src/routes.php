@@ -13,7 +13,7 @@ $app->any('/nuevo-usuario', 'UserController:createUserAction');
 
 $app->get('/profile','UserController:showProfileAction');
 
-$app->get('/editProfile','UserController:editProfileAction');
+$app->any('/editProfile','UserController:editProfileAction');
 
 
 /* AuctionController Routes */

@@ -1,7 +1,7 @@
 <form action="/editProfile" method="POST" enctype="multipart/form-data">
     <ul class="collapsible" data-collapsible="exapandible">
         <li>
-            <div class="collapsible-header active hoverable"><i class="tiny material-icons">perm_media</i>Editar Foto</div>
+            <div class="collapsible-header active hoverable"><i class="fa fa-picture-o"></i>Editar Foto</div>
             <div class="collapsible-body">
                 <div class="row">
                     <div class="file-field input-field">

@@ -100,7 +100,6 @@
         </li>
     </ul>
 </form>
-
 <script>
     $(function() {
         <?php if ($error): ?>
@@ -108,3 +107,4 @@
         <?php endif ?>
     });
 </script>
+

@@ -13,10 +13,10 @@
 						<div class="section">
 						<li>Dirección:</li>
 						<li><div class="col s7 card-content"><ul class="indigo-text text-darken-4" >
-							<li><h6><i class="tiny material-icons">label</i> Calle: <span class="blue-text text-darken-6"><?php echo $loggedUser['calle']?></span></h6></li>
-							<li><h6><i class="tiny material-icons">label</i> CP: <span class="blue-text text-darken-6"><?php echo $loggedUser['codigo_postal']?></span></h6></li>
-							<li><h6><i class="tiny material-icons">label</i> Ciudad: <span class="blue-text text-darken-6"><?php echo $loggedUser['ciudad']?></span></h6></li>
-							<li><h6><i class="tiny material-icons">label</i> Población: <span class="blue-text text-darken-6"><?php echo $loggedUser['poblacion']?></span></h6></li>
+							<li><h6><i class="fa fa-chevron-right"></i> Calle: <span class="blue-text text-darken-6"><?php echo $loggedUser['calle']?></span></h6></li>
+							<li><h6><i class="fa fa-chevron-right"></i> CP: <span class="blue-text text-darken-6"><?php echo $loggedUser['codigo_postal']?></span></h6></li>
+							<li><h6><i class="fa fa-chevron-right"></i> Ciudad: <span class="blue-text text-darken-6"><?php echo $loggedUser['ciudad']?></span></h6></li>
+							<li><h6><i class="fa fa-chevron-right"></i> Población: <span class="blue-text text-darken-6"><?php echo $loggedUser['poblacion']?></span></h6></li>
 						 </ul></div></li>
 						 </div>
 						<div class="col s7 m7 section"> 
@@ -29,7 +29,7 @@
 				 <div class="card-image right ">
 					<img class="circle responsive-img" src="<?php echo $loggedUser['foto']?>">
 					<a class="col s8 btn waves-effect waves-light btn-large" href="/editProfile">
-					<i class="material-icons right">edit</i>Editar Datos</a>  
+					<i class="fa fa-pencil right"></i>Editar Datos</a>  
 				  </div>				   
 			 </div>
 
@@ -140,7 +140,6 @@
   </div>				
 				
  </div>	
- 
  <script>
     $(function() {
         <?php if ($updated): ?>
@@ -148,3 +147,4 @@
         <?php endif ?>
     });
 </script>
+ 

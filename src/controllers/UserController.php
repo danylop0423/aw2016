@@ -7,9 +7,36 @@ class UserController extends AbstractController
     {
 	  $args['title'] = 'Edita Tus Datos';
 	  $loggedUser = $request->getAttribute('loggedUser');
+	  $picDefault="/assets/images/add_user.png";
 	  if($loggedUser){
-		if($request->isPost){
+		if($request->isPost()){
+			/*
+			 // UPDATE users SET usr = ? , pwd = ? WHERE id = ?
+			$updateStatement = $slimPdo->update(array('usr' => 'your_new_username'))
+                           ->set(array('pwd' => 'your_new_password'))
+                           ->table('users')
+                           ->where('id', '=', 1234);
+
+$affectedRows = $updateStatement->execute();
+			*/
 			//actualizar datos
+		   $newUser = $request->getParam('user');
+		   unset($newUser['password-r']);
+
+                $id = $this->db->update(array_keys($newUser))
+                    ->table('usuarios')
+                    ->set(array_values($newUser))
+                    ->where('id','=',$loggedUser['email'])
+					//->execute()
+                ;
+
+		        $args['title'] = 'Mi Perfil Nuevo';
+				if(!$loggedUser['foto'])
+					$loggedUser['foto']=$picDefault;										 
+				$args['loggedUser'] = $loggedUser;	
+		        return $this->render($response, 'profile.php', $args);
+		   
+		   
 		}else{   
 		  $args['loggedUser'] = $loggedUser;	
 		  return $this->render($response, 'editProfile.php', $args);
@@ -30,8 +57,8 @@ class UserController extends AbstractController
 				$loggedUser['foto']=$picDefault;										 
 			$args['loggedUser'] = $loggedUser;
 			return $this->render($response,'profile.php', $args);
-     } else {
-         $args['error'] = 'Estás intentando acceder sin permisos';
+        }else {
+         $args['error'] = 'Primero debes iniciar sesión';
 		 return $this->render($response,'login.php', $args);
      }
  }
