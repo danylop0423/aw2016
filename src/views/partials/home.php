@@ -48,18 +48,29 @@
 	
 	</div>
 
-		<div id="how" >
-			<ul class="collapsible" data-collapsible="accordion">
+		<div id=" how">
+			<ul class="row l12 collapsible hoverable" data-collapsible="accordion">
 			 <li>
-			  <div class="collapsible-header"><i class="material-icons">info</i> Como Funciona ? </div>
-			  <div class="collapsible-body"><p>Subastar:</p>
-				<p>Registrate, Date de alta como Subastador,
-				Sube tus productos, Establece una Puja Minima y Empieza tu Subasta </p>
+			  <div class="collapsible-header">
+				<h3 class=" teal-text text-darken-2"><i class="large material-icons">info</i> Como Funciona ? </h3></div>
+			  <div class="collapsible-body">
+				<h5 class="red-text text-darken-4"> Subastar:</h5>
+				<div>
+				<p class="teal-text text-lighten-1"><i class="tiny material-icons">label</i> Registrate </p>
+				<p class="teal-text text-lighten-1"><i class="tiny material-icons">label</i> Date de alta como Subastador </p>
+				<p class="teal-text text-lighten-1"><i class="tiny material-icons">label</i> Sube tus productos, Establece una Puja Minima </p>
+				<p class="teal-text text-lighten-1"><i class="tiny material-icons">label</i> ..y Empieza tu Subasta </p>
+			    </div>
 			  </div>
-			  <div class="collapsible-body"><p>Participar en una Subasta: </p>
-				<p>Registrate, Escoge un Producto, puedes pujar a partir
-				de la puja minima y seguir pujando hasta que finalice el tiempo de la subasta,
-				El Ganador va a ser aquel que haga una puja minima __No Repetida__!! </p>
+			  <div class="light-green lighten-5  collapsible-body">
+			    <h5 class="red-text text-darken-4"> Participar en una Subasta: </h5>
+				<div>
+				<p class="teal-text text-lighten-1"><i class="tiny material-icons">label</i> Registrate </p>
+				<p class="teal-text text-lighten-1"><i class="tiny material-icons">label</i> Escoge un Producto</p>
+				<p class="teal-text text-lighten-1"><i class="tiny material-icons">label</i> Puedes empezar con la puja Mínima u Otro valor superior</p>
+				<p class="teal-text text-lighten-1"><i class="tiny material-icons">label</i> Resiste hasta que finalice el tiempo de la subasta</p>
+				<p class="teal-text text-lighten-1"><i class="tiny material-icons">label</i> El Ganador va a ser aquel que haga una puja minima __No Repetida__!! </p>
+			    </div>
 			  </div>
 			 </li>
 			</ul>
