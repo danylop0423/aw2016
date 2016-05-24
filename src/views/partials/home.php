@@ -1,8 +1,3 @@
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">	
-</head>
-
 <script>
  $(document).ready(function(){
       $('.slider').slider({full_width: true,interval: 2500});	

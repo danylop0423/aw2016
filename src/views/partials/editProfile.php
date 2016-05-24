@@ -1,12 +1,7 @@
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">	
-</head>
-
-<form action="/editProfile" method="POST">
+<form action="/editProfile" method="POST" enctype="multipart/form-data">
     <ul class="collapsible" data-collapsible="exapandible">
         <li>
-            <div class="collapsible-header active"><i class="fa fa-user"></i>Editar Foto</div>
+            <div class="collapsible-header active hoverable"><i class="tiny material-icons">perm_media</i>Editar Foto</div>
             <div class="collapsible-body">
                 <div class="row">
                     <div class="file-field input-field">
@@ -22,28 +17,28 @@
                     
         </li>
 		<li>
-            <div class="collapsible-header "><i class="fa fa-user"></i>Editar Datos personales</div>
+            <div class="collapsible-header hoverable"><i class="fa fa-user"></i>Editar Datos personales</div>
             <div class="collapsible-body">
                 <div class="row">
                     <div class="input-field col s12 l6">
                         <label for="name">
 						  <i class="tiny material-icons right">edit</i>Cambia tu Nombre - <?php echo $loggedUser['nombre']?>
 						</label>
-                        <input type="text" name="user[nombre]" id="name" class="validate" required>
+                        <input type="text" name="user[nombre]" id="name" class="validate" >
                     </div>
 
                     <div class="input-field col s12 l6">
                         <label for="">
 						  <i class="tiny material-icons right">edit</i>Cambia tu Apellido - <?php echo $loggedUser['apellido']?>
 						</label>
-                        <input type="text" name="user[apellido]" id="lastname" class="validate" required>
+                        <input type="text" name="user[apellido]" id="lastname" class="validate" >
                     </div>
 
                     <div class="input-field col s12 l6">
                         <label for="">
 						 <i class="tiny material-icons right">edit</i>Cambia tu Correo - <?php echo $loggedUser['email']?>
 						</label>
-                        <input type="email" name="user[email]" id="email" class="validate" required>
+                        <input type="email" name="user[email]" id="email" class="validate">
                     </div>
 
                     <div class="input-field col s12 l6">
@@ -56,82 +51,82 @@
             </div>
         </li>
         <li>
-            <div class="collapsible-header "><i class="fa fa-home"></i> Editar Domicilio</div>
+            <div class="collapsible-header hoverable"><i class="fa fa-home"></i> Editar Domicilio</div>
             <div class="collapsible-body">
                 <div class="row">
                     <div class="input-field col s12">
                         <label for="street">
 						 <i class="tiny material-icons right">edit</i>Cambia tu Calle - <?php echo $loggedUser['calle']?>
 						</label>
-                        <input type="text" name="user[calle]" id="street" class="validate" required>
+                        <input type="text" name="user[calle]" id="street" class="validate">
                     </div>
 
                     <div class="input-field col s12 l9">
                         <label for="village">
 						  <i class="tiny material-icons right">edit</i>Cambia tu Población - <?php echo $loggedUser['poblacion']?>
 						</label>
-                        <input type="text" name="user[poblacion]" id="village" class="validate" required>
+                        <input type="text" name="user[poblacion]" id="village" class="validate">
                     </div>
 
                     <div class="input-field col s12 l3">
                         <label for="zip">
 						 <i class="tiny material-icons right">edit</i>Cambia tu CP - <?php echo $loggedUser['codigo_postal']?>
 						</label>
-                        <input type="text" name="user[codigo_postal]" id="zip" class="validate" required>
+                        <input type="text" name="user[codigo_postal]" id="zip" class="validate">
                     </div>
 
                     <div class="input-field col s12">
                         <label for="city">
 						 <i class="tiny material-icons right">edit</i>Cambia tu Ciudad - <?php echo $loggedUser['ciudad']?>
 						</label>
-                        <input type="text" name="user[ciudad]" id="city" class="validate" required>
+                        <input type="text" name="user[ciudad]" id="city" class="validate">
                     </div>
                 </div>
             </div>
         </li>
         <li>
-            <div class="collapsible-header "><i class="fa fa-credit-card"></i>Editar Datos bancarios</div>
+            <div class="collapsible-header hoverable"><i class="fa fa-credit-card"></i>Editar Datos bancarios</div>
             <div class="collapsible-body">
                 <div class="row">
                     <div class="input-field col s12 l5">
                         <label for="card">
 						 <i class="tiny material-icons right">edit</i>Cambia tu N.Tajeta de Crédito - <?php echo "****************"?>
 						</label>
-                        <input type="text" name="user[tarjeta]" id="card" class="validate" required>
+                        <input type="text" name="user[tarjeta]" id="card" class="validate">
                     </div>
 
                     <div class="input-field col s6 l3">
                         <label for="cvv">
 						 <i class="tiny material-icons right">edit</i>Cambia CVV -<?php echo"***"?>
 						</label>
-                        <input type="text" name="user[cvv]" id="cvv" class="validate" required>
+                        <input type="text" name="user[cvv]" id="cvv" class="validate" >
                     </div>
 
                     <div class="input-field col s6 l4">
                         <label for="expiration">
 						 <i class="tiny material-icons right">edit</i>Cambia Fecha de Caducidad - <?php echo "**/**"?>
 						</label>
-                        <input type="text" name="user[caduca]" id="expiration" required>
+                        <input type="text" name="user[caduca]" id="expiration" >
                     </div>
                 </div>
             </div>
         </li>
         <li>
-            <div class="collapsible-header "><i class="fa fa-check-circle-o"></i>Editar Contraseña</div>
+            <div class="collapsible-header active hoverable"><i class="fa fa-check-circle-o"></i>Editar Contraseña</div>
             <div class="collapsible-body">
                 <div class="row">
                     <div class="input-field col s12 l6">
                         <label for="">
 						  <i class="tiny material-icons right">edit</i>Cambia tu Contraseña
 						</label>
-                        <input type="password" name="user[password]" id="pass" class="validate" required>
+                        <input type="password" name="user[password]" id="pass" class="validate">
                     </div>
 
                     <div class="input-field col s12 l6">
                         <label for="">
 						<i class="tiny material-icons right">edit</i>Confirmar contraseña
 						</label>
-                        <input type="password" name="user[password-r]" id="pass-r" class="validate" required>
+                        <input type="password" name="user[password-r]" id="pass-r" class="validate">
                     </div>
 
                     

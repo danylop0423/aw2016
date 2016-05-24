@@ -1,8 +1,3 @@
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">	
-</head>
-
 <div id="contenedor">
 		<div id="data">
 		  <div class="row card-panel light-green lighten-5 z-depth-3">
@@ -32,7 +27,7 @@
 				  </div>
 				 
 				 <div class="card-image right ">
-					<img src="<?php echo $loggedUser['foto']?>">
+					<img class="circle responsive-img" src="<?php echo $loggedUser['foto']?>">
 					<a class="col s8 btn waves-effect waves-light btn-large" href="/editProfile">
 					<i class="material-icons right">edit</i>Editar Datos</a>  
 				  </div>				   
