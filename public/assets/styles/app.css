@@ -2036,7 +2036,7 @@ ul {
 .z-depth-0 {
   box-shadow: none !important; }
 
-.z-depth-1, nav, .card-panel, .login-page .login-card, .card, .toast, .btn, .btn-large, .btn-floating, .dropdown-content, .collapsible, .side-nav {
+.z-depth-1, nav, .card-panel, .login-page .login-card, .card, .toast, .btn, .btn-large, .btn-floating, .dropdown-content, .collapsible, .side-nav, .filter-auctions {
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
 
 .z-depth-1-half, .btn:hover, .btn-large:hover, .btn-floating:hover {
@@ -6136,10 +6136,15 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   .picker--time .picker__box {
     margin-bottom: 5em; } }
 
-.clear-fix:after {
+.clear-fix:after, .filter-auctions:after {
   display: block;
   content: "";
   clear: both; }
+
+.flex-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
 
 .section-title {
   color: #C62828;
@@ -6157,6 +6162,24 @@ form .collapsible .collapsible-body {
 
 form .buttons-wrapper {
   margin-top: 30px; }
+
+.filter-auctions .tab-body {
+  padding: 30px 40px;
+  display: flex; }
+  .filter-auctions .tab-body.price form,
+  .filter-auctions .tab-body.time .filters {
+    width: 80%;
+    margin: 0 auto; }
+    .filter-auctions .tab-body.price form label,
+    .filter-auctions .tab-body.time .filters label {
+      display: block;
+      font-size: 15px;
+      margin-bottom: 10px; }
+  .filter-auctions .tab-body .btn-filter {
+    background-color: #fff;
+    color: #222;
+    width: 200px;
+    margin-bottom: 15px; }
 
 body {
   display: flex;

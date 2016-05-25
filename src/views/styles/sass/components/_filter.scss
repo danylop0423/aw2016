@@ -1,0 +1,28 @@
+.filter-auctions {
+    @extend .z-depth-1;
+    @extend .clear-fix;
+
+    .tab-body {
+        padding: 30px 40px;
+        display: flex;
+
+        &.price form,
+        &.time .filters {
+            width: 80%;
+            margin: 0 auto;
+
+            label {
+                display: block;
+                font-size: 15px;
+                margin-bottom: 10px;
+            }
+        }
+
+        .btn-filter {
+            background-color: #fff;
+            color: #222;
+            width: 200px;
+            margin-bottom: 15px;
+        }
+    }
+}
