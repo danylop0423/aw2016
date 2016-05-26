@@ -9,6 +9,8 @@ $app->get('/logout', 'HomeController:logoutAction');
 
  $app->get('/contacto','HomeController:contactAction');
 
+ $app->get('/asistencia','HomeController:technicalAssistantAction');
+
 
 /* UserController Routes */
 $app->any('/nuevo-usuario', 'UserController:createUserAction');
