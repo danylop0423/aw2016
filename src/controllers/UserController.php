@@ -13,31 +13,31 @@ class UserController extends AbstractController
 		   $newUser = $request->getParam('user');
 		   unset($newUser['password-r']);
 		   if(!$newUser['foto'])
-					$newUser['foto']=$picDefault;	
-                $id = $this->db->update($newUser)
-					->table('usuarios')
-                    ->where('email','=',$loggedUser['email'])
-					->execute()
-                ;
-				
-				if($id){
-				$args['title'] = 'Mi Perfil';	
-				$loggedUser=$newUser;
-				$_SESSION['loggeduser'] = base64_encode(serialize($loggedUser));									 
-				$args['loggedUser'] = $loggedUser;	
-		        return $this->render($response, 'profile.php', $args);
-		        }else{
-					$args['error'] = 'Error No se hanpodido actualizar tus datos vuelve a intentarlo';
-		            return $this->render($response, 'editProfile.php', $args);}
-		}else{   
+				$newUser['foto']=$picDefault;	
+		   $id = $this->db->update($newUser)
+					  ->table('usuarios')
+                      ->where('email','=',$loggedUser['email'])
+					  ->execute()
+                      ;
+            //si se ha actualizado usuario correctamente:				
+		   if($id){
+			  $args['title'] = 'Mi Perfil';	
+			  $loggedUser=$newUser;
+			  $_SESSION['loggeduser'] = base64_encode(serialize($loggedUser));									 
+			  $args['loggedUser'] = $loggedUser;	
+		      return $this->render($response, 'profile.php', $args);
+		   }else{
+			  $args['error'] = 'Error No se han podido actualizar tus datos vuelve a intentarlo';
+		      return $this->render($response, 'editProfile.php', $args);}
+		}else{   //si se trata de una petición Get:
 		  $args['title'] = 'Edita Tus Datos';
 		  $args['loggedUser'] = $loggedUser;	
 		  return $this->render($response, 'editProfile.php', $args);}
-	  }else{
-		  $args['error'] = 'Estas intentando acceder sin permisos';
-		  return $this->render($response, 'home.php', $args);}
+	  }else{ 
+		$args['error'] = 'Estas intentando acceder sin permisos';
+		return $this->render($response, 'home.php', $args);}
 	}
-	
+		
 	
     public function showProfileAction($request, $response, $args)
     {
