@@ -21,8 +21,10 @@ class HomeController extends AbstractController
 
         if ($request->isPost()) {
             $user = $request->getParam('user');
+            //Desencriptar contraseña
             $pass = $request->getParam('password');
-
+            $hascode = password_hash($pass, PASSWORD_DEFAULT);
+            
             $user = $this->db->select()
                 ->from('usuarios')
                 ->where('email', '=', htmlspecialchars($user))
@@ -30,7 +32,7 @@ class HomeController extends AbstractController
                 ->fetch()
             ;
 
-            if ($user && $user['password'] === $pass) {
+            if ($user && $user['password'] === $hascode) {
                 $args['loggedUser'] = $user;
                 $_SESSION['loggeduser'] = base64_encode(serialize($user));
 
