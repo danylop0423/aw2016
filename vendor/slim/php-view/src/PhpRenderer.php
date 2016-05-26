@@ -68,7 +68,6 @@ class PhpRenderer
 
     public function renderPartial(ResponseInterface $response, $partial, array $data = [])
     {
-        $this->templatePath .= 'partials/';
         if (!is_file($this->templatePath . $partial)) {
             throw new \RuntimeException("View cannot render `$partial` because the partial does not exist");
         }
@@ -196,12 +195,10 @@ class PhpRenderer
         $data = array_merge($this->attributes, $data);
 
         ob_start();
-        $render($this->templatePath . $template, $data);
+        $this->protectedIncludeScope($this->templatePath . $template, $data);
         $output = ob_get_clean();
 
-        $response->getBody()->write($output);
-
-        return $response;
+        return $output;
     }
 
     /**

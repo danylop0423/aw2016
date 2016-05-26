@@ -5,7 +5,7 @@ return [
 
         // Renderer settings
         'renderer' => [
-            'template_path' => __DIR__ . '/views/',
+            'template_path' => __DIR__ . '/views/partials/',
         ],
 
         // Database settings

@@ -7,9 +7,9 @@ $app->any('/login', 'HomeController:loginAction');
 
 $app->get('/logout', 'HomeController:logoutAction');
 
- $app->get('/contacto','HomeController:contactAction');
+$app->get('/contacto','HomeController:contactAction');
 
- $app->get('/asistencia','HomeController:technicalAssistantAction');
+$app->get('/asistencia','HomeController:technicalAssistantAction');
 
 
 /* UserController Routes */
@@ -21,9 +21,10 @@ $app->any('/editProfile','UserController:editProfileAction');
 
 
 /* AuctionController Routes */
- $app->get('/subastas[/{category}/{subcategory}]', 'AuctionController:listAuctionsAction');
+$app->get('/subastas[/{category}/{subcategory}]', 'AuctionController:listAuctionsAction');
 
- $app->get('/subasta/{id}', 'AuctionController:showAuctionAction');
+$app->get('/subasta/{id}', 'AuctionController:showAuctionAction');
 
 
-
+/* AjaxController Routes Wrapper */
+$app->any('/ajax/{method}', 'AjaxController:executeAction');
