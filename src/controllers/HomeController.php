@@ -15,6 +15,12 @@ class HomeController extends AbstractController
         return $this->render($response, 'contacto.php', $args);
     }   
 
+    public function technicalAssistantAction($request, $response, $args) {
+        $args['title'] = 'Asistencia tecnica';
+
+        return $this->render($response, 'asistencia.php', $args);
+    } 
+
     public function loginAction($request, $response, $args)
     {
         $args['title'] = 'Iniciar sesión';
