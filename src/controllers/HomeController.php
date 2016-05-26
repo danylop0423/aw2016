@@ -15,12 +15,6 @@ class HomeController extends AbstractController
         return $this->render($response, 'contacto.php', $args);
     }   
 
-    public function technicalAssistantAction($request, $response, $args) {
-        $args['title'] = 'Asistencia tecnica';
-
-        return $this->render($response, 'asistencia.php', $args);
-    } 
-
     public function loginAction($request, $response, $args)
     {
         $args['title'] = 'Iniciar sesión';
@@ -29,8 +23,7 @@ class HomeController extends AbstractController
             $user = $request->getParam('user');
             //Desencriptar contraseña
             $pass = $request->getParam('password');
-            $hascode = password_hash($pass, PASSWORD_DEFAULT);
-            
+
             $user = $this->db->select()
                 ->from('usuarios')
                 ->where('email', '=', htmlspecialchars($user))
@@ -38,7 +31,7 @@ class HomeController extends AbstractController
                 ->fetch()
             ;
 
-            if ($user && $user['password'] === $hascode) {
+            if ($user && $user['password'] === $pass) {
                 $args['loggedUser'] = $user;
                 $_SESSION['loggeduser'] = base64_encode(serialize($user));
 

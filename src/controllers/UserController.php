@@ -70,10 +70,7 @@ $affectedRows = $updateStatement->execute();
             $user = $request->getParam('user');
             if (!$this->userExists($user['email'])) {
                 unset($user['password-r']);
-
                 //encriptar contraseña
-                $hascode = password_hash($user['password'], PASSWORD_DEFAULT);
-                $user['password'] = $hascode;
 
                 $id = $this->db->insert(array_keys($user))
                     ->into('usuarios')
