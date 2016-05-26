@@ -5,46 +5,39 @@ class UserController extends AbstractController
 	
 	public function editProfileAction($request, $response, $args)
     {
-	  $args['title'] = 'Edita Tus Datos';
 	  $loggedUser = $request->getAttribute('loggedUser');
+	  $args['title'] = 'Edita Tus Datos';
 	  $picDefault="/assets/images/add_user.png";
 	  if($loggedUser){
 		if($request->isPost()){
-			/*
-			 // UPDATE users SET usr = ? , pwd = ? WHERE id = ?
-			$updateStatement = $slimPdo->update(array('usr' => 'your_new_username'))
-                           ->set(array('pwd' => 'your_new_password'))
-                           ->table('users')
-                           ->where('id', '=', 1234);
-
-$affectedRows = $updateStatement->execute();
-			*/
-			//actualizar datos
 		   $newUser = $request->getParam('user');
 		   unset($newUser['password-r']);
-
+		   if(!$newUser['foto'])
+					$newUser['foto']=$picDefault;	
                 $id = $this->db->update($newUser)
-                    ->table('usuarios')
-                    ->where('id','=',$loggedUser['email'])
-					//->execute()
+					->table('usuarios')
+                    ->where('email','=',$loggedUser['email'])
+					->execute()
                 ;
-
-		        $args['title'] = 'Mi Perfil Nuevo';
-				if(!$loggedUser['foto'])
-					$loggedUser['foto']=$picDefault;										 
+				
+				if($id){
+				$args['title'] = 'Mi Perfil';	
+				$loggedUser=$newUser;
+				$_SESSION['loggeduser'] = base64_encode(serialize($loggedUser));									 
 				$args['loggedUser'] = $loggedUser;	
 		        return $this->render($response, 'profile.php', $args);
-		   
-		   
+		        }else{
+					$args['error'] = 'Error No se hanpodido actualizar tus datos vuelve a intentarlo';
+		            return $this->render($response, 'editProfile.php', $args);}
 		}else{   
+		  $args['title'] = 'Edita Tus Datos';
 		  $args['loggedUser'] = $loggedUser;	
-		  return $this->render($response, 'editProfile.php', $args);
-		 }
-	  } else{
+		  return $this->render($response, 'editProfile.php', $args);}
+	  }else{
 		  $args['error'] = 'Estas intentando acceder sin permisos';
-		  return $this->render($response, 'home.php', $args);
-		}
+		  return $this->render($response, 'home.php', $args);}
 	}
+	
 	
     public function showProfileAction($request, $response, $args)
     {

@@ -7,7 +7,7 @@
                     <div class="file-field input-field">
 						<div class="btn">
 							<span>Browse...</span>
-							<input type="file">
+							<input type="file" value="" >
 						</div>
 						<div class="file-path-wrapper">
 							<input class="file-path validate" type="text">
@@ -22,30 +22,30 @@
                 <div class="row">
                     <div class="input-field col s12 l6">
                         <label for="name">
-						  <i class="fa fa-pencil right"></i>Cambia tu Nombre - <?php echo $loggedUser['nombre']?>
+						  <i class="fa fa-pencil right"></i>Cambia tu Nombre 
 						</label>
-                        <input type="text" name="user[nombre]" id="name" class="validate" >
+                        <input type="text" name="user[nombre]" id="name" class="validate" value=<?php echo $loggedUser['nombre']?> >
                     </div>
 
                     <div class="input-field col s12 l6">
                         <label for="">
-						  <i class="fa fa-pencil right"></i>Cambia tu Apellido - <?php echo $loggedUser['apellido']?>
+						  <i class="fa fa-pencil right"></i>Cambia tu Apellido 
 						</label>
-                        <input type="text" name="user[apellido]" id="lastname" class="validate" >
+                        <input type="text" name="user[apellido]" id="lastname" class="validate" value=<?php echo $loggedUser['apellido']?> >
                     </div>
 
                     <div class="input-field col s12 l6">
                         <label for="">
-						 <i class="fa fa-pencil right"></i>Cambia tu Correo - <?php echo $loggedUser['email']?>
+						 <i class="fa fa-pencil right"></i>Cambia tu Correo
 						</label>
-                        <input type="email" name="user[email]" id="email" class="validate">
+                        <input type="email" name="user[email]" id="email" class="validate" value=<?php echo $loggedUser['email']?>>
                     </div>
 
                     <div class="input-field col s12 l6">
                         <label for="">
-						 <i class="fa fa-pencil right"></i>Cambia tu Teléfono - <?php echo $loggedUser['telefono']?>
+						 <i class="fa fa-pencil right"></i>Cambia tu Teléfono
 						</label>
-                        <input type="text" name="user[telefono]" id="phone" class="validate">
+                        <input type="text" name="user[telefono]" id="phone" class="validate" value=<?php echo $loggedUser['telefono']?>>
                     </div>
                 </div>
             </div>
@@ -56,30 +56,30 @@
                 <div class="row">
                     <div class="input-field col s12">
                         <label for="street">
-						 <i class="fa fa-pencil right"></i>Cambia tu Calle - <?php echo $loggedUser['calle']?>
+						 <i class="fa fa-pencil right"></i>Cambia tu Calle
 						</label>
-                        <input type="text" name="user[calle]" id="street" class="validate">
+                        <input type="text" name="user[calle]" id="street" class="validate" value=<?php echo $loggedUser['calle']?>>
                     </div>
 
                     <div class="input-field col s12 l9">
                         <label for="village">
-						  <i class="fa fa-pencil right"></i>Cambia tu Población - <?php echo $loggedUser['poblacion']?>
+						  <i class="fa fa-pencil right"></i>Cambia tu Población 
 						</label>
-                        <input type="text" name="user[poblacion]" id="village" class="validate">
+                        <input type="text" name="user[poblacion]" id="village" class="validate" value=<?php echo $loggedUser['poblacion']?>>
                     </div>
 
                     <div class="input-field col s12 l3">
                         <label for="zip">
-						 <i class="fa fa-pencil right"></i>Cambia tu CP - <?php echo $loggedUser['codigo_postal']?>
+						 <i class="fa fa-pencil right"></i>Cambia tu CP 
 						</label>
-                        <input type="text" name="user[codigo_postal]" id="zip" class="validate">
+                        <input type="text" name="user[codigo_postal]" id="zip" class="validate" value=<?php echo $loggedUser['codigo_postal']?>>
                     </div>
 
                     <div class="input-field col s12">
                         <label for="city">
-						 <i class="fa fa-pencil right"></i>Cambia tu Ciudad - <?php echo $loggedUser['ciudad']?>
+						 <i class="fa fa-pencil right"></i>Cambia tu Ciudad 
 						</label>
-                        <input type="text" name="user[ciudad]" id="city" class="validate">
+                        <input type="text" name="user[ciudad]" id="city" class="validate" value=<?php echo $loggedUser['ciudad']?>>
                     </div>
                 </div>
             </div>
@@ -90,23 +90,23 @@
                 <div class="row">
                     <div class="input-field col s12 l5">
                         <label for="card">
-						 <i class="fa fa-pencil right"></i>Cambia tu N.Tajeta de Crédito - <?php echo "****************"?>
+						 <i class="fa fa-pencil right"></i>Cambia tu N.Tajeta de Crédito
 						</label>
-                        <input type="text" name="user[tarjeta]" id="card" class="validate">
+                        <input type="password" name="user[tarjeta]" id="card" class="validate" value=<?php echo $loggedUser['tarjeta']?>>
                     </div>
 
                     <div class="input-field col s6 l3">
                         <label for="cvv">
-						 <i class="fa fa-pencil right"></i>Cambia CVV -<?php echo"***"?>
+						 <i class="fa fa-pencil right"></i>Cambia CVV
 						</label>
-                        <input type="text" name="user[cvv]" id="cvv" class="validate" >
+                        <input type="password" name="user[cvv]" id="cvv" class="validate" value=<?php echo $loggedUser['cvv']?>>
                     </div>
 
                     <div class="input-field col s6 l4">
                         <label for="expiration">
-						 <i class="fa fa-pencil right"></i>Cambia Fecha de Caducidad - <?php echo "**/**"?>
+						 <i class="fa fa-pencil right"></i>Cambia Fecha de Caducidad de tu Tarjeta 
 						</label>
-                        <input type="text" name="user[caduca]" id="expiration" >
+                        <input type="password" name="user[caduca]" id="expiration" value=<?php echo $loggedUser['caduca']?>>
                     </div>
                 </div>
             </div>
@@ -119,14 +119,14 @@
                         <label for="">
 						  <i class="fa fa-pencil right"></i>Cambia tu Contraseña
 						</label>
-                        <input type="password" name="user[password]" id="pass" class="validate">
+                        <input type="password" name="user[password]" id="pass" class="validate" value=<?php echo $loggedUser['password']?>>
                     </div>
 
                     <div class="input-field col s12 l6">
                         <label for="">
 						<i class="fa fa-pencil right"></i>Confirmar contraseña
 						</label>
-                        <input type="password" name="user[password-r]" id="pass-r" class="validate">
+                        <input type="password" name="user[password-r]" id="pass-r" class="validate" value=<?php echo $loggedUser['password']?>>
                     </div>
 
                     
