@@ -9,6 +9,12 @@ class HomeController extends AbstractController
         return $this->render($response, 'home.php', $args);
     }
 
+    public function contactAction($request, $response, $args) {
+        $args['title'] = 'Contáctanos';
+
+        return $this->render($response, 'contacto.php', $args);
+    }   
+
     public function loginAction($request, $response, $args)
     {
         $args['title'] = 'Iniciar sesión';

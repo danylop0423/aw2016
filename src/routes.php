@@ -7,6 +7,8 @@ $app->any('/login', 'HomeController:loginAction');
 
 $app->get('/logout', 'HomeController:logoutAction');
 
+ $app->get('/contacto','HomeController:contactAction');
+
 
 /* UserController Routes */
 $app->any('/nuevo-usuario', 'UserController:createUserAction');
@@ -20,4 +22,6 @@ $app->any('/editProfile','UserController:editProfileAction');
  $app->get('/subastas[/{category}/{subcategory}]', 'AuctionController:listAuctionsAction');
 
  $app->get('/subasta/{id}', 'AuctionController:showAuctionAction');
+
+
 
