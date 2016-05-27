@@ -19,6 +19,21 @@ class AuctionController extends AbstractController
             $args['title'] = 'Subastas destacadas';
         }
 
+        $args['categories'] = $this->db->select(array('nombre'))
+            ->from('categoria')
+            ->execute()
+            ->fetchAll()
+        ;
+
+        $args['topAuctions'] = $this->db->select(array('subasta.id', 'productos.nombre', 'productos.foto', 'productos.caducidad', 'subasta.pujaMin'))
+            ->from('subasta')
+            ->join('productos', 'subasta.producto', '=', 'productos.id', 'INNER')
+            ->orderBy('productos.nombre', 'ASC')
+            ->limit(20, 35)
+            ->execute()
+            ->fetchAll()
+        ;
+
         return $this->render($response, 'listAuctions.php', $args);
     }
 }

@@ -2,7 +2,7 @@
 
 class AjaxController extends AbstractAjaxController
 {
-    public function getSubcategoriesAction($request, $response, $args)
+    public function fetchSubcategoriesAction($request, $response, $args)
     {
         $category = $request->getParam('category');
 
@@ -21,16 +21,18 @@ class AjaxController extends AbstractAjaxController
         return $response->withStatus(404);
     }
 
-    public function getFilteredAuctionsAction($request, $response, $args)
+    public function fetchFilteredAuctionsAction($request, $response, $args)
     {
         $filters = $request->getParam('filters');
 
         if ($filters) {
-            $auctions = $this->db->select(array('productos.nombre', 'productos.foto', 'productos.caducidad', 'subasta.pujaMin'))
+            $auctions = $this->db->select(array('subasta.id', 'productos.nombre', 'productos.foto', 'productos.caducidad', 'subasta.pujaMin'))
                 ->from('subasta')
                 ->join('productos', 'subasta.producto', '=', 'productos.id', 'INNER')
                 ->join('subcategoria', 'productos.subcategoria', '=', 'subcategoria.id', 'INNER')
+                ->join('categoria', 'subcategoria.categoria', '=', 'categoria.id', 'INNER')
                 ->whereMany($filters, 'like')
+                ->orderBy('productos.nombre', 'ASC')
                 ->execute()
                 ->fetchAll()
             ;

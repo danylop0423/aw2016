@@ -6398,3 +6398,6 @@ a.button-collapse i {
 .list-auctions-page .auction .body .btn-block {
   width: 100%;
   font-size: 19px; }
+
+.list-auctions-page .fa-refresh {
+  color: #da4747; }

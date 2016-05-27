@@ -42,4 +42,8 @@
             }
         }
     }
+
+    .fa-refresh {
+        color: lighten($primary_color, 10%);
+    }
 }
