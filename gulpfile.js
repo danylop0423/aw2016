@@ -8,7 +8,7 @@ var browserSync = require('browser-sync').create();
 gulp.task('serve', ['sass', 'scripts'], function () {
 
     browserSync.init({
-        proxy: 'reversebid.dev'
+        proxy: 'localhost:82'
     });
 
     gulp.watch('./src/views/styles/sass/**/*.scss', ['sass']);

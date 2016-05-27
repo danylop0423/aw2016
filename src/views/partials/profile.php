@@ -27,7 +27,7 @@
 				  </div>
 				 
 				 <div class="card-image right ">
-					<img class="circle responsive-img" src="<?php echo $loggedUser['foto']?>">
+					<img  class="profile circle responsive-img" src="<?php echo $loggedUser['foto']?>">
 					<a class="col s8 btn waves-effect waves-light btn-large" href="/editProfile">
 					<i class="fa fa-pencil right"></i>Editar Datos</a>  
 				  </div>				   
