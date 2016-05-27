@@ -4,9 +4,31 @@ class AuctionController extends AbstractController
 {
     public function showAuctionAction($request, $response, $args)
     {
-        $args['title'] = 'Apple Watch Sport 38mm';
+        $args['auction'] = $this->db->select(array(
+                'productos.nombre',
+                'productos.foto',
+                'productos.caducidad',
+                'productos.marca',
+                'productos.descripcion',
+                'subasta.pujaMin',
+                'subcategoria.nombre as subcategoria',
+                'categoria.nombre as categoria',
+            ))
+            ->from('subasta')
+            ->join('productos', 'subasta.producto', '=', 'productos.id', 'INNER')
+            ->join('subcategoria', 'productos.subcategoria', '=', 'subcategoria.id', 'INNER')
+            ->join('categoria', 'subcategoria.categoria', '=', 'categoria.id', 'INNER')
+            ->where('subasta.id', '=', htmlspecialchars($args['id']))
+            ->execute()
+            ->fetch()
+        ;
 
-        return $this->render($response, 'showAuction.php', $args);
+        if ($args['auction']) {
+            $args['title'] = $args['auction']['nombre'];
+            return $this->render($response, 'showAuction.php', $args);
+        }
+
+        return $response->withStatus(404);
     }
 
     public function listAuctionsAction($request, $response, $args)

@@ -4,26 +4,20 @@
             <div class="card-panel product">
                 <div class="row">
                     <div class="col s12 m6">
-                        <img src="/assets/images/smartw6.png" alt="" class="responsive-img materialboxed"> <!-- notice the "circle" class -->
+                        <img src="<?php echo $auction['foto'] ?>" alt="" class="responsive-img materialboxed"> <!-- notice the "circle" class -->
                     </div>
 
                     <div class="col s12 m6 information">
-                        <p><label>Producto</label> Apple Watch Sport 38mm</p>
-                        <span><label>Fabricante</label> Apple</span>&nbsp;&nbsp;&nbsp;
+                        <p><label>Producto</label> <?php echo $auction['nombre'] ?></p>
+                        <span><label>Fabricante</label> <?php echo $auction['marca'] ?></span>&nbsp;&nbsp;&nbsp;
                         <span><label>Estado</label> Nuevo</span>
-                        <p><label>Categoría</label> Electrónica <i class="fa fa-angle-right"></i> Reloj Smartwatch</p>
+                        <p><label>Categoría</label> <?php echo $auction['categoria'] ?> <i class="fa fa-angle-right"></i> <?php echo $auction['subcategoria'] ?></p>
                         <p><label>Fin de la subasta</label> 22 Junio 2016 20:00</p>
                     </div>
 
                     <div class="col s12">
                         <p class="section-title">descripción</p>
-                        <p>
-                            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea consequuntur quia necessitatibus sapiente architecto exercitationem sint incidunt ipsum odit? Aut porro, praesentium nulla recusandae. Esse nobis veniam voluptate, deleniti obcaecati.</span>
-                            <span>Minima, quam aut saepe possimus totam voluptatem quis deserunt magnam eum molestiae ut officia suscipit eveniet? Molestias omnis ut, fugit non facere recusandae, necessitatibus earum error natus, optio nulla illum.</span>
-                            <span>Eligendi soluta ut dolor illum reiciendis tempore veritatis iusto vitae cumque. Assumenda iusto temporibus voluptatibus. Nemo esse sed molestias voluptatum inventore laborum voluptate odit adipisci necessitatibus sapiente tempora, quas illum.</span>
-                            <span>Temporibus officiis porro quisquam vel veniam, quasi eligendi libero consectetur labore cumque doloribus autem deserunt, fuga accusantium tempore dignissimos, ullam ipsa, architecto reprehenderit ab odit sed impedit sequi alias. Optio!</span>
-                            <span>Eos et doloribus in similique officia commodi, eum nisi officiis aliquid doloremque dolore, provident rerum facilis. Qui quibusdam fugiat, veritatis asperiores quaerat, tenetur harum magnam mollitia aperiam, sint assumenda sed.</span>
-                        </p>
+                        <p><?php echo $auction['descripcion'] ?></p>
                     </div>
                 </div>
             </div>
@@ -42,7 +36,7 @@
 
                 <div class="last-bid clear-fix">
                     <label>Última puja</label>
-                    <span class="right"><span id="bidAmount">22,5</span><sup>€</sup></span>
+                    <span class="right"><span id="bidAmount"><?php echo $auction['pujaMin'] ?></span><sup>€</sup></span>
                 </div>
 
                 <p class="divider"></p>
