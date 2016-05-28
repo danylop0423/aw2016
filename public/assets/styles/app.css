@@ -2036,7 +2036,7 @@ ul {
 .z-depth-0 {
   box-shadow: none !important; }
 
-.z-depth-1, nav, .card-panel, .login-page .login-card, .card, .toast, .btn, .btn-large, .btn-floating, .dropdown-content, .collapsible, .side-nav, .filter-auctions {
+.z-depth-1, nav, .card-panel, .login-page .login-card, .list-auctions-page .auction, .card, .toast, .btn, .btn-large, .btn-floating, .dropdown-content, .collapsible, .side-nav, .filter-auctions {
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
 
 .z-depth-1-half, .btn:hover, .btn-large:hover, .btn-floating:hover {
@@ -2054,7 +2054,7 @@ ul {
 .z-depth-5 {
   box-shadow: 0 27px 24px 0 rgba(0, 0, 0, 0.2), 0 40px 77px 0 rgba(0, 0, 0, 0.22); }
 
-.hoverable:hover {
+.hoverable:hover, .list-auctions-page .auction:hover {
   transition: box-shadow .25s;
   box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
 
@@ -2573,7 +2573,7 @@ nav ul a span.badge {
 .right-align {
   text-align: right; }
 
-.center, .center-align {
+.center, .center-align, .list-auctions-page .auction {
   text-align: center; }
 
 .left {
@@ -3242,7 +3242,7 @@ small {
     .flow-text {
       font-size: 1.2rem; } }
 
-.card-panel, .login-page .login-card {
+.card-panel, .login-page .login-card, .list-auctions-page .auction {
   transition: box-shadow .25s;
   padding: 20px;
   margin: 0.5rem 0 1rem 0;

@@ -5,8 +5,8 @@
                 <ul class="tabs">
                     <li class="tab col s3"><a class="active" href="#categoryTab">Categoría</a></li>
                     <li class="tab col s3 disabled"><a href="#subcategoryTab">Subcategoría</a></li>
-                    <li class="tab col s3"><a href="#priceTab">Precio</a></li>
-                    <li class="tab col s3"><a href="#timeTab">Tiempo</a></li>
+                    <li class="tab col s3 hide-on-small-only"><a href="#priceTab">Precio</a></li>
+                    <li class="tab col s3 hide-on-small-only"><a href="#timeTab">Tiempo</a></li>
                 </ul>
 
                 <div class="row">
@@ -59,7 +59,7 @@
         <div class="top-auctions" v-if="auctions.length == 0">
             <?php foreach ($topAuctions as $auction): ?>
                 <div class="col s12 m4">
-                    <div class="card-panel auction center-align">
+                    <div class="auction">
                         <div class="header">
                             <p class="title"><a href="/subasta/<?php echo $auction['id'] ?>"><?php echo $auction['nombre'] ?></a></p>
                             <a href="/subasta/<?php echo $auction['id'] ?>"><img src="<?php echo $auction['foto'] ?>" alt="" class="responsive-img"></a>
@@ -78,7 +78,7 @@
 
         <div v-else>
             <div v-if="!loading" v-for="auction in auctions" class="col s12 m4">
-                <div class="card-panel auction center-align">
+                <div class="auction">
                     <div class="header">
                         <p class="title"><a href="/subasta/{{ auction.id }}">{{ auction.nombre }}</a></p>
                         <a href="/subasta/{{ auction.id }}"><img :src="auction.foto" alt="" class="responsive-img"></a>
