@@ -21,7 +21,9 @@ $app->any('/editProfile','UserController:editProfileAction');
 
 
 /* AuctionController Routes */
-$app->get('/subastas[/{category}/{subcategory}]', 'AuctionController:listAuctionsAction');
+$app->get('/subastas[/{category}]', 'AuctionController:listAuctionsAction');
+
+$app->get('/subastas/{category}/{subcategory}', 'AuctionController:listAuctionsAction');
 
 $app->get('/subasta/{id}', 'AuctionController:showAuctionAction');
 

@@ -11,7 +11,11 @@
                         <p><label>Producto</label> <?php echo $auction['nombre'] ?></p>
                         <span><label>Fabricante</label> <?php echo $auction['marca'] ?></span>&nbsp;&nbsp;&nbsp;
                         <span><label>Estado</label> Nuevo</span>
-                        <p><label>Categoría</label> <?php echo $auction['categoria'] ?> <i class="fa fa-angle-right"></i> <?php echo $auction['subcategoria'] ?></p>
+                        <p>
+                            <label>Categoría</label>
+                             <a href="/subastas/<?php echo $auction['categoria'] ?>"><?php echo $auction['categoria'] ?></a> <i class="fa fa-angle-right"></i>
+                             <a href="/subastas/<?php echo $auction['categoria'] ?>/<?php echo $auction['subcategoria'] ?>"><?php echo $auction['subcategoria'] ?></a>
+                        </p>
                         <p><label>Fin de la subasta</label> 22 Junio 2016 20:00</p>
                     </div>
 
