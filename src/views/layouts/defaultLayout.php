@@ -2,6 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Reversebid | <?php echo $title ?></title>
     <link rel="stylesheet" href="/assets/styles/app.css">
     <link rel="stylesheet" href="/assets/vendor/font-awesome/css/font-awesome.min.css">
@@ -62,36 +63,22 @@
                     <li class="bold"><a class="collapsible-header">Productos</a>
                         <div class="collapsible-body" style="">
                             <ul class="collapsible collapsible-accordion">
-                                <li><a class="collapsible-header">Electrónica</a>
-                                    <div class="collapsible-body" style="">
-                                        <ul>
-                                            <li><a href="#">Discos duros</a></li>
-                                            <li><a href="#">Portátiles</a></li>
-                                            <li><a href="#">Smartphone</a></li>
-                                            <li><a href="#">Smartwatch</a></li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li><a class="collapsible-header">Deporte</a>
-                                    <div class="collapsible-body" style="">
-                                        <ul>
-                                            <li><a href="#">Discos duros</a></li>
-                                            <li><a href="#">Portátiles</a></li>
-                                            <li><a href="#">Smartphone</a></li>
-                                            <li><a href="#">Smartwatch</a></li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li><a class="collapsible-header">Hogar</a>
-                                    <div class="collapsible-body" style="">
-                                        <ul>
-                                            <li><a href="#">Discos duros</a></li>
-                                            <li><a href="#">Portátiles</a></li>
-                                            <li><a href="#">Smartphone</a></li>
-                                            <li><a href="#">Smartwatch</a></li>
-                                        </ul>
-                                    </div>
-                                </li>
+                                <?php foreach ($menuCategories as $category => $subcategories): ?>
+                                    <li><a class="collapsible-header"><?php echo $category ?></a>
+                                        <div class="collapsible-body" style="">
+                                            <ul>
+                                                <?php foreach ($subcategories as $subcategory): ?>
+                                                    <?php $link = '/subastas/' . $category . '/' . $subcategory ?>
+                                                    <li class="<?php echo $link == $slug ? 'active' : '' ?>">
+                                                        <a href="<?php echo $link ?>">
+                                                            <?php echo $subcategory ?>
+                                                        </a>
+                                                    </li>
+                                                <?php endforeach ?>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                <?php endforeach ?>
                             </ul>
                         </div>
                     </li>
