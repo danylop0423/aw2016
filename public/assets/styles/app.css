@@ -6403,4 +6403,10 @@ a.button-collapse i {
   color: #da4747; }
 
 .profile-page .profile {
-  margin: 100px 0px 100px 80px; }
+  margin: 30px 0px 30px 50px; }
+
+.profile-page .profile_img {
+  margin: 30px 0px 80px 130px; }
+
+.puja_subasta {
+  margin-top: 100px; }

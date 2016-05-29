@@ -7,10 +7,10 @@
                     <div class="file-field input-field">
 						<div class="btn">
 							<span>Browse...</span>
-							<input type="file" value="" >
+							<input type="file" value="" name="pic" >
 						</div>
 						<div class="file-path-wrapper">
-							<input class="file-path validate" type="text">
+							<input class="file-path validate" type="text" name="user[foto]">
 						</div>
 					</div>
 				</div>
