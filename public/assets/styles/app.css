@@ -6180,6 +6180,9 @@ form .buttons-wrapper {
     color: #222;
     width: 200px;
     margin-bottom: 15px; }
+    .filter-auctions .tab-body .btn-filter.active {
+      background-color: #E53935;
+      color: #fff; }
 
 body {
   display: flex;

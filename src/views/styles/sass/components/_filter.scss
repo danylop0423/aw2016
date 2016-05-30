@@ -23,6 +23,11 @@
             color: #222;
             width: 200px;
             margin-bottom: 15px;
+
+            &.active {
+                background-color: $secondary_color;
+                color: #fff;
+            }
         }
     }
 }

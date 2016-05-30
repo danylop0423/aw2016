@@ -21,6 +21,7 @@ new Vue({
             var $tab = $('a[href="#subcategoryTab"]');
 
             this.filters['categoria.nombre'] = category;
+            this.changeSelectedButtonStyle(event.target, '#categoryTab');
 
             $.ajax({
                 type: 'POST',
@@ -41,9 +42,9 @@ new Vue({
         },
 
         subcategorySelected: function(subcategory) {
-            var $list = $('.list-auctions');
-
             this.filters['subcategoria.nombre'] = subcategory;
+            this.changeSelectedButtonStyle(event.target, '#subcategoryTab');
+
             this.fetchFilteredAuctions({'subcategoria.nombre': subcategory});
         },
 
@@ -71,6 +72,11 @@ new Vue({
                     setTimeout(function() { self.loading = false; }, 250);
                 }
             });
+        },
+
+        changeSelectedButtonStyle: function(target, buttonsContainer) {
+            $(buttonsContainer + ' button').removeClass('active');
+            $(target).addClass('active');
         }
     }
 });
