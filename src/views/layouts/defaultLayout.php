@@ -50,7 +50,7 @@
                     <li class="bold "><a class="collapsible-header ">Subastas</a>
                         <div class="collapsible-body">
                             <ul>
-                                <li><a href="#">Subastar</a></li>
+                                <li><a href="/newProduct">Subastar</a></li>
                                 <li><a href="#">Subastador</a></li>
                                 <li><a href="#">Destacadas</a></li>
                             </ul>

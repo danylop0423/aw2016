@@ -55,6 +55,15 @@ class HomeController extends AbstractController
     }
 
 
+
+    public function newProductAction($request, $response, $args) {
+
+        $args['title'] = 'Subastar';
+
+        return $this->render($response, 'newProduct.php', $args);
+    } 
+
+
     private function decryptPassword($request){
 
         $user = $request->getParam('user');

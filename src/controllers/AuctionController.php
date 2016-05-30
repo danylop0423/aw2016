@@ -101,4 +101,45 @@ class AuctionController extends AbstractController
 
         return $response->withStatus(404);
     }
+
+
+    public function createAuctionAction($request, $response, $args){
+
+
+        
+
+
+        return $this->render($response, '/profile.php', $args);
+
+    }
+
+    public function uploadImageAction($request, $response, $args){
+
+
+
+
+        $target_dir = "uploads/";
+        $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
+        $uploadOk = 1;
+        $imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);
+        // Check if image file is a actual image or fake image
+        if(isset($_POST["submit"])) {
+            $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
+            if($check !== false) {
+                echo "File is an image - " . $check["mime"] . ".";
+                $uploadOk = 1;
+            } else {
+                echo "File is not an image.";
+                $uploadOk = 0;
+            }
+        }
+
+
+
+
+        return $this->render($response, 'uploadImage.php', $args);
+
+    }
+
+
 }
