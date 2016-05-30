@@ -6,11 +6,11 @@ new Vue({
     data: {
         subcategories: [],
         auctions: [],
+        price: '',
         filters: {
-            category: '',
-            subcategory: '',
-            price: '',
-            time: ''
+            'categoria.nombre': '%',
+            'subcategoria.nombre': '%',
+            'subasta.pujaMin': ''
         },
         loading: true
     },
@@ -20,7 +20,7 @@ new Vue({
             var self = this;
             var $tab = $('a[href="#subcategoryTab"]');
 
-            this.filters.category = category;
+            this.filters['categoria.nombre'] = category;
 
             $.ajax({
                 type: 'POST',
@@ -43,8 +43,13 @@ new Vue({
         subcategorySelected: function(subcategory) {
             var $list = $('.list-auctions');
 
-            this.filters.subcategory = subcategory;
+            this.filters['subcategoria.nombre'] = subcategory;
             this.fetchFilteredAuctions({'subcategoria.nombre': subcategory});
+        },
+
+        priceSelected: function() {
+            this.filters['subasta.pujaMin'] = this.price;
+            this.fetchFilteredAuctions(this.filters);
         },
 
         fetchFilteredAuctions: function(filters) {

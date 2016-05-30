@@ -31,8 +31,8 @@
                     <div id="priceTab" class="col s12 tab-body price">
                         <form action="#">
                             <p class="range-field">
-                                <label>Precio máximo: 15,20€</label>
-                                <input type="range" id="test5" min="0" max="100" step="0.5" value="15.20" />
+                                <label>Precio máximo: {{ price }}€</label>
+                                <input type="range" v-model="price" @click="priceSelected()" min="0" max="100" step="0.5" value="20.5" />
                             </p>
                         </form>
                     </div>
