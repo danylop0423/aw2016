@@ -48,13 +48,17 @@ class UserController extends AbstractController
             $user = $request->getParam('user');
             if (!$this->userExists($user['email'])) {
                 unset($user['password-r']);
+
                 //encriptar contraseña
+                $user = $this->generatePassword($user);
 
                 $id = $this->db->insert(array_keys($user))
                     ->into('usuarios')
                     ->values(array_values($user))
                     ->execute()
                 ;
+
+
 
                 if ($id) {
                     $args['title'] = 'Bienvenido ' . $user['nombre'];
@@ -140,5 +144,22 @@ class UserController extends AbstractController
 		return $picDefault;
 		
 	}
+
+	private function generatePassword($user){
+
+		$pepper = 'estoeslaPimienta12389';
+        $salt = rand(10000 , 99999);
+        $user['salt'] = $salt;
+
+        $pass = $salt;
+        $pass .= $user['password'];
+        $pass .= $pepper;
+        $pass = hash('sha256', $pass);
+        $user['password'] = $pass;
+
+        return $user;
+
+	}
+
 	
 }

@@ -24,12 +24,15 @@ class HomeController extends AbstractController
             //Desencriptar contraseña
             $pass = $request->getParam('password');
 
+
             $user = $this->db->select()
                 ->from('usuarios')
                 ->where('email', '=', htmlspecialchars($user))
                 ->execute()
                 ->fetch()
             ;
+
+            $pass = $this->decryptPassword($request);
 
             if ($user && $user['password'] === $pass) {
                 $args['loggedUser'] = $user;
@@ -50,4 +53,29 @@ class HomeController extends AbstractController
 
         return $response->withStatus(302)->withHeader('Location', '/');
     }
+
+
+    private function decryptPassword($request){
+
+        $user = $request->getParam('user');
+        $pepper = 'estoeslaPimienta12389';
+        $passIntend = $request->getParam('password');
+
+        $user = $this->db->select()
+                ->from('usuarios')
+                ->where('email', '=', htmlspecialchars($user))
+                ->execute()
+                ->fetch()
+            ;
+
+        $salt = $user['salt'];
+
+        $pass = $salt;
+        $pass .= $passIntend;
+        $pass .= $pepper;
+
+        return  hash('sha256', $pass);
+
+    }
+
 }
