@@ -92,30 +92,51 @@ class UserController extends AbstractController
         return $user !== false;
     }
 	
-	private function solve_editProfile_post($request,$response,$args,$loggedUser){
+	
+   private function solve_editProfile_post($request,$response,$args,$loggedUser){
 		   $picDefault="/assets/images/add_user.png";
 		   $newUser = $request->getParam('user');
-		   unset($newUser['password-r']);
+		   $newUser['id']=$loggedUser['id'];
 		   if(!$newUser['foto'])
 				$newUser['foto']=$picDefault;	
 		   else 
-			   $newUser['foto']=self::proc_profileImage($newUser['foto']);
+			   $newUser['foto']=self::proc_profileImage($loggedUser['id']);
+		   
+		   if($newUser['foto'][0]!=='/'){
+                $args['error'] = $newUser['foto'];
+				return $this->render($response, 'editProfile.php', $args);
+			   } 		       			   
 		   
 		   foreach ($newUser as $clave => $valor){
-			   $newUser[$clave]=htmlspecialchars(trim(strip_tags($valor)));
-		   }
+			   $newUser[$clave]=htmlspecialchars(trim(strip_tags($valor)));}
 		   
+		   if($newUser['password']){
+				if($newUser['password']===$newUser['password-r']){
+					$newUser=$this->generatePassword($newUser);
+				}else{
+					$args['error'] = 'Las contraseñas no coinciden!!';
+					return $this->render($response, 'editProfile.php', $args);
+				}	 			   
+		   }
+		   else{
+			   $newUser['password']=$loggedUser['password'];
+			   $newUser['salt']=$loggedUser['salt'];
+		   }
+		   unset($newUser['password-r']);
 		   $id = $this->db->update($newUser)
 					  ->table('usuarios')
                       ->where('email','=',$loggedUser['email'])
 					  ->execute()
                       ;
-            //si se ha actualizado usuario correctamente:				
-		   if($id){
-			  $args['title'] = 'Mi Perfil';	
+            //si se ha actualizado usuario correctamente o ambos son iguales
+			//(porque la foto no se actualiza solo se sobrescribe en el dir del servidor ):				
+		   if($id || $newUser['foto']===$loggedUser['foto']) {
+			  $args['title'] = 'Mi Perfil';		
+			  $newUser['id']=$loggedUser['id'];
 			  $loggedUser=$newUser;
 			  $_SESSION['loggeduser'] = base64_encode(serialize($loggedUser));									 
-			  $args['loggedUser'] = $loggedUser;	
+			  $args['loggedUser'] = $loggedUser;
+			  $args['error'] = 'Tus datos se han Actualizado correctamente';
 		      return $this->render($response, 'profile.php', $args);
 		   }else{
 			  $args['error'] = 'Error No se han podido actualizar tus datos vuelve a intentarlo';
@@ -123,28 +144,46 @@ class UserController extends AbstractController
 		
 	}
 	
-	//not finished, please don't touch
-	private function proc_profileImage($originPic){ //devuelve la ruta a almacenar en la bd
-	//para tratar la foto
+   
+  private function proc_profileImage($originPic){ 
 	$picDefault="/assets/images/add_user.png";
 	$originFile=isset($_FILES['pic'])? $_FILES['pic']:false;
+	
 	if($originFile){
-	  $originName=$originFile['name'];
 	  $originType=$originFile['type'];
-	  if (((strpos($originType, "gif") || strpos($img_type, "jpeg") ||strpos($img_type, "jpg")) 
-		     || strpos($img_type, "png"))){
-				 $originName=htmlspecialchars(trim(strip_tags($originName))); 
-				  //construir nueva imagen
-				  return $picDefault;
-			  }
-	}
-	
-	
-		
-		return $picDefault;
-		
-	}
+	  if (((strpos($originType, "gif") || strpos($originType, "jpeg") ||strpos($originType, "jpg")) 
+		     || strpos($originType, "png"))){
+				  $dir='assets\images\users\\';
+				  $tmpFile = $_FILES['pic']['tmp_name'];
+				  $im = file_get_contents($tmpFile);
+				  $dimensiones=getimagesize($tmpFile);
+				  $ancho=$dimensiones[0];
+				  $alto=$dimensiones[1];
+				  
+				  $myAuxImage=imagecreatefromstring($im);
+				  $anchonuevo = 200;
+				  $altonuevo = 250;
 
+				  $newImage=imagecreatetruecolor($anchonuevo,$altonuevo);
+				  imagecopyresampled($newImage,$myAuxImage,0,0,0,0,$anchonuevo, $altonuevo,$ancho,$alto);
+				  imagedestroy($myAuxImage);
+				  $calidad=100;
+
+			
+			      $newFullName="$originPic".".jpg";
+ 			      if(imagejpeg($newImage,$dir.$newFullName,$calidad)){   
+				     return '/assets/images/users/'.$newFullName;
+			      }
+				  return "No se ha podido subir su imagen";
+		  }
+		  return "El fichero que intentas subir no es una Imagen";
+	}	
+    return $picDefault;
+		
+  }
+
+  
+  
 	private function generatePassword($user){
 
 		$pepper = 'estoeslaPimienta12389';

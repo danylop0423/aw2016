@@ -142,8 +142,8 @@
  </div>
  <script>
     $(function() {
-        <?php if ($updated): ?>
-            Materialize.toast('<?php echo $updated ?>', 6000);
+        <?php if ($error): ?>
+            Materialize.toast('<?php echo $error ?>', 6000);
         <?php endif ?>
     });
 </script>

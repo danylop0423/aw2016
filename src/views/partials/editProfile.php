@@ -119,14 +119,14 @@
                         <label for="">
 						  <i class="fa fa-pencil right"></i>Cambia tu Contraseña
 						</label>
-                        <input type="password" name="user[password]" id="pass" class="validate" value=<?php echo $loggedUser['password']?>>
+                        <input type="password" name="user[password]" id="pass" class="validate" value="">
                     </div>
 
                     <div class="input-field col s12 l6">
                         <label for="">
 						<i class="fa fa-pencil right"></i>Confirmar contraseña
 						</label>
-                        <input type="password" name="user[password-r]" id="pass-r" class="validate" value=<?php echo $loggedUser['password']?>>
+                        <input type="password" name="user[password-r]" id="pass-r" class="validate" value="">
                     </div>
 
                     
