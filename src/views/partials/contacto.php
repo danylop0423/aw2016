@@ -1,28 +1,37 @@
 <form action="/contacto" method="POST">
     <ul class="collapsible" data-collapsible="exapandible">
         <li>
-            <div class="collapsible-header active"><i class="fa fa-user"></i>Datos de personales</div>
+            <div class="collapsible-header active"><i class="fa fa-volume-control-phone"></i>Formulario de Contácto</div>
             <div class="collapsible-body">
                 <div class="row">
-                    <div class="input-field col s12 l4">
-                        <label for="name">Nombre *</label>
-                        <input type="text" name="user[nombre]" id="name" class="validate" required>
-                    </div>
 
-                    <div class="input-field col s12 l8">
-                        <label for="">Apellido *</label>
-                        <input type="text" name="user[apellido]" id="lastname" class="validate" required>
+                    <div class="input-field col s12 l6">
+                        <i class=" fa fa-user prefix" aria-hidden="true"></i>
+                        <input type="text" name="contact[nombre]" id="name" class="validate" required>
+                        <label for="name">Nombre *</label>
                     </div>
 
                     <div class="input-field col s12 l9">
+                        <i class=" fa fa-envelope-o prefix" aria-hidden="true"></i>
                         <label for="">Email *</label>
-                        <input type="email" name="user[email]" id="email" class="validate" required>
+                        <input type="email" name="contact[email]" id="email" class="validate" required>
                     </div>
 
-                    <div class="input-field col s12 l3">
-                        <label for="">Teléfono</label>
-                        <input type="text" name="user[telefono]" id="phone" class="validate">
+                    <div class="input-field col s12">
+                        <i class=" fa fa-pencil prefix" aria-hidden="true"></i>
+                        <label for="icon_prefix2">Mensaje *</label>
+                        <input type="text" name="contact[mensaje]" id="message" class="validate" required>
                     </div>
+                          
+                    <div class="buttons-wrapper center-align">
+                        <button class="btn waves-effect waves-light" type="submit" name="action"> <i class="fa fa-paper-plane right" aria-hidden="true"></i>Enviar</button>
+                
+                        <a  href='/home'>
+                        <button class="btn waves-effect waves-light" type="button"><i class="fa fa-eraser right" aria-hidden="true"></i>Borrar</button>
+                   </a>
+                
+            </div>
+
                 </div>
             </div>
         </li>
