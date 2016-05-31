@@ -62,7 +62,8 @@ class UserController extends AbstractController
 
                 if ($id) {
                     $args['title'] = 'Bienvenido ' . $user['nombre'];
-                    $args['loggedUser'] = $user;
+                    $user['id']=$id;
+					$args['loggedUser'] = $user;
                     $_SESSION['loggeduser'] = base64_encode(serialize($user));
 
                     return $this->render($response, 'home.php', $args);
