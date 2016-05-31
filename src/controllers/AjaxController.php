@@ -7,10 +7,11 @@ class AjaxController extends AbstractAjaxController
         $category = $request->getParam('category');
 
         if ($category) {
-            $categories = $this->db->select(array('subcategoria.nombre'))
+            $categories = $this->db->select(array('subcategoria.id', 'subcategoria.nombre'))
                 ->from('subcategoria')
                 ->join('categoria', 'subcategoria.categoria', '=', 'categoria.id', 'INNER')
-                ->where('categoria.nombre', 'like', htmlspecialchars($category))
+                ->where('categoria.id', '=', htmlspecialchars($category))
+                ->orWhere('categoria.nombre', 'like', htmlspecialchars($category))
                 ->execute()
                 ->fetchAll()
             ;

@@ -90,11 +90,7 @@ class AuctionController extends AbstractController
         }
 
         if ($args['topAuctions']) {
-            $args['categories'] = $this->db->select(array('nombre'))
-                ->from('categoria')
-                ->execute()
-                ->fetchAll()
-            ;
+            $args['categories'] = $this->fetchCategories();
 
             return $this->render($response, 'listAuctions.php', $args);
         }
@@ -102,11 +98,19 @@ class AuctionController extends AbstractController
         return $response->withStatus(404);
     }
 
+    public function manageAuctionsAction($request, $response, $args)
+    {
+        $args['title'] = 'Gestión de subastas';
+        $args['categories'] = $this->fetchCategories();
+
+        return $this->render($response, 'manageAuctions.php', $args);
+    }
+
 
     public function createAuctionAction($request, $response, $args){
 
 
-        
+
 
 
         return $this->render($response, '/profile.php', $args);
@@ -141,5 +145,12 @@ class AuctionController extends AbstractController
 
     }
 
-
+    private function fetchCategories()
+    {
+        return $this->db->select(array('id', 'nombre'))
+            ->from('categoria')
+            ->execute()
+            ->fetchAll()
+        ;
+    }
 }

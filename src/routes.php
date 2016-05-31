@@ -22,7 +22,6 @@ $app->get('/profile','UserController:showProfileAction');
 $app->any('/editProfile','UserController:editProfileAction');
 
 
-
 /* AuctionController Routes */
 $app->get('/subastas[/{category}]', 'AuctionController:listAuctionsAction');
 
@@ -33,6 +32,8 @@ $app->get('/subasta/{id}', 'AuctionController:showAuctionAction');
 $app->any('/nuevaSubasta', 'AuctionController:createAuctionAction');
 
 $app->any('/uploadImage', 'AuctionController:uploadImagerAction');
+
+$app->any('/gestion/subastas', 'AuctionController:manageAuctionsAction');
 
 
 /* AjaxController Routes Wrapper */
