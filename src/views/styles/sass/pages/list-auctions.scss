@@ -1,5 +1,9 @@
 .list-auctions-page {
     .auction {
+        @extend .hoverable;
+        @extend .card-panel;
+        @extend .center-align;
+
         .header {
             .title {
                 margin: 0 0 30px;
@@ -41,5 +45,9 @@
                 font-size: 19px;
             }
         }
+    }
+
+    .fa-refresh {
+        color: lighten($primary_color, 10%);
     }
 }

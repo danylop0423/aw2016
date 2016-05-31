@@ -1,36 +1,38 @@
-<div class="list-auctions-page">
+<div id="list-auctions" class="list-auctions-page">
     <div class="row">
         <div class="col s12">
             <div class="filter-auctions">
                 <ul class="tabs">
                     <li class="tab col s3"><a class="active" href="#categoryTab">Categoría</a></li>
                     <li class="tab col s3 disabled"><a href="#subcategoryTab">Subcategoría</a></li>
-                    <li class="tab col s3"><a href="#priceTab">Precio</a></li>
-                    <li class="tab col s3"><a href="#timeTab">Tiempo</a></li>
+                    <li class="tab col s3 hide-on-small-only"><a href="#priceTab">Precio</a></li>
+                    <li class="tab col s3 hide-on-small-only"><a href="#timeTab">Tiempo</a></li>
                 </ul>
 
                 <div class="row">
                     <div id="categoryTab" class="col s12 tab-body">
                         <div class="flex-grid">
-                            <?php for ($i=0; $i < 20; $i++): ?>
-                                <button class="btn btn-filter">Categoría <?php echo $i ?></button>
-                            <?php endfor ?>
+                            <?php foreach ($categories as $category): ?>
+                                <button class="btn btn-filter" @click="categorySelected('<?php echo $category['nombre'] ?>')">
+                                    <?php echo $category['nombre'] ?>
+                                </button>
+                            <?php endforeach ?>
                         </div>
                     </div>
 
                     <div id="subcategoryTab" class="col s12 tab-body">
                         <div class="flex-grid">
-                            <?php for ($i=0; $i < 9; $i++): ?>
-                                <button class="btn btn-filter">Subcategoría <?php echo $i ?></button>
-                            <?php endfor ?>
+                            <button class="btn btn-filter" v-for="subcategory in subcategories" @click="subcategorySelected(subcategory.nombre)">
+                                {{ subcategory.nombre }}
+                            </button>
                         </div>
                     </div>
 
                     <div id="priceTab" class="col s12 tab-body price">
                         <form action="#">
                             <p class="range-field">
-                                <label>Precio máximo: 15,20€</label>
-                                <input type="range" id="test5" min="0" max="100" step="0.5" value="15.20" />
+                                <label>Precio máximo: {{ price }}€</label>
+                                <input type="range" v-model="price" @click="priceSelected()" min="0" max="100" step="0.5" value="20.5" />
                             </p>
                         </form>
                     </div>
@@ -53,24 +55,48 @@
         </div>
     </div>
 
-    <div class="row">
-        <?php for ($i=0; $i < 5; $i++): ?>
-            <div class="col s12 m4">
-                <div class="card-panel auction center-align">
+    <div class="row list-auctions">
+        <div class="top-auctions" v-if="auctions.length == 0">
+            <?php foreach ($topAuctions as $auction): ?>
+                <div class="col s12 m4">
+                    <div class="auction">
+                        <div class="header">
+                            <p class="title"><a href="/subasta/<?php echo $auction['id'] ?>"><?php echo $auction['nombre'] ?></a></p>
+                            <a href="/subasta/<?php echo $auction['id'] ?>"><img src="<?php echo $auction['foto'] ?>" alt="" class="responsive-img"></a>
+                        </div>
+
+                        <div class="body">
+                            <p class="days-left"></p>
+                            <p class="time-left remainingTime">02:22:01</p>
+                            <p class="lowest-bid"><?php echo $auction['pujaMin'] ?><sup>€</sup></p>
+                            <button class="btn btn-block">Pujar</button>
+                        </div>
+                    </div>
+                </div>
+            <?php endforeach ?>
+        </div>
+
+        <div v-else>
+            <div v-if="!loading" v-for="auction in auctions" class="col s12 m4">
+                <div class="auction">
                     <div class="header">
-                        <p class="title"><a href="/subasta/<?php echo $i ?>">Apple Watch Sport 38mm</a></p>
-                        <a href="/subasta/<?php echo $i ?>"><img src="/assets/images/smartw6.png" alt="" class="responsive-img"></a>
+                        <p class="title"><a href="/subasta/{{ auction.id }}">{{ auction.nombre }}</a></p>
+                        <a href="/subasta/{{ auction.id }}"><img :src="auction.foto" alt="" class="responsive-img"></a>
                     </div>
 
                     <div class="body">
                         <p class="days-left"></p>
                         <p class="time-left remainingTime">02:22:01</p>
-                        <p class="lowest-bid">13,25<sup>€</sup></p>
+                        <p class="lowest-bid">{{ auction.pujaMin.replace('.', ',') }}<sup>€</sup></p>
                         <button class="btn btn-block">Pujar</button>
                     </div>
                 </div>
             </div>
-        <?php endfor ?>
+
+            <div class="center-align" v-if="loading">
+                <i class="fa fa-refresh fa-spin fa-5x fa-fw"></i>
+            </div>
+        </div>
     </div>
 </div>
 

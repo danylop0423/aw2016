@@ -27,3 +27,13 @@ $container['logger'] = function ($c) {
     $logger->pushHandler(new Monolog\Handler\StreamHandler($settings['path'], Monolog\Logger::DEBUG));
     return $logger;
 };
+
+// 404 handler
+$container['notFoundHandler'] = function ($c) {
+    return function ($request, $reponse) use ($c) {
+        $data['title'] = 'Página no encontrada';
+        $data['url'] = $request->getUri()->getBaseUrl() . $request->getUri()->getPath();
+
+        return $c['renderer']->renderPartial($reponse, 'error404.php', $data)->withStatus(404);
+    };
+};
