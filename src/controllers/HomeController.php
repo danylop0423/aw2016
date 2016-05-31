@@ -12,6 +12,23 @@ class HomeController extends AbstractController
     public function contactAction($request, $response, $args) {
         $args['title'] = 'Contáctanos';
 
+        //Atributos del metodo mail
+        // $para = 'chsuarez@ucm.es';
+        // $asunto = 'Te chivaste';
+        // $email = 'cesh_christian@yahoo.es';//$request->getParam('contact[email]');
+        // //$nombre = $request->getParam('contact[nombre]');
+        // $mensaje = "hola";//$request->getParam('contact[mensaje]');
+        // $cabecera = 'From: elchucky@decieza.com' . "\r\n" .'Reply-To: '.$email . "\r\n" . 'X-Mailer: PHP/' . phpversion();
+
+        //if(mail($para, $asunto, $mensaje, $cabecera)){
+        if(mail('chsuarez@ucm.es', 'Prueba', 'Mensaje Prueba', null, '-cesh_christian@hotmail.com')){
+            $resultado='<p>Tu mensaje ha sido enviado correctamente. ¡Gracias!</p>'; 
+        }
+        else{
+            $resultado='<p>Tu mensaje NO ha sido enviado correctamente. ¡Intentalo de nuevo!</p>';  
+        }
+        echo $resultado;
+
         return $this->render($response, 'contacto.php', $args);
     }   
 
