@@ -46,7 +46,8 @@ class UserController extends AbstractController
 
         if ($request->isPost()) {
             $user = $request->getParam('user');
-            if (!$this->userExists($user['email'])) {
+            $picDefault="/assets/images/add_user.png";
+			if (!$this->userExists($user['email'])) {
                 unset($user['password-r']);
 
                 //encriptar contraseña
@@ -63,6 +64,8 @@ class UserController extends AbstractController
                 if ($id) {
                     $args['title'] = 'Bienvenido ' . $user['nombre'];
                     $user['id']=$id;
+					if(!$user['foto'])
+						$user['foto']=$picDefault;										 
 					$args['loggedUser'] = $user;
                     $_SESSION['loggeduser'] = base64_encode(serialize($user));
 
@@ -154,7 +157,10 @@ class UserController extends AbstractController
 	  $originType=$originFile['type'];
 	  if (((strpos($originType, "gif") || strpos($originType, "jpeg") ||strpos($originType, "jpg")) 
 		     || strpos($originType, "png"))){
-				  $dir='assets\images\users\\';
+				  $dir='assets'. DIRECTORY_SEPARATOR .'images'. DIRECTORY_SEPARATOR .'users';
+				  if(!is_dir($dir))
+					mkdir ($dir,0766,true);  
+				  $dir=$dir. DIRECTORY_SEPARATOR;
 				  $tmpFile = $_FILES['pic']['tmp_name'];
 				  $im = file_get_contents($tmpFile);
 				  $dimensiones=getimagesize($tmpFile);

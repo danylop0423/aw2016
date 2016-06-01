@@ -38,7 +38,8 @@ class HomeController extends AbstractController
 
         if ($request->isPost()) {
             $user = $request->getParam('user');
-            //Desencriptar contraseña
+            $picDefault="/assets/images/add_user.png";
+			//Desencriptar contraseña
             $pass = $request->getParam('password');
 
 
@@ -50,7 +51,8 @@ class HomeController extends AbstractController
             ;
 
             $pass = $this->decryptPassword($request);
-
+			if(!$user['foto'])
+						$user['foto']=$picDefault;			
             if ($user && $user['password'] === $pass) {
                 $args['loggedUser'] = $user;
                 $_SESSION['loggeduser'] = base64_encode(serialize($user));
