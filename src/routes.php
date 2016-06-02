@@ -7,7 +7,7 @@ $app->any('/login', 'HomeController:loginAction');
 
 $app->get('/logout', 'HomeController:logoutAction');
 
-$app->get('/contacto','HomeController:contactAction');
+$app->any('/contacto','HomeController:contactAction');
 
 $app->get('/asistencia','HomeController:technicalAssistantAction');
 
