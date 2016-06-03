@@ -7,20 +7,20 @@
 
 						  <div class="input-field col s12 ">
 								<i class=" fa fa-user prefix" aria-hidden="true"></i>
-								<input type="text" value= <?php echo $contacto['nombre']?> name="contact[nombre]" id="name" class="validate" required>
+								<input type="text" value= "<?php echo $contacto['nombre']?>"" name="contact[nombre]" id="name" class="validate" required>
 								<label for="name">Nombre *</label>
 						  </div>
 
 						  <div class="input-field col s12 ">
 								<i class=" fa fa-envelope-o prefix" aria-hidden="true"></i>
 								<label for="">Email *</label>
-								<input type="email" value= <?php echo $contacto['email']?> name="contact[email]" id="email" class="validate" required>
+								<input type="email" value= "<?php echo $contacto['email']?> " name="contact[email]" id="email" class="validate" required>
 						  </div>
 
 						  <div class="input-field col s12">
 								<i class=" fa fa-pencil prefix" aria-hidden="true"></i>
 								<label for="icon_prefix2">Mensaje *</label>
-								<input type="text" value= <?php echo $contacto['mensaje']?> name="contact[mensaje]" id="message" class="validate" required>
+								<input type="text" value= "<?php echo $contacto['mensaje']?>" name="contact[mensaje]" id="message" class="validate" required>
 						  </div>
 								  
 						  <div class="buttons-wrapper center-align">
