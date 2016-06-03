@@ -12,25 +12,31 @@ class HomeController extends AbstractController
     public function contactAction($request, $response, $args) {
         $args['title'] = 'Contáctanos';
 
+        //var_dump($asunto); dead;
         //Atributos del metodo mail
-        $para = 'chsuarez@ucm.es';
-        $asunto = 'Te chivaste';
-        $email = 'cesh_christian@yahoo.es';//$request->getParam('contact[email]');
-        //$nombre = $request->getParam('contact[nombre]');
-        $mensaje = 'hola';//$request->getParam('contact[mensaje]');
-         $cabecera = 'From: elchucky@decieza.com' . "\r\n" .'Reply-To: '. $email . "\r\n" . 'X-Mailer: PHP/' . phpversion();
+        if ($request->isPost()) {
+            //Obtengo todos los datos del formulario (contac es un array)
+            $contacto=$request->getParam('contact');
+            $cabecera = 'From: elchucky@decieza.com' . "\r\n" .'Reply-To: '. $contacto['email']; . "\r\n" . 'X-Mailer: PHP/' . phpversion();
+            $para = 'chsuarez@ucm.es';
+            $asunto = 'Te chivaste';
 
-        if(mail($para, $asunto, $mensaje, $cabecera)){
-        //if(mail('chsuarez@ucm.es', 'Prueba', 'Mensaje Prueba', '-cesh_christian@hotmail.com')){
-           echo '<p>Tu mensaje ha sido enviado correctamente. ¡Gracias!</p>'; 
+            if(mail($para, $asunto, $contacto['mensaje'], $cabecera)){
+                $args['error']='Tu mensaje ha sido enviado correctamente.';
+                $args['contacto']= array('nombre'=>'', 'email'=>'', 'mensaje'=>'');//enviar para vaciar el campor nombre
+            }
+            else{
+                $args['error']='Tu mensaje NO se ha enviado correctamente. ¡Intentalo de nuevo!';  
+                $args['contacto']= $contacto;
+            }
+
+            return $this->render($response, 'contacto.php', $args);
         }
-        else{
-            echo '<p>Tu mensaje NO ha sido enviado correctamente. ¡Intentalo de nuevo!</p>';  
-        }
-        //echo $resultado;
-        // mail('chsuarez@ucm.es', 'Prueba', 'Mensaje Prueba', $cabecera);
+
+        $args['contacto']= array('nombre'=>'', 'email'=>'', 'mensaje'=>'');
         return $this->render($response, 'contacto.php', $args);
-    }   
+    } 
+      
 
     public function loginAction($request, $response, $args)
     {
