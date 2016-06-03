@@ -13,11 +13,11 @@ class HomeController extends AbstractController
         $args['title'] = 'Contáctanos';
 
         //Atributos del metodo mail
-         $para = 'chsuarez@ucm.es';
-         $asunto = 'Te chivaste';
+        $para = 'chsuarez@ucm.es';
+        $asunto = 'Te chivaste';
         $email = 'cesh_christian@yahoo.es';//$request->getParam('contact[email]');
-        // //$nombre = $request->getParam('contact[nombre]');
-        $mensaje = "hola";//$request->getParam('contact[mensaje]');
+        //$nombre = $request->getParam('contact[nombre]');
+        $mensaje = 'hola';//$request->getParam('contact[mensaje]');
          $cabecera = 'From: elchucky@decieza.com' . "\r\n" .'Reply-To: '. $email . "\r\n" . 'X-Mailer: PHP/' . phpversion();
 
         if(mail($para, $asunto, $mensaje, $cabecera)){
@@ -28,7 +28,7 @@ class HomeController extends AbstractController
             echo '<p>Tu mensaje NO ha sido enviado correctamente. ¡Intentalo de nuevo!</p>';  
         }
         //echo $resultado;
-       // mail('chsuarez@ucm.es', 'Prueba', 'Mensaje Prueba', $cabecera);
+        // mail('chsuarez@ucm.es', 'Prueba', 'Mensaje Prueba', $cabecera);
         return $this->render($response, 'contacto.php', $args);
     }   
 
