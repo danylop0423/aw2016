@@ -169,7 +169,7 @@ class UserController extends AbstractController
 				  
 				  $myAuxImage=imagecreatefromstring($im);
 				  $anchonuevo = 200;
-				  $altonuevo = 250;
+				  $altonuevo = 200;
 
 				  $newImage=imagecreatetruecolor($anchonuevo,$altonuevo);
 				  imagecopyresampled($newImage,$myAuxImage,0,0,0,0,$anchonuevo, $altonuevo,$ancho,$alto);
