@@ -2,3 +2,5 @@
 node_modules/*
 logs/*
 htdocs/*
+public/assets/images/users
+public/assets/images/users/*
