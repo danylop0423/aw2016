@@ -7,7 +7,7 @@
 
 						  <div class="input-field col s12 ">
 								<i class=" fa fa-user prefix" aria-hidden="true"></i>
-								<input type="text" value= "<?php echo $contacto['nombre']?>"" name="contact[nombre]" id="name" class="validate" required>
+								<input type="text" value= "<?php echo $contacto['nombre']?>" name="contact[nombre]" id="name" class="validate" required>
 								<label for="name">Nombre *</label>
 						  </div>
 

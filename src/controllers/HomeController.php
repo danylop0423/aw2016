@@ -23,7 +23,7 @@ class HomeController extends AbstractController
 
             if(mail($para, $asunto, $contacto['mensaje'], $cabecera)){
                 $args['error']='Tu mensaje ha sido enviado correctamente.';
-                $args['contacto']= array('nombre'=>'', 'email'=>'', 'mensaje'=>'');//enviar para vaciar el campor nombre
+                $args['contacto']=array('nombre'=>'', 'email'=>'', 'mensaje'=>'');//enviar para vaciar el campor nombre
             }
             else{
                 $args['error']='Tu mensaje NO se ha enviado correctamente. ¡Intentalo de nuevo!';  
@@ -33,7 +33,7 @@ class HomeController extends AbstractController
             return $this->render($response, 'contacto.php', $args);
         }
 
-        //$args['contacto']= array('nombre'=>'', 'email'=>'', 'mensaje'=>'');
+        $args['contacto']= array('nombre'=>'', 'email'=>'', 'mensaje'=>'');
         return $this->render($response, 'contacto.php', $args);
     } 
 
