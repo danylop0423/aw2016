@@ -15,7 +15,7 @@ class HomeController extends AbstractController
         //var_dump($asunto); dead;
         //Atributos del metodo mail
         if ($request->isPost()) {
-            //Obtengo todos los datos del formulario (contac es un array)
+            //Obtengo todos los datos del formulario (contact es un array)
             $contacto=$request->getParam('contact');
             $cabecera = 'From: elchucky@decieza.com' . "\r\n" .'Reply-To: '. $contacto['email'] . "\r\n" . 'X-Mailer: PHP/' . phpversion();
             $para = 'chsuarez@ucm.es';
@@ -36,6 +36,33 @@ class HomeController extends AbstractController
         $args['contacto']= array('nombre'=>'', 'email'=>'', 'mensaje'=>'');
         return $this->render($response, 'contacto.php', $args);
     } 
+
+    public function technicalassistantAction($request, $response, $args) {
+        $args['title'] = 'Asistencia técnica';
+
+        //Atributos del metodo mail
+        if ($request->isPost()) {
+            //Obtengo todos los datos del formulario (assistance es un array)
+            $asistencia=$request->getParam('assistance');
+            $cabecera = 'From: elchucky@decieza.com' . "\r\n" .'Reply-To: '. $asistencia['email'] . "\r\n" . 'X-Mailer: PHP/' . phpversion();
+            $para = 'davidzam@ucm.es';
+            $asunto = 'Formulario de Asistencia técnica';
+
+            if(mail($para, $asunto, $asistencia['mensaje'], $cabecera)){
+                $args['error']='Tu mensaje ha sido enviado correctamente.';
+                $args['asistencia']=array('nombre'=>'', 'email'=>'', 'mensaje'=>'');
+            }
+            else{
+                $args['error']='Tu mensaje NO se ha enviado correctamente. ¡Intentalo de nuevo!';  
+                $args['asistencia']= $asistencia;
+            }
+
+            return $this->render($response, 'asistencia.php', $args);
+        }      
+
+        $args['asistencia']= array('nombre'=>'', 'email'=>'', 'mensaje'=>'');
+        return $this->render($response, 'asistencia.php', $args);
+    }
 
 
     public function loginAction($request, $response, $args)

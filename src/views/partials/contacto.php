@@ -28,9 +28,9 @@
 					 
 								<a  href='/home'>
 								<button class="btn waves-effect waves-light" type="reset"><i class="fa fa-eraser right" aria-hidden="true"></i>Borrar</button>
-						 </a>
+						 		</a>
 					 
-				</div>
+						  </div>
 
 					 </div>
 				</div>
