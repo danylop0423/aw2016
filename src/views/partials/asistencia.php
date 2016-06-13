@@ -1,8 +1,10 @@
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <form action="/asistencia" method="POST">
     <ul class="collapsible" data-collapsible="exapandible">
         <li>
-            <div class="collapsible-header active"><i class="large material-icons">comment</i>Formulario de Asistencia Técnica</div>
+            <div class="collapsible-header active">
+              <i class="fa fa-list-alt prefix" aria-hidden="true"></i>
+              Formulario de Asistencia Técnica
+            </div>
                 <div class="collapsible-body">
                   <div class="row">
                     <div class="input-field col s12 l4">
@@ -20,41 +22,24 @@
                     <div class="input-field col s12">
                       <i class="fa fa-phone prefix" aria-hidden="true"></i>
                       <label for="">Teléfono</label>
-                      <input type="tel" name="telephone" id="telephone" class="validate" required>
+                      <input type="tel" name="telephone" id="telephone" class="validate">
                     </div>
 
                     <div class="input-field col s12">
-                      <i class=" fa fa-pencil prefix" aria-hidden="true"></i>
+                      <i class="fa fa-plus prefix" aria-hidden="true"></i>
                       <textarea type="text" value= "<?php echo $asistencia['mensaje']?>" name="assistance[mensaje]" id="textarea1" class="materialize-textarea" length="120" required ></textarea>
                       <label for="textarea1">Indíquenos por qué motivo necesita asistencia *</label>
                     </div>
 
-                    <!--
                     <div class="input-field col s12">
-                      <label>Indíquenos su problema</label>
                       <select>
-                        <option value="" disabled selected>Escoja opción</option>
-                        <option value="1">No consigo pujar por un producto</option>
-                        <option value="2">No consigo subastar productos</option>
-                        <option value="3">No puedo ver mis pujas</option>
-                        <option value="4">No puedo ver los productos subastados</option>
+                        <option value="" disabled selected>Indique su problema</option>
+                        <option value="1">No consigo subastar productos</option>
+                        <option value="2">No puedo ver los productos subastados</option>
+                        <option value="3">No consigo pujar por un producto</option>
+                        <option value="4">No puedo ver mis pujas</option>
                       </select>
-                    </div>
-                    -->
-
-                    <div class="input-field col s12">
-                     <i class="small material-icons">list</i>
-                      <label>Indíquenos su problema</label>
-                      <select multiple>
-                        <optgroup label="Subastas">
-                          <option value="1">No consigo subastar productos</option>
-                          <option value="2">No puedo ver los productos subastados</option>
-                        </optgroup>
-                        <optgroup label="Pujas">
-                          <option value="3">No consigo pujar por un producto</option>
-                          <option value="4">No puedo ver mis pujas</option>
-                        </optgroup>
-                      </select>
+                      <label>Indíquenos la naturaleza de su problema</label>
                     </div>
 
                     <div class="buttons-wrapper center-align">
@@ -69,8 +54,16 @@
         </li>
     </ul>
 </form>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+  $('select').material_select();
+  });
+</script>
+
 <script>
     $(function() {
+       $('select').material_select();
         <?php if ($error): ?>
             Materialize.toast('<?php echo $error ?>', 6000);
         <?php endif ?>
