@@ -11,5 +11,6 @@ return array(
     'AjaxController' => $baseDir . '/src/controllers/AjaxController.php',
     'AuctionController' => $baseDir . '/src/controllers/AuctionController.php',
     'HomeController' => $baseDir . '/src/controllers/HomeController.php',
+    'ManagementController' => $baseDir . '/src/controllers/ManagementController.php',
     'UserController' => $baseDir . '/src/controllers/UserController.php',
 );

@@ -33,7 +33,9 @@ $app->any('/nuevaSubasta', 'AuctionController:createAuctionAction');
 
 $app->any('/uploadImage', 'AuctionController:uploadImagerAction');
 
-$app->any('/gestion/subastas', 'AuctionController:manageAuctionsAction');
+
+/* ManagementController Routes */
+$app->any('/gestion/subastas[/{action}]', 'ManagementController:manageAuctionsAction');
 
 
 /* AjaxController Routes Wrapper */
