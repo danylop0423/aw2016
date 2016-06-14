@@ -103,6 +103,15 @@ class AuctionController extends AbstractController
         $args['title'] = 'Gestión de subastas';
         $args['categories'] = $this->fetchCategories();
 
+        $args['auctions'] = $this->db->select()
+            ->from('subasta')
+            ->join('productos', 'subasta.producto', '=', 'productos.id', 'INNER')
+            // ->where('subasta.subastador', '=', $request->getAttribute('loggedUser')['id'])
+            ->limit(15)
+            ->execute()
+            ->fetchAll()
+        ;
+
         return $this->render($response, 'manageAuctions.php', $args);
     }
 

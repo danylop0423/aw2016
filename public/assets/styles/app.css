@@ -2036,7 +2036,7 @@ ul {
 .z-depth-0 {
   box-shadow: none !important; }
 
-.z-depth-1, nav, .card-panel, .login-page .login-card, .list-auctions-page .auction, .card, .toast, .btn, .btn-large, .btn-floating, .dropdown-content, .collapsible, .side-nav, .filter-auctions {
+.z-depth-1, nav, .card-panel, .login-page .login-card, .list-auctions-page .auction, .card, .management-page .delete-filter, .toast, .btn, .btn-large, .btn-floating, .dropdown-content, .collapsible, .side-nav, .filter-auctions {
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
 
 .z-depth-1-half, .btn:hover, .btn-large:hover, .btn-floating:hover {
@@ -2573,7 +2573,7 @@ nav ul a span.badge {
 .right-align {
   text-align: right; }
 
-.center, .center-align, .list-auctions-page .auction {
+.center, .center-align, .list-auctions-page .auction, .management-page .delete-filter {
   text-align: center; }
 
 .left {
@@ -3249,41 +3249,41 @@ small {
   border-radius: 2px;
   background-color: #fff; }
 
-.card {
+.card, .management-page .delete-filter {
   position: relative;
   margin: 0.5rem 0 1rem 0;
   background-color: #fff;
   transition: box-shadow .25s;
   border-radius: 2px; }
-  .card .card-title {
+  .card .card-title, .management-page .delete-filter .card-title {
     font-size: 24px;
     font-weight: 300; }
-    .card .card-title.activator {
+    .card .card-title.activator, .management-page .delete-filter .card-title.activator {
       cursor: pointer; }
-  .card.small, .card.medium, .card.large {
+  .card.small, .management-page .small.delete-filter, .card.medium, .management-page .medium.delete-filter, .card.large, .management-page .large.delete-filter {
     position: relative; }
-    .card.small .card-image, .card.medium .card-image, .card.large .card-image {
+    .card.small .card-image, .management-page .small.delete-filter .card-image, .card.medium .card-image, .management-page .medium.delete-filter .card-image, .card.large .card-image, .management-page .large.delete-filter .card-image {
       max-height: 60%;
       overflow: hidden; }
-    .card.small .card-content, .card.medium .card-content, .card.large .card-content {
+    .card.small .card-content, .management-page .small.delete-filter .card-content, .card.medium .card-content, .management-page .medium.delete-filter .card-content, .card.large .card-content, .management-page .large.delete-filter .card-content {
       max-height: 40%;
       overflow: hidden; }
-    .card.small .card-action, .card.medium .card-action, .card.large .card-action {
+    .card.small .card-action, .management-page .small.delete-filter .card-action, .card.medium .card-action, .management-page .medium.delete-filter .card-action, .card.large .card-action, .management-page .large.delete-filter .card-action {
       position: absolute;
       bottom: 0;
       left: 0;
       right: 0;
       z-index: 1;
       background-color: inherit; }
-  .card.small {
+  .card.small, .management-page .small.delete-filter {
     height: 300px; }
-  .card.medium {
+  .card.medium, .management-page .medium.delete-filter {
     height: 400px; }
-  .card.large {
+  .card.large, .management-page .large.delete-filter {
     height: 500px; }
-  .card .card-image {
+  .card .card-image, .management-page .delete-filter .card-image {
     position: relative; }
-    .card .card-image img {
+    .card .card-image img, .management-page .delete-filter .card-image img {
       display: block;
       border-radius: 2px 2px 0 0;
       position: relative;
@@ -3292,24 +3292,24 @@ small {
       top: 0;
       bottom: 0;
       width: 100%; }
-    .card .card-image .card-title {
+    .card .card-image .card-title, .management-page .delete-filter .card-image .card-title {
       color: #fff;
       position: absolute;
       bottom: 0;
       left: 0;
       padding: 20px; }
-  .card .card-content {
+  .card .card-content, .management-page .delete-filter .card-content {
     padding: 20px;
     border-radius: 0 0 2px 2px; }
-    .card .card-content p {
+    .card .card-content p, .management-page .delete-filter .card-content p {
       margin: 0;
       color: inherit; }
-    .card .card-content .card-title {
+    .card .card-content .card-title, .management-page .delete-filter .card-content .card-title {
       line-height: 48px; }
-  .card .card-action {
+  .card .card-action, .management-page .delete-filter .card-action {
     border-top: 1px solid rgba(160, 160, 160, 0.2);
     padding: 20px; }
-    .card .card-action a {
+    .card .card-action a, .management-page .delete-filter .card-action a {
       color: #ffab40;
       margin-right: 20px;
       -webkit-transition: color 0.3s ease;
@@ -3318,9 +3318,9 @@ small {
       -ms-transition: color 0.3s ease;
       transition: color 0.3s ease;
       text-transform: uppercase; }
-      .card .card-action a:hover {
+      .card .card-action a:hover, .management-page .delete-filter .card-action a:hover {
         color: #ffd8a6; }
-  .card .card-reveal {
+  .card .card-reveal, .management-page .delete-filter .card-reveal {
     padding: 20px;
     position: absolute;
     background-color: #fff;
@@ -3330,7 +3330,7 @@ small {
     height: 100%;
     z-index: 1;
     display: none; }
-    .card .card-reveal .card-title {
+    .card .card-reveal .card-title, .management-page .delete-filter .card-reveal .card-title {
       cursor: pointer;
       display: block; }
 
@@ -6262,7 +6262,7 @@ a.button-collapse i {
       transition: margin .25s ease; }
       .side-nav.fixed .logo .search-wrapper.focused {
         margin: 0 2px; }
-      .side-nav.fixed .logo .search-wrapper.card {
+      .side-nav.fixed .logo .search-wrapper.card, .side-nav.fixed .logo .management-page .search-wrapper.delete-filter, .management-page .side-nav.fixed .logo .search-wrapper.delete-filter {
         position: relative;
         background-color: #fff;
         border-radius: 2px;
@@ -6413,3 +6413,9 @@ a.button-collapse i {
 
 .puja_subasta {
   margin-top: 100px; }
+
+.management-page .highlight tr {
+  cursor: pointer; }
+
+.management-page .delete-filter {
+  border-top: 3px solid #E53935; }
