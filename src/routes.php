@@ -9,7 +9,7 @@ $app->get('/logout', 'HomeController:logoutAction');
 
 $app->any('/contacto','HomeController:contactAction');
 
-$app->get('/asistencia','HomeController:technicalassistantAction');
+$app->any('/asistencia','HomeController:technicalassistantAction');
 
 $app->any('/newProduct','HomeController:newProductAction');
 
