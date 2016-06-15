@@ -17,19 +17,18 @@ class HomeController extends AbstractController
         if ($request->isPost()) {
             //Obtengo todos los datos del formulario (contact es un array)
             $contacto=$request->getParam('contact');
-            $cabecera = 'From: elchucky@decieza.com' . "\r\n" .'Reply-To: '. $contacto['email'] . "\r\n" . 'X-Mailer: PHP/' . phpversion();
+            $cabecera = 'From: reversebid@reversebid.com' . "\r\n" .'Reply-To: '. $contacto['email'] . "\r\n" . 'X-Mailer: PHP/' . phpversion();
             $para = 'chsuarez@ucm.es';
             $asunto = 'Formulario de Contacto';
 
             if(mail($para, $asunto, $contacto['mensaje'], $cabecera)){
                 $args['error']='Tu mensaje ha sido enviado correctamente.';
-                $args['contacto']=array('nombre'=>'', 'email'=>'', 'mensaje'=>'');//enviar para vaciar el campor nombre
             }
             else{
-                $args['error']='Tu mensaje NO se ha enviado correctamente. ¡Intentalo de nuevo!';  
-                $args['contacto']= $contacto;
+                $args['error']='Tu mensaje NO se ha enviado correctamente. ¡Intentalo de nuevo!'; 
             }
 
+            $args['contacto']=array('nombre'=>'', 'email'=>'', 'mensaje'=>'');
             return $this->render($response, 'contacto.php', $args);
         }
 

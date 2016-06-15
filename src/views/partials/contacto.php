@@ -27,7 +27,7 @@
 								<button class="btn waves-effect waves-light" type="submit" name="action"> <i class="fa fa-paper-plane right" aria-hidden="true"></i>Enviar</button>
 					 
 								<a  href='/home'>
-								<button class="btn waves-effect waves-light" type="reset"><i class="fa fa-eraser right" aria-hidden="true"></i>Borrar</button>
+								<button class="btn waves-effect waves-light" type="reset"> <i class="fa fa-eraser right" aria-hidden="true"></i>Borrar</button>
 						 		</a>
 					 
 						  </div>
