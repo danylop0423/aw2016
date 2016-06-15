@@ -6346,6 +6346,9 @@ a.button-collapse i {
   .auction-page .auction p:nth-child(3) {
     margin-top: 0; }
 
+.auction-page .auction button {
+  width: 100%; }
+
 .auction-page .auctioneer .rating p:nth-child(1) {
   margin-bottom: 0; }
 

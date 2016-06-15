@@ -48,6 +48,26 @@ class AjaxController extends AbstractAjaxController
         return $response->withStatus(404);
     }
 
+    public function makeBidAction($request, $response, $args)
+    {
+        $bid = $request->getParam('bid');
+        $auctionId = $request->getParam('auction');
+        $loggedUser = $request->getAttribute('loggedUser') || false;
+
+        if ($loggedUser) {
+            if ($this->isWinnerBid($auctionId, $bid)) {
+                $args['error'] = false;
+                $this->saveBid($auctionId, $loggedUser['id'], $bid);
+            } else {
+                $args['error'] = '¡Fallo al registrar la puja!';
+            }
+        } else {
+            $args['error'] = '¡Debes iniciar sesión primero!';
+        }
+
+        $this->renderJSON($response, $args);
+    }
+
     private function filterAuctionsByPrice($filters)
     {
         $bid = $filters['subasta.pujaMin'];
@@ -63,6 +83,28 @@ class AjaxController extends AbstractAjaxController
             ->orderBy('productos.nombre', 'ASC')
             ->execute()
             ->fetchAll()
+        ;
+    }
+
+    private function isWinnerBid($auctionId, $bid)
+    {
+        // $winnerBid = $this->db->select()
+        //     ->from('pujas')
+        //     ->where('producto', '=', $auctionId)
+        //     ->having('ultimaPuja', '>=', $bid)
+        //     ->execute()
+        //     ->fetchAll()
+        // ;
+
+        return false;
+    }
+
+    private function saveBid($auctionId, $loggedUserId, $bid)
+    {
+        return $this->db->insert(array('usuario', 'producto', 'ultimaPuja'))
+           ->into('pujas')
+           ->values($loggedUserId, $auctionId, $bid)
+           ->execute()
         ;
     }
 }

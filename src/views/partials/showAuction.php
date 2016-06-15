@@ -28,8 +28,8 @@
         </div>
 
         <div class="col s12 m3">
-            <div class="card-panel bid">
-                <div class="auction">
+            <div class="card-panel auction">
+                <div class="time">
                     <label>Tiempo restante</label>
 
                     <p><i class="fa fa-calendar-o"></i> 2 Días</p>
@@ -46,7 +46,7 @@
                 <p class="divider"></p>
 
                 <div class="center-align">
-                    <button class="btn"><i class="fa fa-gavel left"></i> Pujar</button>
+                    <bid-button auction-id="<?php echo $auction['id'] ?>" product-name="<?php echo $auction['nombre'] ?>"></bid-button>
                 </div>
             </div>
         </div>

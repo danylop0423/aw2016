@@ -6,8 +6,10 @@
     <title>Reversebid | <?php echo $title ?></title>
     <link rel="stylesheet" href="/assets/styles/app.css">
     <link rel="stylesheet" href="/assets/vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/assets/vendor/sweetalert2/sweetalert2.css">
     <script src="/assets/vendor/jquery/jquery.min.js"></script>
     <script src="/assets/vendor/bootstrap/js/materialize.min.js"></script>
+    <script src="/assets/vendor/sweetalert2/sweetalert2.min.js"></script>
 </head>
 <body>
     <header>

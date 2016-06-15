@@ -69,7 +69,7 @@
                             <p class="days-left"></p>
                             <p class="time-left remainingTime">02:22:01</p>
                             <p class="lowest-bid"><?php echo $auction['pujaMin'] ?><sup>€</sup></p>
-                            <button class="btn btn-block">Pujar</button>
+                            <bid-button auction-id="<?php echo $auction['id'] ?>" product-name="<?php echo $auction['nombre'] ?>"></bid-button>
                         </div>
                     </div>
                 </div>
@@ -88,7 +88,7 @@
                         <p class="days-left"></p>
                         <p class="time-left remainingTime">02:22:01</p>
                         <p class="lowest-bid">{{ auction.pujaMin.replace('.', ',') }}<sup>€</sup></p>
-                        <button class="btn btn-block">Pujar</button>
+                        <bid-button :auction-id="auction.id" :product-name="auction.nombre"></bid-button>
                     </div>
                 </div>
             </div>

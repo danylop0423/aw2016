@@ -1,11 +1,11 @@
 <script>
  $(document).ready(function(){
-      $('.slider').slider({full_width: true,interval: 2500});	
+      $('.slider').slider({full_width: true,interval: 2500});
    });
 </script>
 
 <div id="contenedor">
-		
+
 		<div id= "principal_img">
    		  <div class="slider">
 			<ul class="slides">
@@ -40,7 +40,7 @@
 			  </li>
 			</ul>
 		</div>
-	
+
 	</div>
 
 		<div id=" how">
