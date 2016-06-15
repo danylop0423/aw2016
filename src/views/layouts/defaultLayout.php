@@ -126,7 +126,7 @@
                         <li><a class="grey-text text-lighten-3" href="/contacto">Contacto</a></li>
                         <li><a class="grey-text text-lighten-3" href="/asistencia">Asistencia técnica</a></li>
                         <li><a class="grey-text text-lighten-3" href="#!">Condiciones de uso</a></li>
-                        <li><a class="grey-text text-lighten-3" href="#!">Politicas de privacidad</a></li>
+                        <li><a class="grey-text text-lighten-3" href="/politicas">Politicas de privacidad</a></li>
                         <li><a class="grey-text text-lighten-3" href="#!">Venta y reembolso</a></li>
                     </ul>
                 </div>

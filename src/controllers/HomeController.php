@@ -36,6 +36,15 @@ class HomeController extends AbstractController
         return $this->render($response, 'contacto.php', $args);
     } 
 
+
+    public function politicasAction($request, $response, $args) {
+        $args['title'] = 'Políticas de Privacidad';
+
+        
+        return $this->render($response, 'politicas.php', $args);
+    } 
+
+
     public function technicalassistantAction($request, $response, $args) {
         $args['title'] = 'Asistencia técnica';
 
