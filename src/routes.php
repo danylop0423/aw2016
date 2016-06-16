@@ -9,9 +9,11 @@ $app->get('/logout', 'HomeController:logoutAction');
 
 $app->any('/contacto','HomeController:contactAction');
 
+$app->any('/asistencia','HomeController:technicalassistantAction');
+
 $app->any('/politicas','HomeController:politicasAction');
 
-$app->any('/asistencia','HomeController:technicalassistantAction');
+$app->any('/reembolso','HomeController:reembolsoAction');
 
 $app->any('/newProduct','HomeController:newProductAction');
 

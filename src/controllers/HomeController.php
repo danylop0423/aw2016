@@ -37,14 +37,6 @@ class HomeController extends AbstractController
     } 
 
 
-    public function politicasAction($request, $response, $args) {
-        $args['title'] = 'Políticas de Privacidad';
-
-        
-        return $this->render($response, 'politicas.php', $args);
-    } 
-
-
     public function technicalassistantAction($request, $response, $args) {
         $args['title'] = 'Asistencia técnica';
 
@@ -71,6 +63,21 @@ class HomeController extends AbstractController
         $args['asistencia']= array('nombre'=>'', 'email'=>'', 'mensaje'=>'');
         return $this->render($response, 'asistencia.php', $args);
     }
+
+
+    public function politicasAction($request, $response, $args) {
+        $args['title'] = 'Políticas de Privacidad';
+        
+        return $this->render($response, 'politicas.php', $args);
+    } 
+
+
+    public function reembolsoAction($request, $response, $args) {
+        $args['title'] = 'Venta y Reembolso';
+        
+        return $this->render($response, 'reembolso.php', $args);
+    } 
+
 
 
     public function loginAction($request, $response, $args)

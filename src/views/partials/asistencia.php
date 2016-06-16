@@ -7,7 +7,7 @@
             </div>
                 <div class="collapsible-body">
                   <div class="row">
-                    <div class="input-field col s12 l4">
+                    <div class="input-field col s12 ">
                        <i class=" fa fa-user prefix" aria-hidden="true"></i>
                         <label for="name">Nombre *</label>
                         <input type="text" name="user[usuario]" id="user" class="validate" required>
