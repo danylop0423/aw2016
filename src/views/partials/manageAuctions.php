@@ -90,9 +90,9 @@
         <div id="delete" class="col s12">
             <div class="card-panel">
                 <div class="delete-filter">
-                    <button class="btn-flat waves-effect waves-light">SELECCIONAR TODAS</button>
-                    <button class="btn-flat waves-effect waves-light">SELECCIONAR SUBASTAS CADUCADAS</button>
-                    <button class="btn-flat waves-effect waves-light">CANCELAR SELECCIÓN</button>
+                    <button class="btn-flat waves-effect waves-light" id='delete_selectAll'>SELECCIONAR TODAS</button>
+                    <button class="btn-flat waves-effect waves-light" id='delete_selectExpired'>SELECCIONAR SUBASTAS CADUCADAS</button>
+                    <button class="btn-flat waves-effect waves-light" id='delete_cancelAll'>CANCELAR SELECCIÓN</button>
                 </div>
 
                 <table class="striped">
@@ -108,7 +108,7 @@
                     <tbody>
                         <form action="">
                             <?php foreach ($auctions as $key => $auction): ?>
-                                <tr>
+                                <tr class="deleteField">
                                     <td colspan="2">
                                         <div class="valign-wrapper">
                                             <div class="col s2 hide-on-small-only">
@@ -120,7 +120,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td>20/05/2016 17:30</td>
+                                    <td class="dates">20/05/2016 17:30</td>
                                     <td>21€</td>
                                     <td>31,5€</td>
                                     <td>
@@ -245,5 +245,46 @@
                 }
             });
         });
+		
+		
+		
+		$('#delete_selectAll').on('click', function() {
+           $('.deleteField :input[type=checkbox]').prop('checked', true);
+            
+        });
+		
+		
+		$('#delete_selectExpired').on('click', function() {
+		   var flags=[];
+		   $('.dates').each(function(i,elem){
+			   var date_time=$(this).text().split(" ");
+			   var only_date=date_time[0].split("/"); // [0]=day,[1]=Month,[2]=Year
+			   var only_time=date_time[1];
+			   var in_plaintext=only_date[2]+"-"+only_date[1]+"-"+only_date[0]+"T"+only_time+":00";
+			   var currentDate=Date.parse(new Date());
+			   var expiredDate=Date.parse(new Date(in_plaintext));
+			   if(currentDate > expiredDate)
+				 flags[i]=1;
+			   else 
+				 flags[i]=0;
+			          
+			});
+
+		   $('.deleteField :input[type=checkbox]').each(function(i,elem){
+			   if(flags[i])
+				 $(this).prop('checked', true);
+			   else
+                 $(this).prop('checked', false);				   
+		    });
+		   
+        });
+		
+		
+		$('#delete_cancelAll').on('click', function() {
+           $('.deleteField :input[type=checkbox]').prop('checked', false);
+            
+        });
+		
+			
     });
 </script>
