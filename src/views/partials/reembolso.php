@@ -1,4 +1,4 @@
-<div class="card-panel ">
+<div class="card-panel">
 	<div class="row">
 		<div class="col s12">
 			<p >
@@ -20,13 +20,13 @@
 			    <li>
 			      <div class="collapsible-header blue-text text-darken-2"><i class="fa fa-dropbox" aria-hidden="true"></i>Prepara el paquete</div>
 			      <div class="collapsible-body">
-		      		<p>
+		      		<div class="reembolso-page">
 		      			<ul class="clear-fix">
 		      				<li class="col s12"><i class="fa fa-angle-right"> </i> Caja en la que recibiste el pedido</li>
    							<li class="col s12"><i class="fa fa-angle-right"> </i> Producto</li>
     						<li class="col s12"><i class="fa fa-angle-right"> </i> Otros accesorios o documentos recibidos con el producto</li>
   						</ul>
-  					</p>
+  					</div>
 			      </div>
 			    </li>
 			    <li>
