@@ -159,7 +159,13 @@ class UserController extends AbstractController
 		     || strpos($originType, "png"))){
 				  $dir='assets'. DIRECTORY_SEPARATOR .'images'. DIRECTORY_SEPARATOR .'users';
 				  if(!is_dir($dir))
-					mkdir ($dir,0766,true);  
+					mkdir ($dir,0766,true);
+				  else{ //only because we need it during develop- it changes $dir permissions recursively
+					chmod($dir,0766);
+					$iterator = new RecursiveIteratorIterator(new RecursiveDirectoryIterator($dir));
+					foreach($iterator as $item) 
+					 chmod($item,0766);				
+				    }					
 				  $dir=$dir. DIRECTORY_SEPARATOR;
 				  $tmpFile = $_FILES['pic']['tmp_name'];
 				  $im = file_get_contents($tmpFile);
@@ -179,7 +185,8 @@ class UserController extends AbstractController
 			
 			      $newFullName="$originPic".".jpg";
  			      if(imagejpeg($newImage,$dir.$newFullName,$calidad)){   
-				     return '/assets/images/users/'.$newFullName;
+				     chmod($dir.$newFullName,0766);
+					 return '/assets/images/users/'.$newFullName;
 			      }
 				  return "No se ha podido subir su imagen";
 		  }
