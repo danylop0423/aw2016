@@ -79,6 +79,13 @@ class HomeController extends AbstractController
     } 
 
 
+    public function condicionesAction($request, $response, $args) {
+        $args['title'] = 'Condiciones de Uso';
+        
+        return $this->render($response, 'condiciones.php', $args);
+    } 
+
+
 
     public function loginAction($request, $response, $args)
     {

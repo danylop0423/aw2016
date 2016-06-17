@@ -11,6 +11,8 @@ $app->any('/contacto','HomeController:contactAction');
 
 $app->any('/asistencia','HomeController:technicalassistantAction');
 
+$app->any('/condiciones','HomeController:condicionesAction');
+
 $app->any('/politicas','HomeController:politicasAction');
 
 $app->any('/reembolso','HomeController:reembolsoAction');
