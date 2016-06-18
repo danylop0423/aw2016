@@ -255,10 +255,11 @@
 		
 		
 		$('#delete_selectExpired').on('click', function() {
+		   $('.deleteField :input[type=checkbox]').prop('checked', false);
 		   $('.deleteField[data-finished="data-finished"]').each(function(i,elem){
                $(this).find('input[type=checkbox]').prop('checked', true);             
-        });
-		
+			});
+		 });
 		
 		$('#delete_cancelAll').on('click', function() {
            $('.deleteField :input[type=checkbox]').prop('checked', false);
