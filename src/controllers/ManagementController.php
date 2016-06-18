@@ -11,10 +11,19 @@ class ManagementController extends AbstractController
             ->from('subasta')
             ->join('productos', 'subasta.producto', '=', 'productos.id', 'INNER')
             // ->where('subasta.subastador', '=', $request->getAttribute('loggedUser')['id'])
-            ->limit(15)
+            ->limit(25)
             ->execute()
             ->fetchAll()
         ;
+		$now=new DateTime('now');	
+		$auct=&$args['auctions'];
+		foreach ( $auct as $clave => &$auction){
+		  	$caducidad=new DateTime($auction['caducidad']);
+			if($caducidad <= $now) 
+               $auction['finished']=true;
+			else 	
+		      $auction['finished']=false; 
+		}		
 
         if ($request->isPost()) {
             if ($args['action'] === 'crear') {
