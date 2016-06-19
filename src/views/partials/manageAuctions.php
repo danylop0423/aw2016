@@ -106,7 +106,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <form action="">
+                        <form action="/gestion/subastas/borrar" method="POST">
                             <?php foreach ($auctions as $key => $auction): ?>
                                 <tr class="deleteField" data-finished=<?php echo $auction['finished'] ? 'data-finished':'' ?> >
                                     <td colspan="2">
@@ -129,15 +129,16 @@
                                     </td>
                                 </tr>
                             <?php endforeach ?>
-                        </form>
+                           <div class="fixed-action-btn" >
+							<button class="btn-floating btn-large red" type="submit">
+								<i class="fa fa-trash-o"></i>
+							</button>
+						  </div>
+						</form>
                     </tbody>
                 </table>
             </div>
-            <div class="fixed-action-btn">
-                <a class="btn-floating btn-large red">
-                    <i class="fa fa-trash-o"></i>
-                </a>
-            </div>
+           
         </div>
     </div>
 </div>

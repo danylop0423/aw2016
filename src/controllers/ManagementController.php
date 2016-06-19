@@ -26,11 +26,36 @@ class ManagementController extends AbstractController
 		}		
 
         if ($request->isPost()) {
-            if ($args['action'] === 'crear') {
+			$selected_auctions= $request->getParam('auction');
+			if ($args['action'] === 'crear') {
                 # code...
+				
             } elseif ($args['action'] === 'borrar') {
-                # code...
-            }
+                $deleted=1;   
+				foreach($selected_auctions['id'] as $k => $v){
+				  if($deleted === 1)
+				   $deleted= $this->db->delete()
+				   ->from('subasta')
+				   ->where('id','=',$k)
+				   ->execute();
+				}
+			
+				if($deleted > 0){
+				   $allAuctions=$args['auctions'];	
+				   $updatedArgs=[];
+				   foreach ( $allAuctions as $k => $v){
+					 $flag=$allAuctions[$k]["id"];   
+					 if(!array_key_exists($flag,$selected_auctions['id'])) 
+						 $updatedArgs[$k]=$v;					   
+				   }
+				   $args['auctions']=$updatedArgs;
+				   return $this->render($response, 'manageAuctions.php', $args);
+				 }else{
+					
+					//error
+			      }
+				
+			  }
         }
 
         return $this->render($response, 'manageAuctions.php', $args);
