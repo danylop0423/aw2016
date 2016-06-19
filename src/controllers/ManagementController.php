@@ -31,7 +31,16 @@ class ManagementController extends AbstractController
                 # code...
 				
             } elseif ($args['action'] === 'borrar') {
-                $deleted=1;   
+                /*corregir el delete aqui (he probado esto):
+				   $deleted= $this->db->delete()
+				   ->from('subasta')
+				   ->where('id','IN',array_keys($selected_auctions['id']))
+				   ->execute();
+				*/
+				
+				//este cacho comentar para cambiar el delete de la BD:
+				//-----------------------------------------------------------
+				$deleted=1;   
 				foreach($selected_auctions['id'] as $k => $v){
 				  if($deleted === 1)
 				   $deleted= $this->db->delete()
@@ -39,7 +48,7 @@ class ManagementController extends AbstractController
 				   ->where('id','=',$k)
 				   ->execute();
 				}
-			
+			    //---------------------------------------------------------------
 				if($deleted > 0){
 				   $allAuctions=$args['auctions'];	
 				   $updatedArgs=[];
