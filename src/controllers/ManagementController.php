@@ -31,24 +31,11 @@ class ManagementController extends AbstractController
                 # code...
 				
             } elseif ($args['action'] === 'borrar') {
-                /*corregir el delete aqui (he probado esto):
-				   $deleted= $this->db->delete()
+				 $deleted= $this->db->delete()
 				   ->from('subasta')
-				   ->where('id','IN',array_keys($selected_auctions['id']))
+				   ->whereIn('id',array_keys($selected_auctions['id']))
 				   ->execute();
-				*/
 				
-				//este cacho comentar para cambiar el delete de la BD:
-				//-----------------------------------------------------------
-				$deleted=1;   
-				foreach($selected_auctions['id'] as $k => $v){
-				  if($deleted === 1)
-				   $deleted= $this->db->delete()
-				   ->from('subasta')
-				   ->where('id','=',$k)
-				   ->execute();
-				}
-			    //---------------------------------------------------------------
 				if($deleted > 0){
 				   $allAuctions=$args['auctions'];	
 				   $updatedArgs=[];
@@ -58,10 +45,11 @@ class ManagementController extends AbstractController
 						 $updatedArgs[$k]=$v;					   
 				   }
 				   $args['auctions']=$updatedArgs;
+				   $args['error'] = 'Se han borrado '.$deleted.' Productos';
 				   return $this->render($response, 'manageAuctions.php', $args);
 				 }else{
-					
-					//error
+					$args['error'] = 'Hubo un Problema al Borrar, intentelo de nuevo';
+					return $this->render($response, 'manageAuctions.php', $args);
 			      }
 				
 			  }
