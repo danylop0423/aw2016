@@ -24,14 +24,14 @@
                         <label for="name">
 						  <i class="fa fa-pencil right"></i>Cambia tu Nombre 
 						</label>
-                        <input type="text" name="user[nombre]" id="name" class="validate" value=<?php echo $loggedUser['nombre']?> >
+                        <input type="text" size='20' name="user[nombre]" id="name" class="validate" value=<?php echo $loggedUser['nombre']?> >
                     </div>
 
                     <div class="input-field col s12 l6">
                         <label for="">
 						  <i class="fa fa-pencil right"></i>Cambia tu Apellido 
 						</label>
-                        <input type="text" name="user[apellido]" id="lastname" class="validate" value=<?php echo $loggedUser['apellido']?> >
+                        <input type="text" size='20' name="user[apellido]" id="lastname" class="validate" value=<?php echo $loggedUser['apellido']?> >
                     </div>
 
                     <div class="input-field col s12 l6">
@@ -45,7 +45,7 @@
                         <label for="">
 						 <i class="fa fa-pencil right"></i>Cambia tu Teléfono
 						</label>
-                        <input type="text" name="user[telefono]" id="phone" class="validate" value=<?php echo $loggedUser['telefono']?>>
+                        <input type="tel" name="user[telefono]" id="phone" class="validate" pattern="[0-9]{9}" value=<?php echo $loggedUser['telefono']?>>
                     </div>
                 </div>
             </div>
@@ -58,28 +58,28 @@
                         <label for="street">
 						 <i class="fa fa-pencil right"></i>Cambia tu Calle
 						</label>
-                        <input type="text" name="user[calle]" id="street" class="validate" value=<?php echo $loggedUser['calle']?>>
+                        <input type="text" size='25' name="user[calle]" id="street" class="validate" value=<?php echo $loggedUser['calle']?>>
                     </div>
 
                     <div class="input-field col s12 l9">
                         <label for="village">
 						  <i class="fa fa-pencil right"></i>Cambia tu Población 
 						</label>
-                        <input type="text" name="user[poblacion]" id="village" class="validate" value=<?php echo $loggedUser['poblacion']?>>
+                        <input type="text" size='25' name="user[poblacion]" id="village" class="validate" value=<?php echo $loggedUser['poblacion']?>>
                     </div>
 
                     <div class="input-field col s12 l3">
                         <label for="zip">
 						 <i class="fa fa-pencil right"></i>Cambia tu CP 
 						</label>
-                        <input type="text" name="user[codigo_postal]" id="zip" class="validate" value=<?php echo $loggedUser['codigo_postal']?>>
+                        <input type="number" size='5' name="user[codigo_postal]" id="zip" class="validate" value=<?php echo $loggedUser['codigo_postal']?>>
                     </div>
 
                     <div class="input-field col s12">
                         <label for="city">
 						 <i class="fa fa-pencil right"></i>Cambia tu Ciudad 
 						</label>
-                        <input type="text" name="user[ciudad]" id="city" class="validate" value=<?php echo $loggedUser['ciudad']?>>
+                        <input type="text" size='25' name="user[ciudad]" id="city" class="validate" value=<?php echo $loggedUser['ciudad']?>>
                     </div>
                 </div>
             </div>
@@ -88,25 +88,25 @@
             <div class="collapsible-header hoverable"><i class="fa fa-credit-card"></i>Editar Datos bancarios</div>
             <div class="collapsible-body">
                 <div class="row">
-                    <div class="input-field col s12 l5">
+                    <div class="input-field col s12 l9">
                         <label for="card">
 						 <i class="fa fa-pencil right"></i>Cambia tu N.Tajeta de Crédito
 						</label>
-                        <input type="password" name="user[tarjeta]" id="card" class="validate" value=<?php echo $loggedUser['tarjeta']?>>
+                        <input type="text" size='16' name="user[tarjeta]" id="card" class="validate" value=<?php echo $loggedUser['tarjeta']?>>
                     </div>
 
                     <div class="input-field col s6 l3">
                         <label for="cvv">
 						 <i class="fa fa-pencil right"></i>Cambia CVV
 						</label>
-                        <input type="password" name="user[cvv]" id="cvv" class="validate" value=<?php echo $loggedUser['cvv']?>>
+                        <input type="number" size='4' name="user[cvv]" id="cvv" class="validate" value=<?php echo $loggedUser['cvv']?>>
                     </div>
 
-                    <div class="input-field col s6 l4">
-                        <label for="expiration">
+                    <div id='exp' class="input-field col s6 l12">
+						<label for="expiration">
 						 <i class="fa fa-pencil right"></i>Cambia Fecha de Caducidad de tu Tarjeta 
-						</label>
-                        <input type="password" name="user[caduca]" id="expiration" value=<?php echo $loggedUser['caduca']?>>
+						</label><br/><br/>
+                        <input type="month" name="user[caduca]" id="expiration" value=<?php echo $loggedUser['caduca']?>>
                     </div>
                 </div>
             </div>
@@ -131,7 +131,7 @@
 
                     
                     <div class="buttons-wrapper center-align col s12">
-                        <button class="btn waves-effect waves-light" type="submit">Guardar</button>
+                        <button class="btn waves-effect waves-light" type="submit" enctype="multipart/form-data">Guardar</button>
                     </div>
                 </div>
             </div>
@@ -141,8 +141,10 @@
 
 <script>
     $(function() {
-        <?php if ($error): ?>
+        
+       <?php if ($error): ?>
             Materialize.toast('<?php echo $error ?>', 6000);
         <?php endif ?>
     });
+  
 </script>

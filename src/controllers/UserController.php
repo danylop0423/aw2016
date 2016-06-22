@@ -98,11 +98,10 @@ class UserController extends AbstractController
 	
 	
    private function solve_editProfile_post($request,$response,$args,$loggedUser){
-		   $picDefault="/assets/images/add_user.png";
 		   $newUser = $request->getParam('user');
 		   $newUser['id']=$loggedUser['id'];
 		   if(!$newUser['foto'])
-				$newUser['foto']=$picDefault;	
+				$newUser['foto']=$loggedUser['foto'];
 		   else 
 			   $newUser['foto']=self::proc_profileImage($loggedUser['id']);
 		   
@@ -137,7 +136,7 @@ class UserController extends AbstractController
 		   if($id || $newUser['foto']===$loggedUser['foto']) {
 			  $args['title'] = 'Mi Perfil';		
 			  $newUser['id']=$loggedUser['id'];
-			  $loggedUser=$newUser;
+			  $loggedUser=&$newUser;
 			  $_SESSION['loggeduser'] = base64_encode(serialize($loggedUser));									 
 			  $args['loggedUser'] = $loggedUser;
 			  $args['error'] = 'Tus datos se han Actualizado correctamente';

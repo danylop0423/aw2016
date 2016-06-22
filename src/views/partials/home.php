@@ -51,7 +51,7 @@
 			  <div class="collapsible-body">
 				<h5 class="red-text text-darken-4"> Subastar:</h5>
 				<div>
-				<p class="teal-text text-lighten-1"><i class="fa fa-angle-right"></i> Registrate </p>
+				<p class=""><i class="fa fa-angle-right"></i> Registrate </p>
 				<p class="teal-text text-lighten-1"><i class="fa fa-angle-right"></i> Date de alta como Subastador </p>
 				<p class="teal-text text-lighten-1"><i class="fa fa-angle-right"></i> Sube tus productos, Establece una Puja Minima </p>
 				<p class="teal-text text-lighten-1"><i class="fa fa-angle-right"></i> ..y Empieza tu Subasta </p>

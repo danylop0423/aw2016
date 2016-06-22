@@ -1,6 +1,6 @@
 <div id="contenedor" class="profile-page">
 		<div id="data">
-		  <div class="row card-panel light-green lighten-5 z-depth-3">
+		  <div class="row card-panel light-grey lighten-5 z-depth-3">
 			<div class="col s12 l12 flow-text">
 			  <div>
 				  <div class="col s12 l6 card-content">
