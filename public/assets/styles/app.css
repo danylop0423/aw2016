@@ -6332,6 +6332,10 @@ a.button-collapse i {
   .container {
     margin: 0 auto; } }
 
+.modal.bottom-sheet {
+  overflow: visible;
+  max-height: inherit; }
+
 .login-page .login-card {
   width: 60%;
   margin: 0 auto; }

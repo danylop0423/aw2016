@@ -65,7 +65,30 @@ class AjaxController extends AbstractAjaxController
             $args['error'] = '¡Debes iniciar sesión primero!';
         }
 
-        $this->renderJSON($response, $args);
+        return $this->renderJSON($response, $args);
+    }
+
+    public function updateProductAction($request, $response, $args)
+    {
+        $product = $request->getParam('product');
+
+        if ($product) {
+            $updateResponse = $this->db->update($product)
+                ->table('productos')
+                ->where('id', '=', $product['id'])
+                ->execute()
+            ;
+
+            if ($updateResponse) {
+                $args['response'] = '¡Producto actualizado correctamente!';
+            } else {
+                $args['response'] = '¡El producto no se actualizó!';
+            }
+
+            return $this->renderJSON($response, $args);
+        }
+
+        return $response->withStatus(404);
     }
 
     private function filterAuctionsByPrice($filters)

@@ -213,3 +213,8 @@ a.button-collapse {
         margin: 0 auto;
     }
 }
+
+.modal.bottom-sheet {
+    overflow: visible;
+    max-height: inherit;
+}

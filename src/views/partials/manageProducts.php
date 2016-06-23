@@ -3,18 +3,13 @@
         <div class="col s12">
             <ul class="tabs z-depth-1">
                 <li class="tab col s4"><a href="#create">Nuevo producto</a></li>
-                <li class="tab col s4"><a href="#update">Modificar producto</a></li>
+                <li class="tab col s4"><a class="active" href="#update">Modificar producto</a></li>
                 <li class="tab col s4"><a href="#delete">Borrar producto</a></li>
             </ul>
         </div>
 
         <div id="create" class="col s12">
             <div class="">
-                <script>
-                  $(document).ready(function() {
-                    $('select').material_select();
-                  });
-                </script>
                 <form action="/nuevoProducto" method="POST">
                     <ul class="collapsible" data-collapsible="exapandible">
                         <li>
@@ -143,43 +138,36 @@
 
         <div id="update" class="col s12">
             <div class="card-panel">
-                
-
                 <table class="highlight">
                     <thead>
                         <tr>
                             <th colspan="2">Producto</th>
-                            <th>Precio</th>
+                            <th>Marca</th>
+                            <th>Categoría</th>
+                            <th>Subcategoría</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <form action="/gestion/subastas/borrar" method="POST">
-                            <?php foreach ($auctions as $key => $auction): ?>
-                                <tr class="deleteField" data-finished=<?php echo $auction['finished'] ? 'data-finished':'' ?> >
-                                    <td colspan="2">
-                                        <div class="valign-wrapper">
-                                            <div class="col s2 hide-on-small-only">
-                                                <img class="responsive-img" src="<?php echo $auction['foto'] ?>">
-                                            </div>
-                                            <div class="col s10">
-                                                <span><?php echo $auction['nombre'] ?></span>
-                                            </div>
+                        <?php foreach ($products as $product): ?>
+                            <tr data-target="modal<?php echo $product['id'] ?>" class="modal-trigger"w>
+                                <td colspan="2">
+                                    <div class="valign-wrapper">
+                                        <div class="col s2 hide-on-small-only">
+                                            <img class="responsive-img" src="<?php echo $product['foto'] ?>">
                                         </div>
-                                    </td>
-                                    <td>31,5€</td>
-                                    <td class="dates" ><?php echo $auction['caducidad']?></td>
-                                </tr>
-                            <?php endforeach ?>
-                           <div class="fixed-action-btn" >
-                            <button class="btn-floating btn-large red" type="submit">
-                                <i class="fa fa-trash-o"></i>
-                            </button>
-                          </div>
-                        </form>
+
+                                        <div class="col s10">
+                                            <span><?php echo $product['nombre'] ?></span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td><?php echo $product['marca'] ?></td>
+                                <td><?php echo $product['categoria'] ?></td>
+                                <td><?php echo $product['subcategoria'] ?></td>
+                            </tr>
+                        <?php endforeach ?>
                     </tbody>
                 </table>
-
-
             </div>
         </div>
 
@@ -228,14 +216,12 @@
                         </form>
                     </tbody>
                 </table>
-
-
         </div>
     </div>
 </div>
 
-<?php foreach ($auctions as $key => $auction): ?>
-    <div id="modal<?php echo $key ?>" class="modal bottom-sheet">
+<?php foreach ($products as $product): ?>
+    <div id="modal<?php echo $product['id'] ?>" class="modal bottom-sheet">
         <div class="modal-content">
             <div class="row">
                 <div class="col s12">
@@ -243,9 +229,9 @@
                         <thead>
                             <tr>
                                 <th colspan="2">Producto</th>
-                                <th>Fin subasta</th>
-                                <th>Mínima</th>
-                                <th>Ganadora</th>
+                                <th>Marca</th>
+                                <th>Categoría</th>
+                                <th>Subcategoría</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -253,17 +239,17 @@
                                 <td colspan="2">
                                     <div class="valign-wrapper">
                                         <div class="col s2 hide-on-small-only">
-                                            <img class="responsive-img" src="<?php echo $auction['foto'] ?>">
+                                            <img class="responsive-img" src="<?php echo $product['foto'] ?>">
                                         </div>
 
                                         <div class="col s10">
-                                            <span><?php echo $auction['nombre'] ?></span>
+                                            <span><?php echo $product['nombre'] ?></span>
                                         </div>
                                     </div>
                                 </td>
-                                <td>20/05/2016 17:30</td>
-                                <td>21€</td>
-                                <td>31,5€</td>
+                                <td><?php echo $product['marca'] ?></td>
+                                <td><?php echo $product['categoria'] ?></td>
+                                <td><?php echo $product['subcategoria'] ?></td>
                             </tr>
                         </tbody>
                     </table>
@@ -271,24 +257,50 @@
             </div>
 
              <div class="row">
-                <form class="col s12">
+                <form name="updateProduct" class="col s12" action="/ajax/updateProduct">
                     <div class="row">
-                        <div class="input-field col s6">
-                        <input id="auctionEnd" name="auction[caducidad]" type="text" class="datepicker validate" value="2016-06-28 17:30">
-                        <label for="auctionEnd">Fin subasta</label>
+                        <div class="input-field col s6 l3">
+                            <input id="productName" name="product[nombre]" type="text" class="validate" value="<?php echo $product['nombre'] ?>">
+                            <label for="productName">Nombre</label>
                         </div>
-                        <div class="input-field col s6">
-                            <input id="lowestBid" name="auction[pujaMin]" type="text" class="validate" value="31,5€">
-                            <label for="lowestBid">Puja mínima</label>
+
+                        <div class="input-field col s6 l3">
+                            <input id="productMake" name="product[marca]" type="text" class="validate" value="<?php echo $product['marca'] ?>">
+                            <label for="productMake">Marca</label>
+                        </div>
+
+                        <div class="input-field col s6 l3">
+                            <select id="categoryCombo" class="categoryCombo">
+                                <option value="" disabled selected>Seleccionar</option>
+                                <?php foreach ($categories as $category): ?>
+                                    <option value="<?php echo $category['id'] ?>" <?php echo $category['nombre'] === $product['categoria'] ? 'selected' : '' ?>>
+                                        <?php echo $category['nombre'] ?>
+                                    </option>
+                                <?php endforeach ?>
+                            </select>
+                            <label for="categoryCombo">Categoría</label>
+                        </div>
+
+                        <div class="input-field col s6 l3">
+                            <select id="subcategoryCombo" name="product[subcategoria]" data-empty="Seleccionar">
+                                <option value="<?php echo $product['subcategoria_id'] ?>" selected><?php echo $product['subcategoria'] ?></option>
+                            </select>
+                            <label for="subcategoryCombo">Subcategoría</label>
+                        </div>
+
+                        <div class="input-field col s12">
+                            <textarea id="productDescription" class="materialize-textarea" name="product[descripcion]"><?php echo $product['descripcion'] ?></textarea>
+                            <label for="productDescription">Descripción</label>
+                        </div>
+
+                        <div class="input-field col s12 right-align">
+                            <button type="submit" class="btn waves-effect waves-red">Guardar</button>
+                            <a href="#!" class="modal-action modal-close waves-effect waves-red btn-flat">Cancelar</a>
                         </div>
                     </div>
-                    <input type="hidden" name="auction[id]" value="<?php echo $auction['id'] ?>">
+                    <input type="hidden" name="product[id]" value="<?php echo $product['id'] ?>">
                 </form>
             </div>
-        </div>
-        <div class="modal-footer">
-            <a href="#!" class="modal-action modal-close waves-effect waves-red btn-flat">Cancelar</a>
-            <a href="#!" class="modal-action modal-close waves-effect waves-red btn">Guardar</a>
         </div>
     </div>
 <?php endforeach ?>
@@ -298,8 +310,24 @@
         $('select').material_select();
         $('.modal-trigger').leanModal();
 
-        $('#categoryCombo').on('change', function() {
-            var value = $(this).val();
+        $('form[name="updateProduct"]').on('submit', function(event) {
+            var $form = $(this);
+
+            $.ajax({
+                type: 'POST',
+                url: $form.attr('action'),
+                data : $form.serialize(),
+
+                success: function(data) {
+                    Materialize.toast(data.response, 6000);
+                }
+            });
+
+            event.preventDefault();
+        });
+
+        $('.categoryCombo').on('change', function(event) {
+            var value = $(event.target).val();
 
             $.ajax({
                 type: 'POST',
@@ -312,28 +340,7 @@
 
                 success : function(data) {
                     $('#subcategoryCombo').populateSelect(data);
-                    $('#subcategoryCombo').prop('disabled', false).material_select();
-                }
-            });
-        });
-
-        $('#subcategoryCombo').on('change', function() {
-            var value = $(this).val();
-
-            $.ajax({
-                type: 'POST',
-                url: '/ajax/fetchFilteredAuctions',
-                data : {
-                    filters: {'subcategoria.id': value}
-                },
-
-                beforeSend: function() {
-                    $('#productCombo').html('<option value disabled selected>Cargando...</option>').material_select()
-                },
-
-                success: function(data) {
-                    $('#productCombo').populateProductSelect(data);
-                    $('#productCombo').prop('disabled', false).material_select();
+                    $('#subcategoryCombo').material_select();
                 }
             });
         });
