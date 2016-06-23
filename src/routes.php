@@ -39,12 +39,6 @@ $app->any('/nuevaSubasta', 'AuctionController:createAuctionAction');
 
 $app->any('/uploadImage', 'AuctionController:uploadImagerAction');
 
-/* ProductController Routes */
-$app->get('/productos[/{category}]', 'ProductController:listProductsAction');
-
-$app->get('/productos/{category}/{subcategory}', 'ProductController:listProductsAction');
-
-$app->get('/producto/{id}', 'ProductController:showProductAction');
 
 /* ManagementController Routes */
 $app->any('/gestion/subastas[/{action}]', 'ManagementController:manageAuctionsAction');

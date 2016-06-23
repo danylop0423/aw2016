@@ -81,32 +81,34 @@
                     </li>
                 </ul>
             </li>
-            <li class="no-padding">
-                <ul class="collapsible collapsible-accordion">
-                    <li class="bold "><a class="collapsible-header ">Gestión</a>
-                        <div class="collapsible-body">
-                            <ul>
-                                <li><a href="/gestion/productos">Productos</a></li>
-                                <li><a href="/gestion/subastas">Subastas</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                </ul>
-            </li>
-            <li class="no-padding">
-                <ul class="collapsible collapsible-accordion">
-                    <li class="bold"><a class="collapsible-header">Mi cuenta</a>
-                        <div class="collapsible-body" style="">
-                            <ul>
-                                <li><a href="/profile">Mi perfil</a></li>
-                                <li><a href="/profile#missubastas">Mis subastas </a></li>
-                                <li><a href="/profile#mispujas">Mis pujas </a></li>
-                            </ul>
-                        </div>
-                    </li>
-                </ul>
-            </li>
             <?php if ($loggedUser): ?>
+                <li class="no-padding">
+                    <ul class="collapsible collapsible-accordion">
+                        <li class="bold "><a class="collapsible-header ">Gestión</a>
+                            <div class="collapsible-body">
+                                <ul>
+                                    <li><a href="/gestion/productos">Productos</a></li>
+                                    <li><a href="/gestion/subastas">Subastas</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="no-padding">
+                    <ul class="collapsible collapsible-accordion">
+                        <li class="bold"><a class="collapsible-header">Mi cuenta</a>
+                            <div class="collapsible-body" style="">
+                                <ul>
+                                    <li><a href="/profile">Mi perfil</a></li>
+                                    <li><a href="/profile#missubastas">Mis subastas </a></li>
+                                    <li><a href="/profile#mispujas">Mis pujas </a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+
                 <li class="bold"><a href="/logout">Cerrar sesión</a></li>
             <?php else: ?>
                 <li class="bold"><a href="/nuevo-usuario">Registrarte</a></li>
