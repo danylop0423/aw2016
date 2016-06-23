@@ -44,19 +44,17 @@ class HomeController extends AbstractController
         if ($request->isPost()) {
             //Obtengo todos los datos del formulario (assistance es un array)
             $asistencia=$request->getParam('assistance');
-            $cabecera = 'From: elchucky@decieza.com' . "\r\n" .'Reply-To: '. $asistencia['email'] . "\r\n" . 'X-Mailer: PHP/' . phpversion();
+            $cabecera = 'From: reversebid@reversebid.com' . "\r\n" .'Reply-To: '. $asistencia['email'] . "\r\n" . 'X-Mailer: PHP/' . phpversion();
             $para = 'davidzam@ucm.es';
             $asunto = 'Formulario de Asistencia técnica';
 
             if(mail($para, $asunto, $asistencia['mensaje'], $cabecera)){
                 $args['error']='Tu mensaje ha sido enviado correctamente.';
-                $args['asistencia']=array('nombre'=>'', 'email'=>'', 'mensaje'=>'');
             }
             else{
                 $args['error']='Tu mensaje NO se ha enviado correctamente. ¡Intentalo de nuevo!';  
-                $args['asistencia']= $asistencia;
             }
-
+            $args['asistencia']=array('nombre'=>'', 'email'=>'', 'mensaje'=>'');
             return $this->render($response, 'asistencia.php', $args);
         }      
 

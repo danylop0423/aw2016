@@ -43,6 +43,8 @@ $app->any('/uploadImage', 'AuctionController:uploadImagerAction');
 /* ManagementController Routes */
 $app->any('/gestion/subastas[/{action}]', 'ManagementController:manageAuctionsAction');
 
+$app->any('/gestion/productos[/{action}]', 'ManagementController:manageProductsAction');
+
 
 /* AjaxController Routes Wrapper */
 $app->any('/ajax/{method}', 'AjaxController:executeAction');

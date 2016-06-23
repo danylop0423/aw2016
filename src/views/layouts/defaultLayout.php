@@ -50,20 +50,7 @@
             <li class="bold"><a href="/">Home</a></li>
             <li class="no-padding">
                 <ul class="collapsible collapsible-accordion">
-                    <li class="bold "><a class="collapsible-header ">Subastas</a>
-                        <div class="collapsible-body">
-                            <ul>
-                                <li><a href="/newProduct">Subastar</a></li>
-                                <li><a href="#">Subastador</a></li>
-                                <li><a href="#">Destacadas</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                </ul>
-            </li>
-            <li class="no-padding">
-                <ul class="collapsible collapsible-accordion">
-                    <li class="bold"><a class="collapsible-header">Productos</a>
+                    <li class="bold"><a class="collapsible-header">Subastas</a>
                         <div class="collapsible-body" style="">
                             <ul class="collapsible collapsible-accordion">
                                 <?php foreach ($menuCategories as $category => $subcategories): ?>
@@ -82,6 +69,18 @@
                                         </div>
                                     </li>
                                 <?php endforeach ?>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li class="no-padding">
+                <ul class="collapsible collapsible-accordion">
+                    <li class="bold "><a class="collapsible-header ">Gestión</a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a href="/gestion/productos">Productos</a></li>
+                                <li><a href="/gestion/subastas">Subastas</a></li>
                             </ul>
                         </div>
                     </li>
