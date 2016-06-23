@@ -100,11 +100,3 @@
         </li>
     </ul>
 </form>
-<script>
-    $(function() {
-        <?php if ($error): ?>
-            Materialize.toast('<?php echo $error ?>', 6000);
-        <?php endif ?>
-    });
-</script>
-

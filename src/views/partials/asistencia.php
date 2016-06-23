@@ -57,16 +57,6 @@
 
 <script type="text/javascript">
   $(document).ready(function() {
-  $('select').material_select();
+    $('select').material_select();
   });
 </script>
-
-<script>
-    $(function() {
-       $('select').material_select();
-        <?php if ($error): ?>
-            Materialize.toast('<?php echo $error ?>', 6000);
-        <?php endif ?>
-    });
-</script>
-

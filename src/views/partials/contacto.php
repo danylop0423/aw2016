@@ -22,14 +22,14 @@
 								<label for="icon_prefix2">Mensaje *</label>
 								<input type="text" value= "<?php echo $contacto['mensaje']?>" name="contact[mensaje]" id="message" class="validate" required>
 						  </div>
-								  
+
 						  <div class="buttons-wrapper center-align">
 								<button class="btn waves-effect waves-light" type="submit" name="action"> <i class="fa fa-paper-plane right" aria-hidden="true"></i>Enviar</button>
-					 
+
 								<a  href='/home'>
 								<button class="btn waves-effect waves-light" type="reset"> <i class="fa fa-eraser right" aria-hidden="true"></i>Borrar</button>
 						 		</a>
-					 
+
 						  </div>
 
 					 </div>
@@ -37,11 +37,3 @@
 		  </li>
 	 </ul>
 </form>
-<script>
-	 $(function() {
-		  <?php if ($error): ?>
-				Materialize.toast('<?php echo $error ?>', 6000);
-		  <?php endif ?>
-	 });
-</script>
-

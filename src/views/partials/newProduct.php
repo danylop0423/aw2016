@@ -18,7 +18,7 @@
                         <label for="">Marca *</label>
                         <input type="text" name="product[marca]" id="marca" class="validate" required>
                     </div>
-                    
+
                 </div>
             </div>
         </li>
@@ -26,7 +26,7 @@
             <div class="collapsible-header active"><i class="fa fa-home"></i>Estado del Producto</div>
             <div class="collapsible-body">
                 <div class="row">
-                    
+
                     <div class="input-field col s12 l6">
                         <form action="#">
                            <p>
@@ -41,14 +41,14 @@
                     </div>
 
                     <div class="input-field col s12 l6">
-                       
+
                         <form action="/uploadImage" method="POST" enctype="multipart/form-data">
                             <label>Imagen *</label><br><br><br>
                             <input type="file" name="uploadImage" id="uploadImage">
                             <input type="submit" value="Subir" name="submit">
                         </form>
                          <label for="">Imagen *</label>
-                     </div>   
+                     </div>
 
                 </div>
             </div>
@@ -85,7 +85,7 @@
             <div class="collapsible-header active"><i class="fa fa-check-circle-o"></i>Descripcion</div>
             <div class="collapsible-body">
                 <div class="row">
-                    
+
                   <div class="row">
                     <form class="col s12">
                       <div class="row">
@@ -103,7 +103,7 @@
             <div class="collapsible-header active"><i class="fa fa-check-circle-o"></i>Tiempo de subasta</div>
             <div class="collapsible-body">
                 <div class="row">
-                    
+
                 <div class="input-field col s12">
                     <select>
                       <option value="" disabled selected>Tiempo de subasta</option>
@@ -118,8 +118,8 @@
                     <label>Selecciona el tiempo de subasta</label>
               </div>
 
-                  
-        
+
+
                 <div class="buttons-wrapper center-align col s12">
                     <button class="btn waves-effect waves-light" type="submit">Subastar!</button>
                 </div>
@@ -128,11 +128,3 @@
         </li>
     </ul>
 </form>
-<script>
-    $(function() {
-        <?php if ($error): ?>
-            Materialize.toast('<?php echo $error ?>', 6000);
-        <?php endif ?>
-    });
-</script>
-

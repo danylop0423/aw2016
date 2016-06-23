@@ -18,11 +18,11 @@
                 <button class="btn waves-effect waves-light" type="submit" name="action">
                     Iniciar sesión
                 </button>
-                
+
                    <a  href='/nuevo-usuario' >
 				   <button class="btn-flat waves-effect waves-light" type="button" >Nuevo usuario</button>
 				   </a>
-                
+
             </div>
         </form>
     </div>
@@ -30,10 +30,6 @@
 
 <script>
     $(function() {
-        <?php if ($error): ?>
-            Materialize.toast('<?php echo $error ?>', 6000);
-        <?php endif ?>
-
         $('.btn-flat').on('click', function(e) {
             e.preventDefault();
             window.location.href = '/nuevo-usuario';

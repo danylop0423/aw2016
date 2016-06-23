@@ -138,7 +138,7 @@
                     </tbody>
                 </table>
             </div>
-           
+
         </div>
     </div>
 </div>
@@ -246,33 +246,20 @@
                 }
             });
         });
-		
-		
-		
+
 		$('#delete_selectAll').on('click', function() {
            $('.deleteField :input[type=checkbox]').prop('checked', true);
-            
         });
-		
-		
+
 		$('#delete_selectExpired').on('click', function() {
 		   $('.deleteField :input[type=checkbox]').prop('checked', false);
 		   $('.deleteField[data-finished="data-finished"]').each(function(i,elem){
-               $(this).find('input[type=checkbox]').prop('checked', true);             
+               $(this).find('input[type=checkbox]').prop('checked', true);
 			});
 		 });
-		
+
 		$('#delete_cancelAll').on('click', function() {
            $('.deleteField :input[type=checkbox]').prop('checked', false);
-            
         });
-		
-			
-    });
-	
-	$(function() {
-        <?php if ($error): ?>
-            Materialize.toast('<?php echo $error ?>', 6000);
-        <?php endif ?>
     });
 </script>
