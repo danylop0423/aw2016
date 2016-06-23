@@ -45,6 +45,7 @@ class HomeController extends AbstractController
             //Obtengo todos los datos del formulario (assistance es un array)
             $asistencia=$request->getParam('assistance');
             $cabecera = 'From: reversebid@reversebid.com' . "\r\n" .'Reply-To: '. $asistencia['email'] . "\r\n" . 'X-Mailer: PHP/' . phpversion();
+
             $para = 'davidzam@ucm.es';
             $asunto = 'Formulario de Asistencia técnica';
 
