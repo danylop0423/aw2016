@@ -7,7 +7,7 @@ class AuctionController extends AbstractController
         $args['auction'] = $this->db->select(array(
                 'productos.nombre',
                 'productos.foto',
-                'productos.caducidad',
+                'subasta.caducidad',
                 'productos.marca',
                 'productos.descripcion',
                 'subasta.pujaMin',
@@ -40,7 +40,7 @@ class AuctionController extends AbstractController
                     'subasta.id',
                     'productos.nombre',
                     'productos.foto',
-                    'productos.caducidad',
+                    'subasta.caducidad',
                     'subasta.pujaMin'
                 ))
                 ->from('subasta')
@@ -58,7 +58,7 @@ class AuctionController extends AbstractController
                     'subasta.id',
                     'productos.nombre',
                     'productos.foto',
-                    'productos.caducidad',
+                    'subasta.caducidad',
                     'subasta.pujaMin'
                 ))
                ->from('subasta')
@@ -76,7 +76,7 @@ class AuctionController extends AbstractController
                     'subasta.id',
                     'productos.nombre',
                     'productos.foto',
-                    'productos.caducidad',
+                    'subasta.caducidad',
                     'subasta.pujaMin'
                 );
             $args['topAuctions'] = $this->db->select($products)
