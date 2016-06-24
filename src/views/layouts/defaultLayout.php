@@ -41,7 +41,7 @@
         <div class="container"><a href="#" data-activates="nav-mobile" class="button-collapse top-nav full hide-on-large-only"><i class="fa fa-bars"></i></a></div>
         <ul id="nav-mobile" class="side-nav fixed" style="transform: translateX(0%);">
             <li class="logo">
-                <a id="logo-container" class="brand-logo"><img class="brand" src="/assets/images/logo.png"></a>
+                <a href="/" id="logo-container" class="brand-logo"><img class="brand" src="/assets/images/logo.png"></a>
             </li>
             <li class="bold"><a href="/">Home</a></li>
             <li class="no-padding">
@@ -136,7 +136,7 @@
         <div class="footer-copyright">
             <div class="container">
                 © 2016 Todos los Derechos Reservados
-                <a class="grey-text text-lighten-4 right" href="#!">ReverseBid</a>
+                <a class="grey-text text-lighten-4 right" href="/">ReverseBid</a>
             </div>
         </div>
     </footer>
