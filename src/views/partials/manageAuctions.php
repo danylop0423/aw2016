@@ -52,7 +52,7 @@
             </div>
         </div>
 
-        <div id="update" class="col s12">
+        <div id="update" class="col s12" >
             <div class="card-panel">
                 <table class="highlight">
                     <thead>
@@ -186,15 +186,15 @@
             </div>
 
              <div class="row">
-                <form class="col s12">
+                <form class="col s12" action="/ajax/updateSubastaAction">
                     <div class="row">
-                        <div class="input-field col s6 l12">
-                        <input placeholder = " <?php echo $auction['caducidad'] ?>" type="text"  id="auctionEnd" name="auction[caducidad]" class="datepicker validate" >
+                        <div class="input-field col s6">
+                        <input placeholder="<?php echo $auction['caducidad']?>" type="text"  id="auctionEnd" name="auction[caducidad]" class="datepicker validate" >
                         <label for="auctionEnd">Fin subasta</label>
                         </div>
-                        <div class="input-field col s6 l12">
+                        <div class="input-field col s6">
                             <label for="lowestBid">Puja mínima</label>
-                            <input id="lowestBid" name="auction[pujaMin]" type="text" class="validate" value="<?php echo $auction['pujaMin'] ?>€">
+                            <input id="lowestBid" name="auction[pujaMin]" type="text" class="validate" placeholder="<?php echo $auction['pujaMin'] ?>€">
                             
                         </div>
                     </div>

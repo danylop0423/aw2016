@@ -94,7 +94,13 @@ class AjaxController extends AbstractAjaxController
 
     public function updateSubastaAction($request, $response, $args)
     {
-        $subasta = $request->getParam('subasta');
+        $subasta = $request->getParam('auction');
+
+        //Para evitar inyeccion SQL
+        // foreach ($_POST as $subasta => $value) {
+        //     $_POST[$subasta]=str_replace("", "", $_POST[$subasta]);
+        // }
+
 
         if ($subasta) {
             $updateResponse = $this->db->update($subasta)
