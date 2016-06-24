@@ -57,7 +57,7 @@
 				<p class="teal-text text-lighten-1"><i class="fa fa-angle-right"></i> ..y Empieza tu Subasta </p>
 			    </div>
 			  </div>
-			  <div class="light-green lighten-5  collapsible-body">
+			  <div class="collapsible-body">
 			    <h5 class="red-text text-darken-4"> Participar en una Subasta: </h5>
 				<div>
 				<p class="teal-text text-lighten-1"><i class="fa fa-angle-right"></i> Registrate </p>
