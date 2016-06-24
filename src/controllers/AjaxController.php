@@ -91,6 +91,30 @@ class AjaxController extends AbstractAjaxController
         return $response->withStatus(404);
     }
 
+
+    public function updateSubastaAction($request, $response, $args)
+    {
+        $subasta = $request->getParam('subasta');
+
+        if ($subasta) {
+            $updateResponse = $this->db->update($subasta)
+                ->table('subasta')
+                ->where('id', '=', $subasta['id'])
+                ->execute()
+            ;
+
+            if ($updateResponse) {
+                $args['response'] = '¡Subasta modificada correctamente!';
+            } else {
+                $args['response'] = '¡No se ha podido modificar subasta!';
+            }
+
+            return $this->renderJSON($response, $args);
+        }
+
+        return $response->withStatus(404);
+    }
+
     private function filterAuctionsByPrice($filters)
     {
         $bid = $filters['subasta.pujaMin'];

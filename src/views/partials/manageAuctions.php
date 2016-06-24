@@ -77,9 +77,12 @@
                                         </div>
                                     </div>
                                 </td>
-                                <td>20/05/2016 17:30</td>
-                                <td>21€</td>
-                                <td>31,5€</td>
+                                 <td><?php echo $auction['caducidad'] ?></td>
+                                 <td><?php echo $auction['pujaMin'] ?>€</td>
+                                
+                                <!-- <td>20/05/2016 17:30</td>
+                                <td>21€</td>-->
+                                <td>31,5€</td> 
                             </tr>
                         <?php endforeach ?>
                     </tbody>
@@ -170,9 +173,12 @@
                                         </div>
                                     </div>
                                 </td>
-                                <td>20/05/2016 17:30</td>
-                                <td>21€</td>
-                                <td>31,5€</td>
+                                <td><?php echo $auction['caducidad'] ?></td>
+                                 <td><?php echo $auction['pujaMin'] ?>€</td>
+                                
+                                <!-- <td>20/07/2016 17:30</td>
+                                <td>21€</td>-->
+                                <td>31,5€</td> 
                             </tr>
                         </tbody>
                     </table>
@@ -182,13 +188,14 @@
              <div class="row">
                 <form class="col s12">
                     <div class="row">
-                        <div class="input-field col s6">
-                        <input id="auctionEnd" name="auction[caducidad]" type="text" class="datepicker validate" value="2016-06-28 17:30">
+                        <div class="input-field col s6 l12">
+                        <input placeholder = " <?php echo $auction['caducidad'] ?>" type="text"  id="auctionEnd" name="auction[caducidad]" class="datepicker validate" >
                         <label for="auctionEnd">Fin subasta</label>
                         </div>
-                        <div class="input-field col s6">
-                            <input id="lowestBid" name="auction[pujaMin]" type="text" class="validate" value="31,5€">
+                        <div class="input-field col s6 l12">
                             <label for="lowestBid">Puja mínima</label>
+                            <input id="lowestBid" name="auction[pujaMin]" type="text" class="validate" value="<?php echo $auction['pujaMin'] ?>€">
+                            
                         </div>
                     </div>
                     <input type="hidden" name="auction[id]" value="<?php echo $auction['id'] ?>">
