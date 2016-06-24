@@ -28,16 +28,24 @@ class ManagementController extends AbstractController
         if ($request->isPost()) {
 			$selected_auctions= $request->getParam('auction');
 			if ($args['action'] === 'crear') {
-                # code...
-                $create = $this->db->create()
-                	->from('subasta')
-                	->whereIn('id',array_keys($selected_auctions['id']))
-                	->execute();
 
-                # distinguir caso intentar crear subasta de un producto con el mismo id...
+                $keys = array_keys($selected_auctions);
+                $keys[] = 'subastador';
 
-                	return $this->render($response, 'manageAuctions.php', $args);
+                $values = array_values($selected_auctions);
+                $values[] = $request->getAttribute('loggedUser')['id'];
 
+                $create = $this->db->insert($keys)
+                    ->into('subasta')
+                    ->values($values)
+                    ->execute()
+                ;
+
+                if($create) {
+                    $args['error'] = 'Se ha creado una subasta con el id '.$create;
+                } else {
+                    $args['error'] = 'No se ha creado la subasta';
+                }
             } elseif ($args['action'] === 'borrar') {
 				 $deleted= $this->db->delete()
 				   ->from('subasta')
@@ -84,6 +92,7 @@ class ManagementController extends AbstractController
 			$selected_auctions= $request->getParam('auction');
 			if ($args['action'] === 'crear') {
                 # code...
+
                 $create = $this->db->create()
                 	->from('subasta')
                 	->whereIn('id',array_keys($selected_auctions['id']))

@@ -77,8 +77,6 @@
             </div>
         </div>
     </div>
-
-    <a class="btn-floating btn-large waves-effect waves-light right"><i class="fa fa-gavel"></i></a>
 </div>
 
 <script>

@@ -10,7 +10,7 @@
 
         <div id="create" class="col s12">
             <div class="">
-                <form>
+                <form action="/gestion/subastas/crear" method="POST">
                     <ul class="collapsible" data-collapsible="expandable">
                         <li>
                             <div class="collapsible-header active"><i class="fa fa-search"></i>Escoger producto</div>
@@ -34,7 +34,7 @@
                                     </div>
 
                                     <div class="input-field col s12">
-                                        <select id="productCombo" data-empty="Seleccionar" disabled>
+                                        <select id="productCombo" data-empty="Seleccionar" name="auction[producto]" disabled>
                                             <option value="" disabled selected>Seleccionar</option>
                                         </select>
                                         <label>Producto</label>
@@ -45,7 +45,21 @@
 
                         <li>
                             <div class="collapsible-header active"><i class="fa fa-gavel"></i>Subasta</div>
-                            <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+                            <div class="collapsible-body">
+                                <div class="row">
+                                    <div class="input-field col s6">
+                                        <label for="name">Fin subasta</label>
+                                        <input type="text" name="auction[caducidad]" id="auctionEnd" class="validate" required>
+                                    </div>
+                                    <div class="input-field col s6">
+                                       <label for="name">Puja Minima</label>
+                                       <input type="number" name="auction[pujaMin]" id="pujaMin" class="validate" required>
+                                    </div>
+                                     <div class="buttons-wrapper center-align">
+                                    <button class="btn waves-effect waves-light" type="submit" name="action">Crear subasta</button>
+                                    </div>
+                                </div>
+                            </div>
                         </li>
                     </ul>
                 </form>

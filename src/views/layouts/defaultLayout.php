@@ -42,10 +42,6 @@
         <ul id="nav-mobile" class="side-nav fixed" style="transform: translateX(0%);">
             <li class="logo">
                 <a id="logo-container" class="brand-logo"><img class="brand" src="/assets/images/logo.png"></a>
-                <div class="search-wrapper card">
-                    <input id="search" maxlength="24"><i class="fa fa-search" style="color: black;"></i>
-                    <div class="search-results"></div>
-                </div>
             </li>
             <li class="bold"><a href="/">Home</a></li>
             <li class="no-padding">

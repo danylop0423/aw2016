@@ -58,7 +58,7 @@
     <div class="row list-auctions">
         <div class="top-auctions" v-if="auctions.length == 0">
             <?php foreach ($topAuctions as $auction): ?>
-                <div class="col s12 m3">
+                <div class="col s12 m4 l3">
                     <div class="auction">
                         <div class="header">
                             <p class="title"><a href="/subasta/<?php echo $auction['id'] ?>"><?php echo $auction['nombre'] ?></a></p>
@@ -77,7 +77,7 @@
         </div>
 
         <div v-else>
-            <div v-if="!loading" v-for="auction in auctions" class="col s12 m3">
+            <div v-if="!loading" v-for="auction in auctions" class="col s12 m4 l3">
                 <div class="auction">
                     <div class="header">
                         <p class="title"><a href="/subasta/{{ auction.id }}">{{ auction.nombre }}</a></p>
