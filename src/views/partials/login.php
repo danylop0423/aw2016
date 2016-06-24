@@ -4,7 +4,7 @@
             <div class="row">
                 <div class="input-field col s12">
                     <i class="fa fa-user prefix"></i>
-                    <input id="icon_prefix" name="user" type="text" class="validate" required>
+                    <input id="icon_prefix" name="user" type="email" class="validate" required>
                     <label for="icon_prefix">Nombre de usuario</label>
                 </div>
                 <div class="input-field col s12">

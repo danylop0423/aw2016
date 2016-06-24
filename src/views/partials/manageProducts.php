@@ -178,44 +178,7 @@
                     <button class="btn-flat waves-effect waves-light" id='delete_cancelAll'>CANCELAR SELECCIÓN</button>
                 </div>
 
-             <table class="striped">
-                     <thead>
-                        <tr>
-                            <th colspan="2">Producto</th>
-                            <th>Precio</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <form action="/gestion/subastas/borrar" method="POST">
-                            <?php foreach ($auctions as $key => $auction): ?>
-                                <tr class="deleteField" data-finished=<?php echo $auction['finished'] ? 'data-finished':'' ?> >
-                                    <td colspan="2">
-                                        <div class="valign-wrapper">
-                                            <div class="col s2 hide-on-small-only">
-                                                <img class="responsive-img" src="<?php echo $auction['foto'] ?>">
-                                            </div>
-
-                                            <div class="col s10">
-                                                <span><?php echo $auction['nombre'] ?></span>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td>31,5€</td>
-                                    <td class="dates" ><?php echo $auction['caducidad']?></td>
-                                    <td>
-                                        <input type="checkbox" id="check<?php echo $key ?>" name="auction[id][<?php echo $auction['id'] ?>]" />
-                                        <label for="check<?php echo $key ?>"></label>
-                                    </td>
-                                </tr>
-                            <?php endforeach ?>
-                           <div class="fixed-action-btn" >
-                            <button class="btn-floating btn-large red" type="submit">
-                                <i class="fa fa-trash-o"></i>
-                            </button>
-                          </div>
-                        </form>
-                    </tbody>
-                </table>
+             
         </div>
     </div>
 </div>

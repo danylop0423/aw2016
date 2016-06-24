@@ -101,7 +101,7 @@
                             <div class="collapsible-body" style="">
                                 <ul>
                                     <li><a href="/profile">Mi perfil</a></li>
-                                    <li><a href="/profile#missubastas">Mis subastas </a></li>
+                                    <li><a href="/gestion/subastas">Mis subastas </a></li>
                                     <li><a href="/profile#mispujas">Mis pujas </a></li>
                                 </ul>
                             </div>
