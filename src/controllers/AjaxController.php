@@ -97,11 +97,9 @@ class AjaxController extends AbstractAjaxController
     {
         $subasta = $request->getParam('auction');
 
-        //Para evitar inyeccion SQL
-        // foreach ($_POST as $subasta => $value) {
-        //     $_POST[$subasta]=str_replace("", "", $_POST[$subasta]);
-        // }
-
+        //Cambiamos las comas por puntos
+        $subasta['pujaMin'] = str_replace(",", ".", $subasta['pujaMin']);
+        //var_dump($subasta); die;
 
         if ($subasta) {
             $updateResponse = $this->db->update($subasta)

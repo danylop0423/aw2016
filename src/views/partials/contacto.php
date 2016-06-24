@@ -1,7 +1,7 @@
 <form action="/contacto" method="POST">
 	 <ul class="collapsible" data-collapsible="exapandible">
 		  <li>
-				<div class="collapsible-header active"><i class="fa fa-volume-control-phone"></i>Formulario de Contácto</div>
+				<div class="collapsible-header active"><i class="fa fa-volume-control-phone"></i>Formulario de Contacto</div>
 				<div class="collapsible-body">
 					 <div class="row">
 

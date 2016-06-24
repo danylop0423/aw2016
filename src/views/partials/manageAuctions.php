@@ -79,10 +79,7 @@
                                 </td>
                                  <td><?php echo $auction['caducidad'] ?></td>
                                  <td><?php echo $auction['pujaMin'] ?>€</td>
-                                
-                                <!-- <td>20/05/2016 17:30</td>
-                                <td>21€</td>-->
-                                <td>31,5€</td> 
+                                 <td><?php echo $auction['total'] ?>€</td> 
                             </tr>
                         <?php endforeach ?>
                     </tbody>
@@ -173,12 +170,9 @@
                                         </div>
                                     </div>
                                 </td>
-                                <td><?php echo $auction['caducidad'] ?></td>
-                                 <td><?php echo $auction['pujaMin'] ?>€</td>
-                                
-                                <!-- <td>20/07/2016 17:30</td>
-                                <td>21€</td>-->
-                                <td>31,5€</td> 
+                                  <td><?php echo $auction['caducidad'] ?></td>
+                                  <td><?php echo $auction['pujaMin'] ?>€</td>
+                                  <td><?php echo $auction['total'] ?>€</td>
                             </tr>
                         </tbody>
                     </table>
@@ -186,25 +180,26 @@
             </div>
 
              <div class="row">
-                <form class="col s12" action="/ajax/updateSubastaAction">
+                <form class="col s12" name="updateAuction" action="/ajax/updateSubasta">
                     <div class="row">
                         <div class="input-field col s6">
-                        <input placeholder="<?php echo $auction['caducidad']?>" type="text"  id="auctionEnd" name="auction[caducidad]" class="datepicker validate" >
+                        <input value="<?php echo $auction['caducidad']?>" type="text"  id="auctionEnd" name="auction[caducidad]" class="datepicker validate" >
                         <label for="auctionEnd">Fin subasta</label>
                         </div>
                         <div class="input-field col s6">
                             <label for="lowestBid">Puja mínima</label>
-                            <input id="lowestBid" name="auction[pujaMin]" type="text" class="validate" placeholder="<?php echo $auction['pujaMin'] ?>€">
+                            <input id="lowestBid" name="auction[pujaMin]" type="text" class="validate" value="<?php echo $auction['pujaMin'] ?>">
                             
+                        </div>
+
+                        <div class="input-field col s12 right-align">
+                            <button type="submit" class="btn waves-effect waves-red">Guardar</button>
+                            <a href="#!" class="modal-action modal-close waves-effect waves-red btn-flat">Cancelar</a>
                         </div>
                     </div>
                     <input type="hidden" name="auction[id]" value="<?php echo $auction['id'] ?>">
                 </form>
             </div>
-        </div>
-        <div class="modal-footer">
-            <a href="#!" class="modal-action modal-close waves-effect waves-red btn-flat">Cancelar</a>
-            <a href="#!" class="modal-action modal-close waves-effect waves-red btn">Guardar</a>
         </div>
     </div>
 <?php endforeach ?>
@@ -252,6 +247,22 @@
                     $('#productCombo').prop('disabled', false).material_select();
                 }
             });
+        });
+
+        $('form[name="updateAuction"]').on('submit', function(event) {
+            var $form = $(this);
+
+            $.ajax({
+                type: 'POST',
+                url: $form.attr('action'),
+                data : $form.serialize(),
+
+                success: function(data) {
+                    Materialize.toast(data.response, 6000);
+                }
+            });
+
+            event.preventDefault();
         });
 
 		$('#delete_selectAll').on('click', function() {

@@ -12,7 +12,7 @@ class HomeController extends AbstractController
     public function contactAction($request, $response, $args) {
         $args['title'] = 'Contáctanos';
 
-        //var_dump($asunto); dead;
+        //var_dump($asunto); die;
         //Atributos del metodo mail
         if ($request->isPost()) {
             //Obtengo todos los datos del formulario (contact es un array)
