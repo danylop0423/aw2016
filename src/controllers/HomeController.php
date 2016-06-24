@@ -131,10 +131,48 @@ class HomeController extends AbstractController
 
     public function newProductAction($request, $response, $args) {
 
-        $args['title'] = 'Subastar';
+        $args['title'] = 'Producto Nuevo';
+
+
 
         return $this->render($response, 'newProduct.php', $args);
     } 
+
+
+    public function createProductAction($request, $response, $args) {
+
+        $args['title'] = 'Producto Nuevo';
+
+
+        if ($request->isPost()) {
+
+            if (isset($_SESSION)) {  //Si usuario registrado
+
+                
+                $product = $request->getParam('product');
+
+                $fecha = time();
+
+                if($product[estado] =='nuevo') $product[estado] = 0; //nuevo
+                else $product[estado] = 1; //usado
+
+                $product[fecha_alta] = date("Y-m-d",$fecha);
+
+                $id = $this->db->insert(array_keys($product))
+                    ->into('productos')
+                    ->values(array_values($product))
+                    ->execute()
+                ;
+
+            } else {
+                $args['error'] = 'No estas registrado';
+            }
+        }
+
+        return $this->render($response, 'profile.php', $args);
+    }
+
+
 
 
     private function decryptPassword($request){

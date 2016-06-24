@@ -19,6 +19,8 @@ $app->any('/reembolso','HomeController:reembolsoAction');
 
 $app->any('/newProduct','HomeController:newProductAction');
 
+$app->any('/newProductRegister','HomeController:createProductAction');
+
 
 /* UserController Routes */
 $app->any('/nuevo-usuario', 'UserController:createUserAction');
