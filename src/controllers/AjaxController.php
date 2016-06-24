@@ -30,7 +30,7 @@ class AjaxController extends AbstractAjaxController
             if (isset($filters['subasta.pujaMin'])) {
                 $auctions = $this->filterAuctionsByPrice($filters);
             } else {
-                $auctions = $this->db->select(array('subasta.id', 'productos.nombre', 'productos.foto', 'productos.caducidad', 'subasta.pujaMin'))
+                $auctions = $this->db->select(array('subasta.id', 'productos.nombre', 'productos.foto', 'subasta.caducidad', 'subasta.pujaMin'))
                     ->from('subasta')
                     ->join('productos', 'subasta.producto', '=', 'productos.id', 'INNER')
                     ->join('subcategoria', 'productos.subcategoria', '=', 'subcategoria.id', 'INNER')
@@ -40,6 +40,7 @@ class AjaxController extends AbstractAjaxController
                     ->execute()
                     ->fetchAll()
                 ;
+                
             }
 
             return $this->renderJSON($response, $auctions);
@@ -126,7 +127,7 @@ class AjaxController extends AbstractAjaxController
         $bid = $filters['subasta.pujaMin'];
         unset($filters['subasta.pujaMin']);
 
-        return $this->db->select(array('subasta.id', 'productos.nombre', 'productos.foto', 'productos.caducidad', 'subasta.pujaMin'))
+        return $this->db->select(array('subasta.id', 'productos.nombre', 'productos.foto', 'subasta.caducidad', 'subasta.pujaMin'))
             ->from('subasta')
             ->join('productos', 'subasta.producto', '=', 'productos.id', 'INNER')
             ->join('subcategoria', 'productos.subcategoria', '=', 'subcategoria.id', 'INNER')

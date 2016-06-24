@@ -35,7 +35,7 @@ class AbstractAjaxController
     protected function renderJSON($response, $args)
     {
         return $response->withStatus(200)
-            ->withHeader('Content-Type: application/json')
+            ->withHeader('Content-Type', 'application/json')
             ->write(json_encode($args))
         ;
     }
