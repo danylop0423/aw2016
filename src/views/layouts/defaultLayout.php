@@ -77,6 +77,7 @@
                     </li>
                 </ul>
             </li>
+            <li><a href="/gestion/productos">Productos</a></li>
             <?php if ($loggedUser): ?>
                 <li class="no-padding">
                     <ul class="collapsible collapsible-accordion">
@@ -87,7 +88,6 @@
                                     <li class="bold "><a class="collapsible-header ">Gestión</a>
                                         <div class="collapsible-body">
                                             <ul>
-                                                <li><a href="/gestion/productos">Mis Productos</a></li>
                                                 <li><a href="/gestion/subastas">Mis Subastas</a></li>
                                                 <li><a href="/profile#mispujas">Mis pujas </a></li>
                                             </ul>
