@@ -120,18 +120,19 @@
             <div class="row">
                 <div class="col l8 s12 white-text">
                     <h5 class="white-text">Redes sociales</h5>
+                
                     <span class="fa-stack fa-lg">
                       <i class="fa fa-square-o fa-stack-2x"></i>
                       <i class="fa fa-twitter fa-stack-1x"></i>
-                    </span>Twitter<br>
+                    </span><a href="https://twitter.com/informaticaucm" style="color:white">Twitter</a><br>
                     <span class="fa-stack fa-lg">
                       <i class="fa fa-square-o fa-stack-2x"></i>
                       <i class="fa fa-facebook fa-stack-1x"></i>
-                    </span>Facebook<br>
+                    </span><a href="https://www.facebook.com/pages/Facultad-de-Inform%C3%A1tica-de-la-UCM/139004316153038?fref=ts" style="color:white">Facebook</a><br>
                     <span class="fa-stack fa-lg">
                       <i class="fa fa-square-o fa-stack-2x"></i>
-                      <i class="fa fa-instagram fa-stack-1x"></i>
-                    </span>Instagram<br>
+                      <i class="fa fa-youtube fa-stack-1x"></i>
+                    </span><a href="https://www.youtube.com/user/finformaticaucm" style="color:white">Youtube</a><br>
 
                     <!-- <ul class="fa-ul">
                       <li><i class="fa-li fa fa-check-square"></i>List icons</li>
