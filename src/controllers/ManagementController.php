@@ -93,48 +93,42 @@ class ManagementController extends AbstractController
             ->from('productos p')
             ->join('subcategoria s', 'p.subcategoria', '=', 's.id')
             ->join('categoria c', 's.categoria', '=', 'c.id')
+            // ->where('producto.subastador', '=', $request->getAttribute('loggedUser')['id'])
             ->limit(25)
             ->execute()
             ->fetchAll()
         ;
 
         if ($request->isPost()) {
-			$selected_auctions= $request->getParam('auction');
-			if ($args['action'] === 'crear') {
-                # code...
+            $loggedUser = $request->getAttribute('loggedUser');
+            if ($loggedUser) {
+                if ($args['action'] === 'crear') {
+                    $upload = $this->uploadImage($request);
 
-                $create = $this->db->create()
-                	->from('subasta')
-                	->whereIn('id',array_keys($selected_auctions['id']))
-                	->execute();
+                    if (!$upload['errors']) {
+                        $product = $request->getParam('product');
 
-                # distinguir caso intentar crear subasta de un producto con el mismo id...
+                        $product['foto'] = '/assets/images/products/' . $upload['name'];
+                        $product['fecha_alta'] = date("Y-m-d",time());
+                        $product['estado'] = $product['estado'] === 'nuevo' ? 0 : 1;
 
-                	return $this->render($response, 'manageProducts.php', $args);
+                        $id = $this->db->insert(array_keys($product))
+                            ->into('productos')
+                            ->values(array_values($product))
+                            ->execute()
+                        ;
 
-            } elseif ($args['action'] === 'borrar') {
-				 $deleted= $this->db->delete()
-				   ->from('subasta')
-				   ->whereIn('id',array_keys($selected_auctions['id']))
-				   ->execute();
-
-				if($deleted > 0){
-				   $allAuctions=$args['auctions'];
-				   $updatedArgs=[];
-				   foreach ( $allAuctions as $k => $v){
-					 $flag=$allAuctions[$k]["id"];
-					 if(!array_key_exists($flag,$selected_auctions['id']))
-						 $updatedArgs[$k]=$v;
-				   }
-				   $args['auctions']=$updatedArgs;
-				   $args['error'] = 'Se han borrado '.$deleted.' Productos';
-				   return $this->render($response, 'manageProducts.php', $args);
-				 }else{
-					$args['error'] = 'Hubo un Problema al Borrar, intentelo de nuevo';
-					return $this->render($response, 'manageProducts.php', $args);
-			      }
-
-			  }
+                        if ($id) {
+                            $args['error'] = '¡Producto añadido correctamente!';
+                        }
+                    } else {
+                        $args['error'] = $upload['errors'];
+                    }
+                } elseif ($args['action'] === 'borrar') {
+                }
+            } else {
+                $args['error'] = 'No estas registrado';
+            }
         }
 
         return $this->render($response, 'manageProducts.php', $args);
@@ -147,5 +141,43 @@ class ManagementController extends AbstractController
             ->execute()
             ->fetchAll()
         ;
+    }
+
+    private function uploadImage($request)
+    {
+        $fileKey = array_keys($request->getUploadedFiles())[0];
+        $path = __DIR__ . '/../../public/assets/images/products';
+
+        $storage = new \Upload\Storage\FileSystem($path);
+        $file = new \Upload\File($fileKey, $storage);
+
+        $file->setName($this->generateRandomName());
+
+        $file->addValidations(array(
+            new \Upload\Validation\Mimetype(array('image/png', 'image/jpg', 'image/jpeg')),
+            new \Upload\Validation\Size('3M')
+        ));
+
+        $data = array(
+            'name'       => $file->getNameWithExtension(),
+            'extension'  => $file->getExtension(),
+            'mime'       => $file->getMimetype(),
+            'size'       => $file->getSize(),
+            'dimensions' => $file->getDimensions(),
+            'errors'     => false,
+        );
+
+        try {
+            $file->upload();
+        } catch (\Exception $e) {
+            $data['errors'] = $file->getErrors();
+        }
+
+        return $data;
+    }
+
+    private function generateRandomName()
+    {
+        return substr(str_shuffle(str_repeat("0123456789abcdefghijklmnopqrstuvwxyz", 20)), 0, 20);
     }
 }

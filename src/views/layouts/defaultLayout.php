@@ -149,7 +149,13 @@
             $(".button-collapse").sideNav();
 
             <?php if (isset($error)): ?>
-                Materialize.toast('<?php echo $error ?>', 6000);
+                <?php if (is_array($error)): ?>
+                    <?php foreach ($error as $e): ?>
+                        Materialize.toast('<?php echo $e ?>', 10000);
+                    <?php endforeach ?>
+                <?php else: ?>
+                    Materialize.toast('<?php echo $error ?>', 10000);
+                <?php endif ?>
             <?php endif ?>
         });
     </script>
