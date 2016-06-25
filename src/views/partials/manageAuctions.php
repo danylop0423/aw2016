@@ -2,9 +2,9 @@
     <div class="row">
         <div class="col s12">
             <ul class="tabs z-depth-1">
-                <li class="tab col s4"><a href="#create">Nueva subasta</a></li>
-                <li class="tab col s4"><a href="#update">Modificar subasta</a></li>
-                <li class="tab col s4"><a href="#delete">Borrar subasta</a></li>
+                <li class="tab col s4"><a href="#create" <?php echo strpos($slug, 'crear') ? 'class="active"' : '' ?>>Nueva subasta</a></li>
+                <li class="tab col s4"><a href="#update" <?php echo strpos($slug, 'editar') ? 'class="active"' : '' ?>>Modificar subasta</a></li>
+                <li class="tab col s4"><a href="#delete" <?php echo strpos($slug, 'borrar') ? 'class="active"' : '' ?>>Borrar subasta</a></li>
             </ul>
         </div>
 
@@ -47,28 +47,29 @@
                             <div class="collapsible-header active"><i class="fa fa-gavel"></i>Subasta</div>
                             <div class="collapsible-body">
                                 <div class="row">
-                    
-                <div class="input-field col s12">
-                    <select name="auction[caducidad]">
-                      <option value="" disabled selected>Tiempo de subasta</option>
-                      <option value="1">1 Dia</option>
-                      <option value="2">2 Dias</option>
-                      <option value="3">3 Dias</option>
-                      <option value="4">4 Dias</option>
-                      <option value="5">5 Dias</option>
-                      <option value="6">6 Dias</option>
-                      <option value="7">7 Dias</option>
-                    </select>
-                    <label>Selecciona el tiempo de subasta</label>
-              </div>
+                                    <div class="input-field col s12 m6">
+                                        <select name="auction[caducidad]">
+                                            <option value="" disabled selected>Tiempo de subasta</option>
+                                            <option value="1">1 Dia</option>
+                                            <option value="2">2 Dias</option>
+                                            <option value="3">3 Dias</option>
+                                            <option value="4">4 Dias</option>
+                                            <option value="5">5 Dias</option>
+                                            <option value="6">6 Dias</option>
+                                            <option value="7">7 Dias</option>
+                                        </select>
+                                        <label>Selecciona el tiempo de subasta</label>
+                                    </div>
 
-
-                                    <div class="input-field col s6">
+                                    <div class="input-field col s12 m6">
                                        <label for="name">Puja Minima</label>
                                        <input type="number" name="auction[pujaMin]" id="pujaMin" class="validate" required>
                                     </div>
-                                     <div class="buttons-wrapper center-align">
-                                    <button class="btn waves-effect waves-light" type="submit" name="action">Crear subasta</button>
+
+                                    <div class="col s12">
+                                        <div class="buttons-wrapper center-align">
+                                            <button class="btn waves-effect waves-light" type="submit" name="action">Crear subasta</button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -105,7 +106,7 @@
                                 </td>
                                  <td><?php echo $auction['caducidad'] ?></td>
                                  <td><?php echo $auction['pujaMin'] ?>€</td>
-                                 <td><?php echo $auction['total'] ?>€</td> 
+                                 <td><?php echo $auction['total'] ?>€</td>
                             </tr>
                         <?php endforeach ?>
                     </tbody>
@@ -215,7 +216,7 @@
                         <div class="input-field col s6">
                             <label for="lowestBid">Puja mínima</label>
                             <input id="lowestBid" name="auction[pujaMin]" type="text" class="validate" value="<?php echo $auction['pujaMin'] ?>">
-                            
+
                         </div>
 
                         <div class="input-field col s12 right-align">

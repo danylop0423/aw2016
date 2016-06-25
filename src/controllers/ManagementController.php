@@ -99,8 +99,8 @@ class ManagementController extends AbstractController
                         $product = $request->getParam('product');
 
                         $product['foto'] = '/assets/images/products/' . $upload['name'];
-                        $product['fecha_alta'] = date("Y-m-d",time());
                         $product['estado'] = $product['estado'] === 'nuevo' ? 0 : 1;
+                        $product['fecha_alta'] = date('Y-m-d H:m', time());
 
                         $id = $this->db->insert(array_keys($product))
                             ->into('productos')

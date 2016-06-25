@@ -64,7 +64,7 @@
                             <div class="collapsible-header active"><i class="fa fa-level-down"></i>Categoría del Producto</div>
                             <div class="collapsible-body clear-fix">
                                 <div class="input-field col s12">
-                                    <select id="categoryCombo" class="categoryCombo">
+                                    <select id="createCategoryCombo" class="categoryCombo">
                                         <option value="" disabled selected>Seleccionar</option>
                                         <?php foreach ($categories as $category): ?>
                                             <option value="<?php echo $category['id'] ?>"><?php echo $category['nombre'] ?></option>
@@ -74,7 +74,7 @@
                                 </div>
 
                                 <div class="input-field col s12">
-                                    <select id="chivaste" name="product[subcategoria]" data-empty="Seleccionar" disabled>
+                                    <select id="createSubcategoryCombo" name="product[subcategoria]" data-empty="Seleccionar" disabled>
                                         <option disabled selected>Seleccionar</option>
                                     </select>
                                     <label for="subcategoryCombo">Subcategoría</label>
@@ -242,20 +242,20 @@
                         </div>
 
                         <div class="input-field col s6 l3">
-                            <select id="categoryCombo" class="categoryCombo">
+                            <select id="updateCategoryCombo">
                                 <option value="" disabled selected>Seleccionar</option>
                                 <?php foreach ($categories as $category): ?>
                                     <option value="<?php echo $category['id'] ?>" <?php echo $category['nombre'] === $product['categoria'] ? 'selected' : '' ?>><?php echo $category['nombre'] ?></option>
                                 <?php endforeach ?>
                             </select>
-                            <label for="categoryCombo">Categoría</label>
+                            <label for="updateCategoryCombo">Categoría</label>
                         </div>
 
                         <div class="input-field col s6 l3">
-                            <select id="subcategoryCombo" name="product[subcategoria]" data-empty="Seleccionar">
+                            <select id="updateSubcategoryCombo" name="product[subcategoria]" data-empty="Seleccionar">
                                 <option value="<?php echo $product['subcategoria_id'] ?>" selected><?php echo $product['subcategoria'] ?></option>
                             </select>
-                            <label for="subcategoryCombo">Subcategoría</label>
+                            <label for="updateSubcategoryCombo">Subcategoría</label>
                         </div>
 
                         <div class="input-field col s12">
@@ -341,7 +341,7 @@
             event.preventDefault();
         });
 
-        $('.categoryCombo').on('change', function(event) {
+        $('#createCategoryCombo, #updateCategoryCombo').on('change', function(event) {
             var value = $(event.target).val();
 
             $.ajax({
@@ -350,12 +350,12 @@
                 data : {category: value},
 
                 beforeSend: function() {
-                    $('#chivaste').html('<option value disabled selected>Cargando...</option>').material_select()
+                    $('#createSubcategoryCombo, #updateSubcategoryCombo').html('<option value disabled selected>Cargando...</option>').material_select()
                 },
 
                 success : function(data) {
-                    $('#chivaste').populateSelect(data);
-                    $('#chivaste').prop('disabled', false).material_select();
+                    $('#createSubcategoryCombo, #updateSubcategoryCombo').populateSelect(data);
+                    $('#createSubcategoryCombo, #updateSubcategoryCombo').prop('disabled', false).material_select();
                 }
             });
         });
