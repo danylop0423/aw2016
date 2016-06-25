@@ -29,18 +29,24 @@ class ManagementController extends AbstractController
 			$selected_auctions= $request->getParam('auction');
 			if ($args['action'] === 'crear') {
 
-                $keys = array_keys($selected_auctions);
-                $keys[] = 'subastador';
+                $auction = $request->getParam('auction');
 
-                $values = array_values($selected_auctions);
-                $values[] = $request->getAttribute('loggedUser')['id'];
+                //Calculo de fechas finales e iniciales
+                $diasSubasta = $auction['caducidad'] ; //en segundos
+                $fechaActual = time();
+                $fechaFin = $diasSubasta + $fechaActual;
+                $fechaActual = date("Y-m-d",$fechaActual);
+                $fechaFin = date("Y-m-d",$fechaFin);
 
-                $create = $this->db->insert($keys)
+                //Falta relacionar la subasta con el subastador que sino la base de datos no se lo come.
+
+
+                $create = $this->db->insert(array_keys($auction))
                     ->into('subasta')
-                    ->values($values)
+                    ->values(array_values($auction))
                     ->execute()
                 ;
-
+                
                 if($create) {
                     $args['error'] = 'Se ha creado una subasta con el id '.$create;
                 } else {

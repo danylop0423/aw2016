@@ -101,8 +101,9 @@ class AuctionController extends AbstractController
 
     public function createAuctionAction($request, $response, $args){
 
+        
 
-        $args['title'] = 'Producto Nuevo';
+        $args['title'] = 'Subasta Nueva';
 
         
 

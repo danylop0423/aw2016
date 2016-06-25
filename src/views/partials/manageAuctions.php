@@ -47,10 +47,22 @@
                             <div class="collapsible-header active"><i class="fa fa-gavel"></i>Subasta</div>
                             <div class="collapsible-body">
                                 <div class="row">
-                                    <div class="input-field col s6">
-                                        <label for="name">Fin subasta</label>
-                                        <input type="text" name="auction[caducidad]" id="auctionEnd" class="validate" required>
-                                    </div>
+                    
+                <div class="input-field col s12">
+                    <select name="auction[caducidad]">
+                      <option value="" disabled selected>Tiempo de subasta</option>
+                      <option value="1">1 Dia</option>
+                      <option value="2">2 Dias</option>
+                      <option value="3">3 Dias</option>
+                      <option value="4">4 Dias</option>
+                      <option value="5">5 Dias</option>
+                      <option value="6">6 Dias</option>
+                      <option value="7">7 Dias</option>
+                    </select>
+                    <label>Selecciona el tiempo de subasta</label>
+              </div></div></div>
+
+
                                     <div class="input-field col s6">
                                        <label for="name">Puja Minima</label>
                                        <input type="number" name="auction[pujaMin]" id="pujaMin" class="validate" required>
@@ -219,6 +231,7 @@
 <?php endforeach ?>
 
 <script>
+
     $(function() {
         $('select').material_select();
         $('.modal-trigger').leanModal();
