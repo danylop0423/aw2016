@@ -2,9 +2,9 @@
     <div class="row">
         <div class="col s12">
             <ul class="tabs z-depth-1">
-                <li class="tab col s4"><a href="#create">Nuevo producto</a></li>
-                <li class="tab col s4"><a href="#update">Modificar producto</a></li>
-                <li class="tab col s4"><a href="#delete">Borrar producto</a></li>
+                <li class="tab col s4"><a href="#create" <?php echo strpos($slug, 'crear') ? 'class="active"' : '' ?>>Nuevo producto</a></li>
+                <li class="tab col s4"><a href="#update" <?php echo strpos($slug, 'editar') ? 'class="active"' : '' ?>>Modificar producto</a></li>
+                <li class="tab col s4"><a href="#delete" <?php echo strpos($slug, 'borrar') ? 'class="active"' : '' ?>>Borrar producto</a></li>
             </ul>
         </div>
 
@@ -202,9 +202,7 @@
                             <select id="categoryCombo" class="categoryCombo">
                                 <option value="" disabled selected>Seleccionar</option>
                                 <?php foreach ($categories as $category): ?>
-                                    <option value="<?php echo $category['id'] ?>" <?php echo $category['nombre'] === $product['categoria'] ? 'selected' : '' ?>>
-                                        <?php echo $category['nombre'] ?>
-                                    </option>
+                                    <option value="<?php echo $category['id'] ?>" <?php echo $category['nombre'] === $product['categoria'] ? 'selected' : '' ?>><?php echo $category['nombre'] ?></option>
                                 <?php endforeach ?>
                             </select>
                             <label for="categoryCombo">Categoría</label>
@@ -220,6 +218,16 @@
                         <div class="input-field col s12">
                             <textarea id="productDescription" class="materialize-textarea" name="product[descripcion]"><?php echo $product['descripcion'] ?></textarea>
                             <label for="productDescription">Descripción</label>
+                        </div>
+
+                        <div class="file-field input-field col s12 l6">
+                            <div class="btn">
+                                <span>Imagen</span>
+                                <input type="file" name="fileimage">
+                            </div>
+                            <div class="file-path-wrapper">
+                                <input class="file-path validate" type="text">
+                            </div>
                         </div>
 
                         <div class="input-field col s12 right-align">
@@ -241,16 +249,51 @@
 
         $('form[name="updateProduct"]').on('submit', function(event) {
             var $form = $(this);
+            var $file = $form.find('input[name="fileimage"]')[0];
 
-            $.ajax({
-                type: 'POST',
-                url: $form.attr('action'),
-                data : $form.serialize(),
+            if ($file.files.length > 0) {
+                var formData =  new FormData();
+                formData.append('fileimage', $file.files[0]);
 
-                success: function(data) {
-                    Materialize.toast(data.response, 6000);
-                }
-            });
+                $.ajax({
+                    type: 'POST',
+                    url: '/ajax/uploadProductImage',
+                    data: formData,
+                    cache: false,
+                    contentType: false,
+                    processData: false,
+
+                    success: function(data) {
+                        if (typeof data.foto !== 'undefined') {
+                            Materialize.toast('Imagen subida correctamente', 10000);
+
+                            $.ajax({
+                                type: 'POST',
+                                url: $form.attr('action'),
+                                data: $form.serialize() + '&product%5Bfoto%5D=' + data.foto,
+
+                                success: function(data) {
+                                    Materialize.toast(data.response, 10000);
+                                }
+                            });
+                        } else if (typeof data.error !== 'undefined') {
+                            $.each(data.error, function(i, error) {
+                                Materialize.toast(error, 10000);
+                            });
+                        }
+                    }
+                });
+            } else {
+                $.ajax({
+                    type: 'POST',
+                    url: $form.attr('action'),
+                    data: $form.serialize(),
+
+                    success: function(data) {
+                        Materialize.toast(data.response, 10000);
+                    }
+                });
+            }
 
             event.preventDefault();
         });

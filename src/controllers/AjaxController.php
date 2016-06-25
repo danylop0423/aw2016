@@ -40,7 +40,6 @@ class AjaxController extends AbstractAjaxController
                     ->execute()
                     ->fetchAll()
                 ;
-                
             }
 
             return $this->renderJSON($response, $auctions);
@@ -74,6 +73,10 @@ class AjaxController extends AbstractAjaxController
         $product = $request->getParam('product');
 
         if ($product) {
+            if (isset($product['foto'])) {
+                $product['foto'] = '/assets/images/products/' . $product['foto'];
+            }
+
             $updateResponse = $this->db->update($product)
                 ->table('productos')
                 ->where('id', '=', $product['id'])
@@ -90,6 +93,19 @@ class AjaxController extends AbstractAjaxController
         }
 
         return $response->withStatus(404);
+    }
+
+    public function uploadProductImageAction($request, $response, $args)
+    {
+        $upload = $this->uploadImage($request);
+
+        if (!$upload['errors']) {
+            $args['foto'] = $upload['name'];
+        } else {
+            $args['error'] = $upload['errors'];
+        }
+
+        return $this->renderJSON($response, $args);
     }
 
 
@@ -158,5 +174,43 @@ class AjaxController extends AbstractAjaxController
            ->values($loggedUserId, $auctionId, $bid)
            ->execute()
         ;
+    }
+
+    private function uploadImage($request)
+    {
+        $fileKey = array_keys($request->getUploadedFiles())[0];
+        $path = __DIR__ . '/../../public/assets/images/products';
+
+        $storage = new \Upload\Storage\FileSystem($path);
+        $file = new \Upload\File($fileKey, $storage);
+
+        $file->setName($this->generateRandomName());
+
+        $file->addValidations(array(
+            new \Upload\Validation\Mimetype(array('image/png', 'image/jpg', 'image/jpeg')),
+            new \Upload\Validation\Size('3M')
+        ));
+
+        $data = array(
+            'name'       => $file->getNameWithExtension(),
+            'extension'  => $file->getExtension(),
+            'mime'       => $file->getMimetype(),
+            'size'       => $file->getSize(),
+            'dimensions' => $file->getDimensions(),
+            'errors'     => false,
+        );
+
+        try {
+            $file->upload();
+        } catch (\Exception $e) {
+            $data['errors'] = $file->getErrors();
+        }
+
+        return $data;
+    }
+
+    private function generateRandomName()
+    {
+        return substr(str_shuffle(str_repeat("0123456789abcdefghijklmnopqrstuvwxyz", 20)), 0, 20);
     }
 }
