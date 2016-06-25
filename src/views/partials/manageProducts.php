@@ -141,9 +141,52 @@
         <div id="delete" class="col s12">
             <div class="card-panel">
                 <div class="delete-filter">
-                    <button class="btn-flat waves-effect waves-light" id='delete_selectAll'>SELECCIONAR TODOS</button>
-                    <button class="btn-flat waves-effect waves-light" id='delete_cancelAll'>CANCELAR SELECCIÓN</button>
+                    <button class="btn-flat waves-effect waves-light" id='selectAll'>SELECCIONAR TODOS</button>
+                    <button class="btn-flat waves-effect waves-light" id='cancelAll'>CANCELAR SELECCIÓN</button>
                 </div>
+
+                <table class="striped">
+                    <thead>
+                        <tr>
+                            <th colspan="2">Producto</th>
+                            <th>Marca</th>
+                            <th>Categoría</th>
+                            <th>Subcategoría</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <form action="/gestion/productos/borrar" method="POST">
+                            <?php foreach ($products as $key => $product): ?>
+                                <tr>
+                                    <td colspan="2">
+                                        <div class="valign-wrapper">
+                                            <div class="col s2 hide-on-small-only">
+                                                <img class="responsive-img" src="<?php echo $product['foto'] ?>">
+                                            </div>
+
+                                            <div class="col s10">
+                                                <span><?php echo $product['nombre'] ?></span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td><?php echo $product['marca'] ?></td>
+                                    <td><?php echo $product['categoria'] ?></td>
+                                    <td><?php echo $product['subcategoria'] ?></td>
+                                    <td>
+                                        <input type="checkbox" id="check<?php echo $key ?>" name="products[id][<?php echo $product['id'] ?>]" />
+                                        <label for="check<?php echo $key ?>"></label>
+                                    </td>
+                                </tr>
+                            <?php endforeach ?>
+
+                            <div class="fixed-action-btn" >
+                                <button class="btn-floating btn-large red" type="submit">
+                                    <i class="fa fa-trash-o"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>
@@ -317,19 +360,12 @@
             });
         });
 
-        $('#delete_selectAll').on('click', function() {
-           $('.deleteField :input[type=checkbox]').prop('checked', true);
+        $('#selectAll').on('click', function() {
+            $('input[type=checkbox]').prop('checked', true);
         });
 
-        $('#delete_selectExpired').on('click', function() {
-           $('.deleteField :input[type=checkbox]').prop('checked', false);
-           $('.deleteField[data-finished="data-finished"]').each(function(i,elem){
-               $(this).find('input[type=checkbox]').prop('checked', true);
-            });
-         });
-
-        $('#delete_cancelAll').on('click', function() {
-           $('.deleteField :input[type=checkbox]').prop('checked', false);
+        $('#cancelAll').on('click', function() {
+           $('input[type=checkbox]').prop('checked', false);
         });
     });
 </script>

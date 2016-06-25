@@ -50,7 +50,7 @@ class ManagementController extends AbstractController
                     ->values(array_values($auction))
                     ->execute()
                 ;
-                
+
                 if($create) {
                     $args['error'] = 'Se ha creado una subasta con el id '.$create;
                 } else {
@@ -89,16 +89,6 @@ class ManagementController extends AbstractController
         $args['title'] = 'Gestión de productos';
         $args['categories'] = $this->fetchCategories();
 
-        $args['products'] = $this->db->select(array('p.id', 'p.nombre', 'p.foto', 'p.marca', 'p.descripcion', 's.nombre subcategoria', 's.id subcategoria_id', 'c.nombre categoria'))
-            ->from('productos p')
-            ->join('subcategoria s', 'p.subcategoria', '=', 's.id')
-            ->join('categoria c', 's.categoria', '=', 'c.id')
-            // ->where('producto.subastador', '=', $request->getAttribute('loggedUser')['id'])
-            ->limit(25)
-            ->execute()
-            ->fetchAll()
-        ;
-
         if ($request->isPost()) {
             $loggedUser = $request->getAttribute('loggedUser');
             if ($loggedUser) {
@@ -125,11 +115,22 @@ class ManagementController extends AbstractController
                         $args['error'] = $upload['errors'];
                     }
                 } elseif ($args['action'] === 'borrar') {
+                    $products = $request->getParam('products');
+
+                    $deleted = $this->db->delete()
+                       ->from('productos')
+                       ->whereIn('id', array_keys($products['id']))
+                       ->execute()
+                    ;
+
+                    $args['error'] = '¡' . $deleted . ' productos borrados!';
                 }
             } else {
                 $args['error'] = 'No estas registrado';
             }
         }
+
+        $args['products'] = $this->fetchLoggedUserProducts();
 
         return $this->render($response, 'manageProducts.php', $args);
     }
@@ -138,6 +139,19 @@ class ManagementController extends AbstractController
     {
         return $this->db->select(array('id', 'nombre'))
             ->from('categoria')
+            ->execute()
+            ->fetchAll()
+        ;
+    }
+
+    private function fetchLoggedUserProducts()
+    {
+        return $this->db->select(array('p.id', 'p.nombre', 'p.foto', 'p.marca', 'p.descripcion', 's.nombre subcategoria', 's.id subcategoria_id', 'c.nombre categoria'))
+            ->from('productos p')
+            ->join('subcategoria s', 'p.subcategoria', '=', 's.id')
+            ->join('categoria c', 's.categoria', '=', 'c.id')
+            // ->where('producto.subastador', '=', $request->getAttribute('loggedUser')['id'])
+            ->limit(25)
             ->execute()
             ->fetchAll()
         ;
