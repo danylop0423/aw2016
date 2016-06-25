@@ -60,7 +60,7 @@
                       <option value="7">7 Dias</option>
                     </select>
                     <label>Selecciona el tiempo de subasta</label>
-              </div></div></div>
+              </div>
 
 
                                     <div class="input-field col s6">
