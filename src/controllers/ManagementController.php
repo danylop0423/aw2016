@@ -30,6 +30,8 @@ class ManagementController extends AbstractController
 			if ($args['action'] === 'crear') {
 
                 $auction = $request->getParam('auction');
+                $user= $request->getAttribute('loggedUser');
+
 
                 //Calculo de fechas finales e iniciales
                 $diasSubasta = $auction['caducidad'] *(24*60*60); //en segundos
@@ -38,11 +40,9 @@ class ManagementController extends AbstractController
                 $fechaActual = date("Y-m-d-H-i-s",$fechaActual);
                 $fechaFin = date("Y-m-d-H-i-s",$fechaFin);
 
-                var_dump($fechaActual);
-                var_dump($fechaFin);
-                die();
+                $auction['caducidad'] = $fechaFin;
 
-                //Falta relacionar la subasta con el subastador que sino la base de datos no se lo come.
+                $auction['subastador'] = $user['id'];
 
 
                 $create = $this->db->insert(array_keys($auction))
