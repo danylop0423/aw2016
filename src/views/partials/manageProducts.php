@@ -163,7 +163,7 @@
                                         </div>
                                     </div>
                                 </td>
-                                <td> <button class= "borrar" onclick="borrar()">Borrar</button> </td>   <!--le paso el id por parametros-->
+                                <td> <button  onclick="deleteProduct(<?php echo $product['id'] ?>)">Borrar</button> </td>   <!--le paso el id por parametros-->
                                 <td><?php echo $product['marca'] ?></td>
                                 <td><?php echo $product['categoria'] ?></td>
                                 <td><?php echo $product['subcategoria'] ?></td>
@@ -274,27 +274,6 @@
         $('select').material_select();
         $('.modal-trigger').leanModal();
 
-        $(".borrar").click(function(){
-
-            $.ajax({
-                        type: 'POST',
-                        url: '/ajax/borraProducto',
-                        data : {product: id},
-
-                    };
-
-                            $id = $request->getParam('id');
-
-            $borrado = $this->db->delete()
-                ->from('productos')
-                ->where('id', '=', $id)
-                ->execute()
-                ->fetch()
-            ;
-
-
-        });
-
         $('form[name="updateProduct"]').on('submit', function(event) {
             var $form = $(this);
 
@@ -345,6 +324,12 @@
            $('.deleteField :input[type=checkbox]').prop('checked', false);
         });
     });
+
+
+    function deleteProduct($id) {
+
+    window.alert("id = " + $id);
+    }
 
 
 </script>
