@@ -118,8 +118,27 @@
     <footer class="page-footer">
         <div class="container">
             <div class="row">
-                <div class="col l8 s12">
+                <div class="col l8 s12 white-text">
                     <h5 class="white-text">Redes sociales</h5>
+                    <span class="fa-stack fa-lg">
+                      <i class="fa fa-square-o fa-stack-2x"></i>
+                      <i class="fa fa-twitter fa-stack-1x"></i>
+                    </span>Twitter<br>
+                    <span class="fa-stack fa-lg">
+                      <i class="fa fa-square-o fa-stack-2x"></i>
+                      <i class="fa fa-facebook fa-stack-1x"></i>
+                    </span>Facebook<br>
+                    <span class="fa-stack fa-lg">
+                      <i class="fa fa-square-o fa-stack-2x"></i>
+                      <i class="fa fa-instagram fa-stack-1x"></i>
+                    </span>Instagram<br>
+
+                    <!-- <ul class="fa-ul">
+                      <li><i class="fa-li fa fa-check-square"></i>List icons</li>
+                      <li><i class="fa-li fa fa-check-square"></i>can be used</li>
+                      <li><i class="fa-li fa fa-spinner fa-spin"></i>as bullets</li>
+                      <li><i class="fa-li fa fa-square"></i>in lists</li>
+                    </ul> -->
                 </div>
                 <div class="col l4 s12">
                     <h5 class="white-text">Enlaces</h5>
