@@ -29,6 +29,7 @@ $app->get('/profile','UserController:showProfileAction');
 
 $app->any('/editProfile','UserController:editProfileAction');
 
+$app->get('/bidList','UserController:listBidAction');
 
 /* AuctionController Routes */
 $app->get('/subastas[/{category}]', 'AuctionController:listAuctionsAction');

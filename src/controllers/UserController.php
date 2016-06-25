@@ -213,5 +213,35 @@ class UserController extends AbstractController
 
 	}
 
+		 public function listBidAction($request, $response, $args)
+    {
+        $args['title'] = 'Mis Pujas';
+        $loggedUser = $request->getAttribute('loggedUser');
+		if($loggedUser){
+		$args['Bids']= $this->db->select(array(
+                    'subasta.id',
+                    'productos.nombre',
+                    'productos.foto',
+                    'subasta.caducidad',
+                    'subasta.pujaMin',
+					'pujas.ultimaPuja'
+                ))
+                ->from('subasta')
+                ->join('productos', 'subasta.producto', '=', 'productos.id', 'INNER')
+                ->join('subcategoria', 'productos.subcategoria', '=', 'subcategoria.id', 'INNER')
+				->join('pujas', 'subasta.producto', '=', 'pujas.producto', 'INNER')
+                ->where('pujas.usuario', '=', $loggedUser['id'])
+                ->orderBy('productos.nombre', 'ASC')
+                ->execute()
+                ->fetchAll()
+            ;
+		return $this->render($response, 'bidList.php', $args);
+		} 
+		else{
+			$args['error']="Acceso indevido, Primero debes Iniciar Sesión";
+			return $this->render($response, 'home.php', $args);
+		}
+    }
+
 	
 }

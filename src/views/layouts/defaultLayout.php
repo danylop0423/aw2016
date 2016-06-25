@@ -28,9 +28,9 @@
                         <ul id="dropdown" class="dropdown-content">
                             <li><a href="/profile">Perfil</a></li>
                             <li class="divider"></li>
-                            <li><a href="/profile#missubastas">Subastas</a></li>
+                            <li><a href="/gestion/subastas">Subastas</a></li>
                             <li class="divider"></li>
-                            <li><a href="/profile#mispujas">Pujas</a></li>
+                            <li><a href="/bidList">Pujas</a></li>
                             <li class="divider"></li>
                             <li><a href="/logout">Cerrar sesión</a></li>
                         </ul>
@@ -89,7 +89,7 @@
                                         <div class="collapsible-body">
                                             <ul>
                                                 <li><a href="/gestion/subastas">Mis Subastas</a></li>
-                                                <li><a href="/profile#mispujas">Mis pujas </a></li>
+                                                <li><a href="/bidList">Mis pujas </a></li>
                                             </ul>
                                         </div>
                                     </li>
