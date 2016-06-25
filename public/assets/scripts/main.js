@@ -164,6 +164,16 @@ new Vue({
 });
 
 
+$(function () {
+    $('#nav-mobile').on('mouseover', function() {
+        $(this).css('overflow', 'scroll');
+    });
+
+    $('#nav-mobile').on('mouseout', function() {
+        $(this).css('overflow', 'auto');
+    });
+});
+
 $.fn.populateSelect = function(data, options) {
     var settings = $.extend({
         empty: $(this).data('empty') || $(this).find('option:first').text(),
@@ -210,12 +220,3 @@ $.fn.populateProductSelect = function(data, options) {
         $(this).html($options);
     });
 };
-
-$(function () {
-    $('input#search').focus(function() { $(this).parent().addClass('focused'); });
-    $('input#search').blur(function() {
-        if (!$(this).val()) {
-            $(this).parent().removeClass('focused');
-        }
-    });
-});
