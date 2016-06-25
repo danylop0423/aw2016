@@ -118,8 +118,28 @@
     <footer class="page-footer">
         <div class="container">
             <div class="row">
-                <div class="col l8 s12">
+                <div class="col l8 s12 white-text">
                     <h5 class="white-text">Redes sociales</h5>
+                
+                    <span class="fa-stack fa-lg">
+                      <i class="fa fa-square-o fa-stack-2x"></i>
+                      <i class="fa fa-twitter fa-stack-1x"></i>
+                    </span><a href="https://twitter.com/informaticaucm" style="color:white">Twitter</a><br>
+                    <span class="fa-stack fa-lg">
+                      <i class="fa fa-square-o fa-stack-2x"></i>
+                      <i class="fa fa-facebook fa-stack-1x"></i>
+                    </span><a href="https://www.facebook.com/pages/Facultad-de-Inform%C3%A1tica-de-la-UCM/139004316153038?fref=ts" style="color:white">Facebook</a><br>
+                    <span class="fa-stack fa-lg">
+                      <i class="fa fa-square-o fa-stack-2x"></i>
+                      <i class="fa fa-youtube fa-stack-1x"></i>
+                    </span><a href="https://www.youtube.com/user/finformaticaucm" style="color:white">Youtube</a><br>
+
+                    <!-- <ul class="fa-ul">
+                      <li><i class="fa-li fa fa-check-square"></i>List icons</li>
+                      <li><i class="fa-li fa fa-check-square"></i>can be used</li>
+                      <li><i class="fa-li fa fa-spinner fa-spin"></i>as bullets</li>
+                      <li><i class="fa-li fa fa-square"></i>in lists</li>
+                    </ul> -->
                 </div>
                 <div class="col l4 s12">
                     <h5 class="white-text">Enlaces</h5>
@@ -149,7 +169,13 @@
             $(".button-collapse").sideNav();
 
             <?php if (isset($error)): ?>
-                Materialize.toast('<?php echo $error ?>', 6000);
+                <?php if (is_array($error)): ?>
+                    <?php foreach ($error as $e): ?>
+                        Materialize.toast('<?php echo $e ?>', 10000);
+                    <?php endforeach ?>
+                <?php else: ?>
+                    Materialize.toast('<?php echo $error ?>', 10000);
+                <?php endif ?>
             <?php endif ?>
         });
     </script>

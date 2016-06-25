@@ -3,99 +3,102 @@
         <div class="col s12">
             <ul class="tabs z-depth-1">
                 <li class="tab col s4"><a href="#create">Nuevo producto</a></li>
-                <li class="tab col s4"><a class="active" href="#update">Modificar producto</a></li>
+                <li class="tab col s4"><a href="#update">Modificar producto</a></li>
                 <li class="tab col s4"><a href="#delete">Borrar producto</a></li>
             </ul>
         </div>
 
         <div id="create" class="col s12">
             <div class="">
-                <form action="/newProductRegister" method="POST">
-                        <ul class="collapsible" data-collapsible="exapandible">
-        <li>
-            <div class="collapsible-header active"><i class="fa fa-user"></i>Datos del producto</div>
-            <div class="collapsible-body">
-                <div class="row">
-                    <div class="input-field col s12 l6">
-                        <label for="name">Nombre del producto *</label>
-                        <input type="text" name="product[nombre]" id="name" class="validate" required>
-                    </div>
+                <form action="/gestion/productos/crear" method="POST" enctype="multipart/form-data">
+                    <ul class="collapsible" data-collapsible="exapandible">
+                        <li>
+                            <div class="collapsible-header active"><i class="fa fa-gift"></i>Datos del producto</div>
+                            <div class="collapsible-body">
+                                <div class="row">
+                                    <div class="input-field col s12 l6">
+                                        <label for="name">Nombre del producto *</label>
+                                        <input type="text" name="product[nombre]" id="name" class="validate" required>
+                                    </div>
 
-                    <div class="input-field col s12 l6">
-                        <label for="">Marca *</label>
-                        <input type="text" name="product[marca]" id="marca" class="validate" required>
-                    </div>
-                    
-                </div>
-            </div>
-        </li>
-        <li>
-            <div class="collapsible-header active"><i class="fa fa-home"></i>Estado del Producto</div>
-            <div class="collapsible-body">
-                <div class="row">
-                    
-                    <div class="input-field col s12 l6">
-                        <form action="#">
-                           <p>
-                              <input name="product[estado]" type="radio" id="nuevo" value ="nuevo" />
-                              <label for="nuevo">Nuevo</label>
-                            </p>
-                            <p>
-                              <input name="product[estado]" type="radio" id="usado" value = "usado" />
-                              <label for="usado">Usado</label>
-                            </p>
-                        </form>
-                    </div>
+                                    <div class="input-field col s12 l6">
+                                        <label for="">Marca *</label>
+                                        <input type="text" name="product[marca]" id="marca" class="validate" required>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header active"><i class="fa fa-battery-quarter"></i>Estado del Producto</div>
+                            <div class="collapsible-body center-align">
+                                <div class="row">
+                                    <div class="input-field col s12 m6">
+                                            <input name="product[estado]" type="radio" id="nuevo" value ="nuevo" />
+                                            <label for="nuevo">Nuevo</label>
+                                    </div>
 
-                    <div class="input-field col s12 l6">
-                       
-                        <form action="/uploadImage" method="POST" enctype="multipart/form-data">
-                            <label>Imagen *</label><br><br><br>
-                            <input type="file" name="product[imagen]" id="uploadImage">
-                            <input type="submit" value="Subir" name="submit">
-                        </form>
-                         <label for="">Imagen *</label>
-                     </div>   
+                                    <div class="input-field col s12 m6">
+                                            <input name="product[estado]" type="radio" id="usado" value = "usado" />
+                                            <label for="usado">Usado</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header active"><i class="fa fa-camera"></i>Imagen del Producto</div>
+                            <div class="collapsible-body">
+                                <div class="row">
+                                    <div class="file-field input-field">
+                                        <div class="btn">
+                                            <span>Imagen</span>
+                                            <input type="file" name="fileimage">
+                                        </div>
+                                        <div class="file-path-wrapper">
+                                            <input class="file-path validate" type="text">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header active"><i class="fa fa-level-down"></i>Categoría del Producto</div>
+                            <div class="collapsible-body clear-fix">
+                                <div class="input-field col s12">
+                                    <select id="categoryCombo" class="categoryCombo">
+                                        <option value="" disabled selected>Seleccionar</option>
+                                        <?php foreach ($categories as $category): ?>
+                                            <option value="<?php echo $category['id'] ?>"><?php echo $category['nombre'] ?></option>
+                                        <?php endforeach ?>
+                                    </select>
+                                    <label for="categoryCombo">Categoría</label>
+                                </div>
 
-                </div>
-            </div>
-        </li>
-        <li>
-                        <div class="input-field col s12">
-                            <select id="categoryCombo" class="categoryCombo">
-                                <option value="" disabled selected>Seleccionar</option>
-                                <?php foreach ($categories as $category): ?>
-                                    <option value="<?php echo $category['id'] ?>">
-                                        <?php echo $category['nombre'] ?>
-                                    </option>
-                                <?php endforeach ?>
-                            </select>
-                            <label for="categoryCombo">Categoría</label>
-                        </div>
+                                <div class="input-field col s12">
+                                    <select id="chivaste" name="product[subcategoria]" data-empty="Seleccionar" disabled>
+                                        <option disabled selected>Seleccionar</option>
+                                    </select>
+                                    <label for="subcategoryCombo">Subcategoría</label>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header active"><i class="fa fa-question-circle-o"></i>Descripción del Producto</div>
+                            <div class="collapsible-body">
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <textarea name='product[descripcion]' id="descripcion" class="materialize-textarea"></textarea>
+                                        <label for="descripcion">Descripcion</label>
+                                    </div>
+                                </div>
 
-                        <div class="input-field col s12">
-                            <select id="chivaste" name="product[subcategoria]" data-empty="Seleccionar">
-                                <option disabled selected></option>
-                            </select>
-                            <label for="subcategoryCombo">Subcategoría</label>
-                        </div>
-        </li>
-        <li>
-            <div class="row">
-            <div class="input-field col s6">
-              <input name='product[descripcion]' placeholder="Descripcion" id="descripcion" type="text" class="validate">
-              <label for="first_name">Descripcion</label>
-            </div>
-            
-
-
-        <li>
-
-            <div class="buttons-wrapper center-align col s12">
-                <button class="btn waves-effect waves-light" type="submit">Subastar!</button>
-            </div>
-        </li>
-    </ul>
+                                <div class="row">
+                                    <div class="col s12 buttons-wrapper center-align">
+                                        <button class="btn waves-effect waves-light" type="submit">Añadir producto</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
                 </form>
             </div>
         </div>
@@ -141,8 +144,7 @@
                     <button class="btn-flat waves-effect waves-light" id='delete_selectAll'>SELECCIONAR TODOS</button>
                     <button class="btn-flat waves-effect waves-light" id='delete_cancelAll'>CANCELAR SELECCIÓN</button>
                 </div>
-
-             
+            </div>
         </div>
     </div>
 </div>
@@ -267,7 +269,7 @@
 
                 success : function(data) {
                     $('#chivaste').populateSelect(data);
-                    $('#chivaste').material_select();
+                    $('#chivaste').prop('disabled', false).material_select();
                 }
             });
         });

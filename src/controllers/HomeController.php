@@ -142,11 +142,11 @@ class HomeController extends AbstractController
     public function createProductAction($request, $response, $args) {
 
         $args['title'] = 'Producto Nuevo';
-
-
+        $loggedUser = $request->getAttribute('loggedUser');
+        
         if ($request->isPost()) {
 
-            if (isset($_SESSION)) {  //Si usuario registrado
+            if ($loggedUser) {  //Si usuario registrado
 
                 
                 $product = $request->getParam('product');
