@@ -32,11 +32,15 @@ class ManagementController extends AbstractController
                 $auction = $request->getParam('auction');
 
                 //Calculo de fechas finales e iniciales
-                $diasSubasta = $auction['caducidad'] ; //en segundos
+                $diasSubasta = $auction['caducidad'] *(24*60*60); //en segundos
                 $fechaActual = time();
                 $fechaFin = $diasSubasta + $fechaActual;
-                $fechaActual = date("Y-m-d",$fechaActual);
-                $fechaFin = date("Y-m-d",$fechaFin);
+                $fechaActual = date("Y-m-d-H-m-s",$fechaActual);
+                $fechaFin = date("Y-m-d-H-m-s",$fechaFin);
+
+                var_dump($fechaActual);
+                var_dump($fechaFin);
+                die();
 
                 //Falta relacionar la subasta con el subastador que sino la base de datos no se lo come.
 
