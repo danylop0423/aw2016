@@ -137,6 +137,43 @@
 
         <div id="delete" class="col s12">
             <div class="card-panel">
+
+
+                <table class="highlight">
+                    <thead>
+                        <tr>
+                            <th colspan="2">Producto</th>
+                            <th>Borrar</th>
+                            <th>Marca</th>
+                            <th>Categoría</th>
+                            <th>Subcategoría</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <?php foreach ($products as $product): ?>
+                            <tr data-target="modal<?php echo $product['id'] ?>">
+                                <td colspan="2">
+                                    <div class="valign-wrapper">
+                                        <div class="col s2 hide-on-small-only">
+                                            <img class="responsive-img" src="<?php echo $product['foto'] ?>">
+                                        </div>
+
+                                        <div class="col s10">
+                                            <span><?php echo $product['nombre'] ?></span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td> <button class= "borrar" onclick="borrar()">Borrar</button> </td>   <!--le paso el id por parametros-->
+                                <td><?php echo $product['marca'] ?></td>
+                                <td><?php echo $product['categoria'] ?></td>
+                                <td><?php echo $product['subcategoria'] ?></td>
+                            </tr>
+                        <?php endforeach ?>
+                    </tbody>
+                </table>
+            
+
+
                 <div class="delete-filter">
                     <button class="btn-flat waves-effect waves-light" id='delete_selectAll'>SELECCIONAR TODOS</button>
                     <button class="btn-flat waves-effect waves-light" id='delete_cancelAll'>CANCELAR SELECCIÓN</button>
@@ -237,6 +274,27 @@
         $('select').material_select();
         $('.modal-trigger').leanModal();
 
+        $(".borrar").click(function(){
+
+            $.ajax({
+                        type: 'POST',
+                        url: '/ajax/borraProducto',
+                        data : {product: id},
+
+                    };
+
+                            $id = $request->getParam('id');
+
+            $borrado = $this->db->delete()
+                ->from('productos')
+                ->where('id', '=', $id)
+                ->execute()
+                ->fetch()
+            ;
+
+
+        });
+
         $('form[name="updateProduct"]').on('submit', function(event) {
             var $form = $(this);
 
@@ -287,4 +345,13 @@
            $('.deleteField :input[type=checkbox]').prop('checked', false);
         });
     });
+
+
 </script>
+
+$borrado = $this->db->delete()
+                ->from('productos')
+                ->where('id', '=', $id)
+                ->execute()
+                ->fetch()
+            ;
