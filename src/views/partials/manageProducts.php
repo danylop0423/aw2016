@@ -275,7 +275,7 @@
 
                         <div class="input-field col s12 right-align">
                             <button type="submit" class="btn waves-effect waves-red">Guardar</button>
-                            <a href="#!" class="modal-action modal-close waves-effect waves-red btn-flat">Cancelar</a>
+                            <a href="#!" class="modal-action modal-close waves-effect waves-red btn-flat">Cerrar</a>
                         </div>
                     </div>
                     <input type="hidden" name="product[id]" value="<?php echo $product['id'] ?>">
@@ -288,7 +288,14 @@
 <script>
     $(function() {
         $('select').material_select();
-        $('.modal-trigger').leanModal();
+
+        $('.modal-trigger').leanModal({
+            complete: function() {
+                if ($('#update').data('updated') == true) {
+                    location.reload();
+                }
+            }
+        });
 
         $('form[name="updateProduct"]').on('submit', function(event) {
             var $form = $(this);
@@ -316,6 +323,7 @@
                                 data: $form.serialize() + '&product%5Bfoto%5D=' + data.foto,
 
                                 success: function(data) {
+                                    $('#update').data('updated', true);
                                     Materialize.toast(data.response, 10000);
                                 }
                             });
@@ -333,6 +341,7 @@
                     data: $form.serialize(),
 
                     success: function(data) {
+                        $('#update').data('updated', true);
                         Materialize.toast(data.response, 10000);
                     }
                 });
