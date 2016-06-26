@@ -56,14 +56,16 @@ class AjaxController extends AbstractAjaxController
     {
         $bid = $request->getParam('bid');
         $auctionId = $request->getParam('auction');
-        $loggedUser = $request->getAttribute('loggedUser') || false;
+        $loggedUser = $request->getAttribute('loggedUser');
 
         if ($loggedUser) {
             if ($this->isWinnerBid($auctionId, $bid)) {
                 $args['error'] = false;
-                $this->saveBid($auctionId, $loggedUser['id'], $bid);
+                if (!$this->saveBid($auctionId, $loggedUser['id'], $bid)) {
+                    $args['error'] = '¡Fallo al registrar la puja!';
+                }
             } else {
-                $args['error'] = '¡Fallo al registrar la puja!';
+                $args['error'] = '¡Puja no ganadora, intentelo de nuevo!';
             }
         } else {
             $args['error'] = '¡Debes iniciar sesión primero!';
@@ -188,22 +190,34 @@ class AjaxController extends AbstractAjaxController
 
     private function isWinnerBid($auctionId, $bid)
     {
-        // $winnerBid = $this->db->select()
-        //     ->from('pujas')
-        //     ->where('producto', '=', $auctionId)
-        //     ->having('ultimaPuja', '>=', $bid)
-        //     ->execute()
-        //     ->fetchAll()
-        // ;
+        $actualBid = $this->db->select(array('p.valor', 's.pujaMin'))
+            ->from('pujas p')
+            ->join('subasta s', 'p.subasta', '=', 's.id', 'INNER')
+            ->where('p.subasta', '=', $auctionId)
+            ->orderBy('p.valor', 'ASC')
+            ->execute()
+            ->fetch()
+        ;
 
-        return false;
+        if (empty($actualBid)) {
+            $lowestBid = $this->db->select(array('pujaMin'))
+                ->from('subasta')
+                ->where('id', '=', $auctionId)
+                ->execute()
+                ->fetch()
+            ;
+
+            return $bid*1 > $lowestBid*1;
+        }
+
+        return $actualBid['valor']*1 > $bid*1 && $actualBid['pujaMin']*1 < $bid*1;
     }
 
     private function saveBid($auctionId, $loggedUserId, $bid)
     {
-        return $this->db->insert(array('usuario', 'producto', 'ultimaPuja'))
+        return $this->db->insert(array('usuario', 'subasta', 'valor', 'ganadora'))
            ->into('pujas')
-           ->values($loggedUserId, $auctionId, $bid)
+           ->values(array($loggedUserId, $auctionId, $bid, 1))
            ->execute()
         ;
     }
