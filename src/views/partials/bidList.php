@@ -3,7 +3,7 @@
     <div class="row list-auctions">
         <div class="top-auctions" v-if="auctions.length == 0">
             <?php foreach ($Bids as $auction): ?>
-                <div class="col s12 m4 l3">
+                <div class="col s12 m4 l4">
                     <div class="auction">
                         <div class="header">
                             <p class="title"><a href="/subasta/<?php echo $auction['id'] ?>"><?php echo $auction['nombre'] ?></a></p>
@@ -12,7 +12,7 @@
 
                         <div class="body">
                             <p class="days-left"></p>
-                            <p class="time-left remainingTime">02:22:01</p>
+							<auction-timer end-time="<?php echo $auction['caducidad'] ?>"></auction-timer>
                             <p class="lowest-bid"><span>Min: </span><?php echo $auction['pujaMin'] ?><sup>€</sup></p>
 							<p class="lowest-bid"><span>Your Last: </span><?php echo $auction['ultimaPuja'] ?><sup>€</sup></p>
                             <bid-button auction-id="<?php echo $auction['id'] ?>" product-name="<?php echo $auction['nombre'] ?>"></bid-button>
@@ -23,7 +23,7 @@
         </div>
 
         <div v-else>
-            <div v-if="!loading" v-for="auction in auctions" class="col s12 m3 l3">
+            <div v-if="!loading" v-for="auction in auctions" class="col s12 m4 l3">
                 <div class="auction">
                     <div class="header">
                         <p class="title"><a href="/subasta/{{ auction.id }}">{{ auction.nombre }}</a></p>
@@ -37,4 +37,5 @@
             </div>
         </div>
     </div>
-</div>
+	
+	</div>
