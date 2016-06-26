@@ -164,7 +164,16 @@ class AjaxController extends AbstractAjaxController
         $fechaFin = $fechaActual+$diasSubasta;
         $fechaFin = date("Y-m-d H:i:s",$fechaFin);
 
-        $subasta['caducidad'] = $fechaFin;
+        if(!empty($subasta['caducidad'])){
+            //Cálculo de fechas finales e iniciales
+            $diasSubasta = $subasta['caducidad']*(24*60*60); //en segundos
+            $fechaActual = time();
+            $fechaFin = $fechaActual+$diasSubasta;
+            $fechaFin = date("Y-m-d H:i:s",$fechaFin);
+           $subasta['caducidad'] = $fechaFin;
+        }
+        
+            
 
         //Cambio de comas por puntos para el precio con decimales
         $subasta['pujaMin'] = str_replace(",", ".", $subasta['pujaMin']);
