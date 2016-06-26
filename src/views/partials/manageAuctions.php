@@ -251,7 +251,7 @@
                 }
             }
         });
-        
+
         $('#categoryCombo').on('change', function() {
             var value = $(this).val();
 
@@ -276,7 +276,7 @@
 
             $.ajax({
                 type: 'POST',
-                url: '/ajax/fetchFilteredAuctions',
+                url: '/ajax/fetchFilteredProducts',
                 data : {
                     filters: {'subcategoria.id': value}
                 },

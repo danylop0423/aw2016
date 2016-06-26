@@ -52,6 +52,27 @@ class AjaxController extends AbstractAjaxController
         return $response->withStatus(404);
     }
 
+    public function fetchFilteredProductsAction($request, $response, $args)
+    {
+        $filters = $request->getParam('filters');
+
+        if ($filters) {
+            $auctions = $this->db->select(array('productos.id', 'productos.nombre', 'productos.foto'))
+                ->from('productos')
+                ->join('subcategoria', 'productos.subcategoria', '=', 'subcategoria.id', 'INNER')
+                ->join('categoria', 'subcategoria.categoria', '=', 'categoria.id', 'INNER')
+                ->whereMany($filters, 'like')
+                ->orderBy('productos.nombre', 'ASC')
+                ->execute()
+                ->fetchAll()
+            ;
+
+            return $this->renderJSON($response, $auctions);
+        }
+
+        return $response->withStatus(404);
+    }
+
     public function makeBidAction($request, $response, $args)
     {
         $bid = $request->getParam('bid');
