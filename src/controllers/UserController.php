@@ -224,12 +224,12 @@ class UserController extends AbstractController
                     'productos.foto',
                     'subasta.caducidad',
                     'subasta.pujaMin',
-					'pujas.ultimaPuja'
+					'pujas.valor'
                 ))
                 ->from('subasta')
                 ->join('productos', 'subasta.producto', '=', 'productos.id', 'INNER')
                 ->join('subcategoria', 'productos.subcategoria', '=', 'subcategoria.id', 'INNER')
-				->join('pujas', 'subasta.producto', '=', 'pujas.producto', 'INNER')
+				->join('pujas', 'subasta.id', '=', 'pujas.subasta', 'INNER')
                 ->where('pujas.usuario', '=', $loggedUser['id'])
                 ->orderBy('productos.nombre', 'ASC')
                 ->execute()
