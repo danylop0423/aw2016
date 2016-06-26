@@ -228,7 +228,7 @@ class AjaxController extends AbstractAjaxController
                 ->fetch()
             ;
 
-            return $bid*1 > $lowestBid*1;
+            return $bid*1 > $lowestBid[0]*1;
         }
 
         return $actualBid['valor']*1 > $bid*1 && $actualBid['pujaMin']*1 < $bid*1;
