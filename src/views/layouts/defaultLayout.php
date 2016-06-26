@@ -10,6 +10,7 @@
     <script src="/assets/vendor/jquery/jquery.min.js"></script>
     <script src="/assets/vendor/bootstrap/js/materialize.min.js"></script>
     <script src="/assets/vendor/sweetalert2/sweetalert2.min.js"></script>
+    <script src="/assets/vendor/moment/moment.min.js"></script>
 
 </head>
 <body>
@@ -120,7 +121,7 @@
             <div class="row">
                 <div class="col l8 s12 white-text">
                     <h5 class="white-text">Redes sociales</h5>
-                
+
                     <span class="fa-stack fa-lg">
                       <i class="fa fa-square-o fa-stack-2x"></i>
                       <i class="fa fa-twitter fa-stack-1x"></i>

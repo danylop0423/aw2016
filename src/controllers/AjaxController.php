@@ -30,12 +30,16 @@ class AjaxController extends AbstractAjaxController
             if (isset($filters['subasta.pujaMin'])) {
                 $auctions = $this->filterAuctionsByPrice($filters);
             } else {
+                $date = $filters['subasta.caducidad'];
+                unset($filters['subasta.caducidad']);
+
                 $auctions = $this->db->select(array('subasta.id', 'productos.nombre', 'productos.foto', 'subasta.caducidad', 'subasta.pujaMin'))
                     ->from('subasta')
                     ->join('productos', 'subasta.producto', '=', 'productos.id', 'INNER')
                     ->join('subcategoria', 'productos.subcategoria', '=', 'subcategoria.id', 'INNER')
                     ->join('categoria', 'subcategoria.categoria', '=', 'categoria.id', 'INNER')
                     ->whereMany($filters, 'like')
+                    ->whereBetween('subasta.caducidad', array(date('Y-m-d'), $date))
                     ->orderBy('productos.nombre', 'ASC')
                     ->execute()
                     ->fetchAll()
@@ -145,7 +149,9 @@ class AjaxController extends AbstractAjaxController
     private function filterAuctionsByPrice($filters)
     {
         $bid = $filters['subasta.pujaMin'];
+        $date = $filters['subasta.caducidad'];
         unset($filters['subasta.pujaMin']);
+        unset($filters['subasta.caducidad']);
 
         return $this->db->select(array('subasta.id', 'productos.nombre', 'productos.foto', 'subasta.caducidad', 'subasta.pujaMin'))
             ->from('subasta')
@@ -153,6 +159,7 @@ class AjaxController extends AbstractAjaxController
             ->join('subcategoria', 'productos.subcategoria', '=', 'subcategoria.id', 'INNER')
             ->join('categoria', 'subcategoria.categoria', '=', 'categoria.id', 'INNER')
             ->whereMany($filters, 'like')
+            ->whereBetween('subasta.caducidad', array(date('Y-m-d'), $date))
             ->where('subasta.pujaMin', '<', $bid)
             ->orderBy('productos.nombre', 'ASC')
             ->execute()

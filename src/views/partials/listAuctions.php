@@ -44,9 +44,9 @@
                             </div>
 
                             <div class="flex-grid">
-                                <button class="btn btn-filter">Hoy</button>
-                                <button class="btn btn-filter">Mañana</button>
-                                <button class="btn btn-filter">Esta semana</button>
+                                <button class="btn btn-filter" @click="timeSelected('today')">Hoy</button>
+                                <button class="btn btn-filter" @click="timeSelected('tomorrow')">Mañana</button>
+                                <button class="btn btn-filter" @click="timeSelected('week')">Esta semana</button>
                             </div>
                         </div>
                     </div>
@@ -56,7 +56,7 @@
     </div>
 
     <div class="row list-auctions">
-        <div class="top-auctions" v-if="auctions.length == 0">
+        <div class="top-auctions" v-if="auctions.length == 0 && !emptyResponse">
             <?php foreach ($topAuctions as $auction): ?>
                 <div class="col s12 m4 l3">
                     <div class="auction">
@@ -77,7 +77,16 @@
         </div>
 
         <div v-else>
-            <div v-if="!loading" v-for="auction in auctions" class="col s12 m4 l3">
+            <div v-if="loading" class="center-align">
+                <i class="fa fa-refresh fa-spin fa-5x fa-fw"></i>
+            </div>
+
+            <div v-if="emptyResponse && !loading" class="center-align">
+                <i class="fa fa-bomb fa-3x"></i>
+                <p class="">¡No se encontraron subastas con los filtros introducidos!</p>
+            </div>
+
+            <div v-if="!loading && !emptyResponse" v-for="auction in auctions" class="col s12 m4 l3">
                 <div class="auction">
                     <div class="header">
                         <p class="title"><a href="/subasta/{{ auction.id }}">{{ auction.nombre }}</a></p>
@@ -91,10 +100,6 @@
                         <bid-button :auction-id="auction.id" :product-name="auction.nombre"></bid-button>
                     </div>
                 </div>
-            </div>
-
-            <div class="center-align" v-if="loading">
-                <i class="fa fa-refresh fa-spin fa-5x fa-fw"></i>
             </div>
         </div>
     </div>

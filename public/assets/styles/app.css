@@ -6382,7 +6382,10 @@ a.button-collapse i {
 .list-auctions-page .auction .header .title {
   margin: 0 0 30px;
   font-size: 18px;
-  font-weight: bold; }
+  font-weight: bold;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis; }
   .list-auctions-page .auction .header .title:after {
     display: block;
     content: "";

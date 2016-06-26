@@ -7,11 +7,13 @@ new Vue({
         subcategories: [],
         auctions: [],
         price: '',
+        tempo: '',
         filters: {
             'categoria.nombre': '%',
             'subcategoria.nombre': '%',
-            'subasta.pujaMin': ''
+            'subasta.caducidad': moment().add(6, 'months').format('Y-MM-D')
         },
+        emptyResponse: false,
         loading: true
     },
 
@@ -38,19 +40,36 @@ new Vue({
                 }
             });
 
-            this.fetchFilteredAuctions({'categoria.nombre': category});
+            this.fetchFilteredAuctions();
         },
 
         subcategorySelected: function(subcategory) {
             this.filters['subcategoria.nombre'] = subcategory;
             this.changeSelectedButtonStyle(event.target, '#subcategoryTab');
 
-            this.fetchFilteredAuctions({'subcategoria.nombre': subcategory});
+            this.fetchFilteredAuctions();
         },
 
         priceSelected: function() {
             this.filters['subasta.pujaMin'] = this.price;
-            this.fetchFilteredAuctions(this.filters);
+            this.fetchFilteredAuctions();
+        },
+
+        timeSelected: function(time) {
+            var date = moment();
+
+            if (time === 'today') {
+                time = date.add(1, 'days').format('Y-MM-D');
+            } else if (time === 'tomorrow') {
+                time = date.add(2, 'days').format('Y-MM-D');
+            } else if (time === 'week') {
+                time = date.add(8, 'days').format('Y-MM-D');
+            }
+
+            this.filters['subasta.caducidad'] = time;
+            this.changeSelectedButtonStyle(event.target, '#timeTab');
+
+            this.fetchFilteredAuctions();
         },
 
         fetchFilteredAuctions: function(filters) {
@@ -60,7 +79,7 @@ new Vue({
                 type: 'POST',
                 url: '/ajax/fetchFilteredAuctions',
                 data : {
-                    filters: filters
+                    filters: self.filters
                 },
 
                 beforeSend: function() {
@@ -69,6 +88,8 @@ new Vue({
 
                 success: function(data) {
                     self.auctions = data;
+                    self.emptyResponse = data.length == 0;
+
                     setTimeout(function() { self.loading = false; }, 250);
                 }
             });
