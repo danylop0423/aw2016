@@ -17,12 +17,12 @@
                             <div class="collapsible-body">
                                 <div class="row">
                                     <div class="input-field col s12 l6">
-                                        <label for="name">Nombre del producto *</label>
+                                        <label required for="name">Nombre del producto *</label>
                                         <input type="text" name="product[nombre]" id="name" class="validate" required>
                                     </div>
 
                                     <div class="input-field col s12 l6">
-                                        <label for="">Marca *</label>
+                                        <label required for="">Marca *</label>
                                         <input type="text" name="product[marca]" id="marca" class="validate" required>
                                     </div>
                                 </div>
@@ -33,7 +33,7 @@
                             <div class="collapsible-body center-align">
                                 <div class="row">
                                     <div class="input-field col s12 m6">
-                                            <input name="product[estado]" type="radio" id="nuevo" value ="nuevo" />
+                                            <input default name="product[estado]" type="radio" id="nuevo" value ="nuevo" checked="checked" />
                                             <label for="nuevo">Nuevo</label>
                                     </div>
 
@@ -65,7 +65,7 @@
                             <div class="collapsible-body clear-fix">
                                 <div class="input-field col s12">
                                     <select id="createCategoryCombo" class="categoryCombo">
-                                        <option value="" disabled selected>Seleccionar</option>
+                                        <option required value="" disabled selected>Seleccionar</option>
                                         <?php foreach ($categories as $category): ?>
                                             <option value="<?php echo $category['id'] ?>"><?php echo $category['nombre'] ?></option>
                                         <?php endforeach ?>
@@ -74,7 +74,7 @@
                                 </div>
 
                                 <div class="input-field col s12">
-                                    <select id="createSubcategoryCombo" name="product[subcategoria]" data-empty="Seleccionar" disabled>
+                                    <select required id="createSubcategoryCombo" name="product[subcategoria]" data-empty="Seleccionar" disabled>
                                         <option disabled selected>Seleccionar</option>
                                     </select>
                                     <label for="subcategoryCombo">Subcategoría</label>
@@ -86,7 +86,7 @@
                             <div class="collapsible-body">
                                 <div class="row">
                                     <div class="input-field col s12">
-                                        <textarea name='product[descripcion]' id="descripcion" class="materialize-textarea"></textarea>
+                                        <textarea required name='product[descripcion]' id="descripcion" class="materialize-textarea"></textarea>
                                         <label for="descripcion">Descripcion</label>
                                     </div>
                                 </div>

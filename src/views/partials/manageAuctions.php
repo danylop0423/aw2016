@@ -17,7 +17,7 @@
                             <div class="collapsible-body">
                                 <div class="row">
                                     <div class="input-field col s12 m6">
-                                        <select id="categoryCombo">
+                                        <select required id="categoryCombo">
                                             <option value="" disabled selected>Seleccionar</option>
                                             <?php foreach ($categories as $category): ?>
                                                 <option value="<?php echo $category['id'] ?>"><?php echo $category['nombre'] ?></option>
@@ -27,14 +27,14 @@
                                     </div>
 
                                     <div class="input-field col s12 m6">
-                                        <select id="subcategoryCombo" data-empty="Seleccionar" disabled>
+                                        <select required id="subcategoryCombo" data-empty="Seleccionar" disabled>
                                             <option value="" disabled selected>Seleccionar</option>
                                         </select>
                                         <label>Subcategoría</label>
                                     </div>
 
                                     <div class="input-field col s12">
-                                        <select id="productCombo" data-empty="Seleccionar" name="auction[producto]" disabled>
+                                        <select required id="productCombo" data-empty="Seleccionar" name="auction[producto]" disabled>
                                             <option value="" disabled selected>Seleccionar</option>
                                         </select>
                                         <label>Producto</label>
@@ -48,7 +48,7 @@
                             <div class="collapsible-body">
                                 <div class="row">
                                     <div class="input-field col s12 m6">
-                                        <select name="auction[caducidad]">
+                                        <select required name="auction[caducidad]">
                                             <option value="" disabled selected>Tiempo de subasta</option>
                                             <option value="1">1 Dia</option>
                                             <option value="2">2 Dias</option>
@@ -62,7 +62,7 @@
                                     </div>
 
                                     <div class="input-field col s12 m6">
-                                       <label for="name">Puja Minima</label>
+                                       <label for="name" min=1>Puja Minima</label>
                                        <input type="number" name="auction[pujaMin]" id="pujaMin" class="validate" required>
                                     </div>
 
