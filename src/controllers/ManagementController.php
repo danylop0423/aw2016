@@ -37,8 +37,8 @@ class ManagementController extends AbstractController
                 $diasSubasta = $auction['caducidad'] *(24*60*60); //en segundos
                 $fechaActual = time();
                 $fechaFin = $diasSubasta + $fechaActual;
-                $fechaActual = date("Y-m-d-H-i-s",$fechaActual);
-                $fechaFin = date("Y-m-d-H-i-s",$fechaFin);
+                $fechaActual = date("Y-m-d H:i:s",$fechaActual);
+                $fechaFin = date("Y-m-d H:i:s",$fechaFin);
 
                 $auction['caducidad'] = $fechaFin;
 
