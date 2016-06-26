@@ -134,12 +134,6 @@
                       <i class="fa fa-youtube fa-stack-1x"></i>
                     </span><a href="https://www.youtube.com/user/finformaticaucm" style="color:white">Youtube</a><br>
 
-                    <!-- <ul class="fa-ul">
-                      <li><i class="fa-li fa fa-check-square"></i>List icons</li>
-                      <li><i class="fa-li fa fa-check-square"></i>can be used</li>
-                      <li><i class="fa-li fa fa-spinner fa-spin"></i>as bullets</li>
-                      <li><i class="fa-li fa fa-square"></i>in lists</li>
-                    </ul> -->
                 </div>
                 <div class="col l4 s12">
                     <h5 class="white-text">Enlaces</h5>

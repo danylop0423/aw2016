@@ -91,7 +91,7 @@ class AjaxController extends AbstractAjaxController
 
             return $this->renderJSON($response, $args);
         }
-
+        //echo <meta http-equiv="refresh" content="3"  URL=gestion/subastas.php>
         return $response->withStatus(404);
     }
 
@@ -113,9 +113,16 @@ class AjaxController extends AbstractAjaxController
     {
         $subasta = $request->getParam('auction');
 
-        //Cambiamos las comas por puntos
+        //Cálculo de fechas finales e iniciales
+        $diasSubasta = $subasta['caducidad']*(24*60*60); //en segundos
+        $fechaActual = time();
+        $fechaFin = $fechaActual+$diasSubasta;
+        $fechaFin = date("Y-m-d H:i:s",$fechaFin);
+
+        $subasta['caducidad'] = $fechaFin;
+
+        //Cambio de comas por puntos para el precio con decimales
         $subasta['pujaMin'] = str_replace(",", ".", $subasta['pujaMin']);
-        //var_dump($subasta); die;
 
         if ($subasta) {
             $updateResponse = $this->db->update($subasta)

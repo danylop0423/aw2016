@@ -210,12 +210,22 @@
                 <form class="col s12" name="updateAuction" action="/ajax/updateSubasta">
                     <div class="row">
                         <div class="input-field col s6">
-                        <input value="<?php echo $auction['caducidad']?>" type="text"  id="auctionEnd" name="auction[caducidad]" class="datepicker validate" >
+                        <select class="datepicker validate" name="auction[caducidad]" id="auctionEnd">
+                            <option value="<?php echo $auction['caducidad']?>" disabled selected>Tiempo de subasta</option>
+                            <option value="1">1 Dia</option>
+                            <option value="2">2 Dias</option>
+                            <option value="3">3 Dias</option>
+                            <option value="4">4 Dias</option>
+                            <option value="5">5 Dias</option>
+                            <option value="6">6 Dias</option>
+                            <option value="7">7 Dias</option>
+                        </select>
+                        <!-- <input value=" php echo $auction['caducidad']?>" type="text"  id="auctionEnd" name="auction[caducidad]" class="datepicker validate" > -->
                         <label for="auctionEnd">Fin subasta</label>
                         </div>
                         <div class="input-field col s6">
                             <label for="lowestBid">Puja mínima</label>
-                            <input id="lowestBid" name="auction[pujaMin]" type="text" class="validate" value="<?php echo $auction['pujaMin'] ?>">
+                            <input id="lowestBid" name="auction[pujaMin]" type="number" class="validate" min="1" value="<?php echo $auction['pujaMin'] ?>">
 
                         </div>
 
@@ -306,4 +316,5 @@
            $('.deleteField :input[type=checkbox]').prop('checked', false);
         });
     });
+
 </script>
