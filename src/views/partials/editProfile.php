@@ -72,7 +72,7 @@
                         <label for="zip">
 						 <i class="fa fa-pencil right"></i>Cambia tu CP
 						</label>
-                        <input type="number" size='5' name="user[codigo_postal]" id="zip" class="validate" value=<?php echo $loggedUser['codigo_postal']?>>
+                        <input type="text" pattern="[0-9]{5}" placeholder="28000" name="user[codigo_postal]" id="zip" class="validate" value=<?php echo $loggedUser['codigo_postal']?>>
                     </div>
 
                     <div class="input-field col s12">
@@ -92,21 +92,21 @@
                         <label for="card">
 						 <i class="fa fa-pencil right"></i>Cambia tu N.Tajeta de Crédito
 						</label>
-                        <input type="text" size='16' name="user[tarjeta]" id="card" class="validate" value=<?php echo $loggedUser['tarjeta']?>>
+                        <input type="text" placeholder="5555666677778888" pattern="[0-9]{16}" name="user[tarjeta]" id="card" class="validate" value=<?php echo $loggedUser['tarjeta']?>>
                     </div>
 
                     <div class="input-field col s6 l3">
                         <label for="cvv">
 						 <i class="fa fa-pencil right"></i>Cambia CVV
 						</label>
-                        <input type="number" size='4' name="user[cvv]" id="cvv" class="validate" value=<?php echo $loggedUser['cvv']?>>
+                        <input type="text" placeholder="123" pattern="[0-9]{3}" name="user[cvv]" id="cvv" class="validate" value=<?php echo $loggedUser['cvv']?>>
                     </div>
 
                     <div id='exp' class="input-field col s6 l12">
 						<label for="expiration">
 						 <i class="fa fa-pencil right"></i>Cambia Fecha de Caducidad de tu Tarjeta
 						</label><br/><br/>
-                        <input type="month" name="user[caduca]" id="expiration" value=<?php echo $loggedUser['caduca']?>>
+                        <input type="text"  placeholder="01/2016" pattern="[0-9-/]{7}" name="user[caduca]" id="expiration" value=<?php echo $loggedUser['caduca']?>>
                     </div>
                 </div>
             </div>

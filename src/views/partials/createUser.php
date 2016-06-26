@@ -21,7 +21,7 @@
 
                     <div class="input-field col s12 l3">
                         <label for="">Teléfono</label>
-                        <input type="text" name="user[telefono]" id="phone" class="validate">
+                        <input type="tel" placeholder="612345678"  name="user[telefono]" id="phone" pattern="[0-9]{9}" class="validate">
                     </div>
                 </div>
             </div>
@@ -42,7 +42,7 @@
 
                     <div class="input-field col s12 l3">
                         <label for="zip">Código postal *</label>
-                        <input type="text" name="user[codigo_postal]" id="zip" class="validate" required>
+                        <input type="text" placeholder="28000" name="user[codigo_postal]" id="zip" pattern="[0-9]{5}" class="validate" required>
                     </div>
 
                     <div class="input-field col s12">
@@ -58,17 +58,17 @@
                 <div class="row">
                     <div class="input-field col s12 l6">
                         <label for="card">Número de la tarjeta *</label>
-                        <input type="text" name="user[tarjeta]" id="card" class="validate" required>
+                        <input type="text" placeholder="5555666677778888" pattern="[0-9]{16}" name="user[tarjeta]" id="card" class="validate" required>
                     </div>
 
                     <div class="input-field col s6 l3">
                         <label for="cvv">CVV *</label>
-                        <input type="text" name="user[cvv]" id="cvv" class="validate" required>
+                        <input type="text" placeholder="123" pattern="[0-9]{3}" name="user[cvv]" id="cvv" class="validate" required>
                     </div>
 
                     <div class="input-field col s6 l3">
                         <label for="expiration">Caducidad *</label>
-                        <input type="text" name="user[caduca]" id="expiration" required>
+                        <input type="text" placeholder="01/2016" pattern="[0-9-/]{7}" name="user[caduca]" id="expiration" class="validate" required>
                     </div>
                 </div>
             </div>
@@ -78,12 +78,12 @@
             <div class="collapsible-body">
                 <div class="row">
                     <div class="input-field col s12 l6">
-                        <label for="">Contraseña</label>
+                        <label for="">Contraseña *</label>
                         <input type="password" name="user[password]" id="pass" class="validate" required>
                     </div>
 
                     <div class="input-field col s12 l6">
-                        <label for="">Confirmar contraseña</label>
+                        <label for="">Confirmar contraseña *</label>
                         <input type="password" name="user[password-r]" id="pass-r" class="validate" required>
                     </div>
 
@@ -93,7 +93,7 @@
                     </div>
 
                     <div class="buttons-wrapper center-align col s12">
-                        <button class="btn waves-effect waves-light" type="submit">Registrate</button>
+                        <button class="btn waves-effect waves-light"  type="submit">Registrate</button>
                     </div>
                 </div>
             </div>
