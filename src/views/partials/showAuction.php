@@ -95,5 +95,9 @@
             setTimeout(function() { updateTime() }, 500);
         };
         updateTime();
+
+        new Vue({
+          el: '.auction'
+        });
     });
 </script>

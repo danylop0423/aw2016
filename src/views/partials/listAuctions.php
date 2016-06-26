@@ -67,7 +67,7 @@
 
                         <div class="body">
                             <p class="days-left"></p>
-                            <p class="time-left remainingTime">02:22:01</p>
+                            <auction-timer end-time="<?php echo $auction['caducidad'] ?>"></auction-timer>
                             <p class="lowest-bid"><?php echo $auction['pujaMin'] ?><sup>€</sup></p>
                             <bid-button auction-id="<?php echo $auction['id'] ?>" product-name="<?php echo $auction['nombre'] ?>"></bid-button>
                         </div>
@@ -86,7 +86,7 @@
 
                     <div class="body">
                         <p class="days-left"></p>
-                        <p class="time-left remainingTime">02:22:01</p>
+                        <auction-timer :end-time="auction.caducidad"></auction-timer>
                         <p class="lowest-bid">{{ auction.pujaMin.replace('.', ',') }}<sup>€</sup></p>
                         <bid-button :auction-id="auction.id" :product-name="auction.nombre"></bid-button>
                     </div>
@@ -99,22 +99,3 @@
         </div>
     </div>
 </div>
-
-<script>
-    $(function () {
-        function updateTime() {
-            var $time = $('.remainingTime');
-            var today = new Date();
-            var remaining = [
-                ('0' + (24 - today.getHours())).slice(-2),
-                ('0' + (59 - today.getMinutes())).slice(-2),
-                ('0' + (59 - today.getSeconds())).slice(-2)
-            ];
-
-            $time.text(' ' + remaining.join(':'));
-
-            setTimeout(function() { updateTime() }, 500);
-        };
-        updateTime();
-    });
-</script>

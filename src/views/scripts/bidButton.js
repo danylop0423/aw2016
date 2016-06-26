@@ -73,8 +73,4 @@ var bidButtonComponent = Vue.extend({
     }
 });
 
-Vue.component('bid-button', bidButtonComponent)
-
-new Vue({
-  el: '.auction'
-});
+Vue.component('bid-button', bidButtonComponent);
