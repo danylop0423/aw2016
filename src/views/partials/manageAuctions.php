@@ -220,7 +220,6 @@
                             <option value="6">6 Dias</option>
                             <option value="7">7 Dias</option>
                         </select>
-                        <!-- <input value=" php echo $auction['caducidad']?>" type="text"  id="auctionEnd" name="auction[caducidad]" class="datepicker validate" > -->
                         <label for="auctionEnd">Fin subasta</label>
                         </div>
                         <div class="input-field col s6">
@@ -231,7 +230,7 @@
 
                         <div class="input-field col s12 right-align">
                             <button type="submit" class="btn waves-effect waves-red">Guardar</button>
-                            <a href="#!" class="modal-action modal-close waves-effect waves-red btn-flat">Cancelar</a>
+                            <a href="/gestion/subastas" class="modal-action modal-close waves-effect waves-red btn-flat">Cerrar</a>
                         </div>
                     </div>
                     <input type="hidden" name="auction[id]" value="<?php echo $auction['id'] ?>">
@@ -245,8 +244,14 @@
 
     $(function() {
         $('select').material_select();
-        $('.modal-trigger').leanModal();
-
+        $('.modal-trigger').leanModal({
+            complete: function() {
+                if ($('#update').data('updated') == true) {
+                    location.reload();
+                }
+            }
+        });
+        
         $('#categoryCombo').on('change', function() {
             var value = $(this).val();
 

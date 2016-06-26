@@ -91,7 +91,6 @@ class AjaxController extends AbstractAjaxController
 
             return $this->renderJSON($response, $args);
         }
-        //echo <meta http-equiv="refresh" content="3"  URL=gestion/subastas.php>
         return $response->withStatus(404);
     }
 
