@@ -78,8 +78,8 @@
                     </li>
                 </ul>
             </li>
-            <li><a href="/gestion/productos">Productos</a></li>
             <?php if ($loggedUser): ?>
+                <li><a href="/gestion/productos">Productos</a></li>
                 <li class="no-padding">
                     <ul class="collapsible collapsible-accordion">
                         <li class="bold"><a class="collapsible-header">Mi cuenta</a>
