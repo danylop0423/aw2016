@@ -19,10 +19,6 @@
 							<li><h6><i class="fa fa-chevron-right"></i> Población: <span class="blue-text text-darken-6"><?php echo $loggedUser['poblacion']?></span></h6></li>
 						 </ul></div></li>
 						 </div>
-						<div class="col s12 l9 section">
-						<li>Subastas Activas: <span class="blue-text text-darken-6"> 2 </span></li>
-						<li>Pujas Activas: <span class="blue-text text-darken-6"> 2 </span></li>
-					    </div>
 					  </ul>
 				  </div>
 
@@ -39,55 +35,5 @@
 		</div>
 	  </div>
 
-
-
-
-	<div id= "derecont ">
-
-	   <div class="puja_subasta">
-
-		  <h1 id="mispujas" class="teal-text text-darken-4">Mis Pujas:</h1>
-
-		  <div class="row">
-			<div class="col s12 m7">
-			  <div class="card z-depth-2">
-				  <div class="card-image left">
-				   <img src="/assets/images/smartw6.png">
-				  </div>
-				  <div class="card-content ">
-					  <span class="red-text text-darken-4 card-title">Producto: X</span>
-					  <ul class="indigo-text text-darken-4" >
-						<li>Estado de la Subasta:<span class="blue-text text-darken-6"> Activa</span></li>
-						<li>Puja Ganadora: <span class="blue-text text-darken-6"> 3,00 €</span></li>
-						<li>Mi Ultima Puja: <span class="blue-text text-darken-6">1,00 €</span></li>
-						<li>Tiempo Restante: <span class="blue-text text-darken-6"> 00:03:45</span></li>
-						<li>He Ganado: <span class="blue-text text-darken-6">Aún No </span></li>
-					  </ul>
-				  </div>
-				</div>
-			</div>
-		  </div>
-
-		  <div class="row">
-			<div class="col s12 m7">
-			  <div class="card z-depth-2">
-				  <div class="card-image left">
-				   <img src="/assets/images/smartw4.png">
-				  </div>
-				  <div class="card-content ">
-					  <span class="red-text text-darken-4 card-title">Producto: X</span>
-					  <ul class="indigo-text text-darken-4" >
-						<li>Estado de la Subasta:<span class="blue-text text-darken-6"> Activa</span></li>
-						<li>Puja Ganadora: <span class="blue-text text-darken-6"> 3,00 €</span></li>
-						<li>Mi Ultima Puja: <span class="blue-text text-darken-6">1,00 €</span></li>
-						<li>Tiempo Restante: <span class="blue-text text-darken-6"> 00:03:45</span></li>
-						<li>He Ganado: <span class="blue-text text-darken-6">Aún No </span></li>
-					  </ul>
-				  </div>
-				</div>
-			</div>
-		  </div>
-
-	  </div>
-  </div>
+	
  </div>
