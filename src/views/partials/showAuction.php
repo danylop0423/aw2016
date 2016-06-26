@@ -10,13 +10,13 @@
                     <div class="col s12 m6 information">
                         <p><label>Producto</label> <?php echo $auction['nombre'] ?></p>
                         <span><label>Fabricante</label> <?php echo $auction['marca'] ?></span>&nbsp;&nbsp;&nbsp;
-                        <span><label>Estado</label> Nuevo</span>
+                        <span><label>Estado</label> <?php echo $auction['estado'] ? 'Usado' : 'Nuevo' ?></span>
                         <p>
                             <label>Categoría</label>
                              <a href="/subastas/<?php echo $auction['categoria'] ?>"><?php echo $auction['categoria'] ?></a> <i class="fa fa-angle-right"></i>
                              <a href="/subastas/<?php echo $auction['categoria'] ?>/<?php echo $auction['subcategoria'] ?>"><?php echo $auction['subcategoria'] ?></a>
                         </p>
-                        <p><label>Fin de la subasta</label> 22 Junio 2016 20:00</p>
+                        <p><label>Fin de la subasta</label> <?php echo $auction['caducidad'] ?></p>
                     </div>
 
                     <div class="col s12">
@@ -33,7 +33,10 @@
                     <label>Tiempo restante</label>
 
                     <p><i class="fa fa-calendar-o"></i> 2 Días</p>
-                    <p><i class="fa fa-clock-o"></i><span id="remainingTime"> 15:20:00</span></p>
+                    <p>
+                        <i class="fa fa-clock-o"></i>
+                        <span id="remainingTime"> <auction-timer end-time="<?php echo $auction['caducidad'] ?>"></auction-timer></span>
+                    </p>
                 </div>
 
                 <p class="divider"></p>
@@ -54,8 +57,8 @@
         <div class="col s12 m3">
             <div class="card-panel auctioneer">
                 <div class="center-align">
-                    <img src="http://beerhold.it/100/100/s" alt="" class="circle responsive-img">
-                    <p>Nombre del subastador</p>
+                    <img src="<?php echo $loggedUser['foto'] ?>" width="100" alt="" class="circle responsive-img">
+                    <p><?php echo $loggedUser['nombre'] . ' ' . $loggedUser['apellido'] ?></p>
 
                     <p class="divider"></p>
 
