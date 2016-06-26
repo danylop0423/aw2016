@@ -119,8 +119,6 @@ var bidButtonComponent = Vue.extend({
 Vue.component('bid-button', bidButtonComponent);
 
 
-Vue.config.debug = true;
-
 new Vue({
     el: '#list-auctions',
 

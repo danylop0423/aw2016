@@ -1,5 +1,3 @@
-Vue.config.debug = true;
-
 new Vue({
     el: '#list-auctions',
 
