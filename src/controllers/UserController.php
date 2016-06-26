@@ -2,28 +2,28 @@
 
 class UserController extends AbstractController
 {
-	
+
 	public function editProfileAction($request, $response, $args)
     {
 	  $loggedUser = $request->getAttribute('loggedUser');
 	  $args['title'] = 'Edita Tus Datos';
 	  if($loggedUser){
-		
+
 		if($request->isPost()){
      		return self::solve_editProfile_post($request, $response, $args,$loggedUser);
 		}
 		 else{   //si se trata de una petición Get:
 		   $args['title'] = 'Edita Tus Datos';
-		   $args['loggedUser'] = $loggedUser;	
+		   $args['loggedUser'] = $loggedUser;
 		   return $this->render($response, 'editProfile.php', $args);
 		   }
-	 
-	  }else{ 
+
+	  }else{
 		$args['error'] = 'Estas intentando acceder sin permisos';
 		return $this->render($response, 'home.php', $args);}
    }
-		
-	
+
+
     public function showProfileAction($request, $response, $args)
     {
         $args['title'] = 'Mi Perfil';
@@ -31,7 +31,7 @@ class UserController extends AbstractController
 		$picDefault="/assets/images/add_user.png";
         if ($loggedUser) {
 			if(!$loggedUser['foto'])
-				$loggedUser['foto']=$picDefault;										 
+				$loggedUser['foto']=$picDefault;
 			$args['loggedUser'] = $loggedUser;
 			return $this->render($response,'profile.php', $args);
         }else {
@@ -65,7 +65,7 @@ class UserController extends AbstractController
                     $args['title'] = 'Bienvenido ' . $user['nombre'];
                     $user['id']=$id;
 					if(!$user['foto'])
-						$user['foto']=$picDefault;										 
+						$user['foto']=$picDefault;
 					$args['loggedUser'] = $user;
                     $_SESSION['loggeduser'] = base64_encode(serialize($user));
 
@@ -81,45 +81,45 @@ class UserController extends AbstractController
         return $this->render($response, 'createUser.php', $args);
     }
 
-	
+
 //PRIVATE FUNCTIONS:
-	
+
     private function userExists($email)
     {
         $user = $this->db->select()
             ->from('usuarios')
-            ->where('email', '=', htmlspecialchars($email))
+            ->where('email', '=', $email)
             ->execute()
             ->fetch()
         ;
 
         return $user !== false;
     }
-	
-	
+
+
    private function solve_editProfile_post($request,$response,$args,$loggedUser){
 		   $newUser = $request->getParam('user');
 		   $newUser['id']=$loggedUser['id'];
 		   if(!$newUser['foto'])
 				$newUser['foto']=$loggedUser['foto'];
-		   else 
+		   else
 			   $newUser['foto']=self::proc_profileImage($loggedUser['id']);
-		   
+
 		   if($newUser['foto'][0]!=='/'){
                 $args['error'] = $newUser['foto'];
 				return $this->render($response, 'editProfile.php', $args);
-			   } 		       			   
-		   
+			   }
+
 		   foreach ($newUser as $clave => $valor){
-			   $newUser[$clave]=htmlspecialchars(trim(strip_tags($valor)));}
-		   
+			   $newUser[$clave]=trim(strip_tags($valor));}
+
 		   if($newUser['password']){
 				if($newUser['password']===$newUser['password-r']){
 					$newUser=$this->generatePassword($newUser);
 				}else{
 					$args['error'] = 'Las contraseñas no coinciden!!';
 					return $this->render($response, 'editProfile.php', $args);
-				}	 			   
+				}
 		   }
 		   else{
 			   $newUser['password']=$loggedUser['password'];
@@ -132,29 +132,29 @@ class UserController extends AbstractController
 					  ->execute()
                       ;
             //si se ha actualizado usuario correctamente o ambos son iguales
-			//(porque la foto no se actualiza solo se sobrescribe en el dir del servidor ):				
+			//(porque la foto no se actualiza solo se sobrescribe en el dir del servidor ):
 		   if($id || $newUser['foto']===$loggedUser['foto']) {
-			  $args['title'] = 'Mi Perfil';		
+			  $args['title'] = 'Mi Perfil';
 			  $newUser['id']=$loggedUser['id'];
 			  $loggedUser=&$newUser;
-			  $_SESSION['loggeduser'] = base64_encode(serialize($loggedUser));									 
+			  $_SESSION['loggeduser'] = base64_encode(serialize($loggedUser));
 			  $args['loggedUser'] = $loggedUser;
 			  $args['error'] = 'Tus datos se han Actualizado correctamente';
 		      return $this->render($response, 'profile.php', $args);
 		   }else{
 			  $args['error'] = 'Error No se han podido actualizar tus datos vuelve a intentarlo';
 		      return $this->render($response, 'editProfile.php', $args);}
-		
+
 	}
-	
-   
-  private function proc_profileImage($originPic){ 
+
+
+  private function proc_profileImage($originPic){
 	$picDefault="/assets/images/add_user.png";
 	$originFile=isset($_FILES['pic'])? $_FILES['pic']:false;
-	
+
 	if($originFile){
 	  $originType=$originFile['type'];
-	  if (((strpos($originType, "gif") || strpos($originType, "jpeg") ||strpos($originType, "jpg")) 
+	  if (((strpos($originType, "gif") || strpos($originType, "jpeg") ||strpos($originType, "jpg"))
 		     || strpos($originType, "png"))){
 				  $dir='assets'. DIRECTORY_SEPARATOR .'images'. DIRECTORY_SEPARATOR .'users';
 				  if(!is_dir($dir))
@@ -162,16 +162,16 @@ class UserController extends AbstractController
 				  else{ //only because we need it during develop- it changes $dir permissions recursively
 					chmod($dir,0766);
 					$iterator = new RecursiveIteratorIterator(new RecursiveDirectoryIterator($dir));
-					foreach($iterator as $item) 
-					 chmod($item,0766);				
-				    }					
+					foreach($iterator as $item)
+					 chmod($item,0766);
+				    }
 				  $dir=$dir. DIRECTORY_SEPARATOR;
 				  $tmpFile = $_FILES['pic']['tmp_name'];
 				  $im = file_get_contents($tmpFile);
 				  $dimensiones=getimagesize($tmpFile);
 				  $ancho=$dimensiones[0];
 				  $alto=$dimensiones[1];
-				  
+
 				  $myAuxImage=imagecreatefromstring($im);
 				  $anchonuevo = 200;
 				  $altonuevo = 200;
@@ -181,22 +181,22 @@ class UserController extends AbstractController
 				  imagedestroy($myAuxImage);
 				  $calidad=100;
 
-			
+
 			      $newFullName="$originPic".".jpg";
- 			      if(imagejpeg($newImage,$dir.$newFullName,$calidad)){   
+ 			      if(imagejpeg($newImage,$dir.$newFullName,$calidad)){
 				     chmod($dir.$newFullName,0766);
 					 return '/assets/images/users/'.$newFullName;
 			      }
 				  return "No se ha podido subir su imagen";
 		  }
 		  return "El fichero que intentas subir no es una Imagen";
-	}	
+	}
     return $picDefault;
-		
+
   }
 
-  
-  
+
+
 	private function generatePassword($user){
 
 		$pepper = 'estoeslaPimienta12389';
@@ -236,12 +236,12 @@ class UserController extends AbstractController
                 ->fetchAll()
             ;
 		return $this->render($response, 'bidList.php', $args);
-		} 
+		}
 		else{
 			$args['error']="Acceso indevido, Primero debes Iniciar Sesión";
 			return $this->render($response, 'home.php', $args);
 		}
     }
 
-	
+
 }

@@ -18,7 +18,7 @@ class AuctionController extends AbstractController
             ->join('productos', 'subasta.producto', '=', 'productos.id', 'INNER')
             ->join('subcategoria', 'productos.subcategoria', '=', 'subcategoria.id', 'INNER')
             ->join('categoria', 'subcategoria.categoria', '=', 'categoria.id', 'INNER')
-            ->where('subasta.id', '=', htmlspecialchars($args['id']))
+            ->where('subasta.id', '=', $args['id'])
             ->execute()
             ->fetch()
         ;
@@ -46,7 +46,8 @@ class AuctionController extends AbstractController
                 ->from('subasta')
                 ->join('productos', 'subasta.producto', '=', 'productos.id', 'INNER')
                 ->join('subcategoria', 'productos.subcategoria', '=', 'subcategoria.id', 'INNER')
-                ->where('subcategoria.nombre', '=', htmlspecialchars($args['subcategory']))
+                ->where('subcategoria.nombre', '=', $args['subcategory'])
+                ->where('subasta.caducidad', '>', date('Y-m-d H:i'))
                 ->orderBy('productos.nombre', 'ASC')
                 ->execute()
                 ->fetchAll()
@@ -65,7 +66,8 @@ class AuctionController extends AbstractController
                 ->join('productos', 'subasta.producto', '=', 'productos.id', 'INNER')
                 ->join('subcategoria', 'productos.subcategoria', '=', 'subcategoria.id', 'INNER')
                 ->join('categoria', 'subcategoria.categoria', '=', 'categoria.id', 'INNER')
-                ->where('categoria.nombre', '=', htmlspecialchars($args['category']))
+                ->where('categoria.nombre', '=', $args['category'])
+                ->where('subasta.caducidad', '>', date('Y-m-d H:i'))
                 ->orderBy('productos.nombre', 'ASC')
                 ->execute()
                 ->fetchAll()
@@ -82,6 +84,7 @@ class AuctionController extends AbstractController
             $args['topAuctions'] = $this->db->select($products)
                 ->from('subasta')
                 ->join('productos', 'subasta.producto', '=', 'productos.id', 'INNER')
+                ->where('subasta.caducidad', '>', date('Y-m-d H:i'))
                 ->orderBy('productos.nombre', 'DESC')
                 ->limit(20, 35)
                 ->execute()
@@ -97,48 +100,6 @@ class AuctionController extends AbstractController
         }
 
         return $response->withStatus(404);
-    }
-
-    public function createAuctionAction($request, $response, $args){
-
-        
-
-        $args['title'] = 'Subasta Nueva';
-
-        
-
-
-
-        return $this->render($response, '/profile.php', $args);
-
-    }
-
-    public function uploadImageAction($request, $response, $args){
-
-
-
-
-        $target_dir = "uploads/";
-        $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
-        $uploadOk = 1;
-        $imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);
-        // Check if image file is a actual image or fake image
-        if(isset($_POST["submit"])) {
-            $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
-            if($check !== false) {
-                echo "File is an image - " . $check["mime"] . ".";
-                $uploadOk = 1;
-            } else {
-                echo "File is not an image.";
-                $uploadOk = 0;
-            }
-        }
-
-
-
-
-        return $this->render($response, 'uploadImage.php', $args);
-
     }
 
     private function fetchCategories()

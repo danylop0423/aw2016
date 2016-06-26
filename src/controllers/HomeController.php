@@ -25,7 +25,7 @@ class HomeController extends AbstractController
                 $args['error']='Tu mensaje ha sido enviado correctamente.';
             }
             else{
-                $args['error']='Tu mensaje NO se ha enviado correctamente. ¡Intentalo de nuevo!'; 
+                $args['error']='Tu mensaje NO se ha enviado correctamente. ¡Intentalo de nuevo!';
             }
 
             $args['contacto']=array('nombre'=>'', 'email'=>'', 'mensaje'=>'');
@@ -34,7 +34,7 @@ class HomeController extends AbstractController
 
         $args['contacto']= array('nombre'=>'', 'email'=>'', 'mensaje'=>'');
         return $this->render($response, 'contacto.php', $args);
-    } 
+    }
 
 
     public function technicalassistantAction($request, $response, $args) {
@@ -53,11 +53,11 @@ class HomeController extends AbstractController
                 $args['error']='Tu mensaje ha sido enviado correctamente.';
             }
             else{
-                $args['error']='Tu mensaje NO se ha enviado correctamente. ¡Intentalo de nuevo!';  
+                $args['error']='Tu mensaje NO se ha enviado correctamente. ¡Intentalo de nuevo!';
             }
             $args['asistencia']=array('nombre'=>'', 'email'=>'', 'mensaje'=>'');
             return $this->render($response, 'asistencia.php', $args);
-        }      
+        }
 
         $args['asistencia']= array('nombre'=>'', 'email'=>'', 'mensaje'=>'');
         return $this->render($response, 'asistencia.php', $args);
@@ -66,24 +66,23 @@ class HomeController extends AbstractController
 
     public function politicasAction($request, $response, $args) {
         $args['title'] = 'Políticas de Privacidad';
-        
+
         return $this->render($response, 'politicas.php', $args);
-    } 
+    }
 
 
     public function reembolsoAction($request, $response, $args) {
         $args['title'] = 'Venta y Reembolso';
-        
+
         return $this->render($response, 'reembolso.php', $args);
-    } 
+    }
 
 
     public function condicionesAction($request, $response, $args) {
         $args['title'] = 'Condiciones de Uso';
-        
-        return $this->render($response, 'condiciones.php', $args);
-    } 
 
+        return $this->render($response, 'condiciones.php', $args);
+    }
 
 
     public function loginAction($request, $response, $args)
@@ -99,14 +98,14 @@ class HomeController extends AbstractController
 
             $user = $this->db->select()
                 ->from('usuarios')
-                ->where('email', '=', htmlspecialchars($user))
+                ->where('email', '=', $user)
                 ->execute()
                 ->fetch()
             ;
 
             $pass = $this->decryptPassword($request);
 			if(!$user['foto'])
-						$user['foto']=$picDefault;			
+						$user['foto']=$picDefault;
             if ($user && $user['password'] === $pass) {
                 $args['loggedUser'] = $user;
                 $_SESSION['loggeduser'] = base64_encode(serialize($user));
@@ -120,6 +119,7 @@ class HomeController extends AbstractController
         return $this->render($response, 'login.php', $args);
     }
 
+
     public function logoutAction($request, $response, $args)
     {
         unset($_SESSION['loggeduser']);
@@ -128,62 +128,15 @@ class HomeController extends AbstractController
     }
 
 
-
-    public function newProductAction($request, $response, $args) {
-
-        $args['title'] = 'Producto Nuevo';
-
-
-
-        return $this->render($response, 'newProduct.php', $args);
-    } 
-
-
-    public function createProductAction($request, $response, $args) {
-
-        $args['title'] = 'Producto Nuevo';
-        $loggedUser = $request->getAttribute('loggedUser');
-        
-        if ($request->isPost()) {
-
-            if ($loggedUser) {  //Si usuario registrado
-
-                
-                $product = $request->getParam('product');
-
-                $fecha = time();
-
-                if($product[estado] =='nuevo') $product[estado] = 0; //nuevo
-                else $product[estado] = 1; //usado
-
-                $product[fecha_alta] = date("Y-m-d",$fecha);
-
-                $id = $this->db->insert(array_keys($product))
-                    ->into('productos')
-                    ->values(array_values($product))
-                    ->execute()
-                ;
-
-            } else {
-                $args['error'] = 'No estas registrado';
-            }
-        }
-
-        return $this->render($response, 'profile.php', $args);
-    }
-
-
-
-
-    private function decryptPassword($request){
-
+    private function decryptPassword($request)
+    {
         $user = $request->getParam('user');
         $pepper = 'estoeslaPimienta12389';
         $passIntend = $request->getParam('password');
 
         $user = $this->db->select()
                 ->from('usuarios')
-                ->where('email', '=', htmlspecialchars($user))
+                ->where('email', '=', $user)
                 ->execute()
                 ->fetch()
             ;
@@ -195,7 +148,5 @@ class HomeController extends AbstractController
         $pass .= $pepper;
 
         return  hash('sha256', $pass);
-
     }
-
 }
