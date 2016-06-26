@@ -111,6 +111,25 @@ class AjaxController extends AbstractAjaxController
         return $this->renderJSON($response, $args);
     }
 
+    public function addReviewAction($request, $response, $args)
+    {
+        $review = $request->getParam('review');
+        $loggedUser = $request->getAttribute('loggedUser');
+
+        if ($loggedUser) {
+            $review['origen'] = $loggedUser['id'];
+
+            $args['insert'] = $this->db->insert(array_keys($review))
+               ->into('comentarios')
+               ->values(array_values($review))
+               ->execute()
+            ;
+        } else {
+            $args['error'] = 'Debes iniciar sesión primero';
+        }
+
+        return $this->renderJSON($response, $args);
+    }
 
     public function updateSubastaAction($request, $response, $args)
     {

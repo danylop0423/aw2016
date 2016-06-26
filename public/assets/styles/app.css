@@ -6372,6 +6372,25 @@ a.button-collapse i {
   .auction-page .bid .bid-amount .fa-gavel {
     font-size: 50px; }
 
+.auction-page .reviews blockquote {
+  padding: 10px 20px;
+  margin: 0 0 20px;
+  border-left: 5px solid #C62828; }
+  .auction-page .reviews blockquote footer {
+    display: block;
+    font-size: 80%;
+    line-height: 1.42857143;
+    color: #777; }
+
+.auction-page .reviews .row {
+  margin-bottom: 0; }
+
+.auction-page .reviews .section-title {
+  margin-top: 5px; }
+
+.auction-page .reviews .divider:last-child {
+  display: none; }
+
 .auction-page .section-title {
   margin-top: 50px;
   font-size: 22px; }

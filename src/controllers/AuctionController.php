@@ -13,11 +13,16 @@ class AuctionController extends AbstractController
                 'subasta.pujaMin',
                 'subcategoria.nombre as subcategoria',
                 'categoria.nombre as categoria',
+                'usuarios.id as subastador_id',
+                'usuarios.nombre as subastador_nombre',
+                'usuarios.apellido as subastador_apellido',
+                'usuarios.foto as subastador_foto',
             ))
             ->from('subasta')
             ->join('productos', 'subasta.producto', '=', 'productos.id', 'INNER')
             ->join('subcategoria', 'productos.subcategoria', '=', 'subcategoria.id', 'INNER')
             ->join('categoria', 'subcategoria.categoria', '=', 'categoria.id', 'INNER')
+             ->join('usuarios', 'subasta.subastador', '=', 'usuarios.id', 'INNER')
             ->where('subasta.id', '=', $args['id'])
             ->execute()
             ->fetch()
@@ -25,6 +30,15 @@ class AuctionController extends AbstractController
 
         if ($args['auction']) {
             $args['title'] = $args['auction']['nombre'];
+
+            $args['reviews'] = $this->db->select(array('c.texto as texto', 'u.nombre as origen'))
+                ->from('comentarios c')
+                ->join('usuarios u', 'c.origen', '=', 'u.id', 'INNER')
+                ->where('c.destino', '=', $args['auction']['subastador_id'])
+                ->execute()
+                ->fetchAll()
+            ;
+
             return $this->render($response, 'showAuction.php', $args);
         }
 

@@ -25,6 +25,27 @@
                     </div>
                 </div>
             </div>
+
+            <div class="card-panel reviews">
+                <div class="row">
+                    <div class="col s12">
+                        <p class="section-title">comentarios sobre el subastador</p>
+
+                        <?php foreach ($reviews as $review): ?>
+                            <blockquote>
+                                <p><?php echo $review['texto'] ?></p>
+                                <footer><?php echo $review['origen'] ?></footer>
+                            </blockquote>
+
+                            <p class="divider"></p>
+                        <?php endforeach ?>
+                    </div>
+
+                    <div class="col s12 right-align">
+                        <button class="btn btn-flat modal-trigger" data-target="modal">añadir comentario</button>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div class="col s12 m3">
@@ -32,7 +53,6 @@
                 <div class="time">
                     <label>Tiempo restante</label>
 
-                    <p><i class="fa fa-calendar-o"></i> 2 Días</p>
                     <p>
                         <i class="fa fa-clock-o"></i>
                         <span id="remainingTime"> <auction-timer end-time="<?php echo $auction['caducidad'] ?>"></auction-timer></span>
@@ -57,8 +77,8 @@
         <div class="col s12 m3">
             <div class="card-panel auctioneer">
                 <div class="center-align">
-                    <img src="<?php echo $loggedUser['foto'] ?>" width="100" alt="" class="circle responsive-img">
-                    <p><?php echo $loggedUser['nombre'] . ' ' . $loggedUser['apellido'] ?></p>
+                    <img src="<?php echo $auction['subastador_foto'] ?>" width="100" alt="" class="circle responsive-img">
+                    <p><?php echo $auction['subastador_nombre'] . ' ' . $auction['subastador_apellido'] ?></p>
 
                     <p class="divider"></p>
 
@@ -80,27 +100,54 @@
             </div>
         </div>
     </div>
+
+    <div id="modal" class="modal">
+        <form action="/ajax/addReview" name="addReview" method="POST">
+            <div class="modal-content">
+                <h4>Comentario sobre el subastador</h4>
+                <div class="input-field col s12">
+                    <textarea id="textarea" name="review[texto]" class="materialize-textarea"></textarea>
+                    <label for="textarea">Textarea</label>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">cancelar</a>
+                <button type="submit" class="btn">enviar</button>
+            </div>
+            <input type="hidden" name="review[destino]" value="<?php echo $auction['subastador_id'] ?>">
+        </form>
+    </div>
 </div>
+
+
 
 <script>
     $(function () {
-        function updateTime() {
-            var $time = $('#remainingTime');
-            var today = new Date();
-            var remaining = [
-                ('0' + (24 - today.getHours())).slice(-2),
-                ('0' + (59 - today.getMinutes())).slice(-2),
-                ('0' + (59 - today.getSeconds())).slice(-2)
-            ];
-
-            $time.text(' ' + remaining.join(':'));
-
-            setTimeout(function() { updateTime() }, 500);
-        };
-        updateTime();
+        $('.modal-trigger').leanModal();
 
         new Vue({
           el: '.auction'
+        });
+
+        $('form[name="addReview"]').on('submit', function(e) {
+            $form = $(this);
+
+            $.ajax({
+                url: $form.attr('action'),
+                type: $form.attr('method'),
+                data: $form.serialize(),
+
+                success: function (data) {
+                    if (typeof data.error !== 'undefined') {
+                        Materialize.toast(data.error, 10000);
+                    } else {
+                        $('#modal').closeModal();
+                        Materialize.toast('Comentario registrado correctamente', 10000);
+                    }
+                }
+            });
+
+            e.preventDefault();
         });
     });
 </script>
