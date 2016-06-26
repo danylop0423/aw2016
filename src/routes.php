@@ -17,10 +17,6 @@ $app->any('/politicas','HomeController:politicasAction');
 
 $app->any('/reembolso','HomeController:reembolsoAction');
 
-$app->any('/newProduct','HomeController:newProductAction');
-
-$app->any('/newProductRegister','HomeController:createProductAction');
-
 
 /* UserController Routes */
 $app->any('/nuevo-usuario', 'UserController:createUserAction');
@@ -31,16 +27,13 @@ $app->any('/editProfile','UserController:editProfileAction');
 
 $app->get('/bidList','UserController:listBidAction');
 
+
 /* AuctionController Routes */
 $app->get('/subastas[/{category}]', 'AuctionController:listAuctionsAction');
 
 $app->get('/subastas/{category}/{subcategory}', 'AuctionController:listAuctionsAction');
 
 $app->get('/subasta/{id}', 'AuctionController:showAuctionAction');
-
-$app->any('/nuevaSubasta', 'AuctionController:createAuctionAction');
-
-$app->any('/uploadImage', 'AuctionController:uploadImagerAction');
 
 
 /* ManagementController Routes */
