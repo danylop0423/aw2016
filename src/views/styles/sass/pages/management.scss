@@ -1,0 +1,14 @@
+.management-page {
+    .highlight {
+        tr {
+            cursor: pointer;
+        }
+    }
+
+    .delete-filter {
+        @extend .card;
+        @extend .center-align;
+
+        border-top: 3px solid $secondary_color;
+    }
+}

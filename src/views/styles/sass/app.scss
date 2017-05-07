@@ -1,0 +1,14 @@
+@import "../materialize/materialize.scss";
+
+@import "components/helpers";
+@import "components/section";
+@import "components/forms.scss";
+@import "components/filter.scss";
+
+@import "pages/default.scss";
+@import "pages/login.scss";
+@import "pages/auction.scss";
+@import "pages/list-auctions.scss";
+@import "pages/profile.scss";
+@import "pages/management.scss";
+@import "pages/reembolso.scss";

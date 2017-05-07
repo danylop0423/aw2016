@@ -1,0 +1,13 @@
+.clear-fix {
+    &:after {
+        display: block;
+        content: "";
+        clear: both;
+    }
+}
+
+.flex-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}

@@ -1,0 +1,8 @@
+.login-page {
+    .login-card {
+        @extend .card-panel;
+
+        width: 60%;
+        margin: 0 auto;
+    }
+}
